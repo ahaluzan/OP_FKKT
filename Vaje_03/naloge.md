@@ -1,6 +1,6 @@
 # Zanka *`while`*  
 
-Mapo s testi si lahko prenesete [tukaj](https://downgit.github.io/#/home?url=https://github.com/ahaluzan/OP_FKKT/tree/main/Vaje_02/)
+Mapo s testi si lahko prenesete [tukaj](???)
 
 ## 1. naloga: Poštevanka  
 
