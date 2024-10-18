@@ -1,5 +1,7 @@
 # Zanka *`while`*  
 
+Mapo s testi si lahko prenesete [tukaj](https://downgit.github.io/#/home?url=https://github.com/ahaluzan/OP_FKKT/tree/main/Vaje_02/)
+
 ## 1. naloga: Poštevanka  
 
 Napišite program, ki prebere število z vhoda (kakor je izpisano v spodnjem primeru) ter izpiše (z zanko `while`) njegovo "poštevanko" (večkratnike podanega števila do 10). Program poimenujte `postevanka.py`.  
