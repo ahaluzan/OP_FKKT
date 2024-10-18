@@ -128,15 +128,15 @@ Sprememba: 23
 Stanje: 23
 Sprememba: 15
 Stanje: 38
-Sprememba: \-30
+Sprememba: -30
 Stanje: 8
 Sprememba: 10
 Stanje: 18
 Sprememba: 100
 Stanje: 118
-Sprememba: \-200
+Sprememba: -200
 Stanje: -82
-Sprememba: \-50
-Stanje: \-132
+Sprememba: -50
+Stanje: -132
 Bankrot!
 ```

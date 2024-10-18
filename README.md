@@ -1,3 +1,5 @@
 # Osnove programiranja (obvezni) - vaje
 
-V tem GitHub repozitoriju so zbrane vaje s spletne učilnice FRI.
+Pričujoči GitHub repozitorij vsebuje materiale za vaje pri predmetu Osnove programiranja (obvezni), ki se izvaja na Fakulteti za kemijo in kemijsko tehnologijo.
+
+Vsebine so enake kot na spletni učilnici. 
