@@ -1,6 +1,4 @@
-Pri primerih delovanja programov so z **modro** označeni izpisi vašega programa, z **rdečo** pa vnos uporabnika. Pri reševanju pazite, da se vaši izpisi ujemajo z izpisi v navodilih (vključno s presledki). Testirate s testnimi skriptami, ki jih dobite [**⇉ tukaj ⇇**](https://ucilnica.fri.uni-lj.si/draftfile.php/201846/user/draft/352115717/vaje02.zip?time=1633365588558).
-
-ZIP-datoteko s testi razpakirajte v enega od imenikov, kjer imate pravice za pisanje. Vsaka naloga ima svoj podimenik, v katerem so testi. Svoj program ustrezno poimenujte in shranite v imenik poleg testne skripte `test.py`. Teste poženete tako, da požnete program test.py (lahko preko IDLE ali konzole).
+Datoteka s testi je v isti mapi kot pričujoča navodila. Mapo s testi razpakirajte v enega od imenikov, kjer imate pravice za pisanje. Vsaka naloga ima svoj podimenik, v katerem so testi. Svoj program ustrezno poimenujte in shranite v imenik poleg testne skripte `test.py`. Teste poženete tako, da požnete program test.py (lahko preko IDLE ali konzole).
 
 ## 1. naloga: Črka v nizu
 
@@ -12,9 +10,11 @@ Primer delovanja programa:
 Vpišite niz: fakulteta  
 Vpišite črko: a
 Niz vsebuje črko a.
+```
 
 Še en primer:
 
+```
 Vpišite niz: univerza  
 Vpišite črko: ž
 Niz ne vsebuje črke ž.
