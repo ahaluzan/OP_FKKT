@@ -1,0 +1,1 @@
+Vpiši temperaturo [°C]: Želite pretvoriti v Kelvine (vpiši K) ali Fahrenheite (vpiši F)? Vnesli ste napačno enoto!

@@ -1,0 +1,26 @@
+{
+  "modulesToTest": [
+    {
+      "id": "2021-22-V2-01",
+      "moduleName": "crka_v_nizu",
+        "publicTests" : {
+          "rootDir" : "public",
+          "timeouts": [],
+          "points:": []
+        },
+        "privateTests": {
+          "rootDir" : "private",
+          "timeouts": [],
+          "points:": []
+        }
+    }
+  ],
+  "defaultTimeout": 2,
+  "abbreviatedOutputLen": 192,
+  "toTestRootDir": ".",
+  "testDirNames": {
+     "inputDir": "input",
+     "outputDir": "output",
+     "resultsDir": "results"
+   }
+}

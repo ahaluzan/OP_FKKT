@@ -1,0 +1,26 @@
+{
+  "modulesToTest": [
+    {
+      "id": "2018-19-V3-08",
+      "moduleName": "kvadratna_enacba",
+        "publicTests" : {
+          "rootDir" : "public",
+          "timeouts": [],
+          "points:": []
+        },
+        "privateTests": {
+          "rootDir" : "private",
+          "timeouts": [],
+          "points:": []
+        }
+    }
+  ],
+  "defaultTimeout": 2,
+  "abbreviatedOutputLen": 192,
+  "toTestRootDir": ".",
+  "testDirNames": {
+     "inputDir": "input",
+     "outputDir": "output",
+     "resultsDir": "results"
+   }
+}
