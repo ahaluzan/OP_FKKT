@@ -6,7 +6,7 @@ ZIP-datoteko s testi razpakirajte v enega od imenikov, kjer imate pravice za pis
 
 Napišite program `crka_v_nizu.py`, ki ugotovi, ali nek niz vsebuje podano črko (ali nek drug znak). Vaš program naj uporabnika najprej vpraša po nizu, nato še po črki. Program naj izpiše, ali je ta črka vsebovana v nizu. Da bo naloga lažja, naj program velike in male črke smatra kot različne znake.
 
-Primer delovanja programa:
+Primer delovanja programa: 
 
 ```
 Vpišite niz: fakulteta  
