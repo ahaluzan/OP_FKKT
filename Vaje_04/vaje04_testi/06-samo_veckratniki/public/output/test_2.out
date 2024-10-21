@@ -1,0 +1,1 @@
+Vpišite seznam števil: Vnesite število: Ne vsebuje.

@@ -1,0 +1,2 @@
+Cena artikla: Cena artikla: Cena artikla: Cena artikla: Cena artikla: Cena artikla: Vsota: 67
+Povprečna cena: 13.4

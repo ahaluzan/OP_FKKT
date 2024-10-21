@@ -1,7 +1,5 @@
 # Zanka *`while`*  
 
-Mapo s testi si lahko prenesete [tukaj](???)
-
 ## 1. naloga: Poštevanka  
 
 Napišite program, ki prebere število z vhoda (kakor je izpisano v spodnjem primeru) ter izpiše (z zanko `while`) njegovo "poštevanko" (večkratnike podanega števila do 10). Program poimenujte `postevanka.py`.  

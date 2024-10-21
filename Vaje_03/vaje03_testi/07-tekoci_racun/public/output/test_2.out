@@ -1,0 +1,3 @@
+Sprememba: Stanje: 15
+Sprememba: Stanje: -435
+Bankrot!

@@ -1,0 +1,2 @@
+Vpišite seznam števil: 30
+6.0

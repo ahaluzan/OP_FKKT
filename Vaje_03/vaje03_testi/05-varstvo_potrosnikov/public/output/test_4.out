@@ -1,0 +1,2 @@
+Cena artikla: Vsota: 0
+Povprečna cena: 0.0

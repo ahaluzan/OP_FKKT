@@ -1,0 +1,2 @@
+Vpišite seznam števil: 0
+0

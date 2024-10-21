@@ -1,0 +1,26 @@
+{
+  "modulesToTest": [
+    {
+      "id": "2019-20-V4-01",
+      "moduleName": "iskanje_minimuma",
+        "publicTests" : {
+          "rootDir" : "public",
+          "timeouts": [],
+          "points:": []
+        },
+        "privateTests": {
+          "rootDir" : "private",
+          "timeouts": [],
+          "points:": []
+        }
+    }
+  ],
+  "defaultTimeout": 2,
+  "abbreviatedOutputLen": 192,
+  "toTestRootDir": ".",
+  "testDirNames": {
+     "inputDir": "input",
+     "outputDir": "output",
+     "resultsDir": "results"
+   }
+}

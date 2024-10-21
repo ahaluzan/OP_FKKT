@@ -1,0 +1,2 @@
+Vpišite seznam števil: -50580
+-45.98182

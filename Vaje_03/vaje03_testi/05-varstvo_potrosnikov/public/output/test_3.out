@@ -1,0 +1,2 @@
+Cena artikla: Cena artikla: Vsota: 32
+Povprečna cena: 32.0
