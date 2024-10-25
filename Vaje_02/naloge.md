@@ -42,15 +42,15 @@ Iz Celzijev v Kelvine pretvarjamo tako, da stopinjam prištejemo 273,15. Iz Celz
 Primer delovanja programa:
 
 ```
-Vpiši temperaturo \[°C\]: 32
+Vpiši temperaturo [°C]: 32
 Želite pretvoriti v Kelvine (vpiši K) ali Fahrenheite (vpiši F)?K
 32.0 °C je enako 305.15 K
 
-Vpiši temperaturo \[°C\]: 23
+Vpiši temperaturo [°C]: 23
 Želite pretvoriti v Kelvine (vpiši K) ali Fahrenheite (vpiši F)? F
 23.0 °C je enako 73.4 °F
 
-Vpiši temperaturo \[°C\]: 13
+Vpiši temperaturo [°C]: 13
 Želite pretvoriti v Kelvine (vpiši K) ali Fahrenheite (vpiši F)? C
 Vnesli ste napačno enoto!
 ```
@@ -61,18 +61,18 @@ Napišite program `ITM.py`, ki uporabnika vpraša po telesni višini in masi ter
 Primer delovanja programa:
 
 ```
-Telesna višina \[cm\]: 189
-Teža \[kg\]: 70
+Telesna višina [cm]: 189
+Teža [kg]: 70
 Vaš indeks telesne mase je: 19.6
 Super, nadaljujte s svojim življenjskim stilom!
 
-Telesna višina \[cm\]: 170
-Teža \[kg\]: 53
+Telesna višina [cm]: 170
+Teža [kg]: 53
 Vaš indeks telesne mase je: 18.34
 Pojejte kakšen kos torte več! ;)
 
-Telesna višina \[cm\]: 165
-Teža \[kg\]: 70
+Telesna višina [cm]: 165
+Teža [kg]: 70
 Vaš indeks telesne mase je: 25.71
 Treba se bo več gibati in jesti bolj zdravo!
 ```
