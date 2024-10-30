@@ -56,7 +56,7 @@ Seznam števil naj vpiše uporabnik. Za pretvorbo vhodnega niza v seznam uporabi
 Primer delovanja:
 
 ```
-Vpišite seznam števil: \[23, 42, 87, 34, 1, -3, 2\]
+Vpišite seznam števil: [23, 42, 87, 34, 1, -3, 2]
 186
 26.57143
 ```

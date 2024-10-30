@@ -1,0 +1,26 @@
+{
+  "assignmentsToTest": [
+    {
+      "id": "2018-19-V6-02",
+      "assignmentName": "IMDb",
+        "publicTests" : {
+          "rootDir" : "public",
+          "timeouts": [],
+          "points:": []
+        },
+        "privateTests": {
+          "rootDir" : "private",
+          "timeouts": [],
+          "points:": []
+        }
+    }
+  ],
+  "defaultTimeout": 2,
+  "toTestRootDir": ".",
+  "testRootDir": ".",
+  "testDirNames": {
+     "unitTestDir": "unit_test",
+     "unitTestStdoutDir": "unit_test_stdout",
+     "unitTestResultsDir": "unit_test_results"
+   }
+}
