@@ -25,7 +25,7 @@ Spletna učilnica se uporablja predvsem za obvestila in oddajo gradiv, medtem ko
 
 Repozitorij lahko prenesete na enega od naslednjih načinov:
 
-- **lloniranje** (priporočeno, saj lahko z `git pull` enostavno pridobite posodobitve):
+- **kloniranje** (priporočeno, saj lahko z `git pull` enostavno pridobite posodobitve):
   ```
   git clone <povezava-do-repozitorija>
   ```
