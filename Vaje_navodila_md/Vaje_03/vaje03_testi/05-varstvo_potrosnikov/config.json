@@ -2,7 +2,7 @@
   "modulesToTest": [
     {
       "id": "2019-20-V4-05",
-      "moduleName": "varstvo_potrosnikov",
+      "moduleName": "povprecna_cena",
         "publicTests" : {
           "rootDir" : "public",
           "timeouts": [],
