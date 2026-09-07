@@ -4,7 +4,7 @@ Ta repozitorij vsebuje vsa gradiva za predmet **Osnove programiranja**, ki se iz
 
 Povezava do spletne učilnice predmeta: `<POVEZAVA DO SPLETNE UČILNICE>`
 
-Spletna učilnica se uporablja predvsem za obvestila in oddajo gradiv, medtem ko so vaje in dodatna gradiva ažurneje vzdrževana tukaj. V primeru razlik med gradivi na spletni učilnici in tu se držite gradiv iz tega repozitorija.
+Spletna učilnica se uporablja predvsem za obvestila in oddajo nalog, medtem ko so vaje in dodatna gradiva ažurneje vzdrževana tukaj. V primeru razlik med gradivi na spletni učilnici in tu se držite gradiv iz tega repozitorija.
 
 ## Struktura repozitorija
 
@@ -38,10 +38,10 @@ git pull
 
 ## Uporaba avtomatskih testov
 
-V mapi `naloge_testi` je za vsak sklop vaj svoja podmapa s testi. Postopek je naslednji:
+V mapi `naloge_testi` je za vsak sklop vaj svoja podmapa s testi. Avtomatsko testiranje izvedete tako, da:
 
-1. V mapo, ki ustreza sklopu vaj in nalogi, ki jo rešujete, shranite svojo datoteko z rešitvami. Vaša datoteka mora biti poimenovano tako, kot je navedeno v navodilih vaj, sicer je test ne bo prepoznal. 
-2. V mapi odprite in zaženite datoteko `test.py`.
+1. v mapo, ki ustreza sklopu vaj in nalogi, ki jo rešujete, shranite svojo datoteko z rešitvami. Vaša datoteka mora biti poimenovano tako, kot je navedeno v navodilih vaj, sicer je test ne bo prepoznal;
+2. v mapi odprete in zaženite datoteko `test.py`.
 
 Iz terminala to storite z ukazom (v mapi, kjer je `test.py`):
 ```
@@ -49,6 +49,4 @@ python test.py
 ```
 (na nekaterih sistemih, kot je Linux, je ukaz `python3 test.py`)
 
-Test vas obvesti, katere naloge so rešene pravilno in kje so morebitne napake.
-
-
+Test označi, katere naloge so rešene pravilno in kje so morebitne napake.
