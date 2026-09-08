@@ -1,4 +1,4 @@
-# vaje: Python in IDLE
+# 1. vaje: Python in IDLE
 
 ## Naloge
 
@@ -11,7 +11,7 @@ Svoj program ustrezno poimenujte in shranite v imenik poleg testne
 skripte `test.py`. Teste poženete tako, da poženete program `test.py`
 (lahko preko IDLE ali konzole).
 
-### Kako ti je ime? {#ime}
+### Kako ti je ime? 
 
 Napišite program `ime.py`, ki uporabnika povpraša najprej po imenu in na
 zaslon izpiše dolžino tega imena.
@@ -23,7 +23,7 @@ Vpiši ime: Janez
 Dolžina imena Janez je 5
 ```
 
-### Pitagorov izrek {#nal:pitagora}
+### Pitagorov izrek 
 
 Napišite program `pitagorov_izrek.py`, ki uporabnika vpraša po dolžinah
 katet pravokotnega trikotnika in izpiše dolžino hipotenuze. Program naj
@@ -38,7 +38,7 @@ Vpiši dolžino druge katete: 4
 Dolžina hipotenuze: 5.0
 ```
 
-### Ploščina pravokotnega trikotnika {#nal:ploscina}
+### Ploščina pravokotnega trikotnika 
 
 Program iz prejšnje naloge spremenite tako, da izračuna in izpiše
 ploščino pravokotnega trikotnika. Program shranite kot `ploscina.py`.
@@ -53,7 +53,7 @@ Dolžina hipotenuze: 5.0
 Ploščina trikotnika: 6.0
 ```
 
-### Molska masa {#nal:molska}
+### Molska masa 
 
 Napišite program `molska_masa.py`, ki na podlagi uporabnikovega vnosa
 celega števila molekul vode, izračuna molsko maso $CuSO_4(H_2O)_x$.
@@ -78,14 +78,14 @@ Molska masa je 249.6 g/mol.
 
 ## Rešitve
 
-### [1.1.1](#ime){reference-type="ref" reference="ime"} Kako ti je ime? {#ime-kako-ti-je-ime .unnumbered}
+### Kako ti je ime?
 
 ``` {.python breaklines="" bgcolor="UL_lightgray" linenos=""}
 ime = input("Vpiši ime: ")
 print("Dolžina imena", ime, "je", len(ime))
 ```
 
-### [1.1.2](#nal:pitagora){reference-type="ref" reference="nal:pitagora"} Pitagorov izrek {#nalpitagora-pitagorov-izrek .unnumbered}
+### Pitagorov izrek
 
 ``` {.python breaklines="" bgcolor="UL_lightgray" linenos=""}
 a = float(input("Vpiši dolžino prve katete: "))
@@ -97,7 +97,7 @@ c = c ** (1 / 2)
 print("Dolžina hipotenuze: ", str(round(c, 1)))
 ```
 
-### [1.1.3](#nal:ploscina){reference-type="ref" reference="nal:ploscina"} Ploščina pravokotnega trikotnika {#nalploscina-ploščina-pravokotnega-trikotnika .unnumbered}
+### Ploščina pravokotnega trikotnika 
 
 ``` {.python breaklines="" bgcolor="UL_lightgray" linenos=""}
 a = float(input("Vpiši dolžino prve katete: "))
@@ -111,7 +111,7 @@ print("Dolžina hipotenuze:", round(c,2))
 print("Ploščina trikotnika:", round(p,2))
 ```
 
-### [1.1.4](#nal:molska){reference-type="ref" reference="nal:molska"} Molska masa {#nalmolska-molska-masa .unnumbered}
+### Molska masa 
 
 ``` {.python breaklines="" bgcolor="UL_lightgray" linenos=""}
 hidratacija = int(input('Stopnja hidratacije: '))
@@ -127,11 +127,11 @@ mm = round(mm,1)
 print('Molska masa je', mm, 'g/mol.')
 ```
 
-# vaje: Pogojni stavek *if*
+# 2. vaje: Pogojni stavek *if*
 
 ## Naloge
 
-### Črka v nizu {#nal:crka_v_nizu}
+### Črka v nizu 
 
 Napišite program `crka_v_nizu.py`, ki ugotovi, ali nek niz vsebuje
 podano črko (ali nek drug znak). Vaš program naj uporabnika najprej
@@ -153,7 +153,7 @@ Niz ne vsebuje črke ž.
 
 Pri tej nalogi testi niso občutljivi na presledke.
 
-### Največje in najmanjše število {#nal:min-maks}
+### Največje in najmanjše število
 
 Napišite program `min_maks.py`, ki izpiše največjo in najmanjšo izmed
 treh (celih) števil, ki jih vnese uporabnik. Ne uporabite funkcij
@@ -168,7 +168,7 @@ Vpišite 3. število: 7
 Minimum: 5, Maksimum: 8
 ```
 
-### Pretvarjanje temperatur {#nal:temperature}
+### Pretvarjanje temperatur 
 
 Napišite program `temperature.py`, ki uporabnika vpraša po stopinjah
 Celzija in v katero enoto naj jih spremeni (Fahrenheit ali Kelvin).
@@ -194,7 +194,7 @@ Vpiši temperaturo [°C]: 13
 Vnesli ste napačno enoto!
 ```
 
-### Indeks telesne mase {#nal:itm}
+### Indeks telesne mase
 
 Napišite program `ITM.py`, ki uporabnika vpraša po telesni višini v in
 masi. ITM izračunajte po formuli $ITM = teza / visina^{2}$, pri čemer
@@ -225,7 +225,7 @@ Vaš indeks telesne mase je: 25.71
 Indeks kaže na previsoko telesno težo.
 ```
 
-### Kvadratna enačba {#nal:kvadratna}
+### Kvadratna enačba 
 
 Napišite program `kvadratna_enacba.py`, ki izračuna vse realne rešitve
 kvadratne enačbe $ax^2+bx+c=0$ na štiri decimalna mesta za decimalno
@@ -265,7 +265,7 @@ Enačba nima realnih rešitev.
 
 ## Rešitve
 
-### [2.1.1](#nal:crka_v_nizu){reference-type="ref" reference="nal:crka_v_nizu"} Črka v nizu {#nalcrka_v_nizu-črka-v-nizu .unnumbered}
+### Črka v nizu
 
 ``` python
 niz = input('Vpišite niz: ')
@@ -276,7 +276,7 @@ else:
     print('Niz ne vsebuje črke '+crka+'.')                                                     
 ```
 
-### [2.1.2](#nal:min-maks){reference-type="ref" reference="nal:min-maks"} Največje in najmanjše število {#nalmin-maks-največje-in-najmanjše-število .unnumbered}
+### Največje in najmanjše število 
 
 ``` python
 st1 = int(input("Vpišite 1. število: "))
@@ -295,7 +295,7 @@ if st3 < minimum:
 print("Minimum:", str(minimum)+", Maksimum:", maksimum)
 ```
 
-### [2.1.3](#nal:temperature){reference-type="ref" reference="nal:temperature"} Pretvarjanje temperatur {#naltemperature-pretvarjanje-temperatur .unnumbered}
+### Pretvarjanje temperatur 
 
 ``` python
 temp_C = float(input('Vpiši temperaturo [°C]: '))
@@ -310,7 +310,7 @@ else:
     print('Vnesli ste napačno enoto!')
 ```
 
-### [2.1.4](#nal:itm){reference-type="ref" reference="nal:itm"} Indeks telesne mase {#nalitm-indeks-telesne-mase .unnumbered}
+### Indeks telesne mase 
 
 ``` python
 visina = float(input("Telesna višina [cm]: "))
@@ -325,7 +325,7 @@ else:
     print("Indeks kaže na normalno telesno težo.")
 ```
 
-### [2.1.5](#nal:kvadratna){reference-type="ref" reference="nal:kvadratna"} Kvadratna enačba {#nalkvadratna-kvadratna-enačba .unnumbered}
+### Kvadratna enačba 
 
 ``` python
 a = float(input('Vpiši a: '))
@@ -344,11 +344,11 @@ else:
     print('Enačba ima dve realni rešitvi:', round(x1, 4), 'in', round(x2, 4))
 ```
 
-# vaje: Zanka *while*
+# 3. vaje: Zanka *while*
 
 ## Naloge
 
-### Poštevanka {#nal:postevanka}
+### Poštevanka 
 
 Napišite program `postevanka.py`, ki uporabnika pozove k vnosu števila,
 nato pa na zaslon izpiše večkratnike podanega števila do 10.
@@ -369,7 +369,7 @@ Vnos števila: 5
 50
 ```
 
-### Vse po pet {#nal:popet}
+### Vse po pet 
 
 Napišite program `vse_po_pet.py`, ki zahteva, da morajo stranke v
 trgovini vedno kupiti natanko pet artiklov. Program uporabnika vpraša po
@@ -386,7 +386,7 @@ Cena artikla: 3
 Vsota: 16
 ```
 
-### Konkurenca {#nal:konkurenca}
+### Konkurenca
 
 Program ,,vse po pet" popravite tako, da blagajnika najprej vpraša,
 koliko izdelkov je v košarici, nato vpraša po cenah teh izdelkov in na
@@ -402,7 +402,7 @@ Cena artikla: 1
 Vsota: 7
 ```
 
-### Top shop {#nal:topshop}
+### Top shop 
 
 Popravite program ,,konkurenca" tako, da ta uporabnika sprašuje po cenah
 toliko časa, dokler mu uporabnik ne vnese ničle. Program poimenujte
@@ -418,7 +418,7 @@ Cena artikla: 0
 Vsota: 7
 ```
 
-### Povprečna cena {#nal:povpcena}
+### Povprečna cena
 
 Popravite program `top_shop.py` tako, da bo izpisal tudi povprečno ceno.
 To zaokrožite na 5 decimalnih mest. Program poimenujte
@@ -435,7 +435,7 @@ Vsota: 7
 Povprečna cena: 2.33333
 ```
 
-### Trojni stop {#nal:trojni}
+### Trojni stop 
 
 Napišite program `trojni_stop.py`, ki mu uporabnik vnaša cene in ki se
 neha izvajati, ko uporabnik vnese 0 (ne bo več kupoval), ko je vnešenih
@@ -475,7 +475,7 @@ Cena: 1
 Porabili boste 10 EUR za 10 stvari.
 ```
 
-### Tekoči račun {#nal:tekoci}
+### Tekoči račun 
 
 Napišite bančni program, poimenovan `tekoci_racun.py`, kamor uporabniki
 vtipkavajo prejemke in izdatke v obliki pozitivnih in negativnih zneskov
@@ -504,7 +504,7 @@ Bankrot!
 
 ## Rešitve nalog
 
-### [3.1.1](#nal:postevanka){reference-type="ref" reference="nal:postevanka"} Poštevanka {#nalpostevanka-poštevanka .unnumbered}
+### Poštevanka
 
 ``` python
 st = int(input("Vnos števila: "))
@@ -514,7 +514,7 @@ while i <= 10:
     i += 1
 ```
 
-### [3.1.2](#nal:popet){reference-type="ref" reference="nal:popet"} Vse po pet {#nalpopet-vse-po-pet .unnumbered}
+### Vse po pet 
 
 ``` python
 vsota = 0
@@ -534,7 +534,7 @@ for i in range(5):
 print('Vsota:', vsota)
 ```
 
-### [3.1.3](#nal:konkurenca){reference-type="ref" reference="nal:konkurenca"} Konkurenca {#nalkonkurenca-konkurenca .unnumbered}
+### Konkurenca 
 
 ``` python
 vsota = 0
@@ -554,7 +554,7 @@ for i in range(int(input('Število izdelkov: '))):
 print('Vsota:', vsota)
 ```
 
-### [3.1.4](#nal:topshop){reference-type="ref" reference="nal:topshop"} Top shop {#naltopshop-top-shop .unnumbered}
+### Top shop 
 
 ``` python
 vsota = 0
@@ -566,7 +566,7 @@ while cena != 0:
 print('Vsota:', vsota)
 ```
 
-### [3.1.5](#nal:povpcena){reference-type="ref" reference="nal:povpcena"} Povprečna cena {#nalpovpcena-povprečna-cena .unnumbered}
+### Povprečna cena 
 
 ``` python
 artiklov = -1
@@ -584,7 +584,7 @@ else:
 print('Povprečna cena:', round(povprecje, 5))
 ```
 
-### [3.1.6](#nal:trojni){reference-type="ref" reference="nal:trojni"} Trojni stop {#naltrojni-trojni-stop .unnumbered}
+### Trojni stop
 
 ``` python
 artiklov = 0
@@ -601,7 +601,7 @@ if cena == 0:
 print('Porabili boste', vsota, 'evrov za', artiklov, 'stvari.')
 ```
 
-### [3.1.7](#nal:tekoci){reference-type="ref" reference="nal:tekoci"} Tekoči račun {#naltekoci-tekoči-račun .unnumbered}
+### Tekoči račun
 
 ``` python
 stanje = 0
@@ -611,17 +611,17 @@ while stanje > -100:
 print('Bankrot!')
 ```
 
-# vaje: Seznami in zanka *for*
+# 4. vaje: Seznami in zanka *for*
 
 ## Naloge
 
-### Iskanje minimuma {#nal:min}
+### Iskanje minimuma
 
 Napišite program `iskanje_minimuma.py`, ki poišče in izpiše najmanjši
 element v seznamu celih števil brez uporabe funkcije `min()` ali
 sortiranja! Seznam števil naj poda uporabnik, pri čemer lahko za
 interpretacijo vhodnega niza kot seznam uporabite funkcijo `eval()`, ki
-omogoča avtomatsko prepoznavo vnesenega podatkovnega tipa[^1].
+omogoča avtomatsko prepoznavo vnesenega podatkovnega tipa (v primeru seznamov je nujno treba vnesti tudi oklepaje).
 
 Primer delovanja:
 
@@ -630,7 +630,7 @@ Vpišite seznam števil: [23, 42, 87, 34, 1, -3, 2]
 -3
 ```
 
-### Niz v seznamu {#nal:niz_v_seznamu}
+### Niz v seznamu 
 
 Napišite program `niz_v_seznamu.py`, ki ugotovi, ali je nek niz vsebovan
 v predhodno definiranem seznamu nizov, definiranem kot:\
@@ -653,7 +653,7 @@ Seznam ne vsebuje niza "vrednost".
 
 Testi pri tej nalogi niso občutljivi na presledke.
 
-### Števila v seznamu {#nal:stevila_v_seznamu}
+### Števila v seznamu 
 
 Napišite program `stevilo_v_seznamu.py`, ki ugotovi, ali je število, ki
 ga vpiše uporabnik, v predhodno definiranem seznamu celih števil. Ta
@@ -672,7 +672,7 @@ Vpišite število: 4
 Seznam ne vsebuje števila 4
 ```
 
-### Vsota in povprečje {#nal:vsota_povp}
+### Vsota in povprečje 
 
 Napišite program `vsota_in_povprecje.py`, ki za podani seznam izračuna
 vsoto (brez uporabe funkcije `sum`) in povprečje elementov, zaokroženo
@@ -686,7 +686,7 @@ Vpišite seznam števil: [23, 42, 87, 34, 1, -3, 2]
 26.57143
 ```
 
-### Iskanje večkratnikov {#nal:veckratniki}
+### Iskanje večkratnikov
 
 Napišite program `iskanje_veckratnikov.py`, ki preveri, ali seznam
 vsebuje vsaj en večkratnik izbranega števila. Seznam in izbrano število
@@ -704,7 +704,7 @@ Vnesite število: 8
 Ne vsebuje.
 ```
 
-### Samo večkratniki {#nal:samoveckratniki}
+### Samo večkratniki 
 
 Program `iskanje_veckratnikov.py` spremenite tako, da bo preverjal, ali
 seznam vsebuje zgolj večkratnike izbranega števila. Seznam in izbrano
@@ -723,7 +723,7 @@ Vnesite število: 9
 Ne vsebuje.
 ```
 
-### Izris trikotnika {#nal:trikotnik}
+### Izris trikotnika
 
 Po programerski tradiciji je eden prvih programov, ki jih napišemo v
 določenem programskem jeziku, izris trikotnika iz zvezdic. Napišite
@@ -738,7 +738,7 @@ Vpiši višino: 4
  * * * *
 ```
 
-### Izris smrekice {#nal:smrekica}
+### Izris smrekice
 
 Napišite program `izris_smrekice.py`, ki bo namesto trikotnikov
 izrisoval ,,smrekice".
@@ -759,7 +759,7 @@ niso potrebni.
 
 ## Rešitve nalog
 
-### [4.1.1](#nal:min){reference-type="ref" reference="nal:min"} Iskanje minimuma {#nalmin-iskanje-minimuma .unnumbered}
+### Iskanje minimuma 
 
 ``` python
 seznam = eval(input('Vpišite seznam števil: '))
@@ -770,7 +770,7 @@ for elt in seznam:
 print(minimum)
 ```
 
-### [4.1.2](#nal:niz_v_seznamu){reference-type="ref" reference="nal:niz_v_seznamu"} Niz v seznamu {#nalniz_v_seznamu-niz-v-seznamu .unnumbered}
+### Niz v seznamu
 
 ``` python
 seznam = ["beseda", "spremenljivka", "niz", "zanka", "stavek", "slovar"]
@@ -781,7 +781,7 @@ else:
     print('Seznam ne vsebuje niza "'+niz+'".')
 ```
 
-### [4.1.3](#nal:stevila_v_seznamu){reference-type="ref" reference="nal:stevila_v_seznamu"} Števila v seznamu {#nalstevila_v_seznamu-števila-v-seznamu .unnumbered}
+### Števila v seznamu
 
 ``` python
 seznam = [3, 35, 7, 68, 9, 10, 12, 481, 17, 12, 31, 21, 98, 33]
@@ -792,7 +792,7 @@ else:
     print('Seznam ne vsebuje števila', st)
 ```
 
-### [4.1.4](#nal:vsota_povp){reference-type="ref" reference="nal:vsota_povp"} Vsota in povprečje {#nalvsota_povp-vsota-in-povprečje .unnumbered}
+### Vsota in povprečje
 
 ``` python
 seznam = eval(input("Vpišite seznam števil: "))
@@ -806,7 +806,7 @@ else:
     print(0)
 ```
 
-### [4.1.5](#nal:veckratniki){reference-type="ref" reference="nal:veckratniki"} Iskanje večkratnikov {#nalveckratniki-iskanje-večkratnikov .unnumbered}
+### Iskanje večkratnikov
 
 ``` python
 seznam = eval(input("Vpišite seznam števil: "))
@@ -823,7 +823,7 @@ else:
     print("Ne vsebuje.")
 ```
 
-### [4.1.6](#nal:samoveckratniki){reference-type="ref" reference="nal:samoveckratniki"} Samo večkratniki {#nalsamoveckratniki-samo-večkratniki .unnumbered}
+### Samo večkratniki 
 
 ``` python
 seznam = eval(input("Vpišite seznam števil: "))
@@ -840,7 +840,7 @@ else:
     print("Ne vsebuje.")
 ```
 
-### [4.1.7](#nal:trikotnik){reference-type="ref" reference="nal:trikotnik"} Izris trikotnika {#naltrikotnik-izris-trikotnika .unnumbered}
+### Izris trikotnika 
 
 ``` python
 n = int(input('Vpiši višino: '))
@@ -849,7 +849,7 @@ for i in range(1, n + 1):
     print('*' * i)
 ```
 
-### [4.1.8](#nal:smrekica){reference-type="ref" reference="nal:smrekica"} Izris smrekice {#nalsmrekica-izris-smrekice .unnumbered}
+### Izris smrekice 
 
 ``` python
 n = int(input('Vpiši višino: '))
@@ -858,11 +858,11 @@ for i in range(1, n + 1):
     print(' ' * (n - i) + '*' * (2 * i - 1))
 ```
 
-# vaje: Funkcije
+# 5. vaje: Funkcije
 
 ## Naloge
 
-### Preproste funkcije {#nal:prepfx}
+### Preproste funkcije 
 
 Vse funkcije iz tega sklopa pišite v datoteko `preproste_funkcije.py`.
 
@@ -945,7 +945,7 @@ True
 Namig: najprej razmislite, kako ugotoviti, ali se nek podan element
 nahaja v seznamu.
 
-### Razcep na prafaktorje {#nal:razcep}
+### Razcep na prafaktorje 
 
 Vse funkcije iz tega sklopa pišite v datoteko `razcep.py`.
 
@@ -956,7 +956,7 @@ pomožnih funkcij.
 **Praštevilo**
 
 Napišite funkcijo `prastevilo(n)`, ki za vnešeno število vrne, ali je
-praštevilo[^2].
+praštevilo. Število 1 ni praštevilo.
 
 *Primera pravilnega delovanja funkcije:*
 
@@ -1024,7 +1024,7 @@ Namig: Funkcija naj za vsa praštevila med `2` in `n` (vključno z `2` in
 `n`) ugotovi, kolikokrat delijo podano število in če ga delijo vsaj
 enkrat, to doda v seznam.
 
-### Fibonaccijevo zaporedje {#nal:fibonacci}
+### Fibonaccijevo zaporedje
 
 Vse funkcije iz tega sklopa pišite v datoteko `fibonacci.py`.
 
@@ -1054,7 +1054,7 @@ Napišite funkcijo `liha_fibonaccijeva_stevila(n)`, ki prejme število
 
 ## Rešitve
 
-### [5.1.1](#nal:prepfx){reference-type="ref" reference="nal:prepfx"} Preproste funkcije {#nalprepfx-preproste-funkcije .unnumbered}
+### Preproste funkcije
 
 **Iskanje minimuma**
 
@@ -1105,7 +1105,7 @@ def prekrivajoca_seznama(seznam1, seznam2):
     return False
 ```
 
-### [5.1.2](#nal:razcep){reference-type="ref" reference="nal:razcep"} Razcep na prafaktorje {#nalrazcep-razcep-na-prafaktorje .unnumbered}
+### Razcep na prafaktorje 
 
 **Praštevilo**
 
@@ -1160,7 +1160,7 @@ def razcep_na_prafaktorje(n):
     return seznam
 ```
 
-### [5.1.3](#nal:fibonacci){reference-type="ref" reference="nal:fibonacci"} Fibonaccijevo zaporedje {#nalfibonacci-fibonaccijevo-zaporedje .unnumbered}
+### Fibonaccijevo zaporedje 
 
 **Fibonaccijeva števila**
 
@@ -1187,11 +1187,11 @@ def liha_fibonaccijeva_stevila(n):
     return suma
 ```
 
-# vaje: (Ne)spremenljivi podatkovni tipi in terke
+# 6. vaje: (Ne)spremenljivi podatkovni tipi in terke
 
 ## Naloge
 
-### Spremenljivost {#nal:spremenljivost}
+### Spremenljivost 
 
 Vse funkcije tega sklopa pišite v datoteko `spremenljivost.py`
 
@@ -1253,7 +1253,7 @@ podanem seznamu.
 [1, 2, 3, 4, 5]
 ```
 
-### Terke {#nal:terke}
+### Terke 
 
 Vse funkcije tega sklopa pišite v datoteko `IMDb.py`.
 
@@ -1357,7 +1357,7 @@ redu kot v seznamu serij.
 
 ## Rešitve
 
-### [6.1.1](#nal:spremenljivost){reference-type="ref" reference="nal:spremenljivost"} Spremenljivost {#nalspremenljivost-spremenljivost .unnumbered}
+### Spremenljivost 
 
 **Korenjenje v seznamu (1)**
 
@@ -1394,7 +1394,7 @@ def unikaten_seznam(s):
     return unikati
 ```
 
-### [6.1.2](#nal:terke){reference-type="ref" reference="nal:terke"} Terke {#nalterke-terke .unnumbered}
+### Terke 
 
 **Ocene**
 
@@ -1472,7 +1472,7 @@ def najnovejse(serije):
     return naj_naslov
 ```
 
-# vaje: Slovarji
+# 7. vaje: Slovarji
 
 ## Naloge
 
@@ -1495,7 +1495,7 @@ izdelki = [('mleko', 0.86, 128),
     ('gorgonzola', 2.69, 32)]
 ```
 
-### V slovar {#nal:v_slovar}
+### V slovar 
 
 Napišite funkcijo `v_slovar`, ki kot argument sprejme seznam `izdelki`.
 Funkcija naj vrača slovar, kjer kot ključi nastopajo imena izdelkov,
@@ -1508,7 +1508,7 @@ vrednosti pa so seznami oblike `[cena, zaloga]`.
 {'mleko': [0.86, 128], 'hrenovka': [1.99, 28], 'jogurt': [0.49, 56], 'sok': [1.79, 104], 'moka': [1.39, 99], 'paradižnik': [0.23, 35], 'gorgonzola': [2.69, 32], 'makaroni': [1.89, 67], 'kruh': [2.19, 43], 'piškoti': [2.99, 73], 'jajce': [0.1, 103]}
 ```
 
-### Število izdelkov {#nal:st_izdelkov}
+### Število izdelkov 
 
 Napišite funkcijo `stevilo_izdelkov(zaloga)`, ki kot argument sprejme
 slovar, kot ga vrača funkcija `v_slovar` (tj. slovar `zaloga`). Funkcija
@@ -1522,7 +1522,7 @@ naj vrne število vseh izdelkov v trgovini.
 768
 ```
 
-### Nakupovalna košara {#nal:nakupovalnakosara}
+### Nakupovalna košara
 
 Napišite funkcijo `nakupovalna_kosara`, ki kot argument prejme seznam
 vsebine nakupovalne košare. Funkcija naj vrača slovar, kjer so ključi
@@ -1536,7 +1536,7 @@ imena izdelkov, vrednosti pa število izdelkov.
 {'jogurt': 3, 'mleko': 1, 'piškoti': 1}
 ```
 
-### Cena {#nal:cena}
+### Cena 
 
 Napišite funkcijo `cena`, ki sprejme dva argumenta: slovar zaloge, kot
 ga vrača funkcija `v_slovar` (tj. slovar `zaloga`) in slovar nakupov,
@@ -1553,7 +1553,7 @@ znesek, ki ga mora plačati kupec.
 5.32
 ```
 
-### Popravek zaloge {#nal:popravek_zaloge}
+### Popravek zaloge 
 
 Napišite funkcijo `popravek_zaloge(zaloga, izdelek, popravek)`, ki
 spremeni slovar `zaloga` tako, da zalogo izdelka, podanega v argumentu
@@ -1578,7 +1578,7 @@ spremenil zalogo na negativno, naj funkcija zaloge ne spremeni in vrne
 >>>
 ```
 
-### Blagajna {#nal:blagajna}
+### Blagajna 
 
 Napišite funkcijo `blagajna`, ki kot argumenta sprejme slovar zaloge,
 kot ga vrača funkcija `v_slovar` in slovar nakupov, kot ga vrača
@@ -1601,7 +1601,7 @@ Pomagajte si s funkcijami, ki ste jih napisali do sedaj.
 {'paradižnik': [0.23, 35], 'kruh': [2.19, 43], 'mleko': [0.86, 127], 'jajce': [0.1, 103], 'piškoti': [2.99, 72], 'moka': [1.39, 99], 'jogurt': [0.49, 53], 'hrenovka': [1.99, 28], 'sok': [1.79, 104], 'makaroni': [1.89, 67], 'gorgonzola': [2.69, 32]}
 ```
 
-### Kuhanje {#nal:kuhanje}
+### Kuhanje 
 
 V slovarju `jedi` kot ključi nastopajo imena jedi, vrednosti pa so
 slovarji z imenom sestavine in potrebno količino za pripravo 1 obroka:
@@ -1625,7 +1625,7 @@ potrebnih za pripravo izbrane jedi.
 2.55
 ```
 
-### Obrok {#nal:obrok}
+### Obrok 
 
 Napišite funkcijo `posamezna_jed(jedi, jed, obrokov)`, ki kot argumente
 sprejme slovar receptov jedi (tj. `jedi`), ime jedi (argument `jed` v
@@ -1640,7 +1640,7 @@ količinami sestavin za izbrano jed.
 {'moka': 4, 'mleko': 4, 'jajce': 12}
 ```
 
-### Nakup {#nal:nakup}
+### Nakup 
 
 Napišite funkcijo `nakup(jedi, obroki)`, ki kot argumenta sprejme slovar
 jedi (tj. `jedi`) in število obrokov. Funkcija naj vrača slovar, kjer
@@ -1655,7 +1655,7 @@ sestavin, potrebnih za pripravo vseh obrokov.
 {'paradižnik': 60, 'gorgonzola': 20, 'moka': 25, 'kruh': 5, 'hrenovka': 10, 'jajce': 75, 'makaroni': 20, 'mleko': 25}
 ```
 
-### Primanjkljaj {#nal:primanjkljaj}
+### Primanjkljaj
 
 Napišite funkcijo `primanjkljaj(zaloga, jedi, obroki)`, ki kot argumente
 sprejme zalogo trgovine, seznam jedi in količino obrokov. Funkcija naj
@@ -1674,7 +1674,7 @@ na obroke.
 
 ## Rešitve nalog
 
-### [7.1.1](#nal:v_slovar){reference-type="ref" reference="nal:v_slovar"} V slovar {#nalv_slovar-v-slovar .unnumbered}
+### V slovar 
 
 ``` python
 def v_slovar(izdelki):
@@ -1684,7 +1684,7 @@ def v_slovar(izdelki):
     return cene
 ```
 
-### [7.1.2](#nal:st_izdelkov){reference-type="ref" reference="nal:st_izdelkov"} Število izdelkov {#nalst_izdelkov-število-izdelkov .unnumbered}
+### Število izdelkov 
 
 ``` python
 def stevilo_izdelkov(zaloga):
@@ -1695,7 +1695,7 @@ def stevilo_izdelkov(zaloga):
     return vsota
 ```
 
-### [7.1.3](#nal:nakupovalnakosara){reference-type="ref" reference="nal:nakupovalnakosara"} Nakupovalna košara {#nalnakupovalnakosara-nakupovalna-košara .unnumbered}
+### Nakupovalna košara 
 
 ``` python
 def nakupovalna_kosara(seznam):
@@ -1707,7 +1707,7 @@ def nakupovalna_kosara(seznam):
     return slovar
 ```
 
-### [7.1.4](#nal:cena){reference-type="ref" reference="nal:cena"} Cena {#nalcena-cena .unnumbered}
+### Cena 
 
 ``` python
 def cena(zaloga, slovar_nakupov):
@@ -1717,7 +1717,7 @@ def cena(zaloga, slovar_nakupov):
     return znesek
 ```
 
-### [7.1.5](#nal:popravek_zaloge){reference-type="ref" reference="nal:popravek_zaloge"} Popravek zaloge {#nalpopravek_zaloge-popravek-zaloge .unnumbered}
+### Popravek zaloge 
 
 ``` python
 def popravek_zaloge(zaloga, izdelek, popravek):
@@ -1729,7 +1729,7 @@ def popravek_zaloge(zaloga, izdelek, popravek):
         return None
 ```
 
-### [7.1.6](#nal:blagajna){reference-type="ref" reference="nal:blagajna"} Blagajna {#nalblagajna-blagajna .unnumbered}
+### Blagajna 
 
 ``` python
 def blagajna(zaloga, slovar_nakupov):
@@ -1738,7 +1738,7 @@ def blagajna(zaloga, slovar_nakupov):
     return cena(zaloga, slovar_nakupov)
 ```
 
-### [7.1.7](#nal:kuhanje){reference-type="ref" reference="nal:kuhanje"} Kuhanje {#nalkuhanje-kuhanje .unnumbered}
+### Kuhanje 
 
 ``` python
 def kuhanje(zaloga, jedi, jed):
@@ -1748,7 +1748,7 @@ def kuhanje(zaloga, jedi, jed):
     return cena
 ```
 
-### [7.1.8](#nal:obrok){reference-type="ref" reference="nal:obrok"} Obrok {#nalobrok-obrok .unnumbered}
+### Obrok 
 
 ``` python
 def posamezna_jed(jedi, jed, obrokov):
@@ -1758,7 +1758,7 @@ def posamezna_jed(jedi, jed, obrokov):
     return sestavine
 ```
 
-### [7.1.9](#nal:nakup){reference-type="ref" reference="nal:nakup"} Nakup {#nalnakup-nakup .unnumbered}
+### Nakup 
 
 ``` python
 def nakup(jedi, obroki):
@@ -1771,7 +1771,7 @@ def nakup(jedi, obroki):
     return sestavine
 ```
 
-### [7.1.10](#nal:primanjkljaj){reference-type="ref" reference="nal:primanjkljaj"} Primanjkljaj {#nalprimanjkljaj-primanjkljaj .unnumbered}
+### Primanjkljaj 
 
 ``` python
 def primanjkljaj(zaloga, jedi, obroki):
@@ -1783,13 +1783,13 @@ def primanjkljaj(zaloga, jedi, obroki):
     return slovar
 ```
 
-# vaje: Množice in metode
+# 8. vaje: Množice in metode
 
 ## Naloge
 
 Funkcije shranite v datoteko `metode.py`.
 
-### Besede z a-ji {#nal:a}
+### Besede z a-ji
 
 Napišite funkcijo `aa_besede`, ki kot argument sprejme niz, vrne pa
 množico besed iz niza, ki vsebujejo vsaj dve črki `a`. Funkcija naj ne
@@ -1803,7 +1803,7 @@ lahko, da bo edino ločilo v testnih primerih pika (`.`).
 {'ananas', 'Anja', 'jabolka'}
 ```
 
-### Najdaljše besede {#nal:najdaljse_besede}
+### Najdaljše besede 
 
 Napišite funkcijo `najdaljse_besede`, ki kot argument sprejme niz, vrne
 pa množico najdaljših besed v podanem nizu. Predpostavite lahko, da
@@ -1816,7 +1816,7 @@ bosta edini ločili v testnih nizih pika (`.`) in vejica (`,`).
 {'Ljubljani'}
 ```
 
-### Inicialke {#nal:inicialke}
+### Inicialke 
 
 Napišite funkcijo `velike_zacetnice`, ki kot argument sprejme niz.
 Funkcija naj vrača spremenjen niz, v katerem vsem besedam, daljšim od
@@ -1829,7 +1829,7 @@ dveh znakov, spremeni prvo črko v veliko začetnico.
 'V Trgovini je Kupila Ananas in Jabolka.'
 ```
 
-### Unikaten seznam {#nal:unikaten_seznam}
+### Unikaten seznam 
 
 Napišite funkcijo `razlicne_skladbe`, ki kot argument sprejme seznam
 poslušanih skladb in vrne število različnih skladb.
@@ -1841,7 +1841,7 @@ poslušanih skladb in vrne število različnih skladb.
 6
 ```
 
-### Prijatelji {#nal:prijatelji}
+### Prijatelji 
 
 Napišite funkcijo `skupne`, ki kot argumenta sprejme dva seznama.
 Seznama vsebujeta naslove poslušanih skladb dveh prijateljev. Funkcija
@@ -1854,7 +1854,7 @@ naj vrne množico skladb, ki so na obeh seznamih.
 {'Imagine', 'One'}
 ```
 
-### Repertoar {#nal:repertoar}
+### Repertoar 
 
 Napišite funkcijo `repertoar`, ki kot argumenta sprejme dva seznama
 predvajanj dveh prijateljev. Funkcija naj vrača množico skladb, ki so na
@@ -1867,7 +1867,7 @@ enem ali drugem ali obeh seznamih.
 {'Let It Be', 'Imagine', 'The River', 'One', 'Stand By Me', 'Stairway To Heaven'}
 ```
 
-### Unikati {#nal:unikati}
+### Unikati
 
 Napišite funkcijo `unikatna_predvajanja(seznam1, seznam2)`, ki sprejme
 seznama predvajanj dveh prijateljev. Funkcija naj vrne množico skladb,
@@ -1880,7 +1880,7 @@ ki so na enem ali drugem seznamu, ne pa na obeh.
 {'Let It Be', 'The River', 'Stand By Me', 'Stairway To Heaven'}
 ```
 
-### Ponavljajoči se znaki {#nal:ponavljajoci_znaki}
+### Ponavljajoči se znaki 
 
 Napišite funkcijo `ponavljajoci_znaki`, ki kot argument sprejme niz.
 Funkcija naj vrne množico terk oblike: `(znak, število)`, pri čemer
@@ -1895,7 +1895,7 @@ občutljiva na velikost črk.
 {('l', 2), ('i', 3), ('r', 2), ('a', 2), ('g', 2), ('o', 5), ('n', 2)}
 ```
 
-### Onesnaženost z delci PM10 {#nal:pm10}
+### Onesnaženost z delci PM10 
 
 Agencija Republike Slovenije za okolje (ARSO) nas je prosila, da
 naredimo analizo onesnaženosti z delci PM10 v treh največjih slovenskih
@@ -1965,7 +1965,7 @@ januar = [
 
 ## Rešitve nalog
 
-### [8.1.1](#nal:a){reference-type="ref" reference="nal:a"} Besede z a-ji {#nala-besede-z-a-ji .unnumbered}
+### Besede z a-ji 
 
 ``` python
 def aa_besede(s):
@@ -1976,7 +1976,7 @@ def aa_besede(s):
     return mn
 ```
 
-### [8.1.2](#nal:najdaljse_besede){reference-type="ref" reference="nal:najdaljse_besede"} Najdaljše besede {#nalnajdaljse_besede-najdaljše-besede .unnumbered}
+### Najdaljše besede 
 
 ``` python
 def najdaljse_besede(s):
@@ -1993,7 +1993,7 @@ def najdaljse_besede(s):
     return mn
 ```
 
-### [8.1.3](#nal:inicialke){reference-type="ref" reference="nal:inicialke"} Inicialke {#nalinicialke-inicialke .unnumbered}
+### Inicialke 
 
 ``` python
 def velike_zacetnice(s):
@@ -2008,35 +2008,35 @@ def velike_zacetnice(s):
 Če niste našli metode `capitalize`, lahko nalogo rešite tudi tako:\
 `beseda = beseda[0].upper()+beseda[1:]`
 
-### [8.1.4](#nal:unikaten_seznam){reference-type="ref" reference="nal:unikaten_seznam"} Unikaten seznam {#nalunikaten_seznam-unikaten-seznam .unnumbered}
+### Unikaten seznam 
 
 ``` python
 def razlicne_skladbe(seznam):
     return len(set(seznam))
 ```
 
-### [8.1.5](#nal:prijatelji){reference-type="ref" reference="nal:prijatelji"} Prijatelji {#nalprijatelji-prijatelji .unnumbered}
+### Prijatelji 
 
 ``` python
 def skupne(seznam1, seznam2):
     return set(seznam1) & set(seznam2)
 ```
 
-### [8.1.6](#nal:repertoar){reference-type="ref" reference="nal:repertoar"} Repertoar {#nalrepertoar-repertoar .unnumbered}
+### Repertoar
 
 ``` python
 def repertuar(seznam1, seznam2):
     return set(seznam1) | set(seznam2)
 ```
 
-### [8.1.7](#nal:unikati){reference-type="ref" reference="nal:unikati"} Unikati {#nalunikati-unikati .unnumbered}
+### Unikati
 
 ``` python
 def unikatna_predvajanja(seznam1, seznam2):
     return set(seznam1) ^ set(seznam2)
 ```
 
-### [8.1.8](#nal:ponavljajoci_znaki){reference-type="ref" reference="nal:ponavljajoci_znaki"} Ponavljajoči se znaki {#nalponavljajoci_znaki-ponavljajoči-se-znaki .unnumbered}
+### Ponavljajoči se znaki 
 
 ``` python
 def ponavljajoci_znaki(niz):
@@ -2048,8 +2048,7 @@ def ponavljajoci_znaki(niz):
     return mn
 ```
 
-### [8.1.9](#nal:pm10){reference-type="ref" reference="nal:pm10"} Onesnaženost z delci PM10 {#nalpm10-onesnaženost-z-delci-pm10 .unnumbered}
-
+### Onesnaženost z delci PM10 
 ``` python
 def najveckrat_onesnazena_mesta(podatki, kraji):
     mesta = [0] * len(kraji)
@@ -2068,11 +2067,11 @@ def najveckrat_onesnazena_mesta(podatki, kraji):
         return maksimumi
 ```
 
-# vaje: Datoteke
+# 9. vaje: Datoteke
 
 ## Naloge
 
-### Filmi {#nal:filmi}
+### Filmi
 
 Vse funkcije tega sklopa shranite v datoteko `filmi.py`.
 
@@ -2204,11 +2203,11 @@ vrne njegovo povprečno oceno.
 3.2296978281397544
 ```
 
-### Oliver Twist {#nal:olivertwist}
+### Oliver Twist 
 
 Vse naloge tega sklopa shranite v datoteko `knjiga.py`.
 
-Za reševanje potrebujete datoteko `OliverTwist.txt`[^4].
+Za reševanje potrebujete datoteko [`OliverTwist.txt`](http://www.gutenberg.org/ebooks/730).
 
 **Število besed**
 
@@ -2240,12 +2239,13 @@ datoteko in vrne število različnih znakov, ki se pojavijo v knjigi.
 Napišite funkcijo `najpogostejsi_znak(datoteka)`, ki prebere datoteko in
 vrne **znak**, ki se v datoteki pojavi največkrat.
 
-*Primer pravilne izvedbe funkcije:*[^5]
+*Primer pravilne izvedbe funkcije:*
 
 ``` {.text breaklines="" bgcolor="gray_light"}
 >>> najpogostejsi_znak('OliverTwist.txt')
 ' '
 ```
+ (Vrnjen znak je presledek.)
 
 **Hapax legomenon**
 
@@ -2263,7 +2263,7 @@ potrebno.
 
 ## Rešitve nalog
 
-### [9.1.1](#nal:filmi){reference-type="ref" reference="nal:filmi"} Filmi {#nalfilmi-filmi .unnumbered}
+### Filmi 
 
 **Preberi**
 
@@ -2338,7 +2338,7 @@ def ocena_filma(id_filma, csv_datoteka):
     return vsota / stevec
 ```
 
-### [9.1.2](#nal:olivertwist){reference-type="ref" reference="nal:olivertwist"} Oliver Twist {#nalolivertwist-oliver-twist .unnumbered}
+### Oliver Twist 
 
 **Število besed**
 
@@ -2402,14 +2402,3 @@ def hapax(datoteka):
             seznam.append(beseda)
     return len(seznam)
 ```
-
-[^1]: V primeru seznamov je nujno treba vnesti tudi oklepaje.
-
-[^2]: Število 1 ni praštevilo.
-
-[^3]: Merilno mesto Iskrba se nahaja ob Kočevski Reki, kjer v bližini ni
-    virov, ki bi povzročali emisije delcev.
-
-[^4]: Vir: <http://www.gutenberg.org/ebooks/730>
-
-[^5]: Vrnjen znak je presledek.
