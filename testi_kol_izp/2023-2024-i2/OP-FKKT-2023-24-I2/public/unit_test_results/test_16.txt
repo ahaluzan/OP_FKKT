@@ -1,0 +1,12 @@
+AssertionError: Lists differ: ['Lenox Hill', 'Our Planet', 'The Last Dance', "Chef's Table"] != ['Our Planet']
+
+First differing element 0:
+'Lenox Hill'
+'Our Planet'
+
+First list contains 3 additional elements.
+First extra element 1:
+'Our Planet'
+
+- ['Lenox Hill', 'Our Planet', 'The Last Dance', "Chef's Table"]
++ ['Our Planet']

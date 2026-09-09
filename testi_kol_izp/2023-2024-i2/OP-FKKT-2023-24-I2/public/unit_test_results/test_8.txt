@@ -1,0 +1,1 @@
+AssertionError: 2004 != 2002 : Napacen kljuc.

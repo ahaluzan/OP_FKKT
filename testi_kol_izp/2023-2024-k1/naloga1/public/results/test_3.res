@@ -1,0 +1,2 @@
+Vnesi nukleotid: Vnesi nukleotid: Vnesi nukleotid: Vnesi nukleotid: RNA zaporedje ne more vsebovati baze T!
+Vnesi nukleotid: Vnesel si RNA zaporedje UUAG dolžine 4

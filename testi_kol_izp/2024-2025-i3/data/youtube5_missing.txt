@@ -1,0 +1,6 @@
+uvrstitev,ime,sledilci,vsebine,ogledi,drzava
+28,T-Series Bhakti Sagar,72.6M,29.140,37.185.631.965,IN
+18,Gaming,92.9M,0,0,
+5,Set India,180M,148.727,172.709.029.653,IN
+98,Katy Perry,45.6M,170,27.616.850.074,US
+25,Sports,74.7M,0,0,

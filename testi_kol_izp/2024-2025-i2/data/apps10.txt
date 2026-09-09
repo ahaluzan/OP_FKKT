@@ -1,0 +1,11 @@
+ime;kategorija;ocena;st_ocen;st_nalaganj;max_nalaganj;brezplacna;cena;valuta;velikost;update;publika;oglasi;nakup
+Project Makeover;Casual;4.1;338773;10000000;42892331;TRUE;0;USD;197M;8.6.21;Everyone;FALSE;TRUE
+WhatsApp Messenger;Communication;4;138557570;5000000000;6265637751;TRUE;0;USD;Varies with device;9.6.21;Everyone;FALSE;FALSE
+Asana: Your work manager;Business;4.5;34128;1000000;3999771;TRUE;0;USD;16M;15.6.21;Everyone;FALSE;FALSE
+Telegram;Communication;4.5;470676;500000000;885977963;TRUE;0;USD;Varies with device;17.4.21;Mature 17+;FALSE;FALSE
+Dumb Ways To Draw;Casual;3.9;50095;5000000;5903840;TRUE;0;USD;99M;1.4.21;Teen;TRUE;TRUE
+SkyView Lite;Education;4.4;43828;10000000;13152293;TRUE;0;USD;51M;3.12.19;Everyone;TRUE;FALSE
+Recolor: Adult Coloring Book - Color and Relax;Entertainment;3.6;74271;5000000;9820958;TRUE;0;USD;Varies with device;11.5.21;Teen;TRUE;TRUE
+Forest: Stay focused;Productivity;4.7;340816;10000000;21750659;TRUE;0;USD;Varies with device;2.6.21;Everyone;TRUE;TRUE
+Calm - Meditate, Sleep, Relax;Health & Fitness;4.3;402349;10000000;38128818;TRUE;0;USD;Varies with device;8.6.21;Everyone;FALSE;TRUE
+TED;Education;4.6;208571;10000000;28512452;TRUE;0;USD;18M;9.7.20;Everyone 10+;TRUE;FALSE

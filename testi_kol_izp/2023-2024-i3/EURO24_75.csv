@@ -1,0 +1,75 @@
+ID,ime,pozicija,drzava,leto_rojstva,st_tekem,zacetna_poz,minute,goli,asistence,rumeni,rdeci
+14,Joachim Andersen,DF,Denmark,1996,4,4,360,0,0,1,0
+16,Waldemar Anton,DF,Germany,1996,2,0,33,0,0,0,0
+23,Alexander Bah,DF-MF,Denmark,1997,4,3,281,0,0,0,0
+38,Maximilian Beier,FW,Germany,2002,1,0,26,0,0,0,0
+44,Victor Bernth Kristiansen,DF-MF,Denmark,2002,4,2,156,0,1,0,0
+58,Jacob Bruun Larsen,FW,Denmark,1998,1,0,10,0,0,0,0
+66,Emre Can,MF,Germany,1994,4,1,102,1,0,0,0
+69,Dani Carvajal,DF,Spain,1992,5,5,469,1,0,3,1
+83,Kingsley Coman,MF,France,1996,1,0,16,0,0,0,0
+85,Diogo Costa,GK,Portugal,1999,5,5,510,0,0,0,0
+91,Diogo Dalot,DF-MF,Portugal,1999,2,2,152,0,0,0,0
+101,Thomas Delaney,MF,Denmark,1991,3,1,84,0,0,0,0
+105,Ruben Dias,DF,Portugal,1997,4,4,420,0,0,0,0
+124,Christian Eriksen,MF-FW,Denmark,1992,4,4,348,1,0,0,0
+128,Joao Felix,MF-FW,Portugal,1999,2,1,105,0,0,0,0
+131,Phil Foden,FW-MF,England,2000,7,7,617,0,0,1,0
+138,Chris Fuhrich,FW,Germany,1998,1,0,19,0,0,0,0
+142,Conor Gallagher,MF,England,2000,5,1,120,0,0,1,0
+149,Anthony Gordon,FW,England,2001,1,0,2,0,0,0,0
+154,Alex Grimaldo,DF,Spain,1995,2,1,115,0,0,0,0
+158,Marc Guehi,DF,England,2000,6,6,570,0,1,2,0
+171,Kai Havertz,FW-MF,Germany,1999,5,5,389,2,1,0,0
+174,Theo Hernandez,DF,France,1997,6,6,570,0,0,0,0
+181,Pierre Hojbjerg,MF,Denmark,1995,4,4,353,0,0,0,0
+185,Goncalo Inacio,DF,Portugal,2001,2,1,118,0,0,0,0
+190,Diogo Jota,FW-MF,Portugal,1996,3,0,100,0,0,0,0
+199,N'Golo Kante,MF,France,1991,6,6,511,0,0,0,0
+210,Randal Kolo Muani,FW,France,1998,5,2,201,1,0,0,0
+214,Jules Kounde,DF,France,1998,6,6,570,0,0,0,0
+230,Aymeric Laporte,DF,Spain,1994,6,6,525,0,0,0,0
+232,Rafael Leao,FW,Portugal,1999,4,4,287,0,0,2,0
+245,Mike Maignan,GK,France,1995,6,6,570,0,0,0,0
+259,Kylian Mbappe,FW,France,1998,5,5,464,1,1,1,0
+268,Mikel Merino,MF-FW,Spain,1996,7,1,182,1,0,0,0
+282,Alvaro Morata,FW,Spain,1992,7,6,449,1,1,2,0
+288,Jamal Musiala,FW,Germany,2003,5,5,419,3,0,0,0
+292,Nacho,DF,Spain,1990,4,2,263,0,0,0,0
+297,Pedro Neto,DF-FW,Portugal,2000,3,1,120,0,0,1,0
+299,Joao Neves,MF,Portugal,2004,2,1,77,0,0,0,0
+302,Matheus Nunes,MF,Portugal,1998,2,0,18,0,0,0,0
+307,Dani Olmo,MF-FW,Spain,1998,6,3,432,3,2,1,0
+313,Joao Palhinha,MF,Portugal,1995,4,4,299,0,0,2,0
+317,Pedri,MF,Spain,2002,4,4,186,0,1,0,0
+322,Danilo Pereira,DF,Portugal,1991,1,1,90,0,0,0,0
+327,Jordan Pickford,GK,England,1994,7,7,690,0,0,0,0
+337,Adrien Rabiot,MF,France,1995,5,5,371,0,0,2,0
+345,David Raum,DF,Germany,1998,3,2,166,0,1,1,0
+349,Declan Rice,MF,England,1999,7,7,690,0,1,0,0
+355,Cristiano Ronaldo,FW,Portugal,1985,5,5,485,0,1,1,0
+357,Fabian Ruiz Pena,MF,Spain,1996,6,6,540,2,2,1,0
+362,William Saliba,DF,France,2001,6,6,570,0,0,1,0
+371,Nico Schlotterbeck,DF,Germany,1999,2,1,120,0,1,1,0
+378,Nelson Semedo,DF,Portugal,1993,5,0,100,0,0,0,0
+387,Antonio Silva,DF,Portugal,2003,2,1,73,0,0,0,0
+389,Unai Simon,GK,Spain,1997,6,6,570,0,0,1,0
+408,John Stones,DF,England,1994,7,7,690,0,0,1,0
+427,Aurelien Tchouameni,MF,France,2000,5,5,470,0,0,2,0
+432,Ivan Toney,FW-MF,England,1996,3,0,45,0,1,0,0
+436,Kieran Trippier,DF,England,1990,6,6,450,0,0,2,0
+444,Dayot Upamecano,DF,France,1998,6,6,570,0,0,0,0
+459,Vitinha,MF,Portugal,2000,4,4,358,0,0,0,0
+463,Kyle Walker,DF,England,1990,7,7,690,0,0,0,0
+469,Nico Williams,FW,Spain,2002,6,6,492,2,1,0,0
+472,Florian Wirtz,FW-MF,Germany,2003,5,3,279,2,0,1,0
+492,Martin Zubimendi,MF,Spain,1999,4,1,141,0,0,0,0
+46,Jaka Bijol,DF,Slovenia,1999,4,4,390,0,0,2,0
+72,Zan Celar,FW-MF,Slovenia,1999,3,0,67,0,0,1,0
+122,Timi Elsnik,MF,Slovenia,1998,4,4,359,0,1,0,0
+150,Jon Gorenc Stankovic,MF,Slovenia,1996,4,0,94,0,0,1,0
+187,Erik Janza,DF,Slovenia,1993,3,3,269,1,0,2,0
+222,Jasmin Kurtic,FW,Slovenia,1989,1,0,1,0,0,0,0
+305,Jan Oblak,GK,Slovenia,1993,4,4,390,0,0,0,0
+400,Andraz Sporar,FW,Slovenia,1994,4,4,338,0,0,0,0
+454,Benjamin Verbic,MF,Slovenia,1993,3,0,74,0,0,0,0

@@ -1,0 +1,8 @@
+AssertionError: Lists differ: [] != ['Pablo Escobar: The Drug Lord', 'Lenox Hill']
+
+Second list contains 2 additional elements.
+First extra element 0:
+'Pablo Escobar: The Drug Lord'
+
+- []
++ ['Pablo Escobar: The Drug Lord', 'Lenox Hill']

@@ -1,0 +1,990 @@
+leto;ime;priimek;kategorija;spol;datum rojstva;drzava rojstva
+1901;Wilhelm Conrad;Röntgen;physics;male;1845-03-27;DE
+1901;Emil;von Behring;medicine;male;1854-03-15;PL
+1901;Henry;Dunant;peace;male;1828-05-08;CH
+1901;Frédéric;Passy;peace;male;1822-05-20;FR
+1901;Sully;Prudhomme;literature;male;1839-03-16;FR
+1901;Jacobus H.;van 't Hoff;chemistry;male;1852-08-30;NL
+1902;Emil;Fischer;chemistry;male;1852-10-09;DE
+1902;Theodor;Mommsen;literature;male;1817-11-30;DE
+1902;Albert;Gobat;peace;male;1843-05-21;CH
+1902;Élie;Ducommun;peace;male;1833-02-19;CH
+1902;Pieter;Zeeman;physics;male;1865-05-25;NL
+1902;Ronald;Ross;medicine;male;1857-05-13;IN
+1902;Hendrik A.;Lorentz;physics;male;1853-07-18;NL
+1903;Pierre;Curie;physics;male;1859-05-15;FR
+1903;Randal;Cremer;peace;male;1828-03-18;GB
+1903;Henri;Becquerel;physics;male;1852-12-15;FR
+1903;Marie;Curie;physics;female;1867-11-07;PL
+1903;Niels Ryberg;Finsen;medicine;male;1860-12-15;DK
+1903;Bjørnstjerne;Bjørnson;literature;male;1832-12-08;NO
+1903;Svante;Arrhenius;chemistry;male;1859-02-19;SE
+1904;José;Echegaray;literature;male;1832-04-19;ES
+1904;Lord;Rayleigh;physics;male;1842-11-12;GB
+1904;Institute of International Law;;peace;org;1873-00-00;
+1904;Sir William;Ramsay;chemistry;male;1852-10-02;GB
+1904;Ivan;Pavlov;medicine;male;1849-09-14;RU
+1904;Frédéric;Mistral;literature;male;1830-09-08;FR
+1905;Adolf;von Baeyer;chemistry;male;1835-10-31;DE
+1905;Henryk;Sienkiewicz;literature;male;1846-05-05;PL
+1905;Philipp;Lenard;physics;male;1862-06-07;SK
+1905;Bertha;von Suttner;peace;female;1843-06-09;CZ
+1905;Robert;Koch;medicine;male;1843-12-11;DE
+1906;Giosuè;Carducci;literature;male;1835-07-27;IT
+1906;Theodore;Roosevelt;peace;male;1858-10-27;US
+1906;J.J.;Thomson;physics;male;1856-12-18;GB
+1906;Santiago;Ramón y Cajal;medicine;male;1852-05-01;ES
+1906;Henri;Moissan;chemistry;male;1852-09-28;FR
+1906;Camillo;Golgi;medicine;male;1843-07-07;IT
+1907;Alphonse;Laveran;medicine;male;1845-06-18;FR
+1907;Eduard;Buchner;chemistry;male;1860-05-20;DE
+1907;Rudyard;Kipling;literature;male;1865-12-30;IN
+1907;Louis;Renault;peace;male;1843-05-21;FR
+1907;Ernesto Teodoro;Moneta;peace;male;1833-09-20;IT
+1907;Albert A.;Michelson;physics;male;1852-12-19;PL
+1908;Ernest;Rutherford;chemistry;male;1871-08-30;NZ
+1908;Rudolf;Eucken;literature;male;1846-01-05;DE
+1908;Fredrik;Bajer;peace;male;1837-04-21;DK
+1908;Ilya;Mechnikov;medicine;male;1845-05-15;UA
+1908;Paul;Ehrlich;medicine;male;1854-03-14;PL
+1908;Klas Pontus;Arnoldson;peace;male;1844-10-27;SE
+1908;Gabriel;Lippmann;physics;male;1845-08-16;LU
+1909;Guglielmo;Marconi;physics;male;1874-04-25;IT
+1909;Theodor;Kocher;medicine;male;1841-08-25;CH
+1909;Selma;Lagerlöf;literature;female;1858-11-20;SE
+1909;Wilhelm;Ostwald;chemistry;male;1853-09-02;LV
+1909;Ferdinand;Braun;physics;male;1850-06-06;DE
+1909;Auguste;Beernaert;peace;male;1829-07-26;BE
+1909;Paul Henri;d'Estournelles de Constant;peace;male;1852-11-22;FR
+1910;Paul;Heyse;literature;male;1830-03-15;DE
+1910;Permanent International Peace Bureau;;peace;org;1891-00-00;
+1910;Johannes Diderik;van der Waals;physics;male;1837-11-23;NL
+1910;Albrecht;Kossel;medicine;male;1853-09-16;DE
+1910;Otto;Wallach;chemistry;male;1847-03-27;RU
+1911;Alfred;Fried;peace;male;1864-11-11;AT
+1911;Tobias;Asser;peace;male;1838-04-28;NL
+1911;Marie;Curie;chemistry;female;1867-11-07;PL
+1911;Wilhelm;Wien;physics;male;1864-01-13;RU
+1911;Maurice;Maeterlinck;literature;male;1862-08-29;BE
+1911;Allvar;Gullstrand;medicine;male;1862-06-05;SE
+1912;Gerhart;Hauptmann;literature;male;1862-11-15;PL
+1912;Alexis;Carrel;medicine;male;1873-06-28;FR
+1912;Paul;Sabatier;chemistry;male;1854-11-05;FR
+1912;Victor;Grignard;chemistry;male;1871-05-06;FR
+1912;Gustaf;Dalén;physics;male;1869-11-30;SE
+1912;Elihu;Root;peace;male;1845-02-15;US
+1913;Charles;Richet;medicine;male;1850-08-26;FR
+1913;Alfred;Werner;chemistry;male;1866-12-12;FR
+1913;Henri;La Fontaine;peace;male;1854-04-22;BE
+1913;Rabindranath;Tagore;literature;male;1861-05-07;IN
+1913;Heike;Kamerlingh Onnes;physics;male;1853-09-21;NL
+1914;Max;von Laue;physics;male;1879-10-09;DE
+1914;Robert;Bárány;medicine;male;1876-04-22;AT
+1914;Theodore W.;Richards;chemistry;male;1868-01-31;US
+1915;William;Bragg;physics;male;1862-07-02;GB
+1915;Lawrence;Bragg;physics;male;1890-03-31;AU
+1915;Richard;Willstätter;chemistry;male;1872-08-13;DE
+1915;Romain;Rolland;literature;male;1866-01-29;FR
+1916;Verner;von Heidenstam;literature;male;1859-07-06;SE
+1917;International Committee of the Red Cross;;peace;org;1863-00-00;
+1917;Charles Glover;Barkla;physics;male;1877-06-07;GB
+1917;Karl;Gjellerup;literature;male;1857-06-02;DK
+1917;Henrik;Pontoppidan;literature;male;1857-07-24;DK
+1918;Max;Planck;physics;male;1858-04-23;DE
+1918;Fritz;Haber;chemistry;male;1868-12-09;PL
+1919;Woodrow;Wilson;peace;male;1856-12-28;US
+1919;Jules;Bordet;medicine;male;1870-06-13;BE
+1919;Johannes;Stark;physics;male;1874-04-15;DE
+1919;Carl;Spitteler;literature;male;1845-04-24;CH
+1920;Charles Edouard;Guillaume;physics;male;1861-02-15;CH
+1920;Walther;Nernst;chemistry;male;1864-06-25;PL
+1920;August;Krogh;medicine;male;1874-11-15;DK
+1920;Léon;Bourgeois;peace;male;1851-05-21;FR
+1920;Knut;Hamsun;literature;male;1859-08-04;NO
+1921;Anatole;France;literature;male;1844-04-16;FR
+1921;Hjalmar;Branting;peace;male;1860-11-23;SE
+1921;Albert;Einstein;physics;male;1879-03-14;DE
+1921;Frederick;Soddy;chemistry;male;1877-09-02;GB
+1921;Christian;Lange;peace;male;1869-09-17;NO
+1922;Niels;Bohr;physics;male;1885-10-07;DK
+1922;Fridtjof;Nansen;peace;male;1861-10-10;NO
+1922;Francis W.;Aston;chemistry;male;1877-09-01;GB
+1922;Otto;Meyerhof;medicine;male;1884-04-12;DE
+1922;Jacinto;Benavente;literature;male;1866-08-12;ES
+1922;Archibald V.;Hill;medicine;male;1886-09-26;GB
+1923;Frederick G.;Banting;medicine;male;1891-11-14;CA
+1923;John;Macleod;medicine;male;1876-09-06;GB
+1923;Robert A.;Millikan;physics;male;1868-03-22;US
+1923;Fritz;Pregl;chemistry;male;1869-09-03;SI
+1923;William Butler;Yeats;literature;male;1865-06-13;IE
+1924;Wladyslaw;Reymont;literature;male;1867-05-07;PL
+1924;Willem;Einthoven;medicine;male;1860-05-21;ID
+1924;Manne;Siegbahn;physics;male;1886-12-03;SE
+1925;James;Franck;physics;male;1882-08-26;DE
+1925;Gustav;Hertz;physics;male;1887-07-22;DE
+1925;Sir Austen;Chamberlain;peace;male;1863-10-16;GB
+1925;Charles G.;Dawes;peace;male;1865-08-27;US
+1925;Richard;Zsigmondy;chemistry;male;1865-04-01;AT
+1925;George Bernard;Shaw;literature;male;1856-07-26;IE
+1926;Gustav;Stresemann;peace;male;1878-05-10;DE
+1926;Aristide;Briand;peace;male;1862-03-28;FR
+1926;Grazia;Deledda;literature;female;1871-09-27;IT
+1926;Johannes;Fibiger;medicine;male;1867-04-23;DK
+1926;Jean Baptiste;Perrin;physics;male;1870-09-30;FR
+1926;The;Svedberg;chemistry;male;1884-08-30;SE
+1927;Henri;Bergson;literature;male;1859-10-18;FR
+1927;Ludwig;Quidde;peace;male;1858-03-23;DE
+1927;Arthur H.;Compton;physics;male;1892-09-10;US
+1927;C.T.R.;Wilson;physics;male;1869-02-14;GB
+1927;Julius;Wagner-Jauregg;medicine;male;1857-03-07;AT
+1927;Heinrich;Wieland;chemistry;male;1877-06-04;DE
+1927;Ferdinand;Buisson;peace;male;1841-12-20;FR
+1928;Charles;Nicolle;medicine;male;1866-09-21;FR
+1928;Adolf;Windaus;chemistry;male;1876-12-25;DE
+1928;Owen Willans;Richardson;physics;male;1879-04-26;GB
+1928;Sigrid;Undset;literature;female;1882-05-20;DK
+1929;Arthur;Harden;chemistry;male;1865-10-12;GB
+1929;Hans;von Euler-Chelpin;chemistry;male;1873-02-15;DE
+1929;Christiaan;Eijkman;medicine;male;1858-08-11;NL
+1929;Louis;de Broglie;physics;male;1892-08-15;FR
+1929;Thomas;Mann;literature;male;1875-06-06;DE
+1929;Sir Frederick;Hopkins;medicine;male;1861-06-20;GB
+1929;Frank B.;Kellogg;peace;male;1856-12-22;US
+1930;Sinclair;Lewis;literature;male;1885-02-07;US
+1930;Karl;Landsteiner;medicine;male;1868-06-14;AT
+1930;Hans;Fischer;chemistry;male;1881-07-27;DE
+1930;Nathan;Söderblom;peace;male;1866-01-15;SE
+1930;Sir Chandrasekhara Venkata;Raman;physics;male;1888-11-07;IN
+1931;Otto;Warburg;medicine;male;1883-10-08;DE
+1931;Carl;Bosch;chemistry;male;1874-08-27;DE
+1931;Friedrich;Bergius;chemistry;male;1884-10-11;PL
+1931;Erik Axel;Karlfeldt;literature;male;1864-07-20;SE
+1931;Jane;Addams;peace;female;1860-09-06;US
+1931;Nicholas Murray;Butler;peace;male;1862-04-02;US
+1932;Edgar;Adrian;medicine;male;1889-11-30;GB
+1932;Sir Charles;Sherrington;medicine;male;1857-11-27;GB
+1932;Werner;Heisenberg;physics;male;05-12-1901;DE
+1932;John;Galsworthy;literature;male;1867-08-14;GB
+1932;Irving;Langmuir;chemistry;male;1881-01-31;US
+1933;Paul A.M.;Dirac;physics;male;08-08-1902;GB
+1933;Erwin;Schrödinger;physics;male;1887-08-12;AT
+1933;Sir Norman;Angell;peace;male;1872-12-26;GB
+1933;Thomas H.;Morgan;medicine;male;1866-09-25;US
+1933;Ivan;Bunin;literature;male;1870-10-22;RU
+1934;George H.;Whipple;medicine;male;1878-08-28;US
+1934;Harold C.;Urey;chemistry;male;1893-04-29;US
+1934;Luigi;Pirandello;literature;male;1867-06-28;IT
+1934;George R.;Minot;medicine;male;1885-12-02;US
+1934;William P.;Murphy;medicine;male;1892-02-06;US
+1934;Arthur;Henderson;peace;male;1863-09-13;GB
+1935;Frédéric;Joliot;chemistry;male;19-03-1900;FR
+1935;Irène;Joliot-Curie;chemistry;female;1897-09-12;FR
+1935;James;Chadwick;physics;male;1891-10-20;GB
+1935;Hans;Spemann;medicine;male;1869-06-27;DE
+1935;Carl;von Ossietzky;peace;male;1889-10-03;DE
+1936;Peter;Debye;chemistry;male;1884-03-24;NL
+1936;Otto;Loewi;medicine;male;1873-06-03;DE
+1936;Victor F.;Hess;physics;male;1883-06-24;AT
+1936;Sir Henry;Dale;medicine;male;1875-06-09;GB
+1936;Carl D.;Anderson;physics;male;03-09-1905;US
+1936;Carlos;Saavedra Lamas;peace;male;1878-11-01;AR
+1936;Eugene;O'Neill;literature;male;1888-10-16;US
+1937;George Paget;Thomson;physics;male;1892-05-03;GB
+1937;Albert;Szent-Györgyi;medicine;male;1893-09-16;HU
+1937;Norman;Haworth;chemistry;male;1883-03-19;GB
+1937;Clinton;Davisson;physics;male;1881-10-22;US
+1937;Robert;Cecil;peace;male;1864-09-14;GB
+1937;Roger;Martin du Gard;literature;male;1881-03-23;FR
+1937;Paul;Karrer;chemistry;male;1889-04-21;RU
+1938;Enrico;Fermi;physics;male;29-09-1901;IT
+1938;Richard;Kuhn;chemistry;male;03-12-1900;AT
+1938;Corneille;Heymans;medicine;male;1892-03-28;BE
+1938;Nansen International Office for Refugees;;peace;org;1921-00-00;
+1938;Pearl;Buck;literature;female;1892-06-26;US
+1939;Gerhard;Domagk;medicine;male;1895-10-30;PL
+1939;Ernest;Lawrence;physics;male;08-08-1901;US
+1939;Leopold;Ruzicka;chemistry;male;1887-09-13;HR
+1939;Adolf;Butenandt;chemistry;male;24-03-1903;DE
+1939;Frans Eemil;Sillanpää;literature;male;1888-09-16;FI
+1943;Henrik;Dam;medicine;male;1895-02-21;DK
+1943;Edward A.;Doisy;medicine;male;1893-11-13;US
+1943;George;de Hevesy;chemistry;male;1885-08-01;HU
+1943;Otto;Stern;physics;male;1888-02-17;PL
+1944;Joseph;Erlanger;medicine;male;1874-01-05;US
+1944;Johannes V.;Jensen;literature;male;1873-01-20;DK
+1944;Herbert S.;Gasser;medicine;male;1888-07-05;US
+1944;Otto;Hahn;chemistry;male;1879-03-08;DE
+1944;International Committee of the Red Cross;;peace;org;1863-00-00;
+1944;Isidor Isaac;Rabi;physics;male;1898-07-29;PL
+1945;Wolfgang;Pauli;physics;male;25-04-1900;AT
+1945;Gabriela;Mistral;literature;female;1889-04-07;CL
+1945;Artturi;Virtanen;chemistry;male;1895-01-15;FI
+1945;Cordell;Hull;peace;male;1871-10-02;US
+1945;Sir Alexander;Fleming;medicine;male;1881-08-06;GB
+1945;Ernst B.;Chain;medicine;male;19-06-1906;DE
+1945;Sir Howard;Florey;medicine;male;1898-09-24;AU
+1946;John R.;Mott;peace;male;1865-05-25;US
+1946;Percy W.;Bridgman;physics;male;1882-04-21;US
+1946;James B.;Sumner;chemistry;male;1887-11-19;US
+1946;John H.;Northrop;chemistry;male;1891-07-05;US
+1946;Wendell M.;Stanley;chemistry;male;16-08-1904;US
+1946;Hermann J.;Muller;medicine;male;1890-12-21;US
+1946;Emily Greene;Balch;peace;female;1867-01-08;US
+1946;Hermann;Hesse;literature;male;1877-07-02;DE
+1947;Gerty;Cori;medicine;female;1896-08-15;CZ
+1947;Bernardo;Houssay;medicine;male;1887-04-10;AR
+1947;Edward V.;Appleton;physics;male;1892-09-06;GB
+1947;André;Gide;literature;male;1869-11-22;FR
+1947;Sir Robert;Robinson;chemistry;male;1886-09-13;GB
+1947;Friends Service Council;;peace;org;1647-00-00;
+1947;American Friends Service Committee;;peace;org;1917-00-00;
+1947;Carl;Cori;medicine;male;1896-12-05;CZ
+1948;Paul;Müller;medicine;male;1899-01-12;CH
+1948;T.S.;Eliot;literature;male;1888-09-26;US
+1948;Arne;Tiselius;chemistry;male;10-08-1902;SE
+1948;Patrick M.S.;Blackett;physics;male;1897-11-18;GB
+1949;Egas;Moniz;medicine;male;1874-11-29;PT
+1949;William F.;Giauque;chemistry;male;1895-05-12;CA
+1949;Walter;Hess;medicine;male;1881-03-17;CH
+1949;William;Faulkner;literature;male;1897-09-25;US
+1949;John;Boyd Orr;peace;male;1880-09-23;GB
+1949;Hideki;Yukawa;physics;male;23-01-1907;JP
+1950;Bertrand;Russell;literature;male;1872-05-18;GB
+1950;Ralph;Bunche;peace;male;07-08-1904;US
+1950;Philip S.;Hench;medicine;male;1896-02-28;US
+1950;Tadeus;Reichstein;medicine;male;1897-07-20;PL
+1950;Edward C.;Kendall;medicine;male;1886-03-08;US
+1950;Kurt;Alder;chemistry;male;10-07-1902;PL
+1950;Cecil;Powell;physics;male;05-12-1903;GB
+1950;Otto;Diels;chemistry;male;1876-01-23;DE
+1951;Léon;Jouhaux;peace;male;1879-07-01;FR
+1951;Pär;Lagerkvist;literature;male;1891-05-23;SE
+1951;Ernest T.S.;Walton;physics;male;06-10-1903;IE
+1951;John;Cockcroft;physics;male;1897-05-27;GB
+1951;Edwin M.;McMillan;chemistry;male;18-09-1907;US
+1951;Max;Theiler;medicine;male;1899-01-30;ZA
+1951;Glenn T.;Seaborg;chemistry;male;19-04-1912;US
+1952;Felix;Bloch;physics;male;23-10-1905;CH
+1952;Richard L.M.;Synge;chemistry;male;28-10-1914;GB
+1952;Albert;Schweitzer;peace;male;1875-01-14;FR
+1952;Selman A.;Waksman;medicine;male;1888-07-22;UA
+1952;Archer J.P.;Martin;chemistry;male;01-03-1910;GB
+1952;E. M.;Purcell;physics;male;30-08-1912;US
+1952;François;Mauriac;literature;male;1885-10-11;FR
+1953;George C.;Marshall;peace;male;1880-12-31;US
+1953;Hans;Krebs;medicine;male;25-08-1900;DE
+1953;Fritz;Lipmann;medicine;male;1899-06-12;RU
+1953;Frits;Zernike;physics;male;1888-07-16;NL
+1953;Hermann;Staudinger;chemistry;male;1881-03-23;DE
+1953;Winston;Churchill;literature;male;1874-11-30;GB
+1954;John F.;Enders;medicine;male;1897-02-10;US
+1954;Thomas H.;Weller;medicine;male;15-06-1915;US
+1954;Frederick C.;Robbins;medicine;male;25-08-1916;US
+1954;Linus;Pauling;chemistry;male;28-02-1901;US
+1954;Max;Born;physics;male;1882-12-11;PL
+1954;Walther;Bothe;physics;male;1891-01-08;DE
+1954;Ernest;Hemingway;literature;male;1899-07-21;US
+1954;Office of the United Nations High Commissioner for Refugees;;peace;org;14-12-1950;
+1955;Halldór;Laxness;literature;male;23-04-1902;IS
+1955;Polykarp;Kusch;physics;male;26-01-1911;DE
+1955;Willis E.;Lamb;physics;male;12-07-1913;US
+1955;Hugo;Theorell;medicine;male;06-07-1903;SE
+1955;Vincent;du Vigneaud;chemistry;male;18-05-1901;US
+1956;Werner;Forssmann;medicine;male;29-08-1904;DE
+1956;André F.;Cournand;medicine;male;1895-09-24;FR
+1956;Walter H.;Brattain;physics;male;10-02-1902;CN
+1956;Nikolay;Semenov;chemistry;male;1896-04-03;RU
+1956;Sir Cyril;Hinshelwood;chemistry;male;1897-05-19;GB
+1956;John;Bardeen;physics;male;23-05-1908;US
+1956;William B.;Shockley;physics;male;13-02-1910;GB
+1956;Dickinson W.;Richards;medicine;male;1895-10-30;US
+1956;Juan Ramón;Jiménez;literature;male;1881-12-24;ES
+1957;Chen Ning;Yang;physics;male;22-09-1922;CN
+1957;Lester Bowles;Pearson;peace;male;1897-04-23;CA
+1957;Lord;Todd;chemistry;male;02-10-1907;GB
+1957;Tsung-Dao;Lee;physics;male;24-11-1926;CN
+1957;Albert;Camus;literature;male;07-11-1913;DZ
+1957;Daniel;Bovet;medicine;male;23-03-1907;CH
+1958;Frederick;Sanger;chemistry;male;13-08-1918;GB
+1958;Georges;Pire;peace;male;10-02-1910;BE
+1958;Edward;Tatum;medicine;male;14-12-1909;US
+1958;Joshua;Lederberg;medicine;male;23-05-1925;US
+1958;Boris;Pasternak;literature;male;1890-02-10;RU
+1958;Il´ja M.;Frank;physics;male;23-10-1908;RU
+1958;Igor Y.;Tamm;physics;male;1895-07-08;RU
+1958;Pavel A.;Cherenkov;physics;male;28-07-1904;RU
+1958;George;Beadle;medicine;male;22-10-1903;US
+1959;Arthur;Kornberg;medicine;male;03-03-1918;US
+1959;Jaroslav;Heyrovsky;chemistry;male;1890-12-20;CZ
+1959;Owen;Chamberlain;physics;male;10-07-1920;US
+1959;Emilio;Segrè;physics;male;01-02-1905;IT
+1959;Severo;Ochoa;medicine;male;24-09-1905;ES
+1959;Philip;Noel-Baker;peace;male;1889-11-01;GB
+1959;Salvatore;Quasimodo;literature;male;20-08-1901;IT
+1960;Peter;Medawar;medicine;male;28-02-1915;BR
+1960;Donald A.;Glaser;physics;male;21-09-1926;US
+1960;Sir Frank Macfarlane;Burnet;medicine;male;1899-09-03;AU
+1960;Saint-John;Perse;literature;male;1887-05-31;GP
+1960;Albert;Lutuli;peace;male;1898-00-00;ZW
+1960;Willard F.;Libby;chemistry;male;17-12-1908;US
+1961;Rudolf;Mössbauer;physics;male;31-01-1929;DE
+1961;Dag;Hammarskjöld;peace;male;29-07-1905;SE
+1961;Georg;von Békésy;medicine;male;1899-06-03;HU
+1961;Ivo;Andric;literature;male;1892-10-10;BA
+1961;Melvin;Calvin;chemistry;male;08-04-1911;US
+1961;Robert;Hofstadter;physics;male;05-02-1915;US
+1962;Maurice;Wilkins;medicine;male;15-12-1916;NZ
+1962;James;Watson;medicine;male;06-04-1928;US
+1962;Francis;Crick;medicine;male;08-06-1916;GB
+1962;Linus;Pauling;peace;male;28-02-1901;US
+1962;John C.;Kendrew;chemistry;male;24-03-1917;GB
+1962;Max F.;Perutz;chemistry;male;19-05-1914;AT
+1962;Lev;Landau;physics;male;22-01-1908;AZ
+1962;John;Steinbeck;literature;male;27-02-1902;US
+1963;Andrew;Huxley;medicine;male;22-11-1917;GB
+1963;Alan;Hodgkin;medicine;male;05-02-1914;GB
+1963;Sir John;Eccles;medicine;male;27-01-1903;AU
+1963;J. Hans D.;Jensen;physics;male;25-06-1907;DE
+1963;Eugene;Wigner;physics;male;17-11-1902;HU
+1963;International Committee of the Red Cross;;peace;org;1863-00-00;
+1963;League of Red Cross Societies;;peace;org;1919-00-00;
+1963;Giorgos;Seferis;literature;male;13-03-1900;TR
+1963;Maria;Goeppert Mayer;physics;female;28-06-1906;PL
+1963;Karl;Ziegler;chemistry;male;1898-11-26;DE
+1963;Giulio;Natta;chemistry;male;26-02-1903;IT
+1964;Nicolay G.;Basov;physics;male;14-12-1922;RU
+1964;Jean-Paul;Sartre;literature;male;21-06-1905;FR
+1964;Martin Luther;King Jr.;peace;male;15-01-1929;US
+1964;Aleksandr M.;Prokhorov;physics;male;11-07-1916;AU
+1964;Feodor;Lynen;medicine;male;06-04-1911;DE
+1964;Charles H.;Townes;physics;male;28-07-1915;US
+1964;Konrad;Bloch;medicine;male;21-01-1912;PL
+1964;Dorothy Crowfoot;Hodgkin;chemistry;female;12-05-1910;EG
+1965;Robert B.;Woodward;chemistry;male;10-04-1917;US
+1965;François;Jacob;medicine;male;17-06-1920;FR
+1965;André;Lwoff;medicine;male;08-05-1902;FR
+1965;Jacques;Monod;medicine;male;09-02-1910;FR
+1965;United Nations Children's Fund;;peace;org;1946-00-00;
+1965;Sin-Itiro;Tomonaga;physics;male;31-03-1906;JP
+1965;Mikhail;Sholokhov;literature;male;24-05-1905;RU
+1965;Julian;Schwinger;physics;male;12-02-1918;US
+1965;Richard P.;Feynman;physics;male;11-05-1918;US
+1966;Charles B.;Huggins;medicine;male;22-09-1901;CA
+1966;Shmuel;Agnon;literature;male;1888-07-17;UA
+1966;Robert S.;Mulliken;chemistry;male;1896-06-07;US
+1966;Peyton;Rous;medicine;male;1879-10-05;US
+1966;Nelly;Sachs;literature;female;1891-12-10;DE
+1966;Alfred;Kastler;physics;male;03-05-1902;FR
+1967;Ragnar;Granit;medicine;male;30-10-1900;FI
+1967;George;Wald;medicine;male;18-11-1906;US
+1967;George;Porter;chemistry;male;06-12-1920;GB
+1967;Miguel Angel;Asturias;literature;male;1899-10-19;GT
+1967;Ronald G.W.;Norrish;chemistry;male;1897-11-09;GB
+1967;Manfred;Eigen;chemistry;male;09-05-1927;DE
+1967;Keffer;Hartline;medicine;male;22-12-1903;US
+1967;Hans;Bethe;physics;male;02-07-1906;FR
+1968;H. Gobind;Khorana;medicine;male;09-01-1922;IN
+1968;Marshall W.;Nirenberg;medicine;male;10-04-1927;US
+1968;Lars;Onsager;chemistry;male;27-11-1903;NO
+1968;René;Cassin;peace;male;1887-10-05;FR
+1968;Robert W.;Holley;medicine;male;28-01-1922;US
+1968;Luis;Alvarez;physics;male;13-06-1911;US
+1968;Yasunari;Kawabata;literature;male;1899-06-11;JP
+1969;Derek;Barton;chemistry;male;08-09-1918;GB
+1969;Samuel;Beckett;literature;male;13-04-1906;IE
+1969;Ragnar;Frisch;economics;male;1895-03-03;NO
+1969;Murray;Gell-Mann;physics;male;15-09-1929;US
+1969;Jan;Tinbergen;economics;male;12-04-1903;NL
+1969;International Labour Organization;;peace;org;1919-00-00;
+1969;Salvador E.;Luria;medicine;male;13-08-1912;IT
+1969;Alfred D.;Hershey;medicine;male;04-12-1908;US
+1969;Max;Delbrück;medicine;male;04-09-1906;DE
+1969;Odd;Hassel;chemistry;male;1897-05-17;NO
+1970;Hannes;Alfvén;physics;male;30-05-1908;SE
+1970;Louis;Néel;physics;male;22-11-1904;FR
+1970;Norman;Borlaug;peace;male;25-03-1914;US
+1970;Luis;Leloir;chemistry;male;06-09-1906;FR
+1970;Alexandr;Solzhenitsyn;literature;male;11-12-1918;RU
+1970;Paul A.;Samuelson;economics;male;15-05-1915;US
+1970;Julius;Axelrod;medicine;male;30-05-1912;US
+1970;Ulf;von Euler;medicine;male;07-02-1905;SE
+1970;Sir Bernard;Katz;medicine;male;26-03-1911;DE
+1971;Willy;Brandt;peace;male;18-12-1913;DE
+1971;Dennis;Gabor;physics;male;05-06-1900;HU
+1971;Simon;Kuznets;economics;male;30-04-1901;BY
+1971;Gerhard;Herzberg;chemistry;male;25-12-1904;DE
+1971;Earl W.;Sutherland Jr.;medicine;male;19-11-1915;US
+1971;Pablo;Neruda;literature;male;12-07-1904;CL
+1972;Heinrich;Böll;literature;male;21-12-1917;DE
+1972;Gerald M.;Edelman;medicine;male;01-07-1929;US
+1972;Leon N.;Cooper;physics;male;28-02-1930;US
+1972;Stanford;Moore;chemistry;male;04-09-1913;US
+1972;Christian;Anfinsen;chemistry;male;26-03-1916;US
+1972;William H.;Stein;chemistry;male;25-06-1911;US
+1972;John;Bardeen;physics;male;23-05-1908;US
+1972;Kenneth J.;Arrow;economics;male;23-08-1921;US
+1972;John R.;Hicks;economics;male;08-04-1904;GB
+1972;Robert;Schrieffer;physics;male;31-05-1931;US
+1972;Rodney R.;Porter;medicine;male;08-10-1917;GB
+1973;Brian D.;Josephson;physics;male;04-01-1940;GB
+1973;Ernst Otto;Fischer;chemistry;male;10-11-1918;DE
+1973;Geoffrey;Wilkinson;chemistry;male;14-07-1921;GB
+1973;Le Duc Tho;;peace;male;14-10-1911;VN
+1973;Wassily;Leontief;economics;male;05-08-1906;RU
+1973;Konrad;Lorenz;medicine;male;07-11-1903;AT
+1973;Leo;Esaki;physics;male;12-03-1925;JP
+1973;Ivar;Giaever;physics;male;05-04-1929;NO
+1973;Karl;von Frisch;medicine;male;1886-11-20;AT
+1973;Patrick;White;literature;male;28-05-1912;GB
+1973;Henry;Kissinger;peace;male;27-05-1923;DE
+1973;Nikolaas;Tinbergen;medicine;male;15-04-1907;NL
+1974;Paul J.;Flory;chemistry;male;19-06-1910;US
+1974;Eyvind;Johnson;literature;male;29-07-1900;SE
+1974;Gunnar;Myrdal;economics;male;1898-12-06;SE
+1974;Harry;Martinson;literature;male;06-05-1904;SE
+1974;Christian;de Duve;medicine;male;02-10-1917;GB
+1974;Antony;Hewish;physics;male;11-05-1924;GB
+1974;Martin;Ryle;physics;male;27-09-1918;GB
+1974;George E.;Palade;medicine;male;19-11-1912;RO
+1974;Eisaku;Sato;peace;male;27-03-1901;JP
+1974;Seán;MacBride;peace;male;26-01-1904;FR
+1974;Friedrich;von Hayek;economics;male;1899-05-08;AT
+1974;Albert;Claude;medicine;male;1898-08-24;BE
+1975;John;Cornforth;chemistry;male;07-09-1917;AU
+1975;Vladimir;Prelog;chemistry;male;23-07-1906;BA
+1975;Howard M.;Temin;medicine;male;10-12-1934;US
+1975;Aage N.;Bohr;physics;male;19-06-1922;DK
+1975;Ben R.;Mottelson;physics;male;09-07-1926;US
+1975;James;Rainwater;physics;male;09-12-1917;US
+1975;Tjalling C.;Koopmans;economics;male;28-08-1910;NL
+1975;Leonid Vitaliyevich;Kantorovich;economics;male;19-01-1912;RU
+1975;Eugenio;Montale;literature;male;1896-10-12;IT
+1975;David;Baltimore;medicine;male;07-03-1938;US
+1975;Renato;Dulbecco;medicine;male;22-02-1914;IT
+1975;Andrei;Sakharov;peace;male;21-05-1921;RU
+1976;Milton;Friedman;economics;male;31-07-1912;US
+1976;William;Lipscomb;chemistry;male;09-12-1919;US
+1976;Mairead;Corrigan;peace;female;27-01-1944;GB
+1976;Burton;Richter;physics;male;22-03-1931;US
+1976;Samuel C.C.;Ting;physics;male;27-01-1936;US
+1976;Baruch S.;Blumberg;medicine;male;28-07-1925;US
+1976;D. Carleton;Gajdusek;medicine;male;09-09-1923;US
+1976;Betty;Williams;peace;female;22-05-1943;GB
+1976;Saul;Bellow;literature;male;10-06-1915;CA
+1977;Philip W.;Anderson;physics;male;13-12-1923;US
+1977;James E.;Meade;economics;male;23-06-1907;GB
+1977;Bertil;Ohlin;economics;male;1899-04-23;SE
+1977;Sir Nevill F.;Mott;physics;male;30-09-1905;GB
+1977;John H.;Van Vleck;physics;male;1899-03-13;US
+1977;Andrew V.;Schally;medicine;male;30-11-1926;LT
+1977;Rosalyn;Yalow;medicine;female;19-07-1921;US
+1977;Ilya;Prigogine;chemistry;male;25-01-1917;RU
+1977;Roger;Guillemin;medicine;male;11-01-1924;FR
+1977;Amnesty International;;peace;org;1961-00-00;
+1977;Vicente;Aleixandre;literature;male;1898-04-26;ES
+1978;Anwar;al-Sadat;peace;male;25-12-1918;EG
+1978;Menachem;Begin;peace;male;16-08-1913;BY
+1978;Arno;Penzias;physics;male;26-04-1933;DE
+1978;Hamilton O.;Smith;medicine;male;23-08-1931;US
+1978;Daniel;Nathans;medicine;male;30-10-1928;US
+1978;Werner;Arber;medicine;male;03-06-1929;CH
+1978;Robert Woodrow;Wilson;physics;male;10-01-1936;US
+1978;Isaac Bashevis;Singer;literature;male;14-07-1904;PL
+1978;Herbert;Simon;economics;male;15-06-1916;US
+1978;Pyotr;Kapitsa;physics;male;1894-07-09;RU
+1978;Peter;Mitchell;chemistry;male;29-09-1920;GB
+1979;Georg;Wittig;chemistry;male;1897-06-16;DE
+1979;Theodore W.;Schultz;economics;male;30-04-1902;US
+1979;Sir Arthur;Lewis;economics;male;23-01-1915;LC
+1979;Anjezë Gonxhe;Bojaxhiu;peace;female;26-08-1910;MK
+1979;Herbert C.;Brown;chemistry;male;22-05-1912;GB
+1979;Sheldon;Glashow;physics;male;05-12-1932;US
+1979;Steven;Weinberg;physics;male;03-05-1933;US
+1979;Godfrey N.;Hounsfield;medicine;male;28-08-1919;GB
+1979;Allan M.;Cormack;medicine;male;23-02-1924;ZA
+1979;Odysseus;Elytis;literature;male;02-11-1911;GR
+1979;Abdus;Salam;physics;male;29-01-1926;PK
+1980;Frederick;Sanger;chemistry;male;13-08-1918;GB
+1980;Jean;Dausset;medicine;male;19-10-1916;FR
+1980;Baruj;Benacerraf;medicine;male;29-10-1920;VE
+1980;Lawrence R.;Klein;economics;male;14-09-1920;US
+1980;Paul;Berg;chemistry;male;30-06-1926;US
+1980;Adolfo;Pérez Esquivel;peace;male;26-11-1931;AR
+1980;Walter;Gilbert;chemistry;male;21-03-1932;US
+1980;Val;Fitch;physics;male;10-03-1923;US
+1980;James;Cronin;physics;male;29-09-1931;US
+1980;Czeslaw;Milosz;literature;male;30-06-1911;LT
+1980;George D.;Snell;medicine;male;19-12-1903;US
+1981;James;Tobin;economics;male;05-03-1918;US
+1981;Elias;Canetti;literature;male;25-07-1905;BG
+1981;David H.;Hubel;medicine;male;27-02-1926;CA
+1981;Nicolaas;Bloembergen;physics;male;11-03-1920;NL
+1981;Office of the United Nations High Commissioner for Refugees;;peace;org;14-12-1950;
+1981;Roger W.;Sperry;medicine;male;20-08-1913;US
+1981;Kenichi;Fukui;chemistry;male;04-10-1918;JP
+1981;Roald;Hoffmann;chemistry;male;18-07-1937;UA
+1981;Torsten N.;Wiesel;medicine;male;03-06-1924;SE
+1981;Arthur L.;Schawlow;physics;male;05-05-1921;US
+1981;Kai M.;Siegbahn;physics;male;20-04-1918;SE
+1982;George J.;Stigler;economics;male;17-01-1911;US
+1982;Alva;Myrdal;peace;female;31-01-1902;SE
+1982;Gabriel;García Márquez;literature;male;06-03-1927;CO
+1982;John R.;Vane;medicine;male;29-03-1927;GB
+1982;Aaron;Klug;chemistry;male;11-08-1926;LT
+1982;Sune K.;Bergström;medicine;male;10-01-1916;SE
+1982;Kenneth G.;Wilson;physics;male;08-06-1936;US
+1982;Alfonso;García Robles;peace;male;20-03-1911;MX
+1982;Bengt I.;Samuelsson;medicine;male;21-05-1934;SE
+1983;Lech;Walesa;peace;male;29-09-1943;PL
+1983;Henry;Taube;chemistry;male;30-11-1915;CA
+1983;Barbara;McClintock;medicine;female;16-06-1902;US
+1983;Gerard;Debreu;economics;male;04-07-1921;FR
+1983;William;Golding;literature;male;19-09-1911;GB
+1983;William A.;Fowler;physics;male;09-08-1911;US
+1983;Subramanyan;Chandrasekhar;physics;male;19-10-1910;PK
+1984;Niels K.;Jerne;medicine;male;23-12-1911;GB
+1984;Georges J.F.;Köhler;medicine;male;17-04-1946;DE
+1984;César;Milstein;medicine;male;08-10-1927;AR
+1984;Jaroslav;Seifert;literature;male;23-09-1901;CZ
+1984;Desmond;Tutu;peace;male;07-10-1931;ZA
+1984;Bruce;Merrifield;chemistry;male;15-07-1921;US
+1984;Simon;van der Meer;physics;male;24-11-1925;NL
+1984;Carlo;Rubbia;physics;male;31-03-1934;IT
+1984;Richard;Stone;economics;male;30-08-1913;GB
+1985;International Physicians for the Prevention of Nuclear War;;peace;org;1980-00-00;
+1985;Klaus;von Klitzing;physics;male;28-06-1943;PL
+1985;Joseph L.;Goldstein;medicine;male;18-04-1940;US
+1985;Michael S.;Brown;medicine;male;13-04-1941;US
+1985;Herbert A.;Hauptman;chemistry;male;14-02-1917;US
+1985;Jerome;Karle;chemistry;male;18-06-1918;US
+1985;Claude;Simon;literature;male;10-10-1913;MG
+1985;Franco;Modigliani;economics;male;18-06-1918;IT
+1986;Dudley R.;Herschbach;chemistry;male;18-06-1932;US
+1986;John C.;Polanyi;chemistry;male;23-01-1929;DE
+1986;Gerd;Binnig;physics;male;20-07-1947;DE
+1986;Heinrich;Rohrer;physics;male;06-06-1933;CH
+1986;Ernst;Ruska;physics;male;25-12-1906;DE
+1986;Yuan T.;Lee;chemistry;male;19-11-1936;TW
+1986;Rita;Levi-Montalcini;medicine;female;22-04-1909;IT
+1986;Stanley;Cohen;medicine;male;17-11-1922;US
+1986;Elie;Wiesel;peace;male;30-09-1928;RO
+1986;Wole;Soyinka;literature;male;13-07-1934;NG
+1986;James M.;Buchanan Jr.;economics;male;03-10-1919;US
+1987;Charles J.;Pedersen;chemistry;male;03-10-1904;KR
+1987;Joseph;Brodsky;literature;male;24-05-1940;RU
+1987;K. Alex;Müller;physics;male;20-04-1927;CH
+1987;Jean-Marie;Lehn;chemistry;male;30-09-1939;FR
+1987;J. Georg;Bednorz;physics;male;16-05-1950;DE
+1987;Susumu;Tonegawa;medicine;male;05-09-1939;JP
+1987;Robert M.;Solow;economics;male;23-08-1924;US
+1987;Oscar;Arias Sánchez;peace;male;13-09-1940;CR
+1987;Donald J.;Cram;chemistry;male;22-04-1919;US
+1988;United Nations Peacekeeping Forces;;peace;org;1948-00-00;
+1988;Jack;Steinberger;physics;male;25-05-1921;DE
+1988;Melvin;Schwartz;physics;male;02-11-1932;US
+1988;Leon M.;Lederman;physics;male;15-07-1922;US
+1988;George H.;Hitchings;medicine;male;18-04-1905;US
+1988;Hartmut;Michel;chemistry;male;18-07-1948;DE
+1988;Robert;Huber;chemistry;male;20-02-1937;DE
+1988;Johann;Deisenhofer;chemistry;male;30-09-1943;DE
+1988;Naguib;Mahfouz;literature;male;11-12-1911;EG
+1988;Sir James W.;Black;medicine;male;14-06-1924;GB
+1988;Gertrude B.;Elion;medicine;female;23-01-1918;US
+1988;Maurice;Allais;economics;male;31-05-1911;FR
+1989;Thomas R.;Cech;chemistry;male;08-12-1947;US
+1989;Sidney;Altman;chemistry;male;07-05-1939;CA
+1989;Hans G.;Dehmelt;physics;male;09-09-1922;DE
+1989;Norman F.;Ramsey;physics;male;27-08-1915;US
+1989;J. Michael;Bishop;medicine;male;22-02-1936;US
+1989;Wolfgang;Paul;physics;male;10-08-1913;DE
+1989;Trygve;Haavelmo;economics;male;13-12-1911;NO
+1989;Camilo José;Cela;literature;male;11-05-1916;ES
+1989;Lhamo;Thondup;peace;male;06-07-1935;CN
+1989;Harold E.;Varmus;medicine;male;18-12-1939;US
+1990;Octavio;Paz;literature;male;31-03-1914;MX
+1990;Richard E.;Taylor;physics;male;02-11-1929;CA
+1990;Henry W.;Kendall;physics;male;09-12-1926;US
+1990;Jerome I.;Friedman;physics;male;28-03-1930;US
+1990;Harry M.;Markowitz;economics;male;24-08-1927;US
+1990;Merton H.;Miller;economics;male;16-05-1923;US
+1990;Joseph E.;Murray;medicine;male;01-04-1919;US
+1990;Mikhail;Gorbachev;peace;male;02-03-1931;RU
+1990;E. Donnall;Thomas;medicine;male;15-03-1920;US
+1990;William F.;Sharpe;economics;male;16-06-1934;US
+1990;Elias James;Corey;chemistry;male;12-07-1928;US
+1991;Ronald H.;Coase;economics;male;29-12-1910;GB
+1991;Nadine;Gordimer;literature;female;20-11-1923;ZA
+1991;Bert;Sakmann;medicine;male;12-06-1942;DE
+1991;Pierre-Gilles;de Gennes;physics;male;24-10-1932;FR
+1991;Aung San Suu Kyi;;peace;female;19-06-1945;MM
+1991;Erwin;Neher;medicine;male;20-03-1944;DE
+1991;Richard R.;Ernst;chemistry;male;14-08-1933;CH
+1992;Derek;Walcott;literature;male;23-01-1930;LC
+1992;Edmond H.;Fischer;medicine;male;06-04-1920;CN
+1992;Rudolph A.;Marcus;chemistry;male;21-07-1923;CA
+1992;Gary;Becker;economics;male;02-12-1930;US
+1992;Rigoberta;Menchú Tum;peace;female;09-01-1959;GT
+1992;Georges;Charpak;physics;male;01-08-1924;PL
+1992;Edwin G.;Krebs;medicine;male;06-06-1918;US
+1993;Russell A.;Hulse;physics;male;28-11-1950;US
+1993;Joseph H.;Taylor Jr.;physics;male;29-03-1941;US
+1993;Toni;Morrison;literature;female;18-02-1931;US
+1993;Douglass C.;North;economics;male;05-11-1920;US
+1993;Michael;Smith;chemistry;male;26-04-1932;GB
+1993;Phillip A.;Sharp;medicine;male;06-06-1944;US
+1993;Richard J.;Roberts;medicine;male;06-09-1943;GB
+1993;Kary B.;Mullis;chemistry;male;28-12-1944;US
+1993;F.W.;de Klerk;peace;male;18-03-1936;ZA
+1993;Robert W.;Fogel;economics;male;01-07-1927;US
+1993;Nelson;Mandela;peace;male;18-07-1918;ZA
+1994;Alfred G.;Gilman;medicine;male;01-07-1941;US
+1994;Martin;Rodbell;medicine;male;01-12-1925;US
+1994;George A.;Olah;chemistry;male;22-05-1927;HU
+1994;Bertram N.;Brockhouse;physics;male;15-07-1918;CA
+1994;Clifford G.;Shull;physics;male;23-09-1915;US
+1994;Kenzaburo;Oe;literature;male;31-01-1935;JP
+1994;Yasser;Arafat;peace;male;24-08-1929;EG
+1994;Yitzhak;Rabin;peace;male;01-03-1922;IL
+1994;Shimon;Peres;peace;male;16-08-1923;BY
+1994;John C.;Harsanyi;economics;male;29-05-1920;HU
+1994;John F.;Nash Jr.;economics;male;13-06-1928;US
+1994;Reinhard;Selten;economics;male;05-10-1930;PL
+1995;Frederick;Reines;physics;male;16-03-1918;US
+1995;Edward B.;Lewis;medicine;male;20-05-1918;US
+1995;Paul J.;Crutzen;chemistry;male;03-12-1933;NL
+1995;Mario J.;Molina;chemistry;male;19-03-1943;MX
+1995;Robert E.;Lucas Jr.;economics;male;15-09-1937;US
+1995;Seamus;Heaney;literature;male;13-04-1939;GB
+1995;F. Sherwood;Rowland;chemistry;male;28-06-1927;US
+1995;Christiane;Nüsslein-Volhard;medicine;female;20-10-1942;DE
+1995;Joseph;Rotblat;peace;male;04-11-1908;PL
+1995;Pugwash Conferences on Science and World Affairs;;peace;org;1957-00-00;
+1995;Martin L.;Perl;physics;male;24-06-1927;US
+1995;Eric F.;Wieschaus;medicine;male;08-06-1947;US
+1996;David M.;Lee;physics;male;20-01-1931;US
+1996;Robert C.;Richardson;physics;male;26-06-1937;US
+1996;Douglas D.;Osheroff;physics;male;01-08-1945;US
+1996;Peter C.;Doherty;medicine;male;15-10-1940;AU
+1996;Rolf M.;Zinkernagel;medicine;male;06-01-1944;CH
+1996;Richard E.;Smalley;chemistry;male;06-06-1943;US
+1996;Wislawa;Szymborska;literature;female;02-07-1923;PL
+1996;Carlos Filipe Ximenes;Belo;peace;male;03-02-1948;TL
+1996;José;Ramos-Horta;peace;male;26-12-1949;TL
+1996;Robert F.;Curl Jr.;chemistry;male;23-08-1933;US
+1996;William;Vickrey;economics;male;21-06-1914;CA
+1996;Sir Harold;Kroto;chemistry;male;07-10-1939;GB
+1996;James A.;Mirrlees;economics;male;05-07-1936;GB
+1997;Dario;Fo;literature;male;24-03-1926;IT
+1997;John E.;Walker;chemistry;male;07-01-1941;GB
+1997;Jens C.;Skou;chemistry;male;08-10-1918;DK
+1997;Robert C.;Merton;economics;male;31-07-1944;US
+1997;Stanley B.;Prusiner;medicine;male;28-05-1942;US
+1997;William D.;Phillips;physics;male;05-11-1948;US
+1997;Myron;Scholes;economics;male;01-07-1941;CA
+1997;Claude;Cohen-Tannoudji;physics;male;01-04-1933;DZ
+1997;Steven;Chu;physics;male;28-02-1948;US
+1997;Jody;Williams;peace;female;09-10-1950;US
+1997;International Campaign to Ban Landmines;;peace;org;1992-00-00;
+1997;Paul D.;Boyer;chemistry;male;31-07-1918;US
+1998;Amartya;Sen;economics;male;03-11-1933;IN
+1998;Horst L.;Störmer;physics;male;06-04-1949;DE
+1998;José;Saramago;literature;male;16-11-1922;PT
+1998;Daniel C.;Tsui;physics;male;28-02-1939;CN
+1998;Walter;Kohn;chemistry;male;09-03-1923;AT
+1998;Robert F.;Furchgott;medicine;male;04-06-1916;US
+1998;Louis J.;Ignarro;medicine;male;31-05-1941;US
+1998;Ferid;Murad;medicine;male;14-09-1936;US
+1998;John;Pople;chemistry;male;31-10-1925;GB
+1998;John;Hume;peace;male;18-01-1937;GB
+1998;David;Trimble;peace;male;15-10-1944;GB
+1998;Robert B.;Laughlin;physics;male;01-11-1950;US
+1999;Günter;Grass;literature;male;16-10-1927;PL
+1999;Ahmed;Zewail;chemistry;male;26-02-1946;EG
+1999;Doctors Without Borders;;peace;org;1971-00-00;
+1999;Martinus J.G.;Veltman;physics;male;27-06-1931;NL
+1999;Gerardus;'t Hooft;physics;male;05-07-1946;NL
+1999;Robert;Mundell;economics;male;24-10-1932;CA
+1999;Günter;Blobel;medicine;male;21-05-1936;PL
+2000;Alan;MacDiarmid;chemistry;male;14-04-1927;NZ
+2000;Xingjian;Gao;literature;male;04-01-1940;CN
+2000;Daniel L.;McFadden;economics;male;29-07-1937;US
+2000;James J.;Heckman;economics;male;19-04-1944;US
+2000;Hideki;Shirakawa;chemistry;male;20-08-1936;JP
+2000;Alan;Heeger;chemistry;male;22-01-1936;US
+2000;Paul;Greengard;medicine;male;11-12-1925;US
+2000;Herbert;Kroemer;physics;male;25-08-1928;DE
+2000;Zhores;Alferov;physics;male;15-03-1930;BY
+2000;Kim;Dae-jung;peace;male;03-12-1925;KR
+2000;Eric;Kandel;medicine;male;07-11-1929;AT
+2000;Arvid;Carlsson;medicine;male;25-01-1923;SE
+2000;Jack;Kilby;physics;male;08-11-1923;US
+2001;George A.;Akerlof;economics;male;17-06-1940;US
+2001;Kofi;Annan;peace;male;08-04-1938;GH
+2001;United Nations;;peace;org;1945-00-00;
+2001;V. S.;Naipaul;literature;male;17-08-1932;TT
+2001;Joseph E.;Stiglitz;economics;male;09-02-1943;US
+2001;A. Michael;Spence;economics;male;1943-00-00;US
+2001;Barry;Sharpless;chemistry;male;28-04-1941;US
+2001;Ryoji;Noyori;chemistry;male;03-09-1938;JP
+2001;William;Knowles;chemistry;male;01-06-1917;US
+2001;Carl;Wieman;physics;male;26-03-1951;US
+2001;Wolfgang;Ketterle;physics;male;21-10-1957;DE
+2001;Eric;Cornell;physics;male;19-12-1961;US
+2001;Sir Paul;Nurse;medicine;male;25-01-1949;GB
+2001;Tim;Hunt;medicine;male;19-02-1943;GB
+2001;Leland;Hartwell;medicine;male;30-10-1939;US
+2002;Jimmy;Carter;peace;male;01-10-1924;US
+2002;Imre;Kertész;literature;male;09-11-1929;HU
+2002;Daniel;Kahneman;economics;male;05-03-1934;IL
+2002;Kurt;Wüthrich;chemistry;male;04-10-1938;CH
+2002;Koichi;Tanaka;chemistry;male;03-08-1959;JP
+2002;John B.;Fenn;chemistry;male;15-06-1917;US
+2002;Vernon L.;Smith;economics;male;01-01-1927;US
+2002;Masatoshi;Koshiba;physics;male;19-09-1926;JP
+2002;Raymond;Davis Jr.;physics;male;14-10-1914;US
+2002;John E.;Sulston;medicine;male;27-03-1942;GB
+2002;H. Robert;Horvitz;medicine;male;08-05-1947;US
+2002;Sydney;Brenner;medicine;male;13-01-1927;ZA
+2002;Riccardo;Giacconi;physics;male;06-10-1931;IT
+2003;Shirin;Ebadi;peace;female;21-06-1947;IR
+2003;Clive W.J.;Granger;economics;male;04-09-1934;GB
+2003;Robert F.;Engle III;economics;male;10-11-1942;US
+2003;Roderick;MacKinnon;chemistry;male;19-02-1956;US
+2003;Peter;Agre;chemistry;male;30-01-1949;US
+2003;Anthony J.;Leggett;physics;male;26-03-1938;GB
+2003;Vitaly L.;Ginzburg;physics;male;04-10-1916;RU
+2003;Sir Peter;Mansfield;medicine;male;09-10-1933;GB
+2003;Paul C.;Lauterbur;medicine;male;06-05-1929;US
+2003;J. M.;Coetzee;literature;male;09-02-1940;ZA
+2003;Alexei;Abrikosov;physics;male;25-06-1928;RU
+2004;Edward C.;Prescott;economics;male;26-12-1940;US
+2004;Irwin;Rose;chemistry;male;16-07-1926;US
+2004;Finn E.;Kydland;economics;male;01-12-1943;NO
+2004;Wangari;Maathai;peace;female;01-04-1940;KE
+2004;Elfriede;Jelinek;literature;female;20-10-1946;AT
+2004;Avram;Hershko;chemistry;male;31-12-1937;HU
+2004;David J.;Gross;physics;male;19-02-1941;US
+2004;Frank;Wilczek;physics;male;15-05-1951;US
+2004;H. David;Politzer;physics;male;31-08-1949;US
+2004;Linda B.;Buck;medicine;female;29-01-1947;US
+2004;Richard;Axel;medicine;male;02-07-1946;US
+2004;Aaron;Ciechanover;chemistry;male;01-10-1947;IL
+2005;Harold;Pinter;literature;male;10-10-1930;GB
+2005;Thomas C.;Schelling;economics;male;14-04-1921;US
+2005;Mohamed;ElBaradei;peace;male;17-06-1942;EG
+2005;International Atomic Energy Agency;;peace;org;1957-00-00;
+2005;Richard R.;Schrock;chemistry;male;04-01-1945;US
+2005;Robert H.;Grubbs;chemistry;male;27-02-1942;US
+2005;Robert J.;Aumann;economics;male;08-06-1930;DE
+2005;Theodor W.;Hänsch;physics;male;30-10-1941;DE
+2005;John L.;Hall;physics;male;21-08-1934;US
+2005;Roy J.;Glauber;physics;male;01-09-1925;US
+2005;J. Robin;Warren;medicine;male;11-06-1937;AU
+2005;Barry J.;Marshall;medicine;male;30-09-1951;AU
+2005;Yves;Chauvin;chemistry;male;10-10-1930;BE
+2006;Grameen Bank;;peace;org;1976-00-00;
+2006;Muhammad;Yunus;peace;male;28-06-1940;BD
+2006;Orhan;Pamuk;literature;male;07-06-1952;TR
+2006;Edmund S.;Phelps;economics;male;26-07-1933;US
+2006;Roger D.;Kornberg;chemistry;male;24-04-1947;US
+2006;George F.;Smoot;physics;male;20-02-1945;US
+2006;Craig C.;Mello;medicine;male;18-10-1960;US
+2006;Andrew Z.;Fire;medicine;male;27-04-1959;US
+2006;John C.;Mather;physics;male;07-08-1946;US
+2007;Roger B.;Myerson;economics;male;29-03-1951;US
+2007;Eric S.;Maskin;economics;male;12-12-1950;US
+2007;Leonid;Hurwicz;economics;male;21-08-1917;RU
+2007;Al;Gore;peace;male;31-03-1948;US
+2007;Intergovernmental Panel on Climate Change;;peace;org;1988-00-00;
+2007;Gerhard;Ertl;chemistry;male;10-10-1936;DE
+2007;Doris;Lessing;literature;female;22-10-1919;IR
+2007;Albert;Fert;physics;male;07-03-1938;FR
+2007;Oliver;Smithies;medicine;male;23-06-1925;GB
+2007;Sir Martin J.;Evans;medicine;male;01-01-1941;GB
+2007;Mario R.;Capecchi;medicine;male;06-10-1937;IT
+2007;Peter;Grünberg;physics;male;18-05-1939;CZ
+2008;Martti;Ahtisaari;peace;male;23-06-1937;FI
+2008;Jean-Marie Gustave;Le Clézio;literature;male;13-04-1940;FR
+2008;Roger Y.;Tsien;chemistry;male;01-02-1952;US
+2008;Martin;Chalfie;chemistry;male;15-01-1947;US
+2008;Osamu;Shimomura;chemistry;male;27-08-1928;JP
+2008;Toshihide;Maskawa;physics;male;07-02-1940;JP
+2008;Paul;Krugman;economics;male;28-02-1953;US
+2008;Yoichiro;Nambu;physics;male;18-01-1921;JP
+2008;Luc;Montagnier;medicine;male;18-08-1932;FR
+2008;Françoise;Barré-Sinoussi;medicine;female;30-07-1947;FR
+2008;Harald;zur Hausen;medicine;male;11-03-1936;DE
+2008;Makoto;Kobayashi;physics;male;07-04-1944;JP
+2009;Oliver E.;Williamson;economics;male;27-09-1932;US
+2009;Elinor;Ostrom;economics;female;07-08-1933;US
+2009;Barack;Obama;peace;male;04-08-1961;US
+2009;Herta;Müller;literature;female;17-08-1953;RO
+2009;Ada E.;Yonath;chemistry;female;22-06-1939;IL
+2009;Thomas A.;Steitz;chemistry;male;23-08-1940;US
+2009;Venkatraman;Ramakrishnan;chemistry;male;1952-00-00;IN
+2009;George E.;Smith;physics;male;10-05-1930;US
+2009;Charles K.;Kao;physics;male;04-11-1933;CN
+2009;Jack W.;Szostak;medicine;male;09-11-1952;GB
+2009;Carol W.;Greider;medicine;female;15-04-1961;US
+2009;Elizabeth H.;Blackburn;medicine;female;26-11-1948;AU
+2009;Willard S.;Boyle;physics;male;19-08-1924;CA
+2010;Dale T.;Mortensen;economics;male;02-02-1939;US
+2010;Mario;Vargas Llosa;literature;male;28-03-1936;PE
+2010;Christopher A.;Pissarides;economics;male;20-02-1948;CY
+2010;Xiaobo;Liu;peace;male;28-12-1955;CN
+2010;Akira;Suzuki;chemistry;male;12-09-1930;JP
+2010;Peter A.;Diamond;economics;male;29-04-1940;US
+2010;Richard F.;Heck;chemistry;male;15-08-1931;US
+2010;Konstantin;Novoselov;physics;male;23-08-1974;RU
+2010;Andre;Geim;physics;male;21-10-1958;RU
+2010;Robert G.;Edwards;medicine;male;27-09-1925;GB
+2010;Ei-ichi;Negishi;chemistry;male;14-07-1935;CN
+2011;Christopher A.;Sims;economics;male;21-10-1942;US
+2011;Tawakkol;Karman;peace;female;07-02-1979;YE
+2011;Leymah;Gbowee;peace;female;01-02-1972;LR
+2011;Ellen;Johnson Sirleaf;peace;female;29-10-1938;LR
+2011;Tomas;Tranströmer;literature;male;15-04-1931;SE
+2011;Dan;Shechtman;chemistry;male;24-01-1941;IL
+2011;Thomas J.;Sargent;economics;male;19-07-1943;US
+2011;Brian P.;Schmidt;physics;male;24-02-1967;US
+2011;Saul;Perlmutter;physics;male;1959-00-00;US
+2011;Ralph M.;Steinman;medicine;male;14-01-1943;CA
+2011;Jules A.;Hoffmann;medicine;male;02-08-1941;LU
+2011;Bruce A.;Beutler;medicine;male;29-12-1957;US
+2011;Adam G.;Riess;physics;male;16-12-1969;US
+2012;Lloyd S.;Shapley;economics;male;02-06-1923;US
+2012;Alvin E.;Roth;economics;male;18-12-1951;US
+2012;European Union;;peace;org;1952-00-00;
+2012;Mo;Yan;literature;male;02-02-1955;CN
+2012;Brian;Kobilka;chemistry;male;30-05-1955;US
+2012;Robert J.;Lefkowitz;chemistry;male;15-04-1943;US
+2012;Serge;Haroche;physics;male;11-09-1944;MA
+2012;Shinya;Yamanaka;medicine;male;04-09-1962;JP
+2012;Sir John B.;Gurdon;medicine;male;02-10-1933;GB
+2012;David J.;Wineland;physics;male;24-02-1944;US
+2013;Robert J.;Shiller;economics;male;29-03-1946;US
+2013;Arieh;Warshel;chemistry;male;20-11-1940;IL
+2013;Lars Peter;Hansen;economics;male;26-10-1952;US
+2013;Eugene F.;Fama;economics;male;14-02-1939;US
+2013;Organisation for the Prohibition of Chemical Weapons;;peace;org;1997-00-00;
+2013;Alice;Munro;literature;female;10-07-1931;CA
+2013;Michael;Levitt;chemistry;male;09-05-1947;ZA
+2013;Martin;Karplus;chemistry;male;15-03-1930;AT
+2013;Peter;Higgs;physics;male;29-05-1929;GB
+2013;François;Englert;physics;male;06-11-1932;BE
+2013;Thomas C.;Südhof;medicine;male;22-12-1955;DE
+2013;Randy W.;Schekman;medicine;male;30-12-1948;US
+2013;James E.;Rothman;medicine;male;03-11-1950;US
+2014;Jean;Tirole;economics;male;09-08-1953;FR
+2014;Malala;Yousafzai;peace;female;12-07-1997;PK
+2014;Patrick;Modiano;literature;male;30-07-1945;FR
+2014;William E.;Moerner;chemistry;male;24-06-1953;US
+2014;Stefan W.;Hell;chemistry;male;23-12-1962;RO
+2014;Eric;Betzig;chemistry;male;13-01-1960;US
+2014;Kailash;Satyarthi;peace;male;11-01-1954;IN
+2014;Hiroshi;Amano;physics;male;11-09-1960;JP
+2014;Isamu;Akasaki;physics;male;30-01-1929;JP
+2014;Edvard I.;Moser;medicine;male;27-04-1962;NO
+2014;May-Britt;Moser;medicine;female;04-01-1963;NO
+2014;John;O'Keefe;medicine;male;18-11-1939;US
+2014;Shuji;Nakamura;physics;male;22-05-1954;JP
+2015;Angus;Deaton;economics;male;19-10-1945;GB
+2015;National Dialogue Quartet;;peace;org;2013-00-00;
+2015;Svetlana;Alexievich;literature;female;31-05-1948;UA
+2015;Aziz;Sancar;chemistry;male;08-09-1946;TR
+2015;Paul;Modrich;chemistry;male;13-06-1946;US
+2015;Tomas;Lindahl;chemistry;male;28-01-1938;SE
+2015;Takaaki;Kajita;physics;male;09-03-1959;JP
+2015;Youyou;Tu;medicine;female;30-12-1930;CN
+2015;Satoshi;Ōmura;medicine;male;12-07-1935;JP
+2015;William C.;Campbell;medicine;male;28-06-1930;IE
+2015;Arthur B.;McDonald;physics;male;29-08-1943;CA
+2016;Bengt;Holmström;economics;male;18-04-1949;FI
+2016;Bernard L.;Feringa;chemistry;male;18-05-1951;NL
+2016;Oliver;Hart;economics;male;09-10-1948;GB
+2016;Juan Manuel;Santos;peace;male;10-08-1951;CO
+2016;Sir J. Fraser;Stoddart;chemistry;male;24-05-1942;GB
+2016;Bob;Dylan;literature;male;24-05-1941;US
+2016;J. Michael;Kosterlitz;physics;male;22-06-1943;GB
+2016;F. Duncan M.;Haldane;physics;male;14-09-1951;GB
+2016;David J.;Thouless;physics;male;21-09-1934;GB
+2016;Yoshinori;Ohsumi;medicine;male;09-02-1945;JP
+2016;Jean-Pierre;Sauvage;chemistry;male;21-10-1944;FR
+2017;International Campaign to Abolish Nuclear Weapons;;peace;org;2007-00-00;
+2017;Kazuo;Ishiguro;literature;male;08-11-1954;JP
+2017;Richard;Henderson;chemistry;male;19-07-1945;GB
+2017;Joachim;Frank;chemistry;male;12-09-1940;DE
+2017;Jacques;Dubochet;chemistry;male;08-06-1942;CH
+2017;Kip S.;Thorne;physics;male;01-06-1940;US
+2017;Richard H.;Thaler;economics;male;12-09-1945;US
+2017;Rainer;Weiss;physics;male;29-09-1932;DE
+2017;Michael W.;Young;medicine;male;28-03-1949;US
+2017;Michael;Rosbash;medicine;male;07-03-1944;US
+2017;Jeffrey C.;Hall;medicine;male;03-05-1945;US
+2017;Barry C.;Barish;physics;male;27-01-1936;US
+2018;Olga;Tokarczuk;literature;female;29-01-1962;PL
+2018;Paul M.;Romer;economics;male;1955-00-00;US
+2018;William D.;Nordhaus;economics;male;31-05-1941;US
+2018;Nadia;Murad;peace;female;1993-00-00;IQ
+2018;Denis;Mukwege;peace;male;01-03-1955;CD
+2018;Sir Gregory P.;Winter;chemistry;male;14-04-1951;GB
+2018;George P.;Smith;chemistry;male;10-03-1941;US
+2018;Frances H.;Arnold;chemistry;female;25-07-1956;US
+2018;Gérard;Mourou;physics;male;22-06-1944;FR
+2018;Arthur;Ashkin;physics;male;02-09-1922;US
+2018;Tasuku;Honjo;medicine;male;27-01-1942;JP
+2018;James P.;Allison;medicine;male;07-08-1948;US
+2018;Donna;Strickland;physics;female;27-05-1959;CA
+2019;Akira;Yoshino;chemistry;male;30-01-1948;JP
+2019;Abhijit;Banerjee;economics;male;21-02-1961;IN
+2019;Michael;Kremer;economics;male;12-11-1964;US
+2019;Peter;Handke;literature;male;06-12-1942;AT
+2019;Esther;Duflo;economics;female;25-10-1972;FR
+2019;M. Stanley;Whittingham;chemistry;male;22-12-1941;GB
+2019;Abiy;Ahmed Ali;peace;male;15-08-1976;ET
+2019;Didier;Queloz;physics;male;23-02-1966;CH
+2019;Michel;Mayor;physics;male;12-01-1942;CH
+2019;James;Peebles;physics;male;25-04-1935;CA
+2019;Gregg;Semenza;medicine;male;12-07-1956;US
+2019;Peter;Ratcliffe;medicine;male;14-05-1954;GB
+2019;William;Kaelin;medicine;male;23-11-1957;US
+2019;John;Goodenough;chemistry;male;25-07-1922;DE
+2020;Robert;Wilson;economics;male;16-05-1937;US
+2020;Paul;Milgrom;economics;male;20-04-1948;US
+2020;World Food Programme;;peace;org;1961-00-00;
+2020;Louise;Glück;literature;female;22-04-1943;US
+2020;Jennifer A.;Doudna;chemistry;female;19-02-1964;US
+2020;Emmanuelle;Charpentier;chemistry;female;11-12-1968;FR
+2020;Reinhard;Genzel;physics;male;24-03-1952;DE
+2020;Roger;Penrose;physics;male;08-08-1931;GB
+2020;Charles;Rice;medicine;male;25-08-1952;US
+2020;Michael;Houghton;medicine;male;1949-00-00;GB
+2020;Harvey;Alter;medicine;male;12-09-1935;US
+2020;Andrea;Ghez;physics;female;16-06-1965;US
+2021;Abdulrazak;Gurnah;literature;male;1948-00-00;
+2021;Joshua;Angrist;economics;male;18-09-1960;US
+2021;David;Card;economics;male;1956-00-00;CA
+2021;Dmitry;Muratov;peace;male;1961-00-00;RU
+2021;Guido;Imbens;economics;male;03-09-1963;NL
+2021;Maria;Ressa;peace;female;02-10-1963;PH
+2021;David;MacMillan;chemistry;male;16-03-1968;GB
+2021;Syukuro;Manabe;physics;male;21-09-1931;JP
+2021;Giorgio;Parisi;physics;male;04-08-1948;IT
+2021;Klaus;Hasselmann;physics;male;25-10-1931;DE
+2021;Ardem;Patapoutian;medicine;male;1967-00-00;LB
+2021;David;Julius;medicine;male;04-11-1955;US
+2021;Benjamin;List;chemistry;male;11-01-1968;DE
+2022;Ben;Bernanke;economics;male;13-12-1953;US
+2022;Center for Civil Liberties;;peace;org;2007-00-00;
+2022;Memorial;;peace;org;1987-00-00;
+2022;Ales;Bialiatski;peace;male;25-09-1962;RU
+2022;Annie;Ernaux;literature;female;01-09-1940;FR
+2022;Morten;Meldal;chemistry;male;1954-00-00;DK
+2022;Anton;Zeilinger;physics;male;20-05-1945;AT
+2022;John F.;Clauser;physics;male;01-12-1942;US
+2022;Alain;Aspect;physics;male;15-06-1947;FR
+2022;Svante;Pääbo;medicine;male;20-04-1955;SE
+2022;Barry;Sharpless;chemistry;male;28-04-1941;US
+2022;Douglas;Diamond;economics;male;25-10-1953;US
+2022;Carolyn;Bertozzi;chemistry;female;10-10-1966;US
+2022;Philip;Dybvig;economics;male;22-05-1955;US

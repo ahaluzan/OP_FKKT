@@ -1,0 +1,6 @@
+﻿naslov;izvajalec;leto;priljubljenost;album;ples;zivost;energicnost;trajanje
+Right As Rain;Adele;2008;54;19;0.842;0.0891;0.679;197347
+One Way Street;Aerosmith;1973;41;Aerosmith;0.457;0.115;0.834;422607
+Sweet Emotion;Aerosmith;1975;75;Toys In The Attic;0.379;0.104;0.76;274088
+Party;Alan Silvestri;1991;1;Dutch (Original Motion Picture Score);0.469;0.121;0.383;337173
+Canyons;Avicii;2013;35;True (Bonus Edition);0.663;0.613;0.682;449360

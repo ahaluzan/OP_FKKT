@@ -1,0 +1,6 @@
+ime;kategorija;ocena;st_ocen;st_nalaganj;max_nalaganj;brezplacna;cena;valuta;velikost;update;publika;oglasi;nakup
+Netflix;Entertainment;4.4;11694633;1000000000;1437250170;TRUE;0;USD;Varies with device;14.6.21;Teen;FALSE;TRUE
+Telegram;Communication;4.5;470676;500000000;885977963;TRUE;0;USD;Varies with device;17.4.21;Mature 17+;FALSE;FALSE
+Headspace: Meditation & Sleep;Health & Fitness;4.6;229799;10000000;28900621;TRUE;0;USD;22M;15.6.21;Everyone;FALSE;TRUE
+Simon's Cat Dash;Casual;4.6;26662;1000000;1492894;TRUE;0;USD;82M;19.2.19;Everyone;TRUE;TRUE
+Slack;Business;4.2;102572;10000000;23142235;TRUE;0;USD;Varies with device;14.6.21;Everyone;FALSE;FALSE

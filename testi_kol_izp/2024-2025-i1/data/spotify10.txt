@@ -1,0 +1,11 @@
+naslov;izvajalec;leto;priljubljenost;album;ples;zivost;energicnost;trajanje
+One Way Street;Aerosmith;1973;41;Aerosmith;0.457;0.115;0.834;422607
+It Will Rain (From Twilight Breaking Dawn);Bruno Mars;2024;5;Bruno Mars Favoritas Da Tour 2024 Brasil;0.572;0.082;0.835;257720
+Ronin;Hans Zimmer;;37;The Last Samurai: Original Motion Picture Score;0.207;0.0816;0.0772;113040
+Open Your Heart;Madonna;1986;51;True Blue;0.624;0.195;;253453
+All This Time;;2009;5;Waking Up;0.413;0.111;0.374;242947
+You'll Be Queen One Day;Ramin Djawadi;2011;40;Game Of Thrones - Music From The HBO Series;0.279;0.083;0.0065;95720
+California King Bed;Rihanna;2010;;Loud;0.475;0.121;0.577;251600
+The Shadows Betray You;Hans Zimmer;2012;31;The Dark Knight Rises;0.534;0.1;0.351;320901
+;Sia;2010;38;Clap Your Hands;0.699;0.359;;238467
+Bad Blood;Taylor Swift;2024;7;Be My Anti-Valentine 2024;0.656;0.201;0.792;211933

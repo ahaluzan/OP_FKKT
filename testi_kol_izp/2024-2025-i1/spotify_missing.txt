@@ -1,0 +1,9 @@
+﻿naslov;izvajalec;leto;priljubljenost;album;ples;zivost;energicnost;trajanje
+Party;Alan Silvestri;1991;1;Dutch (Original Motion Picture Score);0.469;0.121;;337173
+This Is Us;Backstreet Boys;2009;44;This Is Us;0.595;0.12;0.675;
+The Scientist;Coldplay;2024;2;PARA ENAMORADOS;0.557;0.11;0.442;309600
+Ronin;Hans Zimmer;2003;37;The Last Samurai: Original Motion Picture Score;0.207;0.0816;0.0772;113040
+What I've Done - Distorted Remix;Linkin Park;;31;Minutes to Midnight (Deluxe Edition);0.565;0.0802;0.894;227573
+Open Your Heart;Madonna;1986;51;True Blue;0.624;0.195;0.951;253453
+Antologia;Shakira;2002;56;Grandes Exitos;0.844;0.095;0.465;251053
+Bad Blood;Taylor Swift;2024;7;Be My Anti-Valentine 2024;0.656;0.201;0.792;211933

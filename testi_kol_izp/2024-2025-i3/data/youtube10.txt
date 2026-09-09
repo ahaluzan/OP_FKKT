@@ -1,0 +1,12 @@
+uvrstitev,ime,sledilci,vsebine,ogledi,drzava
+26,Justin Bieber,74.4M,249,33.636.731.466,CA
+93,Alan Walker,46.2M,676,14.996.804.659,NO
+78,Bad Bunny,48.5M,157,37.198.349.778,PR
+49,Taylor Swift,60.4M,285,37.663.171.636,US
+4,Youtube Movies,185M,0,0,
+43,MovieClips,62.9M,41.711,64.184.220.639,US
+59,Ed Sheeran,55.6M,538,33.424.121.267,GB
+11,PewDiePie,110M,4.800,29.453.929.047,JP
+63,Get Movies,,3.468,34.460.024.944,RU
+82,Badabun,47.6M,24.021,19.894.897.196,MX
+

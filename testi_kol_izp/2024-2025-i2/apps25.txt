@@ -1,0 +1,26 @@
+ime;kategorija;ocena;st_ocen;st_nalaganj;max_nalaganj;brezplacna;cena;valuta;velikost;update;publika;oglasi;nakup
+Telegram;Communication;4.5;470676;500000000;885977963;TRUE;0;USD;Varies with device;17.4.21;Mature 17+;FALSE;FALSE
+Dumb Ways To Draw;Casual;3.9;50095;5000000;5903840;TRUE;0;USD;99M;1.4.21;Teen;TRUE;TRUE
+Recolor: Adult Coloring Book - Color and Relax;Entertainment;3.6;74271;5000000;9820958;TRUE;0;USD;Varies with device;11.5.21;Teen;TRUE;TRUE
+Forest: Stay focused;Productivity;4.7;340816;10000000;21750659;TRUE;0;USD;Varies with device;2.6.21;Everyone;TRUE;TRUE
+Scoop;Productivity;4.4;3466;100000;178753;TRUE;0;USD;16M;14.6.21;Everyone;FALSE;FALSE
+Calm - Meditate, Sleep, Relax;Health & Fitness;4.3;402349;10000000;38128818;TRUE;0;USD;Varies with device;8.6.21;Everyone;FALSE;TRUE
+Angry Birds 2;Casual;4.3;5736776;100000000;195815208;TRUE;0;USD;77M;14.6.21;Everyone;TRUE;TRUE
+Tandem - Master Any Language with a Native Speaker;Education;4.4;216764;5000000;6910733;TRUE;0;USD;56M;16.6.21;Everyone;TRUE;TRUE
+Mindbody: Home Workout & Fitness App;Health & Fitness;4.2;14800;1000000;4367091;TRUE;0;USD;41M;10.6.21;Everyone;FALSE;FALSE
+LinkedIn Lite: Easy Job Search, Jobs & Networking;Social;4.6;85864;10000000;15229000;TRUE;0;USD;1.2M;24.3.21;Teen;TRUE;FALSE
+Todoist: To-Do List, Tasks & Reminders;Productivity;4.5;226044;10000000;32140864;TRUE;0;USD;Varies with device;15.6.21;Everyone;FALSE;TRUE
+SkyView Lite;Education;4.4;43828;10000000;13152293;TRUE;0;USD;51M;3.12.19;Everyone;TRUE;FALSE
+Eventbrite - Discover popular events & nearby fun;Entertainment;4.5;124888;10000000;16779752;TRUE;0;USD;19M;3.6.21;Everyone;FALSE;FALSE
+LinkedIn Learning: Online Courses to Learn Skills;Education;4.7;3994;5000000;7881963;TRUE;0;USD;38M;9.6.21;Everyone;FALSE;TRUE
+TED;Education;4.6;208571;10000000;28512452;TRUE;0;USD;18M;9.7.20;Everyone 10+;TRUE;FALSE
+Programming Hub: Learn to code;Education;4.7;146536;5000000;6371388;TRUE;0;USD;Varies with device;14.6.21;Everyone;FALSE;TRUE
+Snapchat;Social;4.3;26340056;1000000000;1621265491;TRUE;0;USD;72M;15.6.21;Teen;TRUE;TRUE
+Strava: Track Running, Cycling & Swimming;Health & Fitness;4.4;688058;10000000;44815905;TRUE;0;USD;Varies with device;15.6.21;Teen;FALSE;TRUE
+Glassdoor - Job search, company reviews & salaries;Business;4.3;189595;10000000;14024272;TRUE;0;USD;25M;16.6.21;Everyone;FALSE;FALSE
+Goodreads;Books & Reference;3.6;124828;10000000;17901586;TRUE;0;USD;31M;7.4.21;Teen;TRUE;FALSE
+Journey: Diary, Journal;Lifestyle;4.5;22629;1000000;3577928;TRUE;0;USD;Varies with device;7.5.21;Everyone;FALSE;TRUE
+Fabulous: Daily Motivation & Habit Tracker;Health & Fitness;4.5;402177;10000000;13956026;TRUE;0;USD;90M;11.6.21;Everyone;FALSE;TRUE
+Skillshare - Creative Classes;Education;4.5;46058;1000000;2459848;TRUE;0;USD;21M;11.6.21;Everyone;FALSE;TRUE
+Dumb Ways to Die 2: The Games;Casual;4.4;326593;100000000;103740891;TRUE;0;USD;63M;28.5.21;Teen;TRUE;TRUE
+Trello: Organize anything with anyone, anywhere!;Productivity;4.5;103400;10000000;16185481;TRUE;0;USD;Varies with device;8.6.21;Everyone;FALSE;FALSE

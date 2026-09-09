@@ -1,0 +1,6 @@
+﻿naslov;izvajalec;leto;priljubljenost;album;ples;zivost;energicnost;trajanje
+Hometown Glory;Adele;2008;61;19;0.436;0.102;0.336;271227
+Melt My Heart to Stone;Adele;2008;53;19;0.353;0.215;0.388;203907
+You'll Be Queen One Day;Ramin Djawadi;2011;40;Game Of Thrones - Music From The HBO Series;0.279;0.083;0.0065;95720
+Victory Does Not Make Us Conquerors;Ramin Djawadi;2011;38;Game Of Thrones - Music From The HBO Series;0.125;0.103;0.0214;96307
+Vigilante Shit;Taylor Swift;2023;66;Midnights (The Til Dawn Edition);0.867;0.118;0.272;164801

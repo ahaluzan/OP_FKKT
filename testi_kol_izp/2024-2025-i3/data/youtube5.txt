@@ -1,0 +1,6 @@
+uvrstitev,ime,sledilci,vsebine,ogledi,drzava
+20,5-Minute Crafts,81.1M,7.391,27.907.581.110,US
+29,UR.Cristiano,71.7M,80,721.228.815,PT
+96,Alfredo Larin,46M,1.831,39.518.875.780,SV
+1,MrBeast,336M,838,66.853.633.536,US
+13,Stokes Twins,102M,335,16.139.307.959,US

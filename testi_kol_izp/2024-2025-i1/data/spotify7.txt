@@ -1,0 +1,8 @@
+naslov;izvajalec;leto;priljubljenost;album;ples;zivost;energicnost;trajanje
+Ronin;Hans Zimmer;2003;37;The Last Samurai: Original Motion Picture Score;0.207;0.0816;0.0772;113040
+Open Your Heart;Madonna;1986;51;True Blue;0.624;0.195;0.951;253453
+All This Time;OneRepublic;2009;5;Waking Up;0.413;0.111;0.374;242947
+Open Your Heart;Madonna;1986;51;True Blue;0.624;0.195;0.951;253453
+California King Bed;Rihanna;2010;48;Loud;0.475;0.121;0.577;251600
+Clap Your Hands;Sia;2010;38;Clap Your Hands;0.699;0.359;0.87;238467
+Bad Blood;Taylor Swift;2024;7;Be My Anti-Valentine 2024;0.656;0.201;0.792;211933

@@ -1,0 +1,2 @@
+Vnesi nukleotid: Vnesi nukleotid: Vnesi nukleotid: Vnesi nukleotid: DNA zaporedje ne more vsebovati baze U!
+Vnesi nukleotid: Vnesel si DNA zaporedje TTAG dolžine 4
