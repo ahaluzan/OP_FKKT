@@ -2,7 +2,7 @@
 
 Ta repozitorij vsebuje vsa gradiva za predmet **Osnove programiranja**, ki se izvaja na Fakulteti za kemijo in kemijsko tehnologijo Univerze v Ljubljani. 
 
-Povezava do spletne učilnice predmeta: `<POVEZAVA DO SPLETNE UČILNICE>`
+Povezava do spletne učilnice predmeta: [https://ucilnica.fri.uni-lj.si/course/view.php?id=239](https://ucilnica.fri.uni-lj.si/course/view.php?id=239)
 
 Spletna učilnica se uporablja predvsem za obvestila in oddajo nalog, medtem ko so vaje in dodatna gradiva ažurneje vzdrževana tukaj. V primeru razlik med gradivi na spletni učilnici in tu se držite gradiv iz tega repozitorija.
 
@@ -13,11 +13,13 @@ Spletna učilnica se uporablja predvsem za obvestila in oddajo nalog, medtem ko 
 ├── vaje_komplet.md      # Zbirka nalog za vse vaje
 ├── naloge_testi/         # Avtomatski testi za posamezne sklope vaj
 ├── dodatna_gradiva/       # Gradiva za dodatne vaje in tematike
+├── testi_kol_izp/          # Avtomatski testi starih kolokvijev in izpitov
 └── gradiva/               # PDF-ji gradiv, predpisanih za študij
 ```
 
 - **`vaje_komplet.md`** – vsebuje navodila za vse naloge na enem mestu;
 - **`naloge_testi/`** – mapa vsebuje podmape s testi za vsak sklop vaj. S testi preverjate pravilnost svojih rešitev;
+- **`testi_kol_izp/`** - mapa vsebuje podmape s testi starih izpitov in kolokvijev
 - **`dodatna_gradiva/`** – vsebine, ki presegajo redni obseg vaj (npr. dodatne naloge in teme za tiste, ki želite znanje poglobiti);
 - **`gradiva/`** – PDF-ji skript, uporabljenih pri predmetu.
 
