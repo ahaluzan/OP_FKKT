@@ -1,0 +1,35 @@
+<h5>1. naloga</h5>
+<pre><code>prejemniki = eval(input("Vnesite seznam prejemnikov torte: "))
+redni_studenti = eval(input("Vnesite seznam rednih študentov: "))
+
+placniki = []
+ze_prejeli = []
+for vpisna in prejemniki:
+    if vpisna not in ze_prejeli:
+        ze_prejeli += [vpisna]
+        if vpisna not in redni_studenti:
+            placniki += [vpisna]
+
+print(placniki)
+</code></pre>
+<h5>2. naloga</h5>
+<pre><code>kosov = int(input("Koliko kosov torte je na voljo? "))
+
+while kosov &gt; 0:
+    st = int(input("Koliko kosov torte želiš? "))
+    if st &lt;= kosov:
+        kosov -= st
+        print("Preostalih kosov: ", kosov)
+    else:
+        print("Dobiš le", kosov, "kos(e/a/ov).")
+        kosov = 0
+print("Torte je zmanjkalo!")</code></pre>
+<h5>3. naloga</h5>
+<pre><code>def lucasova_stevila(n):
+    L_n_2 = 2
+    L_n_1 = 1
+    stevila = [2, 1]
+    while L_n_1 + L_n_2 &lt; n:
+        stevila += [L_n_1 + L_n_2]
+        L_n_2, L_n_1 = L_n_1, L_n_1 + L_n_2
+    return stevila</code></pre>
