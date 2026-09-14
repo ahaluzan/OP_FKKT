@@ -1,0 +1,11 @@
+drzava;regija;sreca;GDP;druzina;zivljenje;svoboda;korupcija
+Poland;Central and Eastern Europe;;1.24585;1.04685;0.69058;0.4519;0.055
+Liberia;Sub-Saharan Africa;3.622;0.10706;0.50353;0.23165;0.25748;0.04852
+Mauritius;Sub-Saharan Africa;5.648;1.14372;0.75695;0.66189;0.46145;0.05203
+Mongolia;Eastern Asia;4.907;0.98853;1.08983;0.55469;0.35972;0.03285
+Switzerland;Western Europe;7.509;1.52733;;0.86303;0.58557;0.41203
+Zimbabwe;Sub-Saharan Africa;4.193;0.35041;0.71478;0.1595;0.25429;0.08582
+India;Southern Asia;4.404;0.74036;0.29247;0.45091;0.40285;0.08722
+Latvia;Central and Eastern Europe;5.56;1.21788;0.95025;0.63952;0.27996;0.0889
+Slovakia;Central and Eastern Europe;6.078;1.27973;1.08268;;0.23391;0.02947
+Nicaragua;Latin America and Caribbean;5.992;0.69384;0.89521;0.65213;0.46582;

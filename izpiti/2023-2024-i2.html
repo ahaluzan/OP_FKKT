@@ -1,0 +1,131 @@
+<h1 id="naloge">Naloge</h1>
+<p>Z Netflixa smo pridobili seznam serij, ki jih platforma ponuja, tvoja naloga pa je, da napišeš štiri funkcije, s katerimi lahko analiziramo pridobljen seznam.</p>
+
+<p>Naloge shrani v datoteko <code>naloge.py</code>. Testi se nahajajo v imeniku <code>./testi/2023-2024-i2/</code>.</p>
+
+<h2 id="naloga-1-25-to-k-">Naloga 1 (25 točk)</h2>
+<p>Podatki o serijah so zapisani v tekstovnih datotekah, kjer so v prvi vrstici zapisana imena stolpcev. Ločilo datoteke je podpičje (<code>;</code>).</p>
+<p>Primer datoteke <code>netflix_s.csv</code>:</p>
+<pre><code>naslov;leto;skupina;cas;zanri;drzava;sezone;ocena
+The Last Kingdom;<span class="hljs-number">2015</span>;TV-MA;<span class="hljs-number">55</span>;action,drama,war,history,european;GB;<span class="hljs-number">50</span>;<span class="hljs-number">85</span>
+Monty Python's Flying Circus;<span class="hljs-number">1969</span>;TV<span class="hljs-number">-14</span>;<span class="hljs-number">30</span>;comedy,european;GB;<span class="hljs-number">40</span>;<span class="hljs-number">88</span>
+Top Gear;<span class="hljs-number">2002</span>;TV-PG;<span class="hljs-number">58</span>;comedy,reality,european,music;GB;<span class="hljs-number">320</span>;<span class="hljs-number">87</span>
+Our Planet;<span class="hljs-number">2019</span>;TV-G;<span class="hljs-number">50</span>;documentary;GB;<span class="hljs-number">10</span>;<span class="hljs-number">93</span>
+The Crown;<span class="hljs-number">2016</span>;TV-MA;<span class="hljs-number">56</span>;drama,history,european;GB,US;<span class="hljs-number">50</span>;<span class="hljs-number">87</span>
+The Queen's Gambit;<span class="hljs-number">2020</span>;TV-MA;<span class="hljs-number">56</span>;drama,sport;US;<span class="hljs-number">10</span>;<span class="hljs-number">86</span>
+Narcos;<span class="hljs-number">2015</span>;TV-MA;<span class="hljs-number">52</span>;drama,thriller,crime;US;<span class="hljs-number">30</span>;<span class="hljs-number">88</span>
+The Great British Baking Show;<span class="hljs-number">2010</span>;TV-PG;<span class="hljs-number">57</span>;reality,european;GB;<span class="hljs-number">120</span>;<span class="hljs-number">86</span>
+Stranger Things;<span class="hljs-number">2016</span>;TV<span class="hljs-number">-14</span>;<span class="hljs-number">61</span>;scifi,thriller,drama,fantasy,horror;US;<span class="hljs-number">50</span>;<span class="hljs-number">87</span>
+</code></pre>
+<p>Napiši funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke (<code>str</code>), vrne pa vsebino datoteke v obliki seznama terk, pri čemer je posamezna terka <code>(naslov, leto, cas, sezone, zanr, drzava, ocena, skupina)</code>.</p>
+<p>Za posamezne elemente terke naj velja:</p>
+<ul>
+<li><code>naslov</code> predstavlja naslov serije, zapisan kot <code>str</code>,</li>
+<li><code>leto</code> predstavlja leto izida, zapisano kot <code>int</code>,</li>
+<li><code>cas</code> predstavlja trajanje posamezne epizode v minutah, zapisano kot <code>int</code>,</li>
+<li><code>sezone</code> predstavlja število vseh sezon, zapisano kot <code>int</code>,</li>
+<li><code>zanr</code> predstavlja prvi naveden žanr iz stolpca <code>zanri</code>, zapisan kot <code>str</code>,</li>
+<li><code>drzava</code> predstavlja oznako države, zapisano kot <code>str</code>,</li>
+<li><code>ocena</code> predstavlja povprečno oceno serije s strani IMDb na intervalu od 1-10, zapisano kot <code>float</code>,</li>
+<li><code>skupina</code> predstavlja oznako primernosti serije za starostne skupine, zapisana kot <code>str</code>.</li>
+</ul>
+<p>Napotki:</p>
+<ul>
+<li>prva vrstica vsebuje imena stolpcev, zato jo pri branju preskoči,</li>
+<li>zanimajo nas le serije, ki so daljše od 30 minut, vse ostale pri branju preskoči,</li>
+<li>podatek <code>ocena</code> pretvorimo na interval 1-10 tako, da število, zapisano v datoteki, delimo z 10,</li>
+<li>v nekaterih primerih <code>skupina</code> še nima določene primernosti serije za starostne skupine, zato naj v takšnih primerih terka vsebuje vrednost <code>'ni podano'</code>,</li>
+<li>stolpec <code>zanri</code> lahko v datoteki vsebuje poljubno število žanrov, ki so v posamezni vrstici med seboj ločeni z vejico (<code>,</code>); terka pa naj pod <code>zanr</code> vsebuje le žanr, naveden na prvem mestu v <code>zanri</code>.</li>
+</ul>
+<p>Primer pravilne izvedbe funkcije:</p>
+<pre><code class="lang-Python"><span class="hljs-meta">&gt;&gt;</span>&gt; preberi_podatke(<span class="hljs-string">"netflix_s.csv"</span>)
+[(<span class="hljs-string">'The Last Kingdom'</span>, <span class="hljs-number">2015</span>, <span class="hljs-number">55</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'action'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.5</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Top Gear'</span>, <span class="hljs-number">2002</span>, <span class="hljs-number">58</span>, <span class="hljs-number">320</span>, <span class="hljs-string">'comedy'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">'Our Planet'</span>, <span class="hljs-number">2019</span>, <span class="hljs-number">50</span>, <span class="hljs-number">10</span>, <span class="hljs-string">'documentary'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">9.3</span>, <span class="hljs-string">'TV-G'</span>),
+ (<span class="hljs-string">'The Crown'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">56</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.6</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Narcos'</span>, <span class="hljs-number">2015</span>, <span class="hljs-number">52</span>, <span class="hljs-number">30</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.8</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'The Great British Baking Show'</span>, <span class="hljs-number">2010</span>, <span class="hljs-number">57</span>, <span class="hljs-number">120</span>, <span class="hljs-string">'reality'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.6</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">'Stranger Things'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">61</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'scifi'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-14'</span>)]
+</code></pre>
+<h2 id="naloga-2-25-to-k-">Naloga 2 (25 točk)</h2>
+<h3 id="naloga-2a-15-to-k-">Naloga 2a (15 točk)</h3>
+<p>Napiši funkcijo <code>povprecje</code>, ki kot argumenta sprejme</p>
+<ul>
+<li><em>seznam terk</em>, kot ga vrača naloga 1 (tj. seznam terk oblike <code>(naslov, leto, cas, sezone, zanr, drzave, ocena, skupina)</code>) in</li>
+<li><em>leto</em> zapisano kot <code>int</code>.</li>
+</ul>
+<p>Funkcija naj vrne povprečno oceno serij iz seznama terk, ki so izšle v podanem letu. Povprečna ocena naj bo zaokrožena na dve decimalni mesti natančno. V primeru, da ocene ne moremo izračunati, naj funkcija vrne vrednost <code>False</code>.</p>
+<p>Primer pravilne izvedbe funkcije:</p>
+<pre><code class="lang-Python"><span class="hljs-meta">&gt;&gt;</span>&gt; seznam = [(<span class="hljs-string">'The Last Kingdom'</span>, <span class="hljs-number">2015</span>, <span class="hljs-number">55</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'action'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.5</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Top Gear'</span>, <span class="hljs-number">2002</span>, <span class="hljs-number">58</span>, <span class="hljs-number">320</span>, <span class="hljs-string">'comedy'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.6</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'The Crown'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">56</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Stranger Things'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">61</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'scifi'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-14'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; povprecje(seznam, <span class="hljs-number">2016</span>)
+<span class="hljs-number">8.7</span>
+<span class="hljs-meta">&gt;&gt;</span>&gt; povprecje(seznam, <span class="hljs-number">1883</span>)
+False
+</code></pre>
+<h3 id="naloga-2b-10-to-k-">Naloga 2b (10 točk)</h3>
+<p>Napiši funkcijo <code>povprecja_po_letih</code>, ki kot argument sprejme <em>seznam terk</em>, kot ga vrača naloga 1 (tj. seznam terk oblike <code>(naslov, leto, cas, sezone, zanr, drzave, ocena, skupina)</code>). Funkcija naj vrne slovar, v katerem <strong>ključi</strong> predstavljajo leta izida serij zapisana kot <code>int</code>, <strong>vrednosti</strong> pa povprečne ocene serij v posameznih letih (kot jih vrača funkcija <code>povprecje</code>). Ključi naj bodo le tista leta, za katera lahko izračunamo povprečne ocene glede na podan seznam terk.</p>
+<p>Primer pravilne izvedbe funkcije:</p>
+<pre><code class="lang-Python"><span class="hljs-meta">&gt;&gt;</span>&gt; seznam = [(<span class="hljs-string">'The Last Kingdom'</span>, <span class="hljs-number">2015</span>, <span class="hljs-number">55</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'action'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.5</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Top Gear'</span>, <span class="hljs-number">2002</span>, <span class="hljs-number">58</span>, <span class="hljs-number">320</span>, <span class="hljs-string">'comedy'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.6</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'The Crown'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">56</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Stranger Things'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">61</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'scifi'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-14'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; povprecja_po_letih(seznam)
+{<span class="hljs-number">2002</span>: <span class="hljs-number">8.7</span>, <span class="hljs-number">2015</span>: <span class="hljs-number">8.5</span>, <span class="hljs-number">2016</span>: <span class="hljs-number">8.7</span>, <span class="hljs-number">2020</span>: <span class="hljs-number">8.6</span>}
+</code></pre>
+<h2 id="naloga-3-25-to-k-">Naloga 3 (25 točk)</h2>
+<p>Napiši funkcijo <code>binge_watching</code>, ki kot argumenta sprejme <em>seznam terk</em>, kot ga vrača naloga 1 (tj. seznam terk oblike <code>(naslov, leto, cas, sezone, zanr, drzave, ocena, skupina)</code>) in <em>čas</em> zapisan kot <code>float</code>, ki predstavlja ure, ki jih ima gledalec na voljo za ogled serije. Pri tem bomo predpostavili, da ima posamezna sezona 10 epizod in je dolžina celotne serije v urah enaka:</p>
+<p>$${dolžina} = {čas \over 60} \cdot sezone \cdot 10$$</p>
+<p>Funkcija naj vrne seznam serij, ki jih lahko gledalec v celoti pogleda v navedenem <em>času</em>. Pazite, da se bodo časovne enote ujemale.</p>
+<p>Če nobene izmed serij ni mogoče pogledati v navedenem času, naj funckija vrne prazen seznam.</p>
+<p>Primeri pravilne izvedbe funkcije:</p>
+<pre><code class="lang-Python"><span class="hljs-meta">&gt;&gt;</span>&gt; seznam = [(<span class="hljs-string">'The Last Kingdom'</span>, <span class="hljs-number">2015</span>, <span class="hljs-number">55</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'action'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.5</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Top Gear'</span>, <span class="hljs-number">2002</span>, <span class="hljs-number">58</span>, <span class="hljs-number">320</span>, <span class="hljs-string">'comedy'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.6</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'The Crown'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">56</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Stranger Things'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">61</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'scifi'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-14'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; binge_watching(seznam, <span class="hljs-number">1200</span>)
+[<span class="hljs-string">'The Last Kingdom'</span>, <span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-string">'The Crown'</span>, <span class="hljs-string">'Stranger Things'</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; binge_watching(seznam, <span class="hljs-number">120</span>)
+[<span class="hljs-string">"The Queen's Gambit"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; binge_watching(seznam, <span class="hljs-number">12</span>)
+[]
+</code></pre>
+<h2 id="naloga-4-25-to-k-">Naloga 4 (25 točk)</h2>
+<p>Napiši funkcijo <code>priporocila</code>, ki kot argumenta sprejme <em>ime serije</em>, zapisano kot <code>str</code> in <em>seznam terk</em> kot ga vrača naloga 1 (tj. seznam terk oblike <code>(naslov, leto, cas, sezone, zanr, drzave, ocena, skupina)</code>). Funkcija naj vrne seznam serij, ki so podobne navedeni seriji v vseh naslednjih vidikih:</p>
+<ul>
+<li><code>ocena</code> podobne serije je lahko od izbrane serije nižja za največ 0.5, navzgor omejitve ni,</li>
+<li><code>zanr</code> podobnih serij mora biti enak žanru izbrane serije,</li>
+<li><code>skupina</code> podobnih serij je lahko enaka ali nižja od izbrane serije in sicer:
+<ul>
+<li>če izbrana serija sodi v katerokoli od skupin <code>'TV-G'</code>, <code>'TV-PG'</code>, <code>'TV-Y'</code> ali <code>'TV-Y7'</code>, so lahko podobne serije iz vseh teh skupin,</li>
+<li>če izbrana serija sodi v skupino <code>'TV-14'</code>, lahko podobne serije sodijo v skupine <code>'TV-G'</code>, <code>'TV-PG'</code>, <code>'TV-Y'</code>, <code>'TV-Y7'</code> in <code>'TV-14'</code>,</li>
+<li>če izbrana serija sodi v skupino <code>'TV-MA'</code>, lahko podobne serije iz vseh možnih skupin (tj. <code>'TV-G'</code>, <code>'TV-PG'</code>, <code>'TV-Y'</code>, <code>'TV-Y7'</code>, <code>'TV-14'</code>, <code>'TV-MA'</code>).</li>
+</ul>
+</li>
+</ul>
+<p>Če izbrane serije ni v seznamu, naj funckija vrne <code>False</code>. Če v seznamu ni nobene serije, ki bi bila podobna izbrani seriji, naj funckija vrne prazen seznam.</p>
+<p><strong>Opomba</strong>: iz seznama podobnih serij izločite ime serije, ki je podano kot argument funkcije.</p>
+<p>Primeri pravilne izvedbe funkcije:</p>
+<pre><code class="lang-Python"><span class="hljs-meta">&gt;&gt;</span>&gt; seznam = [(<span class="hljs-string">'Anne with an E'</span>, <span class="hljs-number">2017</span>, <span class="hljs-number">46</span>, <span class="hljs-number">30</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'CA'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-G'</span>),
+ (<span class="hljs-string">'The Last Kingdom'</span>, <span class="hljs-number">2015</span>, <span class="hljs-number">55</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'action'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.5</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Top Gear'</span>, <span class="hljs-number">2002</span>, <span class="hljs-number">58</span>, <span class="hljs-number">320</span>, <span class="hljs-string">'comedy'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">'Call the Midwife'</span>, <span class="hljs-number">2012</span>, <span class="hljs-number">55</span>, <span class="hljs-number">110</span>, <span class="hljs-string">'family'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.5</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">'The Crown'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">56</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'GB,US'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">56</span>, <span class="hljs-number">10</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.6</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'The Great British Baking Show'</span>,<span class="hljs-number">2010</span>,<span class="hljs-number">57</span>,<span class="hljs-number">120</span>,<span class="hljs-string">'reality'</span>,<span class="hljs-string">'GB'</span>,<span class="hljs-number">8.6</span>,<span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">'Top Gear'</span>, <span class="hljs-number">2002</span>, <span class="hljs-number">58</span>, <span class="hljs-number">320</span>, <span class="hljs-string">'comedy'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-PG'</span>),
+ (<span class="hljs-string">'Black Mirror'</span>, <span class="hljs-number">2011</span>, <span class="hljs-number">59</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'drama'</span>, <span class="hljs-string">'GB'</span>, <span class="hljs-number">8.8</span>, <span class="hljs-string">'TV-MA'</span>),
+ (<span class="hljs-string">'Stranger Things'</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">61</span>, <span class="hljs-number">50</span>, <span class="hljs-string">'scifi'</span>, <span class="hljs-string">'US'</span>, <span class="hljs-number">8.7</span>, <span class="hljs-string">'TV-14'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; priporocila(<span class="hljs-string">'The Crown'</span>, seznam)
+[<span class="hljs-string">'Anne with an E'</span>, <span class="hljs-string">"The Queen's Gambit"</span>, <span class="hljs-string">'Black Mirror'</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; priporocila(<span class="hljs-string">'Game of Thrones'</span>, seznam)
+False
+<span class="hljs-meta">&gt;&gt;</span>&gt; priporocila(<span class="hljs-string">'Top Gear'</span>, seznam)
+[]
+</code></pre>

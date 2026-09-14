@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Povzetek testov, 2. kolokvij 2025-2026</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3rem;
+        }
+        pre {
+            background: #f6f8fa;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+<h1>Povzetek testov, 2. kolokvij 2025-2026</h1>
+V povzetku je pod spremenljivko <code>expected</code> navedeno pravilno vračanje funkcije, nato so navedene vrednosti morebitnih drugih spremenljivk, potrebnih za izvedbo funkcije, na koncu vsakega povzetka testa pa je dodan še klic funkcije za dotičen primer. 
+<h2>preberi_podatke</h2>
+<h3>test_1.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+datoteka = &quot;data/boston5.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_2.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+datoteka = &quot;data/boston5.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_3.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+datoteka = &quot;data/boston5.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_4.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+datoteka = &quot;data/boston5.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_5.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+datoteka = &quot;data/boston5.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_6.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+(1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+(1988, &#x27;Rosa Mota&#x27;, &#x27;Portugal&#x27;, 8670, 42.2),
+(1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+(2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+datoteka = &quot;data/boston_miss.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_7.py</h3>
+<pre><code>expected = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (2010, &#x27;Teyba Erkesso&#x27;, &#x27;Ethiopia&#x27;, 8771, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2),
+ (2008, &#x27;Dire Tune&#x27;, &#x27;Ethiopia&#x27;, 8725, 42.2),
+ (2009, &#x27;Salina Kosgei&#x27;, &#x27;Kenya&#x27;, 9136, 42.2),
+ (2011, &#x27;Caroline Kilel&#x27;, &#x27;Kenya&#x27;, 8556, 42.2),
+ (2012, &#x27;Sharon Cherop&#x27;, &#x27;Kenya&#x27;, 9110, 42.2)]
+
+datoteka = &quot;data/boston10.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_8.py</h3>
+<pre><code>expected = [(2010, &#x27;Teyba Erkesso&#x27;, &#x27;Ethiopia&#x27;, 8771, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2),
+ (2008, &#x27;Dire Tune&#x27;, &#x27;Ethiopia&#x27;, 8725, 42.2),
+ (2009, &#x27;Salina Kosgei&#x27;, &#x27;Kenya&#x27;, 9136, 42.2),
+ (2011, &#x27;Caroline Kilel&#x27;, &#x27;Kenya&#x27;, 8556, 42.2),
+ (2012, &#x27;Sharon Cherop&#x27;, &#x27;Kenya&#x27;, 9110, 42.2)]
+
+datoteka = &quot;data/boston_miss2.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_9.py</h3>
+<pre><code>expected = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1903, &#x27;John Lordan&#x27;, &#x27;United States&#x27;, 9689, 39.4),
+ (1904, &#x27;Michael Spring&#x27;, &#x27;United States&#x27;, 9484, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1925, &#x27;Charles Mellor&#x27;, &#x27;United States&#x27;, 9180, 42.0),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (2000, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8771, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2),
+ (1931, &#x27;James Henigan&#x27;, &#x27;United States&#x27;, 10005, 42.2),
+ (1969, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 12166, 42.2),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11310, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2),
+ (2000, &#x27;Elijah Lagat&#x27;, &#x27;Kenya&#x27;, 7787, 42.2)]
+
+datoteka = &quot;data/boston_multiple.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h3>test_10.py</h3>
+<pre><code>expected = [(1903, &#x27;John Lordan&#x27;, &#x27;United States&#x27;, 9689, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1925, &#x27;Charles Mellor&#x27;, &#x27;United States&#x27;, 9180, 42.0),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (2000, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8771, 42.2),
+ (1931, &#x27;James Henigan&#x27;, &#x27;United States&#x27;, 10005, 42.2),
+ (1969, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 12166, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2)]
+
+datoteka = &quot;data/boston_mmiss.csv&quot;
+
+preberi_podatke(datoteka)
+</code></pre>
+<h2>v_slovar</h2>
+<h3>test_11.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416),
+  (1979, &#x27;Joan Benoit&#x27;, 9315),
+  (1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)]}
+
+v_slovar(podatki)
+</code></pre>
+<h3>test_12.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416), (1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633)]}
+
+v_slovar(podatki)
+</code></pre>
+<h3>test_13.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416), (1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633)]}
+
+v_slovar(podatki)
+</code></pre>
+<h3>test_14.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416), (1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633)]}
+
+v_slovar(podatki)
+</code></pre>
+<h3>test_15.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416), (1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633)]}
+
+v_slovar(podatki)
+</code></pre>
+<h3>test_16.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (2010, &#x27;Teyba Erkesso&#x27;, &#x27;Ethiopia&#x27;, 8771, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2),
+ (2008, &#x27;Dire Tune&#x27;, &#x27;Ethiopia&#x27;, 8725, 42.2),
+ (2009, &#x27;Salina Kosgei&#x27;, &#x27;Kenya&#x27;, 9136, 42.2),
+ (2011, &#x27;Caroline Kilel&#x27;, &#x27;Kenya&#x27;, 8556, 42.2),
+ (2012, &#x27;Sharon Cherop&#x27;, &#x27;Kenya&#x27;, 9110, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;Ethiopia&#x27;: [(2010, &#x27;Teyba Erkesso&#x27;, 8771), (2008, &#x27;Dire Tune&#x27;, 8725)],
+ &#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416), (1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633),
+  (2009, &#x27;Salina Kosgei&#x27;, 9136),
+  (2011, &#x27;Caroline Kilel&#x27;, 8556),
+  (2012, &#x27;Sharon Cherop&#x27;, 9110)]}
+
+v_slovar(podatki)
+</code></pre>
+<h3>test_17.py</h3>
+Preverjanje pravilnega poimenovanja opcijskega argumenta.  
+<h3>test_18.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;United States&#x27;: [(1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633)]}
+
+v_slovar(podatki, kilometri = 42.2)
+</code></pre>
+<h3>test_19.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (2010, &#x27;Teyba Erkesso&#x27;, &#x27;Ethiopia&#x27;, 8771, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2),
+ (2008, &#x27;Dire Tune&#x27;, &#x27;Ethiopia&#x27;, 8725, 42.2),
+ (2009, &#x27;Salina Kosgei&#x27;, &#x27;Kenya&#x27;, 9136, 42.2),
+ (2011, &#x27;Caroline Kilel&#x27;, &#x27;Kenya&#x27;, 8556, 42.2),
+ (2012, &#x27;Sharon Cherop&#x27;, &#x27;Kenya&#x27;, 9110, 42.2)]
+
+expected = {&#x27;United States&#x27;: [(1909, &#x27;Henri Renaud&#x27;, 10416)],
+ &#x27;Canada&#x27;: [(1910, &#x27;Fred S. Cameron&#x27;, 8932)]}
+
+v_slovar(podatki, kilometri = 39.4)
+</code></pre>
+<h3>test_20.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (2010, &#x27;Teyba Erkesso&#x27;, &#x27;Ethiopia&#x27;, 8771, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1979, &#x27;Joan Benoit&#x27;, &#x27;United States&#x27;, 9315, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2),
+ (2008, &#x27;Dire Tune&#x27;, &#x27;Ethiopia&#x27;, 8725, 42.2),
+ (2009, &#x27;Salina Kosgei&#x27;, &#x27;Kenya&#x27;, 9136, 42.2),
+ (2011, &#x27;Caroline Kilel&#x27;, &#x27;Kenya&#x27;, 8556, 42.2),
+ (2012, &#x27;Sharon Cherop&#x27;, &#x27;Kenya&#x27;, 9110, 42.2)]
+
+expected = {&#x27;Greece&#x27;: [(1946, &#x27;Stylianos Kyriakides&#x27;, 8967)],
+ &#x27;Ethiopia&#x27;: [(2010, &#x27;Teyba Erkesso&#x27;, 8771), (2008, &#x27;Dire Tune&#x27;, 8725)],
+ &#x27;United States&#x27;: [(1979, &#x27;Joan Benoit&#x27;, 9315)],
+ &#x27;Kenya&#x27;: [(2001, &#x27;Catherine Ndereba&#x27;, 8633),
+  (2009, &#x27;Salina Kosgei&#x27;, 9136),
+  (2011, &#x27;Caroline Kilel&#x27;, 8556),
+  (2012, &#x27;Sharon Cherop&#x27;, 9110)]}
+
+v_slovar(podatki, kilometri = 42.2)
+</code></pre>
+<h2>veckrat</h2>
+<h3>test_21.py</h3>
+Preverjanje pravilnosti podatkovnega tipa.
+<h3>test_22.py</h3>
+<pre><code>podatki = []
+
+expected = set()
+
+veckrat(podatki)
+</code></pre>
+<h3>test_23.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1903, &#x27;John Lordan&#x27;, &#x27;United States&#x27;, 9689, 39.4),
+ (1904, &#x27;Michael Spring&#x27;, &#x27;United States&#x27;, 9484, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1925, &#x27;Charles Mellor&#x27;, &#x27;United States&#x27;, 9180, 42.0),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2),
+ (1931, &#x27;James Henigan&#x27;, &#x27;United States&#x27;, 10005, 42.2),
+ (1969, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 12166, 42.2),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11310, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2)]
+
+expected = {&#x27;Clarence DeMar&#x27;, &#x27;Johnny Miles&#x27;, &#x27;Sara Mae Berman&#x27;}
+
+veckrat(podatki)
+</code></pre>
+<h3>test_24.py</h3>
+<pre><code>podatki = [(1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2)]
+
+expected = set()
+
+veckrat(podatki)
+</code></pre>
+<h3>test_25.py</h3>
+<pre><code>podatki = [(1946, &#x27;Stylianos Kyriakides&#x27;, &#x27;Greece&#x27;, 8967, 42.2),
+ (1909, &#x27;Henri Renaud&#x27;, &#x27;United States&#x27;, 10416, 39.4),
+ (1988, &#x27;Rosa Mota&#x27;, &#x27;Portugal&#x27;, 8670, 42.2),
+ (1910, &#x27;Fred S. Cameron&#x27;, &#x27;Canada&#x27;, 8932, 39.4),
+ (2001, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8633, 42.2)]
+
+expected = set()
+
+veckrat(podatki)
+</code></pre>
+<h3>test_26.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+    (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1903, &#x27;John Lordan&#x27;, &#x27;United States&#x27;, 9689, 39.4),
+ (1904, &#x27;Michael Spring&#x27;, &#x27;United States&#x27;, 9484, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4)]
+
+expected = {&#x27;Clarence DeMar&#x27;}
+
+veckrat(podatki)
+</code></pre>
+<h3>test_27.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2), 
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11310, 42.2)]
+
+expected = {&#x27;Clarence DeMar&#x27;, &#x27;Sara Mae Berman&#x27;}
+
+veckrat(podatki)
+</code></pre>
+<h3>test_28.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2), 
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11310, 42.2)]
+
+expected = {&#x27;Clarence DeMar&#x27;, &#x27;Sara Mae Berman&#x27;, &#x27;Johnny Miles&#x27;}
+
+veckrat(podatki)
+</code></pre>
+<h3>test_29.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1903, &#x27;John Lordan&#x27;, &#x27;United States&#x27;, 9689, 39.4),
+ (1904, &#x27;Michael Spring&#x27;, &#x27;United States&#x27;, 9484, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1925, &#x27;Charles Mellor&#x27;, &#x27;United States&#x27;, 9180, 42.0),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (2000, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8771, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2),
+ (1931, &#x27;James Henigan&#x27;, &#x27;United States&#x27;, 10005, 42.2),
+ (1969, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 12166, 42.2),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11310, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2),
+ (2000, &#x27;Elijah Lagat&#x27;, &#x27;Kenya&#x27;, 7787, 42.2),
+ (1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1903, &#x27;John Lordan&#x27;, &#x27;United States&#x27;, 9689, 39.4),
+ (1904, &#x27;Michael Spring&#x27;, &#x27;United States&#x27;, 9484, 39.4),
+ (1917, &#x27;Bill Kennedy&#x27;, &#x27;United States&#x27;, 8917, 39.4),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1919, &#x27;Carl Linder&#x27;, &#x27;United States&#x27;, 8953, 39.4),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1925, &#x27;Charles Mellor&#x27;, &#x27;United States&#x27;, 9180, 42.0),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (2000, &#x27;Catherine Ndereba&#x27;, &#x27;Kenya&#x27;, 8771, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2),
+ (1931, &#x27;James Henigan&#x27;, &#x27;United States&#x27;, 10005, 42.2),
+ (1969, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 12166, 42.2),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11310, 42.2),
+ (1993, &#x27;Olga Markova&#x27;, &#x27;Russia&#x27;, 8727, 42.2),
+ (1994, &#x27;Uta Pippig&#x27;, &#x27;Germany&#x27;, 8505, 42.2),
+ (2000, &#x27;Elijah Lagat&#x27;, &#x27;Kenya&#x27;, 7787, 42.2)]
+
+expected = {&#x27;Bill Kennedy&#x27;,
+ &#x27;Carl Linder&#x27;,
+ &#x27;Catherine Ndereba&#x27;,
+ &#x27;Charles Mellor&#x27;,
+ &#x27;Clarence DeMar&#x27;,
+ &#x27;Elijah Lagat&#x27;,
+ &#x27;James Henigan&#x27;,
+ &#x27;John Lordan&#x27;,
+ &#x27;Johnny Miles&#x27;,
+ &#x27;Michael Spring&#x27;,
+ &#x27;Olga Markova&#x27;,
+ &#x27;Sammy Mellor&#x27;,
+ &#x27;Sara Mae Berman&#x27;,
+ &#x27;Uta Pippig&#x27;}
+
+veckrat(podatki)
+</code></pre>
+<h3>test_30.py</h3>
+<pre><code>podatki = [(1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2),
+ (1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2)]
+
+expected = {&#x27;Clarence DeMar&#x27;}
+
+veckrat(podatki)
+</code></pre>
+<h2>boljse</h2>
+<h3>test_31.py</h3>
+<pre><code>podatki = [(1924, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8980, 42.0),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2)]
+
+kilometri = 42.2
+
+expected = {&#x27;Clarence DeMar&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_32.py</h3>
+<pre><code>podatki = [(1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9427, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9288, 42.2)]
+
+kilometri = 42.2
+
+expected = {&#x27;Clarence DeMar&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_33.py</h3>
+<pre><code>podatki = [(1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9827, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9888, 42.2)]
+
+kilometri = 42.2
+
+expected = set()
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_34.py</h3>
+<pre><code>podatki = []
+
+kilometri = 42.2
+
+expected = set()
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_35.py</h3>
+<pre><code>podatki = [(1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1928, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9623, 42.2),
+ (1930, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9624, 42.2)]
+
+kilometri = 42.2
+
+expected = set()
+
+boljse(podatki, kilometri)
+</code></pre>
+<h3>test_36.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 9188, 42.2),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11100, 42.2)]
+
+kilometri = 42.2
+
+expected = {&#x27;Sara Mae Berman&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_37.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.0),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 9622, 42.2),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8640, 42.0),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11100, 42.2)]
+
+kilometri = 42.0
+
+expected = {&#x27;Johnny Miles&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_38.py</h3>
+<pre><code>podatki = [(1902, &#x27;Sammy Mellor&#x27;, &#x27;United States&#x27;, 9792, 39.4),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 42.2),
+ (1926, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8740, 42.2),
+ (1927, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 7622, 42.2),
+ (1970, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11107, 42.2),
+ (1929, &#x27;Johnny Miles&#x27;, &#x27;Canada&#x27;, 8640, 42.2),
+ (1971, &#x27;Sara Mae Berman&#x27;, &#x27;United States&#x27;, 11100, 42.2)]
+
+kilometri = 42.2
+
+expected = {&#x27;Clarence DeMar&#x27;, &#x27;Sara Mae Berman&#x27;, &#x27;Johnny Miles&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_39.py</h3>
+<pre><code>podatki = [(1974, &#x27;Miki Gorman&#x27;, &#x27;United States&#x27;, 10031, 42.2),
+ (1977, &#x27;Miki Gorman&#x27;, &#x27;United States&#x27;, 10113, 42.2),
+ (1986, &#x27;Ingrid Kristiansen&#x27;, &#x27;Norway&#x27;, 8695, 42.2),
+ (1989, &#x27;Ingrid Kristiansen&#x27;, &#x27;Norway&#x27;, 8673, 42.2),
+ (2006, &#x27;Rita Jeptoo&#x27;, &#x27;Kenya&#x27;, 8618, 42.2),
+ (2013, &#x27;Rita Jeptoo&#x27;, &#x27;Kenya&#x27;, 8785, 42.2)]
+
+kilometri = 42.2
+
+expected = {&#x27;Ingrid Kristiansen&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+<h3>test_40.py</h3>
+<pre><code>podatki = [(1900, &#x27;Jack Caffery&#x27;, &#x27;Canada&#x27;, 9584, 39.4),
+ (1901, &#x27;Jack Caffery&#x27;, &#x27;Canada&#x27;, 8963, 39.4),
+ (1911, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8499, 39.4),
+ (1922, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8290, 42.0),
+ (1923, &#x27;Clarence DeMar&#x27;, &#x27;United States&#x27;, 8627, 39.4)]
+
+kilometri = 39.4
+
+expected = {&#x27;Jack Caffery&#x27;}
+
+boljse(podatki,kilometri)
+</code></pre>
+
+</body>
+</html>

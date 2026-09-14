@@ -1,0 +1,21 @@
+starost,spol,izdelek,katergorija,cena,lokacija,velikost,barva,sezona,ocena,popust,placilo,pogostost
+44,Male,Scarf,Accessories,39,Kentucky,L,Violet,Fall,3.7,Yes,PayPal,Fortnightly
+24,Male,Shirt,Clothing,40,Texas,M,Brown,Summer,3.5,Yes,Debit Card,Annually
+#49,Male,Sweater,Clothing,80,Iowa,M,Orange,Spring,4.1,Yes,PayPal,Weekly
+52,Female,Pants,Clothing,20,Vermont,M,Yellow,Summer,4.5,No,Venmo,Every 3 Months
+45,Female,Handbag,Accessories,57,New York,L,Red,Winter,2.7,No,PayPal,Monthly
+#67,Female,Socks,Clothing,73,Montana,M,Lavender,Winter,4.2,No,Bank Transfer,Every 3 Months
+63,Male,Shoes,Footwear,48,New Jersey,M,Gold,Summer,2.9,Yes,Venmo,Every 3 Months
+67,Male,Jewelry,Accessories,81,North Dakota,S,Gray,Summer,4.2,No,Credit Card,Weekly
+66,Male,Pants,Clothing,52,North Carolina,L,Turquoise,Spring,3.5,No,Cash,Weekly
+70,Female,Gloves,Accessories,93,New Jersey,L,Teal,Fall,4.4,No,Bank Transfer,Monthly
+51,Female,Blouse,Clothing,83,New Hampshire,M,Magenta,Summer,3.2,No,Cash,Bi-Weekly
+#52,Male,Sneakers,Footwear,36,Colorado,S,Teal,Spring,3.8,No,Venmo,Fortnightly
+#41,Male,Scarf,Accessories,66,Pennsylvania,M,Black,Fall,2.5,No,PayPal,Fortnightly
+44,Female,Socks,Clothing,37,Nebraska,L,Indigo,Fall,3.3,No,Venmo,Annually
+63,Female,Skirt,Clothing,90,Oregon,L,Cyan,Spring,2.9,No,Venmo,Every 3 Months
+46,Female,Shirt,Clothing,79,Florida,M,Teal,Summer,2.5,No,Credit Card,Bi-Weekly
+#42,Female,Shirt,Clothing,20,Massachusetts,M,Red,Winter,3.9,No,PayPal,Monthly
+48,Male,Boots,Footwear,25,Massachusetts,M,Indigo,Summer,3.9,Yes,Venmo,Fortnightly
+39,Male,Backpack,Accessories,75,Nevada,L,Red,Spring,3.1,Yes,Debit Card,Monthly
+39,Male,Jewelry,Accessories,74,New Hampshire,M,Gold,Fall,3.6,Yes,Cash,Quarterly

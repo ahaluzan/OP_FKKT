@@ -1,0 +1,89 @@
+<p>Naloge shranite v datoteko z imenom <strong><span style="background-color: #ffe599;"><code>naloge.py</code></span></strong>.</p>
+<p>Testi se nahajajo v imeniku <code>./testi/2024-2025-i2/</code>.</p>
+
+<h1>2. izpit 2025/2026</h1>
+
+<h2>1. naloga: Preberi podatke</h2>
+<p>Podatki o nakupih se nahajajo v datoteki <code>csv</code>. Predpostavljajte, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljena vejica (<code>,</code>).</p>
+<pre><code>starost,spol,izdelek,kategorija,cena,lokacija,velikost,barva,sezona,ocena,popust,placilo,pogostost
+59,Female,Coat,Outerwear,75,Texas,M,Black,Summer,4.8,No,PayPal,Quarterly
+60,Male,Shirt,Clothing,76,Rhode Island,XL,Teal,Spring,4.7,No,Cash,Annually
+31,Female,Socks,Clothing,43,Utah,M,Silver,Fall,3.6,No,PayPal,Quarterly
+40,Male,Hat,Accessories,45,Iowa,M,Silver,Fall,4.4,No,PayPal,Fortnightly
+61,Female,T-shirt,Clothing,57,Vermont,M,Gray,Summer,2.8,No,Cash,Weekly
+#63,Female,Skirt,Clothing,90,Oregon,L,Cyan,Spring,2.9,No,Venmo,Every 3 Months
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(spol, kategorija, izdelek, velikost, cena, ocena)</code>. Pri tem naj:</p>
+<ul>
+<li><code>spol</code> predstavlja spol kupca, zapisan kot <code>'M'</code> ali <code>'F'</code>,</li>
+<li><code>kategorija</code> predstavlja kategorijo izdelka, zapisana kot <code>str</code>,</li>
+<li><code>izdelek</code> predstavlja ime izdelka, zapisano kot <code>str</code>,</li>
+<li><code>velikost</code> predstavlja velikost izdelka, zapisano kot <code>str</code>,</li>
+<li><code>cena</code> predstavlja ceno izdelka, zapisano kot <code>int</code> in</li>
+<li><code>ocena</code> predstavlja oceno izdelka, zapisano kot <code>float</code>.</li>
+</ul>
+<p>Vrednost spremenljivke <code>spol</code> določite tako, da spol spremenite v <code>'M'</code>, če je v datoteki zapisana vrednost <code>'Male'</code>, in v <code>'F'</code>, če je v datoteki zapisana vrednost <code>'Female'</code>.</p>
+<p>V datoteki se lahko pojavijo tudi vrstice, ki se začnejo z znakom <code>#</code> – take vrstice pri obdelavi podatkov preskočite. Prav tako preskočite vrstico z imeni stolpcev.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; preberi_podatke('data/shop5.csv')
+    [('F', 'Outerwear', 'Coat', 'M', 75, 4.8),
+     ('M', 'Clothing', 'Shirt', 'XL', 76, 4.7),
+     ('F', 'Clothing', 'Socks', 'M', 43, 3.6),
+     ('M', 'Accessories', 'Hat', 'M', 45, 4.4),
+     ('F', 'Clothing', 'T-shirt', 'M', 57, 2.8)]
+</code></pre>
+<h2>2. naloga: Priprava slovarja</h2>
+<p>Napišite funkcijo <code>pripravi_slovar</code>, ki kot argumente sprejme:</p>
+<ul>
+<li>seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(spol, kategorija, izdelek, velikost, cena, ocena)</code>),</li>
+<li>indeks elementa v terki, ki predstavlja ključ slovarja,</li>
+<li>indeks elementa v terki, ki predstavlja vrednost slovarja.</li>
+</ul>
+<p>Funkcija naj vrača slovar, kjer so ključi vrednosti elementov na mestu z indeksom drugega argumenta, vrednosti pa seznami elementov na mestu z indeksom tretjega argumenta funkcije.</p>
+<p>Če je podani seznam terk prazen, naj funkcija <strong>vrne</strong> niz <code>"Slovarja ni mogoce pripraviti."</code></p>
+<p>Če je katerikoli izmed podanih indeksov neveljaven, naj funkcija <strong>vrne</strong> niz <code>"Neveljaven indeks."</code>.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; podatki = [('F', 'Outerwear', 'Coat', 'M', 75, 4.8),
+     ('M', 'Clothing', 'Shirt', 'XL', 76, 4.7),
+     ('F', 'Clothing', 'Socks', 'M', 43, 3.6),
+     ('M', 'Accessories', 'Hat', 'M', 45, 4.4),
+     ('F', 'Clothing', 'T-shirt', 'M', 57, 2.8)]
+&gt;&gt;&gt; pripravi_slovar(podatki, 1, 2)
+    {'Outerwear': ['Coat'],
+    'Clothing': ['Shirt', 'Socks', 'T-shirt'],
+    'Accessories': ['Hat']}
+</code></pre>
+<h2>3. naloga: Največ vrednosti</h2>
+<p>Napišite funkcijo <code>najvec_vrednosti</code>, ki kot argument sprejme slovar, kjer so ključi poljubne vrednosti, vrednosti pa seznami elementov.</p>
+<p>Funkcija naj vrne terko oblike <code>(kljuc, vrednost)</code>, kjer <code>kljuc</code> predstavlja ključ z vrednostjo, ki ima največ elementov v slovarju, <code>vrednost</code> pa pripadajočo vrednost.</p>
+<p>Če je slovar prazen, naj funkcija <strong>vrne</strong> <code>None</code>. Pazite, da ne vračate niza <code>'None'</code>.</p>
+<p>Predpostavljate lahko, da največ vrednosti vsebuje le en ključ v celotnem slovarju.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; slovar = {'Outerwear': ['Coat'],
+    'Clothing': ['Shirt', 'Socks', 'T-shirt'],
+    'Accessories': ['Hat']}
+&gt;&gt;&gt; najvec_vrednosti(slovar)
+    ('Clothing', ['Shirt', 'Socks', 'T-shirt'])
+</code></pre>
+<h2>4. naloga: Po spolih</h2>
+<p>Napišite funkcijo <code>po_spolih</code>, ki kot argument sprejme seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(spol, kategorija, izdelek, velikost, cena, ocena)</code>) ter opcijski argument <code>nacin</code>, ki ima privzeto vrednost <code>"skupno"</code>.</p>
+<p>Funkcija naj glede na vrednost argumenta <code>nacin</code> vrača:</p>
+<ul>
+<li>množico izdelkov, ki jih kupujejo izključno ženske (razlika množic) v načinu <code>nacin = 'f'</code>,</li>
+<li>množico izdelkov, ki jih kupujejo izključno moški (razlika množic) v načinu <code>nacin = 'm'</code>,</li>
+<li>sicer množico izdelkov, ki jih kupujejo tako ženske kot moški (presek, <code>nacin = 'skupno'</code>.</li>
+</ul>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; podatki = [('M', 'Footwear', 'Sneakers', 'M', 20, 2.9),
+     ('F', 'Clothing', 'Socks', 'L', 41, 4.3),
+     ('M', 'Clothing', 'Sweater', 'L', 85, 3.7),
+     ('M', 'Accessories', 'Gloves', 'M', 71, 3.2),
+     ('M', 'Clothing', 'T-shirt', 'L', 31, 4.8),
+     ('F', 'Clothing', 'Sweater', 'M', 26, 4.8)]
+&gt;&gt;&gt; po_spolih (podatki, nacin = 'skupno')
+    {'Sweater'}
+&gt;&gt;&gt; po_spolih(podatki, nacin = 'f')
+    {'Socks'}
+&gt;&gt;&gt; po_spolih(podatki, nacin = 'm')
+    {'Gloves', 'Sneakers', 'T-shirt'}
+</code></pre>

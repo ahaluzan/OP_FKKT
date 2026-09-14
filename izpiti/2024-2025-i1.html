@@ -1,0 +1,113 @@
+<p>Naloge shranite v datoteko <code>naloge.py</code>. Testne datoteke se nahajajo  v imeniku <code>./testi/2024-2025-i1/</code>.</p>
+
+<h2 id="1-naloga-5-to-k-">1. naloga (5 točk)</h2>
+<p>Podatki o lastnostih izbranih skladb, ki jih najdemo v aplikaciji Spotify, so zapisani v tekstovni datoteki. Predpostavljaj, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljeno podpičje (<code>;</code>), prva vrstica pa predstavlja glave stolpcev.</p>
+<p>Primer vsebine datoteke <code>spotify5.txt</code>:</p>
+<pre><code>naslov;izvajalec;leto;priljubljenost;album;ples;zivost;energicnost;trajanje
+Right As Rain;Adele;<span class="hljs-number">2008</span>;<span class="hljs-number">54</span>;<span class="hljs-number">19</span>;<span class="hljs-number">0.842</span>;<span class="hljs-number">0.0891</span>;<span class="hljs-number">0.679</span>;<span class="hljs-number">197347</span>
+One Way Street;Aerosmith;<span class="hljs-number">1973</span>;<span class="hljs-number">41</span>;Aerosmith;<span class="hljs-number">0.457</span>;<span class="hljs-number">0.115</span>;<span class="hljs-number">0.834</span>;<span class="hljs-number">422607</span>
+Sweet Emotion;Aerosmith;<span class="hljs-number">1975</span>;<span class="hljs-number">75</span>;Toys In The Attic;<span class="hljs-number">0.379</span>;<span class="hljs-number">0.104</span>;<span class="hljs-number">0.76</span>;<span class="hljs-number">274088</span>
+Party;Alan Silvestri;<span class="hljs-number">1991</span>;<span class="hljs-number">1</span>;Dutch (Original Motion Picture Score);<span class="hljs-number">0.469</span>;<span class="hljs-number">0.121</span>;<span class="hljs-number">0.383</span>;<span class="hljs-number">337173</span>
+Canyons;Avicii;<span class="hljs-number">2013</span>;<span class="hljs-number">35</span>;True (Bonus Edition);<span class="hljs-number">0.663</span>;<span class="hljs-number">0.613</span>;<span class="hljs-number">0.682</span>;<span class="hljs-number">449360</span>
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(naslov, izvajalec, leto,
+    priljubljenost, ples, zivost, energicnost, sekunde)</code>. Pri tem naj:</p>
+<ul>
+<li><code>naslov</code> predstavlja naslov skladbe, zapisan kot <code>str</code>,</li>
+<li><code>izvajalec</code> predstavlja ime izvajalca, zapisano kot <code>str</code>,</li>
+<li><code>leto</code> predstavlja leto izida skladbe, zapisano kot <code>int</code>,</li>
+<li><code>priljubljenost</code> predstavlja oceno priljubljenosti skladbe, zapisane kot <code>int</code>,</li>
+<li><code>ples</code> predstavlja primernost skladbe za ples, zapisano kot <code>float</code>,</li>
+<li><code>zivost</code> predstavlja število, zapisano kot <code>float</code>,</li>
+<li><code>energicnost</code> predstavlja faktor, zapisan kot <code>float</code>,</li>
+<li><code>sekunde</code> predstavlja dolžino skladbe v sekundah.</li>
+</ul>
+<p>Vsa števila, zapisana kot <code>float</code>, naj bodo zaokrožena na 3 decimalna mesta.</p>
+<p>V primeru, da je naslov daljši od 20 znakov, ga skrajšajte na 20 znakov in na konec dodajte tri pike (<code>...</code>).</p>
+<p>Dolžino skladbe iz milisekund pretvorite v sekunde po formuli:</p>
+<p><code>sekunde</code> = <code>trajanje</code> * 0.001</p>
+<p>Sekunde naj bodo v obliki celih števil (<code>int</code>) - za pretvorbo uporabite funkcijo <code>int</code>.</p>
+<p>Predpostavljajte, da lahko katerakoli izmed številskih spremenljivk v posamezni vrstici datoteke manjka. V tem primeru takšne vrstice ne vključite v seznam terk.</p>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; preberi_podatke(<span class="hljs-string">"spotify5.txt"</span>)
+    [('Right As Rain', 'Adele', <span class="hljs-number">2008</span>, <span class="hljs-number">54</span>, <span class="hljs-number">0.842</span>, <span class="hljs-number">0.089</span>, <span class="hljs-number">0.679</span>, <span class="hljs-number">197</span>),
+    ('One Way Street', 'Aerosmith', <span class="hljs-number">1973</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0.457</span>, <span class="hljs-number">0.115</span>, <span class="hljs-number">0.834</span>, <span class="hljs-number">422</span>),
+    'Sweet Emotion', 'Aerosmith', <span class="hljs-number">1975</span>, <span class="hljs-number">75</span>, <span class="hljs-number">0.379</span>, <span class="hljs-number">0.104</span>, <span class="hljs-number">0.76</span>, <span class="hljs-number">274</span>),
+    ('Party', 'Alan Silvestri', <span class="hljs-number">1991</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0.469</span>, <span class="hljs-number">0.121</span>, <span class="hljs-number">0.383</span>, <span class="hljs-number">337</span>),
+    ('Canyons', 'Avicii', <span class="hljs-number">2013</span>, <span class="hljs-number">35</span>, <span class="hljs-number">0.663</span>, <span class="hljs-number">0.613</span>, <span class="hljs-number">0.682</span>, <span class="hljs-number">449</span>)]
+&gt;&gt;&gt; preberi_podatke(<span class="hljs-string">"spotify_missing.txt"</span>)
+    [('The Scientist', 'Coldplay', <span class="hljs-number">2024</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0.557</span>, <span class="hljs-number">0.11</span>, <span class="hljs-number">0.442</span>, <span class="hljs-number">309</span>),
+    ('Ronin', 'Hans Zimmer', <span class="hljs-number">2003</span>, <span class="hljs-number">37</span>, <span class="hljs-number">0.207</span>, <span class="hljs-number">0.082</span>, <span class="hljs-number">0.077</span>, <span class="hljs-number">113</span>),
+    ('Open Your Heart', 'Madonna', <span class="hljs-number">1986</span>, <span class="hljs-number">51</span>, <span class="hljs-number">0.624</span>, <span class="hljs-number">0.195</span>, <span class="hljs-number">0.951</span>, <span class="hljs-number">253</span>),
+    ('Antologia', 'Shakira', <span class="hljs-number">2002</span>, <span class="hljs-number">56</span>, <span class="hljs-number">0.844</span>, <span class="hljs-number">0.095</span>, <span class="hljs-number">0.465</span>, <span class="hljs-number">251</span>),
+    ('Bad Blood', 'Taylor Swift', <span class="hljs-number">2024</span>, <span class="hljs-number">7</span>, <span class="hljs-number">0.656</span>, <span class="hljs-number">0.201</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">211</span>)]
+&gt;&gt;&gt; preberi_podatke(<span class="hljs-string">"spotify_long.txt"</span>)
+    [('Hometown Glory', 'Adele', <span class="hljs-number">2008</span>, <span class="hljs-number">61</span>, <span class="hljs-number">0.436</span>, <span class="hljs-number">0.102</span>, <span class="hljs-number">0.336</span>, <span class="hljs-number">271</span>),
+    ('Melt My Heart to Sto...', 'Adele', <span class="hljs-number">2008</span>, <span class="hljs-number">53</span>, <span class="hljs-number">0.353</span>, <span class="hljs-number">0.215</span>, <span class="hljs-number">0.388</span>, <span class="hljs-number">203</span>),
+    (<span class="hljs-string">"You'll Be Queen One ..."</span>, 'Ramin Djawadi', <span class="hljs-number">2011</span>, <span class="hljs-number">40</span>, <span class="hljs-number">0.279</span>, <span class="hljs-number">0.083</span>, <span class="hljs-number">0.006</span>, <span class="hljs-number">95</span>),
+    ('Victory Does Not Mak...', 'Ramin Djawadi', <span class="hljs-number">2011</span>, <span class="hljs-number">38</span>, <span class="hljs-number">0.125</span>, <span class="hljs-number">0.103</span>, <span class="hljs-number">0.021</span>, <span class="hljs-number">96</span>),
+    ('Vigilante Shit', 'Taylor Swift', <span class="hljs-number">2023</span>, <span class="hljs-number">66</span>, <span class="hljs-number">0.867</span>, <span class="hljs-number">0.118</span>, <span class="hljs-number">0.272</span>, <span class="hljs-number">164</span>)]
+</code></pre>
+<h2 id="2-naloga-5-to-k-">2. naloga (5 točk)</h2>
+<p>Napišite funkcijo <code>dolzina_skladb</code>, ki kot argumenta sprejme seznam terk, kot ga vrača funckija <code>preberi_podatke</code>(1. naloga, tj. seznam terk oblike <code>(naslov, izvajalec, leto, priljubljenost, ples,
+    zivost, energicnost, trajanje)</code>) in ime izvajalca, zapisano kot niz (<code>str</code>).</p>
+<p>Funkcija naj vrača skupno dolžino trajanja skladb izbranega izvajalca v obliki terke <code>(minute, sekunde)</code>, kjer <code>minute</code> predstavljajo skupno dolžino v minutah, <code>sekunde</code> pa številko, manjšo od <code>60</code>.</p>
+<p>Primera pravilno izvedene funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki = [('One Way Street', 'Aerosmith', <span class="hljs-number">1973</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0.457</span>, <span class="hljs-number">0.115</span>, <span class="hljs-number">0.834</span>, <span class="hljs-number">422</span>), 
+    ('It Will Rain (From T...', 'Bruno Mars', <span class="hljs-number">2024</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.572</span>, <span class="hljs-number">0.082</span>, <span class="hljs-number">0.835</span>, <span class="hljs-number">257</span>), 
+    (<span class="hljs-string">"You'll Be Queen One ..."</span>, 'Ramin Djawadi', <span class="hljs-number">2011</span>, <span class="hljs-number">40</span>, <span class="hljs-number">0.279</span>, <span class="hljs-number">0.083</span>, <span class="hljs-number">0.0065</span>, <span class="hljs-number">95</span>), 
+    ('The Shadows Betray Y...', 'Hans Zimmer', <span class="hljs-number">2012</span>, <span class="hljs-number">31</span>, <span class="hljs-number">0.534</span>, <span class="hljs-number">0.1</span>, <span class="hljs-number">0.351</span>, <span class="hljs-number">320</span>), 
+     ('Goodbye Brother', 'Ramin Djawadi', <span class="hljs-number">2011</span>, <span class="hljs-number">44</span>, <span class="hljs-number">0.159</span>, <span class="hljs-number">0.118</span>, <span class="hljs-number">0.0272</span>, <span class="hljs-number">187</span>),
+    ('Bad Blood', 'Taylor Swift', <span class="hljs-number">2024</span>, <span class="hljs-number">7</span>, <span class="hljs-number">0.656</span>, <span class="hljs-number">0.201</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">211</span>)]
+&gt;&gt;&gt; dolzina_skladb(podatki, <span class="hljs-string">"Taylor Swift"</span>)
+    (<span class="hljs-number">3</span>, <span class="hljs-number">31</span>)
+&gt;&gt;&gt; dolzina_skladb(podatki, <span class="hljs-string">"Ramin Djawadi"</span>)
+    (<span class="hljs-number">4</span>, <span class="hljs-number">42</span>)
+</code></pre>
+<h2 id="3-naloga-5-to-k-">3. naloga (5 točk)</h2>
+<p>Napišite funkcijo <code>tocke</code>, ki kot argumenta sprejme seznam terk, kot ga vrača funckija <code>preberi_podatke</code> (1. naloga, tj. seznam terk oblike <code>(naslov, izvajalec, leto, priljubljenost, ples, zivost,
+    energicnost, trajanje)</code>) in seznam imen izvajalcev, zapisanih kot niz (<code>str</code>).</p>
+<p>Funkcija naj vrača slovar, kjer so ključi izvajalci iz seznama, vrednosti pa povprečja primernosti vseh skladb danega izvajalca za ples (povprečja spremenljivke <code>ples</code> posameznega izvajalca) . Povprečja naj bodo zaokrožena na dve decimalni mesti natančno. Če v podatkih ni nobene skladbe nekega izvajalca, naj bo pripadajoča vrednost v slovarju <code>0</code>.</p>
+<p><em>Namig</em>: najprej si pripravite slovar, v katerem kot ključi nastopajo izvajalci, kot vrednosti pa seznam plesnosti.</p>
+<p>Primera pravilno izvedene funkcije:</p>
+<pre><code><span class="hljs-meta">&gt;&gt;</span>&gt; podatki = [(<span class="hljs-string">'One Way Street'</span>, <span class="hljs-string">'Aerosmith'</span>, <span class="hljs-number">1973</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0</span>.<span class="hljs-number">457</span>, <span class="hljs-number">0</span>.<span class="hljs-number">115</span>, <span class="hljs-number">0</span>.<span class="hljs-number">834</span>, <span class="hljs-number">422</span>), 
+    (<span class="hljs-string">'It Will Rain (From T...'</span>, <span class="hljs-string">'Bruno Mars'</span>, <span class="hljs-number">2024</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0</span>.<span class="hljs-number">572</span>, <span class="hljs-number">0</span>.082, <span class="hljs-number">0</span>.<span class="hljs-number">835</span>, <span class="hljs-number">257</span>), 
+     (<span class="hljs-string">'Somebody'</span>, <span class="hljs-string">'Aerosmith'</span>, <span class="hljs-number">1973</span>, <span class="hljs-number">38</span>, <span class="hljs-number">0</span>.<span class="hljs-number">562</span>, <span class="hljs-number">0</span>.<span class="hljs-number">373</span>, <span class="hljs-number">0</span>.<span class="hljs-number">812</span>, <span class="hljs-number">225</span>),
+     (<span class="hljs-string">'Drunk On Love'</span>, <span class="hljs-string">'Rihanna'</span>, <span class="hljs-number">2012</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0</span>.<span class="hljs-number">655</span>, <span class="hljs-number">0</span>.<span class="hljs-number">401</span>, <span class="hljs-number">0</span>.<span class="hljs-number">873</span>, <span class="hljs-number">212</span>),
+   (<span class="hljs-string">'Where Have You Been ...'</span>, <span class="hljs-string">'Rihanna'</span>, <span class="hljs-number">2012</span>, <span class="hljs-number">33</span>, <span class="hljs-number">0</span>.<span class="hljs-number">727</span>, <span class="hljs-number">0</span>.<span class="hljs-number">06</span>97, <span class="hljs-number">0</span>.<span class="hljs-number">885</span>, <span class="hljs-number">361</span>),
+    (<span class="hljs-string">'Bad Blood'</span>, <span class="hljs-string">'Taylor Swift'</span>, <span class="hljs-number">2024</span>, <span class="hljs-number">7</span>, <span class="hljs-number">0</span>.<span class="hljs-number">656</span>, <span class="hljs-number">0</span>.<span class="hljs-number">201</span>, <span class="hljs-number">0</span>.<span class="hljs-number">792</span>, <span class="hljs-number">211</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; tocke(podatki, [<span class="hljs-string">"Aerosmith"</span>, <span class="hljs-string">"Bruno Mars"</span>])
+    {<span class="hljs-string">'Aerosmith'</span>: <span class="hljs-number">0</span>.<span class="hljs-number">51</span>, <span class="hljs-string">'Bruno Mars'</span>: <span class="hljs-number">0</span>.<span class="hljs-number">57</span>}
+<span class="hljs-meta">&gt;&gt;</span>&gt; tocke(podatki, [<span class="hljs-string">"Rihanna"</span>, <span class="hljs-string">"Beyonce"</span>])
+    {<span class="hljs-string">'Rihanna'</span>: <span class="hljs-number">0</span>.<span class="hljs-number">69</span>, <span class="hljs-string">'Beyonce'</span>: <span class="hljs-number">0</span>}
+</code></pre>
+<h2 id="4-naloga-3-to-ke-">4. naloga (3 točke)</h2>
+<p>Napišite funkcijo <code>izpis_skladb</code>, ki kot argumenta sprejme seznam terk, kot ga vrača funckija <code>preberi_podatke</code>(1. naloga, tj. seznam terk oblike <code>(naslov, izvajalec, leto, priljubljenost, ples, zivost,
+    energicnost, trajanje)</code>) in leto, zapisano kot <code>int</code>.</p>
+<p>Funkcija naj vrača seznam naslovov skladb, ki so nastale v podanem letu.</p>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki = [('One Way Street', 'Aerosmith', <span class="hljs-number">1973</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0.457</span>, <span class="hljs-number">0.115</span>, <span class="hljs-number">0.834</span>, <span class="hljs-number">422</span>), 
+    ('It Will Rain (From T...', 'Bruno Mars', <span class="hljs-number">2024</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.572</span>, <span class="hljs-number">0.082</span>, <span class="hljs-number">0.835</span>, <span class="hljs-number">257</span>), 
+   ('Somebody', 'Aerosmith', <span class="hljs-number">1973</span>, <span class="hljs-number">38</span>, <span class="hljs-number">0.562</span>, <span class="hljs-number">0.373</span>, <span class="hljs-number">0.812</span>, <span class="hljs-number">225</span>),
+   ('Drunk On Love', 'Rihanna', <span class="hljs-number">2012</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0.655</span>, <span class="hljs-number">0.401</span>, <span class="hljs-number">0.873</span>, <span class="hljs-number">212</span>),
+   ('Bad Blood', 'Taylor Swift', <span class="hljs-number">2024</span>, <span class="hljs-number">7</span>, <span class="hljs-number">0.656</span>, <span class="hljs-number">0.201</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">211</span>)]
+&gt;&gt;&gt; izpis_skladb(podatki, <span class="hljs-number">2024</span>)
+    ['It Will Rain (From T...', 'Bad Blood']
+&gt;&gt;&gt; izpis_skladb(podatki, <span class="hljs-number">1990</span>)
+    []
+</code></pre>
+<h3 id="dodatek-2-to-ki-">Dodatek (2 točki)</h3>
+<p>Funkcija naj sprejme še izbirni argument <code>cas</code>. V primeru, da je ta argument pri klicu funkcije podan, naj funkcija vrača le skladbe, ki so enako dolge ali daljše od vrednosti izbirnega argumenta. Če izbirni argument ni podan, naj funkcija deluje kot opisano zgoraj.</p>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki = [('One Way Street', 'Aerosmith', <span class="hljs-number">1973</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0.457</span>, <span class="hljs-number">0.115</span>, <span class="hljs-number">0.834</span>, <span class="hljs-number">422</span>), 
+    ('It Will Rain (From T...', 'Bruno Mars', <span class="hljs-number">2024</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.572</span>, <span class="hljs-number">0.082</span>, <span class="hljs-number">0.835</span>, <span class="hljs-number">257</span>), 
+   ('Somebody', 'Aerosmith', <span class="hljs-number">1973</span>, <span class="hljs-number">38</span>, <span class="hljs-number">0.562</span>, <span class="hljs-number">0.373</span>, <span class="hljs-number">0.812</span>, <span class="hljs-number">225</span>),
+   ('Drunk On Love', 'Rihanna', <span class="hljs-number">2012</span>, <span class="hljs-number">41</span>, <span class="hljs-number">0.655</span>, <span class="hljs-number">0.401</span>, <span class="hljs-number">0.873</span>, <span class="hljs-number">212</span>),
+   ('Bad Blood', 'Taylor Swift', <span class="hljs-number">2024</span>, <span class="hljs-number">7</span>, <span class="hljs-number">0.656</span>, <span class="hljs-number">0.201</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">211</span>)]
+&gt;&gt;&gt; izpis_skladb(podatki, <span class="hljs-number">1973</span>, cas = <span class="hljs-number">225</span>)
+    ['One Way Street', 'Somebody']
+&gt;&gt;&gt; izpis_skladb(podatki, <span class="hljs-number">2024</span>, cas = <span class="hljs-number">250</span>)
+    ['It Will Rain (From T...']
+&gt;&gt;&gt; izpis_skladb(podatki, <span class="hljs-number">2024</span>, cas = <span class="hljs-number">500</span>)
+    []
+</code></pre>

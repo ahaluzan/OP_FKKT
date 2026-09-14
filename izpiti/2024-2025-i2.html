@@ -1,0 +1,95 @@
+<p>Naloge shranite v datoteko <code>naloge.py</code>. Testne datoteke se nahajajo  v imeniku <code>./testi/2024-2025-i2/</code>.</p>
+
+<h2 id="1-naloga-5-to-k-">1. naloga (5 točk)</h2>
+<p>Podatki o lastnostih izbranih aplikacij iz Trgovine GooglePlay, so zapisani v tekstovni datoteki. Predpostavljaj, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljeno podpičje (<code>;</code>).</p>
+<p>Primer vsebine datoteke <code>apps5.txt</code>:</p>
+<pre><code>ime;kategorija;ocena;st_ocen;st_nalaganj;max_nalaganj;brezplacna;cena;valuta;velikost;update;publika;oglasi;nakup
+Netflix;Entertainment;<span class="hljs-number">4.4</span>;<span class="hljs-number">11694633</span>;<span class="hljs-number">1000000000</span>;<span class="hljs-number">1437250170</span>;<span class="hljs-literal">TRUE</span>;<span class="hljs-number">0</span>;USD;Varies <span class="hljs-keyword">with</span> device;<span class="hljs-number">14.6</span>.<span class="hljs-number">21</span>;Teen;<span class="hljs-literal">FALSE</span>;<span class="hljs-literal">TRUE</span>
+Kobo Books - eBooks &amp; Audiobooks;Books &amp; Reference;<span class="hljs-number">4.3</span>;<span class="hljs-number">270245</span>;<span class="hljs-number">10000000</span>;<span class="hljs-number">23837841</span>;<span class="hljs-literal">TRUE</span>;<span class="hljs-number">0</span>;USD;Varies <span class="hljs-keyword">with</span> device;<span class="hljs-number">10.6</span>.<span class="hljs-number">21</span>;Teen;<span class="hljs-literal">FALSE</span>;<span class="hljs-literal">FALSE</span>
+Headspace: Meditation &amp; Sleep;Health &amp; Fitness;<span class="hljs-number">4.6</span>;<span class="hljs-number">229799</span>;<span class="hljs-number">10000000</span>;<span class="hljs-number">28900621</span>;<span class="hljs-literal">TRUE</span>;<span class="hljs-number">0</span>;USD;<span class="hljs-number">22</span>M;<span class="hljs-number">15.6</span>.<span class="hljs-number">21</span>;Everyone;<span class="hljs-literal">FALSE</span>;<span class="hljs-literal">TRUE</span>
+Simon<span class="hljs-symbol">'s</span> Cat Dash;Casual;<span class="hljs-number">4.6</span>;<span class="hljs-number">26662</span>;<span class="hljs-number">1000000</span>;<span class="hljs-number">1492894</span>;<span class="hljs-literal">TRUE</span>;<span class="hljs-number">0</span>;USD;<span class="hljs-number">82</span>M;<span class="hljs-number">19.2</span>.<span class="hljs-number">19</span>;Everyone;<span class="hljs-literal">TRUE</span>;<span class="hljs-literal">TRUE</span>
+Slack;Business;<span class="hljs-number">4.2</span>;<span class="hljs-number">102572</span>;<span class="hljs-number">10000000</span>;<span class="hljs-number">23142235</span>;<span class="hljs-literal">TRUE</span>;<span class="hljs-number">0</span>;USD;Varies <span class="hljs-keyword">with</span> device;<span class="hljs-number">14.6</span>.<span class="hljs-number">21</span>;Everyone;<span class="hljs-literal">FALSE</span>;<span class="hljs-literal">FALSE</span>
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(ime, kategorija, ocena, st_ocen,
+    brezplacna, update, publika)</code>. Pri tem naj:</p>
+<ul>
+<li><code>ime</code> predstavlja ime aplikacije, zapisano kot <code>str</code>,</li>
+<li><code>kategorija</code> predstavlja kategorijo, v katero uvrščamo aplikacijo, zapisana kot <code>str</code>,</li>
+<li><code>ocena</code> predstavlja povprečno uporabniško oceno aplikacije, zapisano kot <code>float</code>,</li>
+<li><code>st_ocen</code> predstavlja število ocen aplikacije, zapisano kot <code>int</code>,</li>
+<li><code>brezplacna</code> povzema brezplačnost aplikacije, zapisano kot <code>bool</code>,</li>
+<li><code>update</code> predstavlja datum zadnje razpoložljive nadgradnje, zapisan kot <code>int</code>,</li>
+<li><code>publika</code> predstavlja ciljno občinstvo aplikacije, zapisano kot <code>str</code>.</li>
+</ul>
+<p>Dodatna navodila:</p>
+<ul>
+<li>če se v imenu aplikacije pojavljata bodisi <code>-</code> ali <code>:</code>, skrajšajte ime do tega znaka, poleg tega pa odstranite vse potencialne presledke na koncu imena (primer: ime <code>Kobo Books - eBooks
+      &amp; Audiobooks</code> naj bo v seznamu <code>Kobo Books</code>),</li>
+<li><code>ocena</code> naj bo zaokrožena na 1 decimalno mesto,</li>
+<li><code>update</code> naj vsebuje le polno letnico zadnje posodobitve (primer: če je zadnja posodobitev <code>15.6.21</code>, naj bo v seznamu <code>2021</code>).</li>
+</ul>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code><span class="hljs-meta">&gt;&gt;&gt; </span>preberi_podatke(<span class="hljs-string">"apps5.txt"</span>)
+    [(<span class="hljs-string">'Netflix'</span>, <span class="hljs-string">'Entertainment'</span>, <span class="hljs-number">4.4</span>, <span class="hljs-number">11694633</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Teen'</span>),
+    (<span class="hljs-string">'Telegram'</span>, <span class="hljs-string">'Communication'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">470676</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Mature 17+'</span>),
+    (<span class="hljs-string">'Headspace'</span>, <span class="hljs-string">'Health &amp; Fitness'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">229799</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">"Simon's Cat Dash"</span>, <span class="hljs-string">'Casual'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">26662</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2019</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Slack'</span>, <span class="hljs-string">'Business'</span>, <span class="hljs-number">4.2</span>, <span class="hljs-number">102572</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>preberi_podatke(<span class="hljs-string">"apps_imena.txt"</span>)
+    [(<span class="hljs-string">'Forest'</span>, <span class="hljs-string">'Productivity'</span>, <span class="hljs-number">4.7</span>, <span class="hljs-number">340816</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Calm'</span>, <span class="hljs-string">'Health &amp; Fitness'</span>, <span class="hljs-number">4.3</span>, <span class="hljs-number">402349</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'TED'</span>, <span class="hljs-string">'Education'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">208571</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2020</span>, <span class="hljs-string">'Everyone 10+'</span>),
+    (<span class="hljs-string">'Skillshare'</span>, <span class="hljs-string">'Education'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">46058</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Asana'</span>, <span class="hljs-string">'Business'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">34128</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>)]
+</code></pre>
+<h2 id="2-naloga-5-to-k-">2. naloga (5 točk)</h2>
+<p>Napišite funkcijo <code>po_kategorijah</code>, ki kot argumenta sprejme <em>seznam terk</em>, kot ga vrača funkcija <code>preberi_podakte</code> (1. naloga) in <em>leto</em>, podano kot <code>int</code>.</p>
+<p>Funkcija naj vrača slovar (<code>dict</code>), ki aplikacije razvrsti po kategorijah. <em>Ključi</em> naj bodo kategorije, <em>vrednosti</em> pa seznami terk s podatki o imenu, publiki, oceni in plačljivosti aplikacije iz podane kategorije (tj. <code>(ime, publika, ocena, brezplacna)</code>), katerih leto zadnje posodobitve je večje od leta, podanega v argumentu funkcije. Če nobena od aplikacij ne izpolnjuje pogoja, naj funkcija vrne niz <code>"Nobena od aplikacij ne izpolnjuje pogoja."</code>.</p>
+<p>Primeri pravilne izvedbe funkcije:</p>
+<pre><code><span class="hljs-meta">&gt;&gt;&gt; </span>podatki = [(<span class="hljs-string">'Dumb Ways To Draw'</span>, <span class="hljs-string">'Casual'</span>, <span class="hljs-number">3.9</span>, <span class="hljs-number">50095</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Teen'</span>),
+    (<span class="hljs-string">'SkyView Lite'</span>, <span class="hljs-string">'Education'</span>, <span class="hljs-number">4.4</span>, <span class="hljs-number">43828</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2019</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Todoist'</span>, <span class="hljs-string">'Productivity'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">226044</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Forest'</span>, <span class="hljs-string">'Productivity'</span>, <span class="hljs-number">4.7</span>, <span class="hljs-number">340816</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'TED'</span>, <span class="hljs-string">'Education'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">208571</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2020</span>, <span class="hljs-string">'Everyone 10+'</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>po_kategorijah(podatki, <span class="hljs-number">2021</span>)
+    {<span class="hljs-string">'Casual'</span>: [(<span class="hljs-string">'Dumb Ways To Draw'</span>, <span class="hljs-string">'Teen'</span>, <span class="hljs-number">3.9</span>, <span class="hljs-keyword">True</span>)],
+    <span class="hljs-string">'Productivity'</span>: [(<span class="hljs-string">'Todoist'</span>, <span class="hljs-string">'Everyone'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-keyword">True</span>), (<span class="hljs-string">'Forest'</span>, <span class="hljs-string">'Everyone'</span>, <span class="hljs-number">4.7</span>, <span class="hljs-keyword">True</span>)]}
+<span class="hljs-meta">&gt;&gt;&gt; </span>po_kategorijah(podatki, <span class="hljs-number">2024</span>)
+    <span class="hljs-string">'Nobena od aplikacij ne izpolnjuje pogoja.'</span>
+</code></pre>
+<h2 id="3-naloga-5-to-k-">3. naloga (5 točk)</h2>
+<p>Napišite funkcijo <code>povprecje_po_kategorijah</code>, ki kot argument sprejme slovar, kot ga vrača funkcija <code>po_kategorijah</code>(2. naloga). Funkcija naj vrača slovar, v katerem kot ključi nastopajo kategorije, pod katerimi so kot vrednosti shranjene povprečne ocene aplikacij iz dane kategorije. Povprečna ocena naj bo zaokrožena na 2 decimalni mesti.</p>
+<p><em>Namig:</em> najprej si pripravite slovar, kjer se pod ključi kategorij nahajajo seznami s povprečnimi ocenami aplikacij.</p>
+<p>Primer pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; slovar = {<span class="hljs-symbol">'Casual</span>': [(<span class="hljs-symbol">'Dumb</span> Ways To Draw', <span class="hljs-symbol">'Teen</span>', <span class="hljs-number">3.9</span>, <span class="hljs-literal">True</span>)],
+    <span class="hljs-symbol">'Productivity</span>': [(<span class="hljs-symbol">'Todoist</span>', <span class="hljs-symbol">'Everyone</span>', <span class="hljs-number">4.5</span>, <span class="hljs-literal">True</span>), (<span class="hljs-symbol">'Forest</span>', <span class="hljs-symbol">'Everyone</span>', <span class="hljs-number">4.7</span>, <span class="hljs-literal">True</span>)]}
+&gt;&gt;&gt; povprecje_po_kategorijah'(slovar)
+    {<span class="hljs-symbol">'Casual</span>': <span class="hljs-number">3.9</span>, <span class="hljs-symbol">'Productivity</span>': <span class="hljs-number">4.6</span>}
+</code></pre>
+<h2 id="4-naloga-5-to-k-">4. naloga (5 točk)</h2>
+<p>Napišite funkcijo <code>avg_per</code>, ki kot argumenta sprejme <em>seznam terk</em>, kot ga vrača funkcija <code>preberi_podakte</code> (1. naloga) in decimalno število, ki ponazarja želeni percentil. Funkcija naj vrača terko oblike <code>(povprecje, percentil)</code>, pri čemer:</p>
+<ul>
+<li><code>povprecje</code> predstavlja povprečno oceno vseh aplikacij v seznamu terk, zaokroženo na 2 decimalni mesti,</li>
+<li><code>percentil</code> pa ocena, ki se nahaja na izbranem percentilu ranžirne vrste vseh števil ocen iz seznama terk.</li>
+</ul>
+<p><em>Postopek računanja percentila:</em></p>
+<ul>
+<li>števila ocen vseh aplikacij iz seznama uredite po velikosti od najmanjšega do največjega (namig: uporabite funkcijo <code>sorted()</code>),</li>
+<li>za percentil izberite vrednost, ki se nahaja na indeksu, ki ponazarja vrednost na izbranem percentilu (primer in namig: če iščemo vrednost 90. percentila, mora funkcija vrniti vrednost, ki se v seznamu nahaja na indeksu <code>int(0.9 * len(seznam))</code>).</li>
+</ul>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code><span class="hljs-meta">&gt;&gt;&gt; </span>podatki = [(<span class="hljs-string">'Netflix'</span>, <span class="hljs-string">'Entertainment'</span>, <span class="hljs-number">4.4</span>, <span class="hljs-number">11694633</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Teen'</span>),
+    (<span class="hljs-string">'Telegram'</span>, <span class="hljs-string">'Communication'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">470676</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Mature 17+'</span>),
+    (<span class="hljs-string">'Headspace'</span>, <span class="hljs-string">'Health &amp; Fitness'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">229799</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">"Simon's Cat Dash"</span>, <span class="hljs-string">'Casual'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">26662</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2019</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Slack'</span>, <span class="hljs-string">'Business'</span>, <span class="hljs-number">4.2</span>, <span class="hljs-number">102572</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>avg_per(podatki, <span class="hljs-number">0.9</span>)
+    (<span class="hljs-number">4.46</span>, <span class="hljs-number">470676</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>podatki2 = [(<span class="hljs-string">'Forest'</span>, <span class="hljs-string">'Productivity'</span>, <span class="hljs-number">4.7</span>, <span class="hljs-number">340816</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Calm'</span>, <span class="hljs-string">'Health &amp; Fitness'</span>, <span class="hljs-number">4.3</span>, <span class="hljs-number">402349</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'TED'</span>, <span class="hljs-string">'Education'</span>, <span class="hljs-number">4.6</span>, <span class="hljs-number">208571</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2020</span>, <span class="hljs-string">'Everyone 10+'</span>),
+    (<span class="hljs-string">'Skillshare'</span>, <span class="hljs-string">'Education'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">46058</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>),
+    (<span class="hljs-string">'Asana'</span>, <span class="hljs-string">'Business'</span>, <span class="hljs-number">4.5</span>, <span class="hljs-number">34128</span>, <span class="hljs-keyword">True</span>, <span class="hljs-number">2021</span>, <span class="hljs-string">'Everyone'</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>avg_per(podatki2, <span class="hljs-number">0.5</span>)
+    (<span class="hljs-number">4.52</span>, <span class="hljs-number">208571</span>)
+</code></pre>

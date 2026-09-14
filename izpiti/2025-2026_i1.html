@@ -1,0 +1,79 @@
+<p>Naloge shranite v datoteko z imenom <strong><span style="background-color: #ffe599;"><code>naloge.py</code></span></strong>.</p>
+<p>Testi se nahajajo v imeniku <code>./testi/2024-2025-i1/</code>.</p>
+
+<h2>1. izpit 2025/2026</h2>
+<h3>1. naloga: Preberi podatke</h3>
+<p>Podatki o učencih programiranja se nahajajo v datoteki <code>csv</code>. Predpostavljajte, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljena vejica (<code>,</code>).</p>
+<p>Primer vsebine datoteke <code>python5.csv</code>:</p>
+<pre><code>id,starost,drzava,izkusnje,tedni,ure,naloge,videi,samoocena,tocke,opravljeno
+600,43,Indonesia,Intermediate,15,8.2,62,30,10,32.5,0
+1200,52,UK,Beginner,2,4.4,62,36,5,32.1,0
+1800,16,UK,Beginner,7,10.1,54,40,7,41.6,0
+2400,21,Indonesia,Beginner,15,11.2,53,29,3,34.9,0
+3000,36,Pakistan,Advanced,12,3.6,57,48,7,59.8,0</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(starost, drzava, izkusnje, tedni, ure, naloge, videi, ocena)</code>. Pri tem naj:</p>
+<ul>
+<li><code>starost</code> predstavlja starost učenca, zapisano kot <code>int</code>,</li>
+<li><code>drzava</code> predstavlja državo, iz katere prihaja učenec, zapisana kot <code>str</code>,</li>
+<li><code>izkusnje</code> predstavlja prehodne izkušnje učenca, zapisane kot <code>str</code>,</li>
+<li><code>tedni</code> predstavlja število tednov tečaja, ki jih je učenec obiskoval, zapisanih kot <code>int</code>,</li>
+<li><code>ure</code> predstavlja število ur, ki jih je učenec na teden porabil za tečaj, zapisane kot <code>float</code> in zaokrožene na 1 decimalno mesto,</li>
+<li><code>naloge</code> predstavlja število rešenih nalog, zapisanih kot <code>int</code>,</li>
+<li><code>videi</code> predstavlja število ogledanih videov s tečaja, zapisanih kot <code>int</code> in</li>
+<li><code>ocena</code> predstavlja končno oceno izpita, zapisano kot <code>int</code>.</li>
+</ul>
+<p>Vrednost spremenljivke <code>ocena</code> dobite tako, da spremenljivki <code>tocke</code> iz datoteke pripišete številsko oceno na intervalu 5-10 po sledečem kriteriju:</p>
+<ul>
+<li>manj kot 50 točk pomeni oceno 5,</li>
+<li>med vključno 50 do 60 točk je ocena 6,</li>
+<li>med vključno 60 do 70 točk je ocena 7,</li>
+<li>med vključno 70 do 80 točk je ocena 8,</li>
+<li>med vključno 80 do 90 točk je ocena 9 in</li>
+<li>od vključno 90 točk do vključno 100 je ocena 10.</li>
+</ul>
+<p>Vrstico z imeni stolpcev pri tvorbi seznama preskočite.</p>
+<p>Če je v spremenljivki <code>drzava</code> zapisana vrednost <code>'Other'</code>, podatkov iz te vrstice ne vključite v seznam terk.</p>
+<p><em>Primera pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; preberi_podatke('data/python5.csv')
+    [(43, 'Indonesia', 'Intermediate', 15, 8.2, 62, 30, 5),
+     (52, 'UK', 'Beginner', 2, 4.4, 62, 36, 5),
+     (16, 'UK', 'Beginner', 7, 10.1, 54, 40, 5),
+     (21, 'Indonesia', 'Beginner', 15, 11.2, 53, 29, 5),
+     (36, 'Pakistan', 'Advanced', 12, 3.6, 57, 48, 6)]</code></pre>
+</section>
+<section>
+<h3>2. naloga: Slovar ocen</h3>
+<p>Napišite funkcijo <code>v_slovar</code>, ki kot argument sprejme seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(starost, drzava, izkusnje, tedni, ure, naloge, videi, ocena)</code>).</p>
+<p>Funkcija naj vrača slovar, kjer so ključi ocene, vrednosti pa seznami terk oblike <br><code>(starost, drzava, izkusnje, tedni, ure, naloge, videi)</code>.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>
+&gt;&gt;&gt; podatki = [(43, 'Indonesia', 'Intermediate', 15, 8.2, 62, 30, 5),
+     (52, 'UK', 'Beginner', 2, 4.4, 62, 36, 5),
+     (16, 'UK', 'Beginner', 7, 10.1, 54, 40, 5),
+     (21, 'Indonesia', 'Beginner', 15, 11.2, 53, 29, 5),
+     (36, 'Pakistan', 'Advanced', 12, 3.6, 57, 48, 6)]
+&gt;&gt;&gt; v_slovar(podatki)
+    {5: [(43, 'Indonesia', 'Intermediate', 15, 8.2, 62, 30),
+      (52, 'UK', 'Beginner', 2, 4.4, 62, 36),
+      (16, 'UK', 'Beginner', 7, 10.1, 54, 40),
+      (21, 'Indonesia', 'Beginner', 15, 11.2, 53, 29)],
+     6: [(36, 'Pakistan', 'Advanced', 12, 3.6, 57, 48)]}</code></pre>
+</section>
+<section>
+<h3>3. naloga: Statistika ocen</h3>
+<p>Napiši funkcijo <code>statistika</code>, ki kot sprejme slovar, kot ga vrača 2. naloga (tj. slovar, kjer kot ključi nastopajo ocene, vrednosti pa so seznami terk oblike <br><code>(starost, drzava, izkusnje, tedni, ure, naloge, videi)</code>. Funkcija naj vrača slovar, kjer kot ključi nastopajo ocene, kot vrednosti pa povprečno število vloženih ur. Povprečja naj bodo zaokrožena na dve decimalni mesti.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; slovar = {5: [(43, 'Indonesia', 'Intermediate', 15, 8.2, 62, 30),<br>      (52, 'UK', 'Beginner', 2, 4.4, 62, 36),<br>      (16, 'UK', 'Beginner', 7, 10.1, 54, 40),<br>      (21, 'Indonesia', 'Beginner', 15, 11.2, 53, 29)],<br>     6: [(36, 'Pakistan', 'Advanced', 12, 3.6, 57, 48)]}<br>&gt;&gt;&gt; statistika(slovar)
+    {5: 8.47, 6: 3.6}</code></pre>
+</section>
+<section>
+<h3>4. naloga: Po izkušnjah</h3>
+<p>Napišite funkcijo <code>po_izkusnjah</code>, ki kot argument sprejme seznam terk oblike <br><code>(starost, drzava, izkusnje, tedni, ure, naloge, videi, ocena)</code> kot ga vrača 1. naloga in niz, ki predstavlja nivo izkušenj tekmovalcev.</p>
+<p>Funkcija naj vrača ime države (<code>str</code>), iz katere prihaja največ tekmovalcev s podanim nivojem izkušenj.</p>
+<p>V primeru, da funkciji podamo prazen seznam ali v seznamu ni nobenega tekmovalca s podanim nivojem izkušenj, naj funkcija vrača prazen niz.</p>
+<p><em>Namig:</em> v prvem koraku si pripravite slovar, v katerem so ključi države, vrednosti pa števila tekmovalcev s podanim nivojem izkušenj.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; podatki = [(52, 'UK', 'Beginner', 2, 4.4, 62, 36, 5),<br>    (16, 'UK', 'Beginner', 7, 10.1, 54, 40, 5),<br>    (21, 'Indonesia', 'Beginner', 15, 11.2, 53, 29, 5),<br>    (36, 'Pakistan', 'Advanced', 12, 3.6, 57, 48, 6)]<br>&gt;&gt;&gt; po_izkusnjah(podatki, 'Beginner')
+    'UK'
+&gt;&gt;&gt; po_izkusnjah(podatki, 'Zacetnik')
+    ''</code></pre></section>

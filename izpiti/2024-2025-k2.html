@@ -1,0 +1,108 @@
+<p>Naloge shranite v datoteko <code>naloge.py</code>. Testne datoteke se nahajajo v imeniku <code>./testi/2024-2025-k2/</code></p>
+
+<h2 id="1-naloga-5-to-k-">1. naloga (5 točk)</h2>
+<p>Podatki o dojemanju sreče po državah so zapisani v tekstovni datoteki. Predpostavljaj, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljeno podpičje (<code>;</code>).</p>
+<p>Primer vsebine datoteke <code>sreca5.txt</code>:</p>
+<pre><code><span class="hljs-selector-tag">drzava</span>;<span class="hljs-selector-tag">regija</span>;<span class="hljs-selector-tag">sreca</span>;<span class="hljs-selector-tag">GDP</span>;<span class="hljs-selector-tag">druzina</span>;<span class="hljs-selector-tag">zivljenje</span>;<span class="hljs-selector-tag">svoboda</span>;<span class="hljs-selector-tag">korupcija</span>
+<span class="hljs-selector-tag">Norway</span>;<span class="hljs-selector-tag">Western</span> <span class="hljs-selector-tag">Europe</span>;7<span class="hljs-selector-class">.498</span>;1<span class="hljs-selector-class">.57744</span>;1<span class="hljs-selector-class">.1269</span>;0<span class="hljs-selector-class">.79579</span>;0<span class="hljs-selector-class">.59609</span>;0<span class="hljs-selector-class">.35776</span>
+<span class="hljs-selector-tag">Finland</span>;<span class="hljs-selector-tag">Western</span> <span class="hljs-selector-tag">Europe</span>;7<span class="hljs-selector-class">.413</span>;1<span class="hljs-selector-class">.40598</span>;1<span class="hljs-selector-class">.13464</span>;0<span class="hljs-selector-class">.81091</span>;0<span class="hljs-selector-class">.57104</span>;0<span class="hljs-selector-class">.41004</span>
+<span class="hljs-selector-tag">Slovenia</span>;<span class="hljs-selector-tag">Central</span> <span class="hljs-selector-tag">and</span> <span class="hljs-selector-tag">Eastern</span> <span class="hljs-selector-tag">Europe</span>;5<span class="hljs-selector-class">.768</span>;1<span class="hljs-selector-class">.29947</span>;1<span class="hljs-selector-class">.05613</span>;0<span class="hljs-selector-class">.79151</span>;0<span class="hljs-selector-class">.53164</span>;0<span class="hljs-selector-class">.03635</span>
+<span class="hljs-selector-tag">Peru</span>;<span class="hljs-selector-tag">Latin</span> <span class="hljs-selector-tag">America</span> <span class="hljs-selector-tag">and</span> <span class="hljs-selector-tag">Caribbean</span>;5<span class="hljs-selector-class">.743</span>;0<span class="hljs-selector-class">.99602</span>;0<span class="hljs-selector-class">.81255</span>;0<span class="hljs-selector-class">.62994</span>;0<span class="hljs-selector-class">.37502</span>;0<span class="hljs-selector-class">.05292</span>
+<span class="hljs-selector-tag">Turkmenistan</span>;<span class="hljs-selector-tag">Central</span> <span class="hljs-selector-tag">and</span> <span class="hljs-selector-tag">Eastern</span> <span class="hljs-selector-tag">Europe</span>;5<span class="hljs-selector-class">.658</span>;1<span class="hljs-selector-class">.08017</span>;1<span class="hljs-selector-class">.03817</span>;0<span class="hljs-selector-class">.44006</span>;0<span class="hljs-selector-class">.37408</span>;0<span class="hljs-selector-class">.28467</span>
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(regija, drzava, sreca, GDP, druzina, zivljenje, svoboda, korupcija)</code>. Pri tem naj:</p>
+<ul>
+<li><code>regija</code> predstavlja ime regije, v kateri se nahaja država, zapisano kot <code>str</code>,</li>
+<li><code>drzava</code> predstavlja ime drzave zapisane kot <code>str</code>,</li>
+<li><code>sreca</code> predstavlja t.i. indeks sreče, zapisan kot <code>float</code>,</li>
+<li><code>GDP</code> predstavlja bruto domači proizvod, zapisan kot <code>float</code>,</li>
+<li><code>druzina</code> predstavlja število, zapisano kot <code>float</code>,</li>
+<li><code>zivljenje</code> predstavlja število, zapisano kot <code>float</code>,</li>
+<li><code>svoboda</code> predstavlja faktor, zapisan kot <code>float</code>,</li>
+<li><code>korupcija</code> predstavlja faktor, zapisan kot <code>float</code>.</li>
+</ul>
+<p>Vsa števila, zapisana kot <code>float</code>, naj bodo zaokrožena na 3 decimalna mesta.</p>
+<p>Predpostavljajte, da lahko katerakoli izmed številskih spremenljivk v posamezni vrstici datoteke manjka. V tem primeru naj terka na njenem mestu vsebuje vrednost <code>False</code>.</p>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; preberi_podatke(<span class="hljs-string">"sreca5.txt"</span>)
+[('Western Europe', 'Norway', <span class="hljs-number">7.498</span>, <span class="hljs-number">1.577</span>, <span class="hljs-number">1.127</span>, <span class="hljs-number">0.796</span>, <span class="hljs-number">0.596</span>, <span class="hljs-number">0.358</span>),
+ ('Western Europe', 'Finland', <span class="hljs-number">7.413</span>, <span class="hljs-number">1.406</span>, <span class="hljs-number">1.135</span>, <span class="hljs-number">0.811</span>, <span class="hljs-number">0.571</span>, <span class="hljs-number">0.41</span>),
+ ('Central and Eastern Europe','Slovenia', <span class="hljs-number">5.768</span>, <span class="hljs-number">1.299</span>, <span class="hljs-number">1.056</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">0.532</span>, <span class="hljs-number">0.036</span>),
+ ('Latin America and Caribbean', 'Peru', <span class="hljs-number">5.743</span>, <span class="hljs-number">0.996</span>, <span class="hljs-number">0.813</span>, <span class="hljs-number">0.63</span>, <span class="hljs-number">0.375</span>, <span class="hljs-number">0.053</span>),
+ ('Central and Eastern Europe', 'Turkmenistan', <span class="hljs-number">5.658</span>, <span class="hljs-number">1.08</span>, <span class="hljs-number">1.038</span>, <span class="hljs-number">0.44</span>, <span class="hljs-number">0.374</span>, <span class="hljs-number">0.285</span>)]
+&gt;&gt;&gt; preberi_podatke(<span class="hljs-string">"sreca10.txt"</span>)
+[('Central and Eastern Europe', 'Poland', False, <span class="hljs-number">1.246</span>, <span class="hljs-number">1.047</span>, <span class="hljs-number">0.691</span>, <span class="hljs-number">0.452</span>, <span class="hljs-number">0.055</span>),
+ ('Sub-Saharan Africa', 'Liberia', <span class="hljs-number">3.622</span>, <span class="hljs-number">0.107</span>, <span class="hljs-number">0.504</span>, <span class="hljs-number">0.232</span>, <span class="hljs-number">0.257</span>, <span class="hljs-number">0.049</span>),
+ ('Sub-Saharan Africa', 'Mauritius', <span class="hljs-number">5.648</span>, <span class="hljs-number">1.144</span>, <span class="hljs-number">0.757</span>, <span class="hljs-number">0.662</span>, <span class="hljs-number">0.461</span>, <span class="hljs-number">0.052</span>),
+ ('Eastern Asia', 'Mongolia', <span class="hljs-number">4.907</span>, <span class="hljs-number">0.989</span>, <span class="hljs-number">1.09</span>, <span class="hljs-number">0.555</span>, <span class="hljs-number">0.36</span>, <span class="hljs-number">0.033</span>),
+ ('Western Europe', 'Switzerland', <span class="hljs-number">7.509</span>, <span class="hljs-number">1.527</span>, False, <span class="hljs-number">0.863</span>, <span class="hljs-number">0.586</span>, <span class="hljs-number">0.412</span>),
+ ('Sub-Saharan Africa', 'Zimbabwe', <span class="hljs-number">4.193</span>, <span class="hljs-number">0.35</span>, <span class="hljs-number">0.715</span>, <span class="hljs-number">0.16</span>, <span class="hljs-number">0.254</span>, <span class="hljs-number">0.086</span>),
+ ('Southern Asia', 'India', <span class="hljs-number">4.404</span>, <span class="hljs-number">0.74</span>, <span class="hljs-number">0.292</span>, <span class="hljs-number">0.451</span>, <span class="hljs-number">0.403</span>, <span class="hljs-number">0.087</span>),
+ ('Central and Eastern Europe', 'Latvia', <span class="hljs-number">5.56</span>, <span class="hljs-number">1.218</span>, <span class="hljs-number">0.95</span>, <span class="hljs-number">0.64</span>, <span class="hljs-number">0.28</span>, <span class="hljs-number">0.089</span>),
+ ('Central and Eastern Europe', 'Slovakia', <span class="hljs-number">6.078</span>, <span class="hljs-number">1.28</span>, <span class="hljs-number">1.083</span>, False, <span class="hljs-number">0.234</span>, <span class="hljs-number">0.029</span>),
+ ('Latin America and Caribbean', 'Nicaragua', <span class="hljs-number">5.992</span>, <span class="hljs-number">0.694</span>, <span class="hljs-number">0.895</span>, <span class="hljs-number">0.652</span>, <span class="hljs-number">0.466</span>, False)]
+</code></pre>
+<h2 id="2-naloga-4-to-ke-">2. naloga (4 točke)</h2>
+<p>Napišite funkcijo <code>v_slovar</code>, ki kot argument sprejme seznam terk, kot ga vrača funkcija <code>preberi_podatke</code>(1. naloga) - tj. seznam terk oblike <code>(regija, drzava, sreca, GDP, druzina, zivljenje, svoboda, korupcija)</code>.</p>
+<p>Funkcija naj vrača slovar (<code>dict</code>), ki kot ključe vsebuje regije, kot vrednosti pa seznam terk oblike <code>(drzava, sreca)</code>.</p>
+<p>Primer pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki1 = [(<span class="hljs-symbol">'Western</span> Europe', <span class="hljs-symbol">'Norway</span>', <span class="hljs-number">7.498</span>, <span class="hljs-number">1.577</span>, <span class="hljs-number">1.127</span>, <span class="hljs-number">0.796</span>, <span class="hljs-number">0.596</span>, <span class="hljs-number">0.358</span>),
+ (<span class="hljs-symbol">'Western</span> Europe', <span class="hljs-symbol">'Finland</span>', <span class="hljs-number">7.413</span>, <span class="hljs-number">1.406</span>, <span class="hljs-number">1.135</span>, <span class="hljs-number">0.811</span>, <span class="hljs-number">0.571</span>, <span class="hljs-number">0.41</span>),
+ (<span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe', <span class="hljs-symbol">'Slovenia</span>', <span class="hljs-number">5.768</span>, <span class="hljs-number">1.299</span>, <span class="hljs-number">1.056</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">0.532</span>, <span class="hljs-number">0.036</span>),
+ (<span class="hljs-symbol">'Latin</span> America <span class="hljs-keyword">and</span> Caribbean', <span class="hljs-symbol">'Peru</span>', <span class="hljs-number">5.743</span>, <span class="hljs-number">0.996</span>, <span class="hljs-number">0.813</span>, <span class="hljs-number">0.63</span>, <span class="hljs-number">0.375</span>, <span class="hljs-number">0.053</span>),
+ (<span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe', <span class="hljs-symbol">'Turkmenistan</span>', <span class="hljs-number">5.658</span>, <span class="hljs-number">1.08</span>, <span class="hljs-number">1.038</span>, <span class="hljs-number">0.44</span>, <span class="hljs-number">0.374</span>, <span class="hljs-number">0.285</span>)]
+&gt;&gt;&gt; v_slovar(podatki1)
+{<span class="hljs-symbol">'Western</span> Europe': [(<span class="hljs-symbol">'Norway</span>', <span class="hljs-number">7.498</span>), (<span class="hljs-symbol">'Finland</span>', <span class="hljs-number">7.413</span>)],
+ <span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe': [(<span class="hljs-symbol">'Slovenia</span>', <span class="hljs-number">5.768</span>), (<span class="hljs-symbol">'Turkmenistan</span>', <span class="hljs-number">5.658</span>)],
+ <span class="hljs-symbol">'Latin</span> America <span class="hljs-keyword">and</span> Caribbean': [(<span class="hljs-symbol">'Peru</span>', <span class="hljs-number">5.743</span>)]}
+</code></pre>
+<h3 id="dodatek-1-to-ka-">Dodatek (1 točka)</h3>
+<p>Funkcija naj v seznam terk shrani le podatke tistih držav, kjer je vrednost spremenljivke <code>sreca</code> različna od vrednosti <code>False</code>. Slovar naj kot ključe vsebuje le tiste regije, ki imajo v seznamu terk vsaj eno državo.</p>
+<p>Primer pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki2 = [(<span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe', <span class="hljs-symbol">'Poland</span>', <span class="hljs-literal">False</span>, <span class="hljs-number">1.246</span>, <span class="hljs-number">1.047</span>, <span class="hljs-number">0.691</span>, <span class="hljs-number">0.452</span>, <span class="hljs-number">0.055</span>),
+ (<span class="hljs-symbol">'Western</span> Europe', <span class="hljs-symbol">'Switzerland</span>', <span class="hljs-number">7.509</span>, <span class="hljs-number">1.527</span>, <span class="hljs-literal">False</span>, <span class="hljs-number">0.863</span>, <span class="hljs-number">0.586</span>, <span class="hljs-number">0.412</span>),
+ (<span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe', <span class="hljs-symbol">'Latvia</span>', <span class="hljs-literal">False</span>, <span class="hljs-number">1.218</span>, <span class="hljs-number">0.95</span>, <span class="hljs-number">0.64</span>, <span class="hljs-number">0.28</span>, <span class="hljs-number">0.089</span>),
+ (<span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe', <span class="hljs-symbol">'Slovakia</span>', <span class="hljs-literal">False</span>, <span class="hljs-number">1.28</span>, <span class="hljs-number">1.083</span>, <span class="hljs-literal">False</span>, <span class="hljs-number">0.234</span>, <span class="hljs-number">0.029</span>),
+ (<span class="hljs-symbol">'Latin</span> America <span class="hljs-keyword">and</span> Caribbean',  <span class="hljs-symbol">'Nicaragua</span>', <span class="hljs-number">5.992</span>, <span class="hljs-number">0.694</span>, <span class="hljs-number">0.895</span>, <span class="hljs-number">0.652</span>, <span class="hljs-number">0.466</span>, <span class="hljs-literal">False</span>)]
+&gt;&gt;&gt; v_slovar(podatki2)
+{<span class="hljs-symbol">'Western</span> Europe': [(<span class="hljs-symbol">'Switzerland</span>', <span class="hljs-number">7.509</span>)],
+ <span class="hljs-symbol">'Latin</span> America <span class="hljs-keyword">and</span> Caribbean': [(<span class="hljs-symbol">'Nicaragua</span>', <span class="hljs-number">5.992</span>)]}
+</code></pre>
+<h2 id="3-naloga-5-to-k-">3. naloga (5 točk)</h2>
+<p>Napišite funkcijo <code>regijska_povprecja</code>, ki kot argument sprejme <code>slovar</code> kot ga vrača funkcija <code>v_slovar</code> (2. naloga).</p>
+<p>Funkcija naj vrača slovar, v katerem kot ključ nastopa posamezna regija, kot vrednost pa regijsko povprečje spremenljivke <code>sreca</code>. To naj bo zaokroženo na dve decimalni mesti natančno.</p>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki = {<span class="hljs-symbol">'Western</span> Europe': [(<span class="hljs-symbol">'Norway</span>', <span class="hljs-number">7.498</span>), (<span class="hljs-symbol">'Finland</span>', <span class="hljs-number">7.413</span>)],
+ <span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe': [(<span class="hljs-symbol">'Slovenia</span>', <span class="hljs-number">5.768</span>), (<span class="hljs-symbol">'Turkmenistan</span>', <span class="hljs-number">5.658</span>)],
+ <span class="hljs-symbol">'Latin</span> America <span class="hljs-keyword">and</span> Caribbean': [(<span class="hljs-symbol">'Peru</span>', <span class="hljs-number">5.743</span>)]}
+&gt;&gt;&gt; regijska_povprecja(podatki)
+{<span class="hljs-symbol">'Western</span> Europe': <span class="hljs-number">7.46</span>,
+ <span class="hljs-symbol">'Central</span> <span class="hljs-keyword">and</span> Eastern Europe': <span class="hljs-number">5.71</span>,
+ <span class="hljs-symbol">'Latin</span> America <span class="hljs-keyword">and</span> Caribbean': <span class="hljs-number">5.74</span>}
+</code></pre>
+<h2 id="4-naloga-3-to-ke-">4. naloga (3 točke)</h2>
+<p>Napišite funkcijo <code>najvecje_bogastvo</code>, ki kot argument sprejme seznam terk, kot ga vrača funkcija <code>preberi_podatke</code>(1. naloga). Funkcija naj vrne ime države z najvišjo vrednostjo spremenljivke <code>GDP</code>. Pri tem lahko predpostavljaš, da je taka samo ena država.</p>
+<p>Primer pravilnega delovanja funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki1 = [('Central and Eastern Europe', 'Slovenia', <span class="hljs-number">5.768</span>, <span class="hljs-number">1.299</span>, <span class="hljs-number">1.056</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">0.532</span>, <span class="hljs-number">0.036</span>)]
+najvecje_bogastvo(podatki1)
+&gt;&gt;&gt; podatk2 = [('Western Europe', 'Norway', <span class="hljs-number">7.498</span>, <span class="hljs-number">1.577</span>, <span class="hljs-number">1.127</span>, <span class="hljs-number">0.796</span>, <span class="hljs-number">0.596</span>, <span class="hljs-number">0.358</span>),
+ ('Western Europe', 'Finland', <span class="hljs-number">7.413</span>, <span class="hljs-number">1.406</span>, <span class="hljs-number">1.135</span>, <span class="hljs-number">0.811</span>, <span class="hljs-number">0.571</span>, <span class="hljs-number">0.41</span>),
+ ('Central and Eastern Europe', 'Slovenia', <span class="hljs-number">5.768</span>, <span class="hljs-number">1.299</span>, <span class="hljs-number">1.056</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">0.532</span>, <span class="hljs-number">0.036</span>),
+ ('Latin America and Caribbean', 'Peru', <span class="hljs-number">5.743</span>, <span class="hljs-number">0.996</span>, <span class="hljs-number">0.813</span>, <span class="hljs-number">0.63</span>, <span class="hljs-number">0.375</span>, <span class="hljs-number">0.053</span>),
+ ('Central and Eastern Europe', 'Turkmenistan', <span class="hljs-number">5.658</span>, <span class="hljs-number">1.08</span>, <span class="hljs-number">1.038</span>, <span class="hljs-number">0.44</span>, <span class="hljs-number">0.374</span>, <span class="hljs-number">0.285</span>)]
+&gt;&gt;&gt; najvecje_bogastvo(podatki2)
+'Norway'
+</code></pre>
+<h3 id="dodatek-2-to-ki-">Dodatek (2 točki)</h3>
+<p>Funkcija naj sprejme še izbirni argument <code>izbrana_regija</code>. V primeru, da je ta argument pri klicu funkcije podan, naj funkcija išče le po izbrani regiji. V primeru, da ta argument ni podan, naj funkcija deluje kot opisano zgoraj.</p>
+<p>Primer pravilnega delovanja funkcije:</p>
+<pre><code>&gt;&gt;&gt; podatki = [('Western Europe', 'Norway', <span class="hljs-number">7.498</span>, <span class="hljs-number">1.577</span>, <span class="hljs-number">1.127</span>, <span class="hljs-number">0.796</span>, <span class="hljs-number">0.596</span>, <span class="hljs-number">0.358</span>),
+ ('Western Europe', 'Finland', <span class="hljs-number">7.413</span>, <span class="hljs-number">1.406</span>, <span class="hljs-number">1.135</span>, <span class="hljs-number">0.811</span>, <span class="hljs-number">0.571</span>, <span class="hljs-number">0.41</span>),
+ ('Central and Eastern Europe', 'Slovenia', <span class="hljs-number">5.768</span>, <span class="hljs-number">1.299</span>, <span class="hljs-number">1.056</span>, <span class="hljs-number">0.792</span>, <span class="hljs-number">0.532</span>, <span class="hljs-number">0.036</span>),
+ ('Latin America and Caribbean', 'Peru', <span class="hljs-number">5.743</span>, <span class="hljs-number">0.996</span>, <span class="hljs-number">0.813</span>, <span class="hljs-number">0.63</span>, <span class="hljs-number">0.375</span>, <span class="hljs-number">0.053</span>),
+ ('Central and Eastern Europe', 'Turkmenistan', <span class="hljs-number">5.658</span>, <span class="hljs-number">1.08</span>, <span class="hljs-number">1.038</span>, <span class="hljs-number">0.44</span>, <span class="hljs-number">0.374</span>, <span class="hljs-number">0.285</span>)]
+&gt;&gt;&gt; najvecje_bogastvo(podatki, 'Central and Eastern Europe')
+'Slovenia'
+&gt;&gt;&gt; najvecje_bogastvo(podatki, 'Luna')
+''
+</code></pre>

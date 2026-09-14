@@ -1,0 +1,21 @@
+id,starost,spol,izdelek,velikost,cena,ocena,placilo,lokacija,clan
+701,25,Female,Cappuccino,M,3.55,4.6,Card,Ljubljana,Yes
+702,33,Male,Latte,L,4.05,4.0,Cash,Maribor,No
+703,41,Female,Espresso,S,2.45,4.9,App,Celje,Yes
+704,29,Male,Mocha,M,4.15,3.8,Card,Unknown,No
+705,52,Female,Cold Brew,L,4.35,4.4,Cash,Kranj,Yes
+706,20,Male,Cappuccino,S,3.15,4.2,App,Koper,No
+707,37,Female,Latte,M,3.65,4.7,Card,Ljubljana,Yes
+708,46,Male,Americano,S,2.85,3.6,Cash,Unknown,No
+709,24,Female,Flat White,L,4.25,4.5,App,Novo Mesto,Yes
+710,58,Male,Espresso,M,2.55,3.9,Card,Maribor,No
+711,31,Female,Mocha,L,4.45,4.8,Cash,Celje,Yes
+712,27,Male,Cold Brew,M,3.95,4.1,App,Unknown,No
+713,44,Female,Cappuccino,S,3.35,4.3,Card,Kranj,Yes
+714,35,Male,Latte,S,3.25,3.7,Cash,Koper,No
+715,22,Female,Espresso,M,2.65,4.6,App,Ljubljana,Yes
+716,49,Male,Flat White,M,4.05,4.0,Card,Novo Mesto,No
+717,26,Female,Americano,L,3.05,4.4,Cash,Maribor,Yes
+718,55,Male,Mocha,S,4.25,3.5,App,Unknown,No
+719,30,Female,Cold Brew,S,3.85,4.9,Card,Celje,Yes
+720,42,Male,Cappuccino,L,3.75,4.2,Cash,Kranj,No

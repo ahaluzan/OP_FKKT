@@ -1,0 +1,11 @@
+id,starost,spol,izdelek,velikost,cena,ocena,placilo,lokacija,clan
+601,22,Female,Latte,S,3.567,4.3,Card,Ljubljana,Yes
+602,31,Male,Espresso,M,2.75,4.0,Cash,Maribor,No
+603,27,Female,Cappuccino,L,3.90,4.8,App,Celje,Yes
+604,40,Male,Mocha,L,4.30,3.7,Card,Unknown,No
+605,19,Female,Cold Brew,M,3.60,4.6,Cash,Ljubljana,Yes
+606,54,Male,Latte,S,3.10,3.9,App,Kranj,No
+607,36,Female,Americano,M,2.95,4.4,Card,Maribor,Yes
+608,45,Male,Cappuccino,L,3.85,4.1,Cash,Unknown,No
+609,23,Female,Flat White,S,3.75,4.5,App,Koper,Yes
+610,29,Male,Espresso,M,2.60,3.8,Card,Celje,No

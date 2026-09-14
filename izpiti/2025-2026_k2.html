@@ -1,0 +1,122 @@
+<p>Naloge shranite v datoteko z imenom <strong><span style="background-color: #ffe599;"><code>naloge.py</code></span></strong>.</p>
+<p>Testi se nahajajo v imeniku <code>./testi/2024-2025-k2/</code>.</p>
+
+<h1>2. kolokvij 2025/2026</h1>
+<h3>1. naloga: Preberi podatke</h3>
+<p>Podatki o zmagovalcih bostonskega maratona skozi leta so zapisani v tekstovni datoteki. Predpostavljajte, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljena vejica (<code>,</code>).</p>
+<p>Primer vsebine datoteke <code>boston5.csv</code>:</p>
+<pre><code>leto,zmagovalec,drzava,cas,milje,kilometri
+1946,Stylianos Kyriakides,Greece,02:29:27,26.2,42.2
+1909,Henri Renaud,United States,02:53:36,24.5,39.4
+1979,Joan Benoit,United States,2:35:15,26.2,42.2
+1910,Fred S. Cameron,Canada,02:28:52,24.5,39.4
+2001,Catherine Ndereba,Kenya,2:23:53,26.2,42.2
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(leto, zmagovalec, drzava, cas,
+    kilometri)</code>. Pri tem naj:</p>
+<ul>
+<li><code>leto</code> predstavlja leto maratona, zapisano kot <code>int</code>,</li>
+<li><code>zmagovalec</code> predstavlja ime zmagovalca/zmagovalke v danem letu, zapisan kot <code>str</code>,</li>
+<li><code>drzava</code> predstavlja državo, iz katere prihaja zmagovalec, zapisana kot <code>str</code>,</li>
+<li><code>cas</code> predstavlja čas teka, pretvorjen v sekunde in zapisan kot <code>int</code> in</li>
+<li><code>kilometri</code> predstavlja število pretečenih kilometrov, zapisanih kot <code>float</code>. Število naj bo zaokroženo na 1 decimalno mesto.</li>
+</ul>
+<p>Predpostavljajte, da lahko katerakoli izmed spremenljivk v posamezni vrstici datoteke manjka. Vrstice z manjkajočimi podatki preskočite. Prav tako preskočite vrstico z imeni stolpcev.</p>
+<p><i>Primera pravilne izvedbe funkcije:</i></p>
+<pre><code>&gt;&gt;&gt; preberi_podatke('data/boston5.csv')
+    [(1946, 'Stylianos Kyriakides', 'Greece', 8967, 42.2),
+     (1909, 'Henri Renaud', 'United States', 10416, 39.4),
+     (1979, 'Joan Benoit', 'United States', 9315, 42.2),
+     (1910, 'Fred S. Cameron', 'Canada', 8932, 39.4),
+     (2001, 'Catherine Ndereba', 'Kenya', 8633, 42.2)]
+</code></pre>
+<pre><code>&gt;&gt;&gt; preberi_podatke('data/boston_miss.csv')
+    [(1946, 'Stylianos Kyriakides', 'Greece', 8967, 42.2),
+     (1909, 'Henri Renaud', 'United States', 10416, 39.4),
+     (1988, 'Rosa Mota', 'Portugal', 8670, 42.2),
+     (1910, 'Fred S. Cameron', 'Canada', 8932, 39.4),
+     (2001, 'Catherine Ndereba', 'Kenya', 8633, 42.2)]
+</code></pre>
+<h3>2. naloga: Države in časi</h3>
+<p><i><strong>Osnova</strong></i></p>
+<p>Napišite funkcijo <code>v_slovar</code>, ki kot argument sprejme seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(leto, zmagovalec,
+    drzava, cas, kilometri)</code>).</p>
+<p>Funkcija naj vrača slovar, kjer so ključi države zmagovalcev, vrednosti pa seznami terk oblike <code>(leto, ime, cas)</code> s podatki zmagovalcev iz določene države.</p>
+<p><i>Primer delovanja:</i></p>
+<pre><code>&gt;&gt;&gt; podatki = [(1946, 'Stylianos Kyriakides', 'Greece', 8967, 42.2),
+     (1909, 'Henri Renaud', 'United States', 10416, 39.4),
+     (1979, 'Joan Benoit', 'United States', 9315, 42.2),
+     (1910, 'Fred S. Cameron', 'Canada', 8932, 39.4),
+     (2001, 'Catherine Ndereba', 'Kenya', 8633, 42.2)]
+&gt;&gt;&gt; v_slovar(podatki)
+    {'Greece': [(1946, 'Stylianos Kyriakides', 8967)],
+     'United States': [(1909, 'Henri Renaud', 10416), (1979, 'Joan Benoit', 9315)],
+    'Canada': [(1910, 'Fred S. Cameron', 8932)],
+    'Kenya': [(2001, 'Catherine Ndereba', 8633)]}
+</code></pre>
+<p><i><strong>Dodatek</strong></i></p>
+<p>V podatkih o zmagovalcih maratona so skozi leta spreminjali razdalje maratona, zato funkciji <code>v_slovar</code> dodajte opcijski argument <code>kilometri</code>.</p>
+<p>Če je vrednost tega argumenta nastavljena na <code>0</code>, naj funkcija deluje kot je opisano prej, sicer pa naj v slovar dodaja le tiste terke oblike <code>(leto, ime, cas)</code>, ki dosegajo ali presegajo izbrano mejo.</p>
+<p><i>Primer delovanja:</i></p>
+<pre><code>&gt;&gt;&gt; podatki = [(1946, 'Stylianos Kyriakides', 'Greece', 8967, 42.2),
+     (1909, 'Henri Renaud', 'United States', 10416, 39.4),
+     (1979, 'Joan Benoit', 'United States', 9315, 42.2),
+     (1910, 'Fred S. Cameron', 'Canada', 8932, 39.4),
+     (2001, 'Catherine Ndereba', 'Kenya', 8633, 42.2)]
+&gt;&gt;&gt; v_slovar(podatki, kilometri = 42.2) 
+    {'Greece': [(1946, 'Stylianos Kyriakides', 8967)],
+    'United States': [(1979, 'Joan Benoit', 9315)],
+    'Kenya': [(2001, 'Catherine Ndereba', 8633)]}
+</code></pre>
+<h3>3. naloga: Večkratni zmagovalci</h3>
+<p>Napišite funkcijo <code>veckrat</code>, ki kot argument sprejme seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(leto, zmagovalec,
+    drzava, cas, kilometri)</code>), vrača pa množico imen večkratnih zmagovalcev - v množici naj bodo le zmagovalci, ki so zmagali več kot enkrat. Če je seznam terk prazen, naj funkcija vrne prazno množico.</p>
+<p><i>Primer delovanja:</i></p>
+<pre><code>&gt;&gt;&gt; podatki = [(1902, 'Sammy Mellor', 'United States', 9792, 39.4),
+     (1903, 'John Lordan', 'United States', 9689, 39.4),
+     (1904, 'Michael Spring', 'United States', 9484, 39.4),
+     (1917, 'Bill Kennedy', 'United States', 8917, 39.4),
+     (1919, 'Carl Linder', 'United States', 8953, 39.4),
+     (1922, 'Clarence DeMar', 'United States', 8290, 39.4),
+     (1923, 'Clarence DeMar', 'United States', 8627, 39.4),
+     (1924, 'Clarence DeMar', 'United States', 8980, 42.0),
+     (1925, 'Charles Mellor', 'United States', 9180, 42.0),
+     (1926, 'Johnny Miles', 'Canada', 8740, 42.0),
+     (1927, 'Clarence DeMar', 'United States', 9622, 42.2),
+     (1928, 'Clarence DeMar', 'United States', 9427, 42.2),
+     (1929, 'Johnny Miles', 'Canada', 9188, 42.2),
+     (1930, 'Clarence DeMar', 'United States', 9288, 42.2),
+     (1931, 'James Henigan', 'United States', 10005, 42.2),
+     (1969, 'Sara Mae Berman', 'United States', 12166, 42.2),
+     (1970, 'Sara Mae Berman', 'United States', 11107, 42.2),
+     (1971, 'Sara Mae Berman', 'United States', 11310, 42.2),
+     (1993, 'Olga Markova', 'Russia', 8727, 42.2),
+     (1994, 'Uta Pippig', 'Germany', 8505, 42.2)]
+&gt;&gt;&gt; veckrat(podatki)
+    {'Clarence DeMar', 'Johnny Miles', 'Sara Mae Berman'}
+</code></pre>
+<h3>4. naloga: Izboljšanje časa</h3>
+<p>Napišite funkcijo <code>boljse</code>, ki kot argumenta sprejme:</p>
+<ul>
+<li>seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(leto,
+      zmagovalec, drzava, cas, kilometri)</code>) in</li>
+<li>dolžino proge (število kilometrov), zapisano kot <code>float</code>.</li>
+</ul>
+<p>Funkcija naj vrne množico imen tistih večkratnih zmagovalcev, ki so pri isti dolžini proge (istem številu kilometrov) vsaj enkrat izboljšali svoj čas glede na eno izmed svojih prejšnjih zmag. To pomeni, da ima zmagovalec v kasnejšem letu krajši čas teka kot v prejšnjem letu, pri čemer upoštevamo le zmage z izbranim številom kilometrov.</p>
+<p>Funkcija naj vrne prazno množico v primerih, da je seznam terk prazen ali noben večkratni zmagovalec ni izboljšal svojega časa pri izbrani dolžini proge.</p>
+<p>Predpostavljate lahko, da bodo podatki vedno urejeni po naraščajočem letu (starejša leta so v seznamu na nižjih indeksih kot novejša leta).</p>
+<p><i>Namig:</i> pri snovanju rešitve razmislite o uporabi slovarjev, pri tem pa pazite, da boste vedno primerjali čas iz starejšega leta s časom iz novejšega.</p>
+<p><i>Primer delovanja:</i></p>
+<pre><code>&gt;&gt;&gt; podatki = [(1922, 'Clarence DeMar', 'United States', 8290, 39.4),
+     (1923, 'Clarence DeMar', 'United States', 8627, 39.4),
+     (1924, 'Clarence DeMar', 'United States', 8980, 42.0),
+     (1927, 'Clarence DeMar', 'United States', 9622, 42.2),
+     (1928, 'Clarence DeMar', 'United States', 9427, 42.2),
+     (1929, 'Johnny Miles', 'Canada', 9188, 42.2),
+     (1930, 'Clarence DeMar', 'United States', 9288, 42.2),
+     (1969, 'Sara Mae Berman', 'United States', 12166, 42.2),
+     (1970, 'Sara Mae Berman', 'United States', 11107, 42.2),
+     (1971, 'Sara Mae Berman', 'United States', 11310, 42.2)]
+&gt;&gt;&gt; boljse(podatki, 42.2)
+    {'Clarence DeMar', 'Sara Mae Berman'}
+</code></pre>

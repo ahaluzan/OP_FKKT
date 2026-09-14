@@ -1,0 +1,6 @@
+drzava;regija;sreca;GDP;druzina;zivljenje;svoboda;korupcija
+Norway;Western Europe;7.498;1.57744;1.1269;0.79579;0.59609;0.35776
+Finland;Western Europe;7.413;1.40598;1.13464;0.81091;0.57104;0.41004
+Slovenia;Central and Eastern Europe;5.768;1.29947;1.05613;0.79151;0.53164;0.03635
+Peru;Latin America and Caribbean;5.743;0.99602;0.81255;0.62994;0.37502;0.05292
+Turkmenistan;Central and Eastern Europe;5.658;1.08017;1.03817;0.44006;0.37408;0.28467

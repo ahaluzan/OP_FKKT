@@ -1,0 +1,39 @@
+<p>Nalogo 1 shranite v datoteko z imenom <strong><span style="background-color: #ffe599;"><code>naloga1.py</code></span></strong>, naloge 2-4 pa v datoteko<strong> <span style="background-color: #ffe599;"><code>naloge.py</code></span></strong>.</p>
+<p>Testi se nahajajo v imeniku <code>./testi/2024-2025-k1/</code>.</p>p>
+<h4>1. naloga: Fakultetni polmaraton</h4>
+<p>Napišite program, ki organizatorjem fakultetnega polmaratona pomaga pri vnašanju prijav in razporejanju tekačev v ustrezne kategorije (A = 10 km, B = 21 km) glede na tedensko razdaljo (<code>float</code>), ki jo v povprečju pretečejo.</p>
+<p>Program naj najprej vpraša po imenu tekmovalca, nato pa po pretečeni tedenski razdalji. Če tedenska razdalja:</p>
+<ul>
+<li>znaša manj kot 15 kilometrov, je prijava zavrnjena;</li>
+<li>znaša med 15 in 30 kilometrov, je tekač avtomatsko uvrščen v kategorijo A;</li>
+<li>dosega ali presega 30 kilometrov, se tekač sam odloči, v kateri kategoriji bo tekel.</li>
+</ul>
+<p>Program naj vsakič sporoči, v katero kategorijo je bil uvrščen tekač. Če tekač javi kategorijo, ki ne obstaja, naj program pozove po ponovnem vnosu.</p>
+<p>Za prijave naj sprašuje tako dolgo, dokler prijavna služba na vprašanje o imenu ne odgovori z 0. Nato program vpraša, ali naj izpiše število tekmovalcev po kategorijah (<code>int</code>) ali poimenski seznam tekmovalcev po kategorijah. </p>
+<p><br><em>Primera delovanja programa:</em><br><code>&gt;&gt;&gt; Vnesi ime: Janez</code><br><code>&gt;&gt;&gt; Vnesi tedensko razdaljo v km: 16</code><br><code>Uvrstitev v kategorijo A.</code><br><code>Naslednji tekmovalec. </code><br><code>&gt;&gt;&gt; Vnesi ime: Franc</code><br><code>&gt;&gt;&gt; Vnesi tedensko razdaljo v km: 30</code><br><code>&gt;&gt;&gt; Izberi kategorijo (A, B): B</code><br><code>Uvrstitev v kategorijo B.</code><br><code>Naslednji tekmovalec.</code><br><code>&gt;&gt;&gt; Vnesi ime: 0</code><br><code>Prijave zaključene. </code><br><code>&gt;&gt;&gt; Želite izpis števila tekmovalcev ali seznama tekmovalcev? (s/l): s</code><br><code>Kategorija A: 1; kategorija B: 1</code></p>
+<p><br><code>&gt;&gt;&gt; Vnesi ime: Janez</code><br><code>&gt;&gt;&gt; Vnesi tedensko razdaljo v km: 10</code><br><code>Zavrnjena prijava.</code><br><code>Naslednji tekmovalec. </code><br><code>&gt;&gt;&gt; Vnesi ime: Franc</code><br><code>&gt;&gt;&gt; Vnesi tedensko razdaljo v km: 35</code><br><code>&gt;&gt;&gt; Izberi kategorijo (A, B): C</code><br><code>Neveljavna kategorija! Poskusi znova.</code><br><code>&gt;&gt;&gt; Vnesi ime: Franc</code><br><code>&gt;&gt;&gt; Vnesi tedensko razdaljo v km: 35</code><br><code>&gt;&gt;&gt; Izberi kategorijo (A, B): B</code><br><code>Uvrstitev v kategorijo B.</code><br><code>Naslednji tekmovalec.</code><br><code>&gt;&gt;&gt; Vnesi ime: 0</code><br><code>Prijave zaključene. </code><br><code>&gt;&gt;&gt; Želite izpis števila tekmovalcev ali seznama tekmovalcev? (s/l): l</code><br><code>Kategorija A: []; kategorija B: ['Franc']</code><br><br></p>
+<h4>2. naloga: Povprečni tempo</h4>
+<p>Napišite funkcijo <code>povprecni_tempo</code>, ki kot argumenta sprejme dva seznama. Prvi seznam vsebuje število kilometrov za posamezni tek, drugi seznam pa čas, ki ga je tekač potreboval, da je pretekel to razdaljo. Funkcija naj vrača seznam treh elementov (vsi <code>float</code>): najpočasnejši tempo (najvišja številka), povprečni tempo in najhitrejši tempo (najnižja številka). Vsi trije elementi naj bodo zaokroženi na 2 decimalni mesti natančno.</p>
+<p>Če se podana seznama ne ujemata v dolžini ali pa je dolžina kateregakoli od njiju manjša od 3, naj funkcija vrne prazen seznam.</p>
+<p><em>Primera delovanja:</em><br><code>&gt;&gt;&gt; kms = [5, 10, 21.1, 42.2]</code><br><code>&gt;&gt;&gt; mins = [25, 50, 110, 240]</code><br><code>&gt;&gt;&gt; povprecni_tempo(kms, mins)</code><br><code>[5.69, 5.23, 5.0]</code></p>
+<p><br><code>&gt;&gt;&gt; kms = [5, 10, 21.1]</code><br><code>&gt;&gt;&gt; mins = [25, 50, 110, 240]</code><br><code>&gt;&gt;&gt; povprecni_tempo(kms, mins)</code><br><code>[]</code></p>
+<h4><br>3. naloga: Napoved časa</h4>
+<p>Napišite funkcijo <code>napoved</code>, ki kot argumenta sprejme tempo (<code>float</code>), podan v min/km, in kategorijo (<code>str</code>). Funkcija naj vrača niz oblike<code> "hh:mm:ss"</code> (<code>str</code>), pri čemer <code>hh</code> označuje ure, <code>mm</code> minute, <code>ss</code> pa sekunde, ki ponazarjajo čas, v katerem z danim tempom tekač preteče razdaljo izbrane kategorije.</p>
+<p>Kategorije in pripadajoče razdalje so sledeče: </p>
+<ul>
+<li>A označuje 10 km,</li>
+<li>B 21.0975 km in</li>
+<li>C 42.195 km.</li>
+</ul>
+<p>Če je podana katerakoli druga kategorija, naj funkcija vrne <code>"Neveljavna kategorija!"</code>.</p>
+<p>Skupni čas izračunate po formuli: <code>tempo * razdalja</code> in je podan v minutah, nato pa ga z deljenjem pretvorite v ure, minute in sekunde po naslednjih formulah:</p>
+<ul>
+<li><code>ure = int(skupni_cas // 60)</code></li>
+<li><code>minute = int(skupni_cas % 60)</code></li>
+<li><code>sekunde = int(((skupni_cas - int(skupni_cas)) * 60)</code></li>
+</ul>
+<p><em>Primeri delovanja:</em><br><code>&gt;&gt;&gt; napoved(6.62, "A")</code><br><code>'01:06:12'</code><br><code>&gt;&gt;&gt; napoved(6.62, "B")</code><br><code>'02:19:39'</code><br><code>&gt;&gt;&gt; napoved(6.62, "D")</code><br><code>'Neveljavna kategorija!"</code><br><br></p>
+<h4>4. naloga: Priprave</h4>
+<p>Napišite funkcijo <code>priprave</code>, ki sprejme dva argumenta v obliki <code>float</code>. Prvi argument je tekačev cilj, drugi pa začetna razdalja. Funkcija naj pripravi izračun števila treningov, ki jih tekač potrebuje za podaljšanje teka iz začetne razdalje na ciljno razdaljo, če na vsakem treningu razdaljo poveča za 10 % - torej: na vsakem treningu je razdalja 10 % daljša od prejšnjega. Funkcija naj vrne število treningov, ki jih tekač potrebuje za dosego cilja. V primeru, da je začetna razdalja večja od cilja, naj funkcija javi<code> "Cilj ste že dosegli."</code>.</p>
+<p><em>Namig: </em><code>razdalja *= 1.1</code></p>
+<p><em>Primera delovanja:</em><br><code>&gt;&gt;&gt; priprave(11,6)</code><br><code>7</code><br><code>&gt;&gt;&gt; priprave(10,9)</code><br><code>2</code></p>

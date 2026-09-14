@@ -1,0 +1,88 @@
+<p>Naloge shranite v datoteko z imenom <strong><span style="background-color: #ffe599;"><code>naloge.py</code></span></strong>.</p>
+<p>Testi se nahajajo v imeniku <code>./testi/2024-2025-i3/</code>.</p>
+
+<h1>3. izpit 2025/2026</h1>
+
+<h2>1. naloga</h2>
+<p>Podatki o naročilih v kavarni se nahajajo v datoteki <code>csv</code>. Predpostavljajte, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljena vejica (<code>,</code>), prva vrstica pa predstavlja glave stolpcev.</p>
+<p>Primer vsebine datoteke <code>kava5.csv</code>:</p>
+<pre><code>id,starost,spol,izdelek,velikost,cena,ocena,placilo,lokacija,clan
+501,25,Female,Cappuccino,M,3.5,4.7,Card,Ljubljana,Yes
+502,34,Male,Latte,L,4.0,4.2,Cash,Maribor,No
+503,19,Female,Espresso,S,2.5,4.9,Card,Ljubljana,Yes
+504,45,Male,Cappuccino,L,3.8,3.9,App,Celje,No
+505,29,Female,Cold Brew,M,3.9,4.5,Card,Unknown,Yes
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(starost, spol, izdelek,
+    velikost, cena, ocena)</code>. Pri tem naj:</p>
+<ul>
+<li><code>starost</code> predstavlja starost kupca, zapisano kot <code>int</code>,</li>
+<li><code>spol</code> predstavlja spol kupca, zapisan kot <code>'M'</code> ali <code>'F'</code>,</li>
+<li><code>izdelek</code> predstavlja ime naročene kave, zapisano kot <code>str</code>,</li>
+<li><code>velikost</code> predstavlja izbrano velikost napitka, zapisano kot <code>str</code>,</li>
+<li><code>cena</code> predstavlja ceno napitka, zapisano kot <code>float</code> in zaokroženo na 2 decimalni mesti ter</li>
+<li><code>ocena</code> predstavlja oceno naročila, zapisano kot <code>float</code>.</li>
+</ul>
+<p>Vrednost spremenljivke <code>spol</code> določite tako, da spol spremenite v <code>'M'</code>, če je v datoteki zapisana vrednost <code>'Male'</code>, in v <code>'F'</code>, če je v datoteki zapisana vrednost <code>'Female'</code>.</p>
+<p>Če je v spremenljivki <code>lokacija</code> zapisana vrednost <code>'Unknown'</code>, podatkov iz te vrstice ne vključite v seznam.</p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; preberi_podatke('data/kava5.csv')
+    [(25, 'F', 'Cappuccino', 'M', 3.5, 4.7),
+     (34, 'M', 'Latte', 'L', 4.0, 4.2),
+     (19, 'F', 'Espresso', 'S', 2.5, 4.9),
+     (45, 'M', 'Cappuccino', 'L', 3.8, 3.9)]
+     [(25, 'F', 'Cappuccino', 'M', 3.5, 4.7), (34, 'M', 'Latte', 'L', 4.0, 4.2), (19, 'F', 'Espresso', 'S', 2.5, 4.9), (45, 'M', 'Cappuccino', 'L', 3.8, 3.9)]
+</code></pre>
+<h2>2. naloga</h2>
+<p>Napišite funkcijo <code>v_slovar</code>, ki kot argument sprejme seznam terk, kot ga vrača 1. naloga (tj. seznam terk oblike <code>(starost, spol, izdelek,
+    velikost, cena, ocena)</code>), ter opcijski argument <code>kljuc</code>, ki ima privzeto vrednost <code>False</code>.</p>
+<p>Če je vrednost argumenta <code>kljuc</code> enaka <code>False</code>, naj funkcija vrača slovar, kjer so ključi imena izdelkov, vrednosti pa seznami terk oblike <code>(starost, spol, velikost, cena, ocena)</code>. Če pa je vrednost argumenta <code>kljuc</code> enaka <code>True</code>, pa naj bosta ključa slovarja oznaki za spola, vrednosti pa seznami terk oblike <code>(starost, izdelek, velikost, cena, ocena)</code>.</p>
+<p>V primeru, da funkciji podamo prazen seznam terk, naj funkcija vrača prazen slovar.</p>
+<p><em>Namig: najprej si pripravite prazen slovar.</em></p>
+<p><em>Primer pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; podatki = [(25, 'F', 'Cappuccino', 'M', 3.5, 4.7), 
+    (34, 'M', 'Latte', 'L', 4.0, 4.2), 
+    (19, 'F', 'Espresso', 'S', 2.5, 4.9), 
+    (45, 'M', 'Cappuccino', 'L', 3.8, 3.9)]
+&gt;&gt;&gt; v_slovar(podatki)
+    {'Cappuccino': [(25, 'F', 'M', 3.5, 4.7), (45, 'M', 'L', 3.8, 3.9)],
+     'Latte': [(34, 'M', 'L', 4.0, 4.2)],
+     'Espresso': [(19, 'F', 'S', 2.5, 4.9)]}
+&gt;&gt;&gt; v_slovar(podatki, kljuc=True)
+    {'F': [(25, 'Cappuccino', 'M', 3.5, 4.7), (19, 'Espresso', 'S', 2.5, 4.9)],
+     'M': [(34, 'Latte', 'L', 4.0, 4.2), (45, 'Cappuccino', 'L', 3.8, 3.9)]}
+</code></pre>
+<h2>3. naloga</h2>
+<p>Napišite funkcijo <code>statistika</code>, ki kot argument sprejme slovar, kot ga vrača 2. naloga s <code>kljuc = False</code> (tj. slovar, kjer so ključi imena izdelkov, vrednosti pa seznami terk oblike <code>(starost,
+    spol, velikost, cena, ocena)</code>).</p>
+<p>Funkcija naj vrača slovar, kjer so ključi enaki kot v vhodnem slovarju, kot vrednosti pa nastopajo povprečne cene posameznega izdelka. Povprečja naj bodo zaokrožena na dve decimalni mesti.</p>
+<p><em>Primera pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; slovar = {
+    'Cappuccino': [(25, 'F', 'M', 3.5, 4.7), (45, 'M', 'L', 3.8, 3.9)],
+     'Latte': [(34, 'M', 'L', 4.0, 4.2)],
+     'Espresso': [(19, 'F', 'S', 2.5, 4.9)]}
+&gt;&gt;&gt; statistika(slovar)
+    {'Cappuccino': 3.65, 'Latte': 4.0, 'Espresso': 2.5}
+&gt;&gt;&gt; statistika({})
+    {}
+</code></pre>
+<h2>4. naloga</h2>
+<p>Napišite funkcijo <code>po_spolu</code>, ki kot argument sprejme slovar, kot ga vrača 2. naloga s <code>kljuc=True</code> (tj. slovar, kjer sta ključa oznaki za spola, vrednosti pa seznami terk oblike <code>(starost, izdelek,
+    velikost, cena, ocena)</code>).</p>
+<p>Funkcija naj vrne slovar s tremi ključi:</p>
+<ul>
+<li><code>'skupno'</code>: množica izdelkov, ki jih naročajo tako ženske kot moški (presek),</li>
+<li><code>'samo_m'</code>: množica izdelkov, ki jih naročajo izključno moški (razlika množic) in</li>
+<li><code>'samo_f'</code>: množica izdelkov, ki jih naročajo izključno ženske (razlika množic).</li>
+</ul>
+<p>Predpostavite lahko, da manjkajoč ključ (<code>'M'</code> ali <code>'F'</code>) v vhodnem slovarju pomeni, da za ta spol ni bilo nobenih naročil.</p>
+<p><em>Primera pravilne izvedbe funkcije:</em></p>
+<pre><code>&gt;&gt;&gt; slovar = {'F': [(25, 'Cappuccino', 'M', 3.5, 4.7), (19, 'Espresso', 'S', 2.5, 4.9)],
+     'M': [(34, 'Latte', 'L', 4.0, 4.2), (45, 'Cappuccino', 'L', 3.8, 3.9)]}
+&gt;&gt;&gt; po_spolu(slovar)
+    {'skupno': {'Cappuccino'}, 'samo_m': {'Latte'}, 'samo_f': {'Espresso'}}
+</code></pre>
+<pre><code>&gt;&gt;&gt; slovar2 = {'M': [(30, 'Latte', 'L', 4.57, 4.0), (50, 'Mocha', 'S', 3.0, 3.5)]}
+&gt;&gt;&gt; po_spolu(slovar2)
+    {'skupno': set(), 'samo_m': {'Latte', 'Mocha'}, 'samo_f': set()}
+</code></pre>

@@ -1,0 +1,108 @@
+<p dir="ltr" style="text-align: left;"></p>
+<p>Ukvarjali se bomo z analizo DNA podatkov. Napisati morate 1 program in 3 funkcije, ki nam bodo pri taki analizi pomagali. </p>
+<p>Naloge niso razvrščene po težavnosti in so neodvisne ena od druge. Testi so na voljo v imeniku <code>./testi/2023-2024-k1/</code>.</p>
+
+<p>Pri prvi nalogi datoteko poimenujte <code>naloga1.py</code>, funkcije ostalih nalog pa spišite v modul z imenom <code>naloge</code>.</p>
+<p></p>
+<p></p>
+
+<p dir="ltr"></p>
+<p>Ukvarjali se bomo z analizo DNA podatkov. Napisati morate 1 program in 3 funkcije, ki nam bodo pri taki analizi pomagali.</p>
+<h2>Naloga 1</h2>
+<p>Napiši program, ki mu uporabnik poda en znak naenkrat in na podlagi vnešenih znakov sestavlja zaporedje nukleotidov. Pri tem naj program upošteva sledeče omejitve:</p>
+<ul>
+<li>Uporabnik lahko vnese le en znak naenkrat, pri čemer mora biti vneseni znak enak bodisi <code>C</code>, <code>T</code>, <code>A</code> ali <code>G</code> (DNA) bodisi <code>C</code>, <code>U</code>, <code>A</code> ali <code>G</code> (RNA). Če uporabnik vnese znak, ki ne ustreza tem pogojem, naj program izpiše <code>Neveljaven nukleotid!</code>.</li>
+<li>Program naj uporabniku v <strong>istem</strong> zaporedju ne dovoli vnašati znakov <code>T</code> in <code>U</code> (glej sledeči alineji):
+<ul>
+<li>V primeru, da je uporabnik predhodno vnesel <code>T</code>, kasneje pa <code>U</code>, naj program izpiše <code>DNA zaporedje ne more vsebovati baze U!</code>.</li>
+<li>V primeru, da je uporabnik predhodno vnesel <code>U</code>, kasneje pa <code>T</code>, naj program izpiše <code>RNA zaporedje ne more vsebovati baze T!</code>.</li>
+</ul>
+</li>
+<li>Program naj prekine vnašanje, ko uporabnik vnese stop kodon (<code>TAG</code>, <code>TGA</code> ali <code>TAA</code> v primeru DNA zaporedja oziroma <code>UAG</code>, <code>UGA</code> ali <code>UAA</code>v primeru RNA zaporedja).</li>
+</ul>
+<p>Program naj na koncu izpiše celotno zaporedje in dolžino tega zaporedja (glej primere spodaj). Izpiše naj tudi tip zaporedja glede na vsebovanost nukleotida <code>T</code> oziroma <code>U</code>.</p>
+<p>Primeri delovanja programa:</p>
+<p><em>Primer 1:</em></p>
+<pre><code class="hljs properties"><span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: A</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: T</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: G</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: C</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: a</span>
+<span class="hljs-attr">Neveljaven</span> <span class="hljs-string">nukleotid!</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: AA</span>
+<span class="hljs-attr">Neveljaven</span> <span class="hljs-string">nukleotid!</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: n</span>
+<span class="hljs-attr">Neveljaven</span> <span class="hljs-string">nukleotid!</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: T</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: A</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: G</span>
+<span class="hljs-attr">Vnesel</span> <span class="hljs-string">si DNA zaporedje ATGCTAG dolžine 7</span>
+</code></pre>
+<p><em>Primer 2:</em></p>
+<pre><code class="hljs properties"><span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: T</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: T</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: A</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: U</span>
+<span class="hljs-attr">DNA</span> <span class="hljs-string">zaporedje ne more vsebovati baze U!</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: G</span>
+<span class="hljs-attr">Vnesel</span> <span class="hljs-string">si DNA zaporedje TTAG dolžine 4</span>
+</code></pre>
+<p><em>Primer 3:</em></p>
+<pre><code class="hljs properties"><span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: U</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: U</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: A</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: T</span>
+<span class="hljs-attr">RNA</span> <span class="hljs-string">zaporedje ne more vsebovati baze T!</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">nukleotid: G</span>
+<span class="hljs-attr">Vnesel</span> <span class="hljs-string">si RNA zaporedje UUAG dolžine 4</span>
+</code></pre>
+<h2>Naloga 2 </h2>
+<h3>Osnova</h3>
+<p>Napiši funkcijo <code>komplement</code>, ki kot argument sprejme DNA zaporedje zapisano kot niz (<code>str</code>) in vrne komplementarno DNA zaporedje zapisano kot niz (<code>str</code>). Pri tem upoštevaj, da je nukelotid <code>T</code> komplementaren nukleotidu <code>A</code> (in obratno) ter da je nukleotid <code>G</code> komplementaren nukleotidu <code>C</code> (in obratno).</p>
+<p>Funkcija naj preveri, če sekvenca res predstavlja DNA zaporedje (vsebuje lahko zgolj znake <code>C</code>, <code>T</code>, <code>A</code> ali <code>G</code>). V primeru, da sekvenca tega pogoja ne izpolnjuje, naj funkcija vrne prazen niz.</p>
+<p>Prazen niz naj vrne tudi v primeru, ko funkcija kot vhodno sekvenco prejme prazen niz.</p>
+<p>Primeri pravilne uporabe funkcije:</p>
+<pre><code class="hljs ruby">&gt; komplement(<span class="hljs-string">"TTAAGGCC"</span>)
+<span class="hljs-string">'AATTCCGG'</span>
+&gt; komplement(<span class="hljs-string">""</span>)
+<span class="hljs-string">''</span>
+</code></pre>
+<h3>Dodatek</h3>
+<p>Funkcija naj sprejme izbiren (opcijski) argument <code>RNA</code>, ki naj bo privzeto postavljen na vrednost <code>False</code>. V tem primeru naj funkcija deluje enako kot v osnovni različici.</p>
+<p>Če je argument <code>RNA</code> postavljen na vrednost <code>True</code>, naj funkcija vrne komplementarno <code>RNA</code> sekvenco, v kateri je <code>T</code> zamenjan za <code>U</code>.</p>
+<p>Primeri pravilne uporabe funkcije:</p>
+<pre><code class="hljs vbnet">&gt; komplement(<span class="hljs-string">"TTAAGG"</span>)
+<span class="hljs-comment">'AATTCC'</span>
+&gt; komplement(<span class="hljs-string">"TTAAGG"</span>, RNA=<span class="hljs-literal">True</span>)
+<span class="hljs-comment">'AAUUCC'</span>
+</code></pre>
+<h2>Naloga 3</h2>
+<p>Napiši funkcijo <code>kvaliteta</code>, ki sprejme tri sezname:</p>
+<ul>
+<li>seznam nizov, ki predstavljajo DNA zaporedja zapisana kot <code>str</code>,</li>
+<li>seznam meritev količin DNA zapisanih kot <code>float</code>,</li>
+<li>seznam ocenjenega procenta nečistoč zapisanem kot <code>float</code>.</li>
+</ul>
+<p>Predpostavljaj, da so vsi trije seznami <em>poravnani</em> - vrednosti na izbranem indeksu se v vseh treh seznamih nanašajo na isto DNA zaporedje. Prav tako lahko predpostavljaš, da so vsi trije seznami enako dolgi.</p>
+<p>Funkcija naj vrne seznam terk oblike <code>(zaporedje, ocenjena_kolicina_DNA)</code>, pri čemer <code>zaporedje</code> predstavlja posamezno zaporedje zapisano kot <code>str</code>, <code>ocenjena_kolicina_DNA</code> pa oceno količine DNA brez nečistoč zapisano kot <code>float</code> zaokrožen na 2 decimalni mesti natančno.</p>
+<p>Če so podani seznami prazni, naj funkcija vrne prazen seznam.</p>
+<p>Oceno količine DNA brez nečistoč izračunamo po formuli:</p>
+<blockquote>
+<p>kolicina = meritev*(1-necistoce*0.01)</p>
+</blockquote>
+<p>Primer pravilnega delovanja funkcije:</p>
+<pre><code class="hljs prolog">&gt; zaporedja = [<span class="hljs-string">"AAA"</span>, <span class="hljs-string">"TTT"</span>, <span class="hljs-string">"C"</span>]
+&gt; koncentracije = [<span class="hljs-number">10</span>, <span class="hljs-number">15</span>, <span class="hljs-number">5</span>]
+&gt; procenti = [<span class="hljs-number">50.325235</span>, <span class="hljs-number">33.444</span>, <span class="hljs-number">15.4</span>]
+&gt; kvaliteta(seqs, <span class="hljs-symbol">Vs</span>, percts)
+[(<span class="hljs-string">'AAA'</span>, <span class="hljs-number">4.97</span>), (<span class="hljs-string">'TTT'</span>, <span class="hljs-number">9.98</span>), (<span class="hljs-string">'C'</span>, <span class="hljs-number">4.23</span>)]
+</code></pre>
+<h2>Naloga 4 </h2>
+<p>Napiši funkcijo <code>naj_DNA</code>, ki sprejme seznam terk, kot ga vrača Naloga 3 (tj. seznam terk oblike <code>(zaporedje, ocenjena_kolicina_DNA)</code>, pri čemer <code>zaporedje</code> predstavlja posamezno zaporedje, <code>ocenjena_kolicina_DNA</code> pa oceno količine DNA brez nečistoč).</p>
+<p>Funkcija naj vrne zaporedje DNA, ki ima največjo ocenjeno količino. Predpostavljaš lahko, da je tako največ eno zaporedje. V primeru, da funkciji podamo prazno zaporedje, naj vrne prazen niz.</p>
+<p>Primeri pravilnega delovanja funkcije:</p>
+<pre><code class="hljs prolog">&gt; naj_DNA([(<span class="hljs-string">'AAA'</span>, <span class="hljs-number">4.97</span>), (<span class="hljs-string">'TTT'</span>, <span class="hljs-number">9.98</span>), (<span class="hljs-string">'C'</span>, <span class="hljs-number">4.23</span>)])
+<span class="hljs-string">'TTT'</span>
+&gt; naj_DNA([])
+<span class="hljs-string">''</span></code></pre>
+<p dir="ltr"></p>

@@ -1,0 +1,31 @@
+starost,spol,izdelek,katergorija,cena,lokacija,velikost,barva,sezona,ocena,popust,placilo,pogostost
+#49,Male,Blouse,Clothing,28,Maryland,M,Red,Spring,3.7,Yes,Debit Card,Bi-Weekly
+#35,Male,Boots,Footwear,96,California,L,Cyan,Fall,4.9,Yes,Debit Card,Every 3 Months
+25,Male,Boots,Footwear,21,Connecticut,L,Beige,Summer,2.7,Yes,Credit Card,Monthly
+25,Male,T-shirt,Clothing,95,Maryland,L,Violet,Fall,3.4,Yes,Venmo,Annually
+31,Female,Coat,Outerwear,76,Kentucky,S,Green,Spring,3.6,No,Venmo,Every 3 Months
+55,Female,Blouse,Clothing,25,Georgia,M,Peach,Spring,2.6,No,Bank Transfer,Bi-Weekly
+#23,Female,Coat,Outerwear,90,Minnesota,M,Teal,Spring,2.9,No,Venmo,Weekly
+45,Female,Handbag,Accessories,33,Mississippi,S,Olive,Fall,4.9,No,Cash,Bi-Weekly
+68,Male,Shoes,Footwear,20,Connecticut,L,Turquoise,Winter,2.6,Yes,Venmo,Monthly
+54,Male,Backpack,Accessories,37,New Mexico,XL,Turquoise,Winter,4.1,Yes,PayPal,Quarterly
+31,Male,Sunglasses,Accessories,85,Missouri,M,White,Fall,3.1,No,Venmo,Every 3 Months
+#51,Male,Gloves,Accessories,76,Wyoming,S,Black,Winter,2.8,No,Debit Card,Weekly
+#43,Male,Backpack,Accessories,78,Arkansas,L,Blue,Summer,4.6,No,PayPal,Every 3 Months
+35,Male,Hat,Accessories,96,Mississippi,M,Teal,Summer,3.4,No,Debit Card,Annually
+57,Male,Shirt,Clothing,40,Illinois,M,Orange,Spring,2.6,No,Cash,Weekly
+41,Male,Shoes,Footwear,89,Colorado,L,Pink,Summer,4.6,No,Credit Card,Weekly
+57,Male,Shoes,Footwear,26,Hawaii,M,Turquoise,Winter,4.2,No,Cash,Annually
+#68,Male,T-shirt,Clothing,76,North Carolina,M,Magenta,Fall,4.5,No,Venmo,Quarterly
+53,Male,Boots,Footwear,52,New Hampshire,XL,Peach,Fall,3,No,Debit Card,Fortnightly
+20,Male,Socks,Clothing,35,Oregon,L,Maroon,Summer,4.2,No,Credit Card,Every 3 Months
+#51,Female,Sandals,Footwear,66,Alaska,L,Pink,Spring,2.7,No,PayPal,Every 3 Months
+57,Female,Sweater,Clothing,79,Nebraska,M,Silver,Spring,3,No,Debit Card,Annually
+22,Female,Jeans,Clothing,91,Iowa,S,Maroon,Winter,4.1,No,Debit Card,Every 3 Months
+33,Male,Skirt,Clothing,25,Mississippi,L,Black,Fall,4,Yes,Bank Transfer,Weekly
+42,Male,Sweater,Clothing,68,Kentucky,M,Violet,Spring,2.6,Yes,Bank Transfer,Fortnightly
+#20,Female,Shorts,Clothing,78,Vermont,M,Pink,Spring,3.6,No,PayPal,Monthly
+63,Female,Shoes,Footwear,74,West Virginia,S,Orange,Winter,4.8,No,Cash,Weekly
+51,Female,Jeans,Clothing,60,Ohio,M,Silver,Summer,3.5,No,PayPal,Annually
+42,Female,Hoodie,Clothing,88,Arizona,M,Gold,Fall,3.1,No,PayPal,Monthly
+27,Female,Jewelry,Accessories,74,Mississippi,L,Indigo,Summer,4.4,No,Debit Card,Every 3 Months

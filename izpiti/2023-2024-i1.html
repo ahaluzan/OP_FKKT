@@ -1,0 +1,145 @@
+<p dir="ltr" style="text-align: left;"></p><p></p><div><div></div></div><div><div>S
+ portala Goodreads smo pridobili seznam knjig, tvoja naloga pa bo, da 
+napišeš štiri funkcije, s katerimi bomo lahko na podlagi določenih 
+kriterijev izbrali knjige za počitniška branja.</div></div><p></p><p>Naloge niso razvrščene po težavnosti in so neodvisne ena od druge. Testi so na voljo v imeniku <code>./testi/2023-2024-i1/</code>.</p><p>Svoje rešitve napišite v datoteko <code>naloge.py</code>.</p><br><p></p>
+
+<div><h1>Naloga 1 (25 točk)</h1>
+
+<p>Podatki o knjigah so zapisani v tekstovnih datotekah. Predpostavljaj,
+ da ima datoteka obliko, ki je skladna s spodnjim zgledom - v prvi 
+vrstici so podana imena stolpcev, za ločilo pa je uporabljeno podpičje (<code>;</code>).</p>
+
+<p>Primer datoteke <code>goodread5.csv</code>:</p>
+
+<pre><code class="hljs properties"><span class="hljs-attr">avtor;naslov;zbirka;ocena;strani;zanri</span>
+<span class="hljs-attr">Frances</span> <span class="hljs-string">Hodgson Burnett;The Secret Garden;;413;331;Classics,Fiction,Childrens,Young Adult,Historical Fiction,Middle Grade,Literature,Fantasy,Historical,Audiobook</span>
+<span class="hljs-attr">John</span> <span class="hljs-string">Green;Looking for Alaska;;402;221;Young Adult,Fiction,Contemporary,Romance,Realistic Fiction,Coming Of Age,Teen,Mystery,Young Adult Contemporary,High School</span>
+<span class="hljs-attr">Louis</span> <span class="hljs-string">Sachar;Holes;Holes;397;233;Young Adult,Fiction,Childrens,Middle Grade,Realistic Fiction,Classics,Mystery,Adventure,School,Contemporary</span>
+<span class="hljs-attr">Arthur</span> <span class="hljs-string">Golden;Memoirs of a Geisha;;412;503;Fiction,Historical Fiction,Romance,Historical,Classics,Japan,Adult,Novels,Asia,Adult Fiction</span>
+<span class="hljs-attr">Stephenie</span> <span class="hljs-string">Meyer;Twilight;The Twilight Saga;360;501;Young Adult,Fantasy,Romance,Vampires,Fiction,Paranormal,Paranormal Romance,Supernatural,Teen,Urban Fantasy</span>
+</code></pre>
+
+<p>Napiši funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke (<code>str</code>) in vrne vsebino datoteke kot seznam terk oblike <code>(avtor, naslov, zbirka, ocena, strani, zanri)</code>. Pri tem naj</p>
+
+<ul>
+<li><code>avtor</code> predstavlja ime avtorja knjige zapisano kot <code>str</code>,</li>
+<li><code>naslov</code> predstavlja naslov knjige zapisan kot <code>str</code>,</li>
+<li><code>zbirka</code> predstavlja ime zbirke, v kateri je bila knjiga izdana, zapisano kot <code>str</code>,</li>
+<li><code>ocena</code> predstavlja oceno knjige na intervalu od 1 do 5 zapisano kot <code>float</code>,</li>
+<li><code>strani</code>predstavlja število strani zapisano kot <code>int</code>,</li>
+<li><code>zanr</code> predstavlja seznam (<code>list</code>) vodilnih treh žanrov, v katere lahko knjigo uvrstimo.</li>
+</ul>
+
+<p>Napotki in namigi:</p>
+
+<ul>
+<li>prva vrstica predstavlja imena stolpcev in jo pri branju preskoči,</li>
+<li>podatek <code>ocena</code> pretvorimo na interval od 1 do 5 tako, da oceno zapisano v datoteki delimo s 100,</li>
+<li>v določenih primerih podatek <code>zbirka</code> v datoteki nima vrednosti (<code>''</code>) - v tem primeru naj terka namesto podatka o zbirki vsebuje vrednost <code>'standalone'</code>.</li>
+<li>podatek <code>zanr</code> lahko v datoteki vsebuje poljubno število žanrov, ki so v posamezni vrstici med seboj ločeni z vejico (<code>,</code>); terka, ki jo tvoja funkcija vrača, naj vsebuje seznam prvih treh žanrov, v katere lahko izbrano knjigo uvrstimo.</li>
+</ul>
+
+<p>Primer pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs prolog">&gt;&gt;&gt; preberi_podatke(<span class="hljs-string">"goodread5.csv"</span>)
+[(<span class="hljs-string">'Frances Hodgson Burnett'</span>,
+  <span class="hljs-string">'The Secret Garden'</span>,
+  <span class="hljs-string">'standalone'</span>,
+  <span class="hljs-number">4.13</span>,
+  <span class="hljs-number">331</span>,
+  [<span class="hljs-string">'Classics'</span>, <span class="hljs-string">'Fiction'</span>, <span class="hljs-string">'Childrens'</span>]),
+ (<span class="hljs-string">'John Green'</span>,
+  <span class="hljs-string">'Looking for Alaska'</span>,
+  <span class="hljs-string">'standalone'</span>,
+  <span class="hljs-number">4.02</span>,
+  <span class="hljs-number">221</span>,
+  [<span class="hljs-string">'Young Adult'</span>, <span class="hljs-string">'Fiction'</span>, <span class="hljs-string">'Contemporary'</span>]),
+ (<span class="hljs-string">'Louis Sachar'</span>,
+  <span class="hljs-string">'Holes'</span>,
+  <span class="hljs-string">'Holes'</span>,
+  <span class="hljs-number">3.97</span>,
+  <span class="hljs-number">233</span>,
+  [<span class="hljs-string">'Young Adult'</span>, <span class="hljs-string">'Fiction'</span>, <span class="hljs-string">'Childrens'</span>]),
+ (<span class="hljs-string">'Arthur Golden'</span>,
+  <span class="hljs-string">'Memoirs of a Geisha'</span>,
+  <span class="hljs-string">'standalone'</span>,
+  <span class="hljs-number">4.12</span>,
+  <span class="hljs-number">503</span>,
+  [<span class="hljs-string">'Fiction'</span>, <span class="hljs-string">'Historical Fiction'</span>, <span class="hljs-string">'Romance'</span>]),
+ (<span class="hljs-string">'Stephenie Meyer'</span>,
+  <span class="hljs-string">'Twilight'</span>,
+  <span class="hljs-string">'The Twilight Saga'</span>,
+  <span class="hljs-number">3.6</span>,
+  <span class="hljs-number">501</span>,
+  [<span class="hljs-string">'Young Adult'</span>, <span class="hljs-string">'Fantasy'</span>, <span class="hljs-string">'Romance'</span>])]
+</code></pre>
+
+<h1>Naloga 2 (25 točk)</h1>
+
+<p>Napiši funkcijo <code>slovar_zanrov</code>, ki kot argument sprejme <em>seznam terk</em>, kot ga vrača Naloga 1, tj. <em>seznam terk</em> oblike <code>(avtor, naslov, zbirka, ocena, strani, zanri)</code>.</p>
+
+<p>Funkcija naj vrne <em>slovar</em> (<code>dict</code>), ki kot <strong>ključe</strong> vsebuje imena žanrov, ki se pojavijo v seznamu terk (<code>zanri</code>). Na posamezen žanr naj bo kot <strong>vrednost</strong> vezan seznam terk oblike <code>(avtor, naslov)</code>, pri čemer posamezna terka predstavlja avtorja in naslov knjige, ki jo uvrščamo v določen žanr.</p>
+
+<p>V primeru, da funkciji kot argument podamo prazen seznam, naj vrne prazen slovar.</p>
+
+<p>Primer pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs prolog">&gt;&gt;&gt; sez =[(<span class="hljs-string">'Frances Hodgson Burnett'</span>, <span class="hljs-string">'The Secret Garden'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.13</span>, <span class="hljs-number">331</span>, [<span class="hljs-string">'Classics'</span>, <span class="hljs-string">'Fiction'</span>, <span class="hljs-string">'Childrens'</span>]),
+  (<span class="hljs-string">'John Green'</span>, <span class="hljs-string">'Looking for Alaska'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.02</span>, <span class="hljs-number">221</span>, [<span class="hljs-string">'Young Adult'</span>, <span class="hljs-string">'Fiction'</span>, <span class="hljs-string">'Contemporary'</span>]),
+  (<span class="hljs-string">'Stephenie Meyer'</span>, <span class="hljs-string">'Twilight'</span>, <span class="hljs-string">'The Twilight Saga'</span>, <span class="hljs-number">3.6</span>, <span class="hljs-number">501</span>, [<span class="hljs-string">'Young Adult'</span>, <span class="hljs-string">'Fantasy'</span>, <span class="hljs-string">'Romance'</span>])]
+&gt;&gt;&gt; slovar_zanrov(sez)
+{<span class="hljs-string">'Classics'</span>: [(<span class="hljs-string">'Frances Hodgson Burnett'</span>, <span class="hljs-string">'The Secret Garden'</span>)],
+ <span class="hljs-string">'Fiction'</span>: [(<span class="hljs-string">'Frances Hodgson Burnett'</span>, <span class="hljs-string">'The Secret Garden'</span>),
+  (<span class="hljs-string">'John Green'</span>, <span class="hljs-string">'Looking for Alaska'</span>)],
+ <span class="hljs-string">'Childrens'</span>: [(<span class="hljs-string">'Frances Hodgson Burnett'</span>, <span class="hljs-string">'The Secret Garden'</span>)],
+ <span class="hljs-string">'Young Adult'</span>: [(<span class="hljs-string">'John Green'</span>, <span class="hljs-string">'Looking for Alaska'</span>),
+  (<span class="hljs-string">'Stephenie Meyer'</span>, <span class="hljs-string">'Twilight'</span>)],
+ <span class="hljs-string">'Contemporary'</span>: [(<span class="hljs-string">'John Green'</span>, <span class="hljs-string">'Looking for Alaska'</span>)],
+ <span class="hljs-string">'Fantasy'</span>: [(<span class="hljs-string">'Stephenie Meyer'</span>, <span class="hljs-string">'Twilight'</span>)],
+ <span class="hljs-string">'Romance'</span>: [(<span class="hljs-string">'Stephenie Meyer'</span>, <span class="hljs-string">'Twilight'</span>)]}
+</code></pre>
+
+<h1>Naloga 3 (25 točk)</h1>
+
+<p>Napiši funkcijo <code>statistika_strani</code>, ki kot argument sprejme <em>seznam terk</em>, kot ga vrača Naloga 1, tj. <em>seznam terk</em> oblike <code>(avtor, naslov, zbirka, ocena, strani, zanri)</code>.</p>
+
+<p>Funkcija naj vrne <em>slovar</em> (<code>dict</code>), ki kot <em>ključ:vrednost</em> vsebuje sledeče pare podatkov:</p>
+
+<ul>
+<li>na ključ <code>'min'</code> (<code>str</code>) naj bo vezano minimalno število strani (<code>int</code>) vseh knjig v seznamu terk,</li>
+<li>na ključ <code>'max'</code> (<code>str</code>) naj bo vezano maksimalno število strani (<code>int</code>) vseh knjig v seznamu terk,</li>
+<li>na ključ <code>'avg'</code> (<code>str</code>) naj bo vezano povprečno število strani (<code>float</code>) vseh knjig v seznamu terk.</li>
+</ul>
+
+<p>Če funkciji podamo prazen seznam terk, naj bo na ključa <code>'min'</code> in <code>'max'</code> vezana vrednost <code>-1</code>, na ključ <code>'avg'</code> pa vrednost <code>'ni podatkov'</code>.</p>
+
+<p>Primera pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs prolog">&gt;&gt;&gt; sez = [(<span class="hljs-string">'Frances Hodgson Burnett'</span>, <span class="hljs-string">'The Secret Garden'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.13</span>, <span class="hljs-number">331</span>, []),
+       (<span class="hljs-string">'John Green'</span>, <span class="hljs-string">'Looking for Alaska'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.02</span>, <span class="hljs-number">221</span>, []),
+       (<span class="hljs-string">'Louis Sachar'</span>, <span class="hljs-string">'Holes'</span>, <span class="hljs-string">'Holes'</span>, <span class="hljs-number">3.97</span>, <span class="hljs-number">233</span>, []),
+       (<span class="hljs-string">'Arthur Golden'</span>, <span class="hljs-string">'Memoirs of a Geisha'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.12</span>, <span class="hljs-number">503</span>, []),
+       (<span class="hljs-string">'Stephenie Meyer'</span>, <span class="hljs-string">'Twilight'</span>, <span class="hljs-string">'The Twilight Saga'</span>, <span class="hljs-number">3.6</span>, <span class="hljs-number">501</span>, [])]
+&gt;&gt;&gt; statistika_strani(sez)
+{<span class="hljs-string">'min'</span>: <span class="hljs-number">221</span>, <span class="hljs-string">'max'</span>: <span class="hljs-number">503</span>, <span class="hljs-string">'avg'</span>: <span class="hljs-number">357.8</span>}
+&gt;&gt;&gt; statistika_strani([])
+{<span class="hljs-string">'min'</span>: <span class="hljs-number">-1</span>, <span class="hljs-string">'max'</span>: <span class="hljs-number">-1</span>, <span class="hljs-string">'avg'</span>: <span class="hljs-string">'ni podatkov'</span>}
+</code></pre>
+
+<h1>Naloga 4 (25 točk)</h1>
+
+<p>Napiši funkcijo <code>zbirke</code>, ki kot argument sprejme <em>seznam terk</em>, kot ga vrača Naloga 1, tj. <em>seznam terk</em> oblike <code>(avtor, naslov, zbirka, ocena, strani, zanri)</code>.</p>
+
+<p>Funkcija naj vrne po abecedi sortiran <code>seznam</code> (<code>list</code>)  vseh zbirk, ki se pojavijo v podanem seznamu terk. Pri tem naj se posamezna zbirka v seznamu pojavi največ enkrat, vrednost <code>'standalone'</code> pa v seznamu ne sme nastopati.</p>
+
+<p>Primer pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs prolog">&gt;&gt;&gt; sez = [(<span class="hljs-string">'Stephenie Meyer'</span>, <span class="hljs-string">'Twilight'</span>, <span class="hljs-string">'The Twilight Saga'</span>, <span class="hljs-number">3.6</span>, <span class="hljs-number">501</span>, []),
+       (<span class="hljs-string">'J.K. Rowling'</span>, <span class="hljs-string">'Harry Potter and the Deathly Hallows'</span>, <span class="hljs-string">'Harry Potter'</span>, <span class="hljs-number">4.62</span>, <span class="hljs-number">759</span>, []),
+       (<span class="hljs-string">'Frances Hodgson Burnett'</span>, <span class="hljs-string">'The Secret Garden'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.13</span>, <span class="hljs-number">331</span>, []),
+       (<span class="hljs-string">'John Green'</span>, <span class="hljs-string">'Looking for Alaska'</span>, <span class="hljs-string">'standalone'</span>, <span class="hljs-number">4.02</span>, <span class="hljs-number">221</span>, []),
+       (<span class="hljs-string">'Louis Sachar'</span>, <span class="hljs-string">'Holes'</span>, <span class="hljs-string">'Holes'</span>, <span class="hljs-number">3.97</span>, <span class="hljs-number">233</span>, []),       
+       (<span class="hljs-string">'J.K. Rowling'</span>, <span class="hljs-string">"Harry Potter and the Sorcerer's Stone"</span>, <span class="hljs-string">'Harry Potter'</span>, <span class="hljs-number">4.47</span>, <span class="hljs-number">309</span>, [])]
+&gt;&gt;&gt; zbirke(sez)
+[<span class="hljs-string">'Harry Potter'</span>, <span class="hljs-string">'Holes'</span>, <span class="hljs-string">'The Twilight Saga'</span>]
+</code></pre>

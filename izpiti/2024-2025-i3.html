@@ -1,0 +1,85 @@
+<p>Naloge shranite v datoteko <code>naloge.py</code>. Testne datoteke se nahajajo  v imeniku <code>./testi/2024-2025-i3/</code>.</p>
+
+<h2 id="1-naloga-5-to-k-">1. naloga (5 točk)</h2>
+<p>Podatki o lastnostih izbranih kanalov na YouTube so zbrani v tekstovni datoteki. Predpostavljaj, da ima datoteka obliko, skladno s spodnjim zgledom. Kot ločilo je uporabljena vejica (<code>,</code>), prva vrstica pa predstavlja glave stolpcev.</p>
+<p>Primer vsebine datoteke <code>youtube5.txt</code>:</p>
+<pre><code>uvrstitev,ime,sledilci,vsebin,ogledi,drzava
+20,5-Minute Crafts,81.1M,7.391,27.907.581.110,US
+29,UR.Cristiano,71.7M,80,721.228.815,PT
+96,Alfredo Larin,46M,1.831,39.518.875.780,SV
+1,MrBeast,336M,838,66.853.633.536,US
+13,Stokes Twins,102M,335,16.139.307.959,US
+</code></pre>
+<p>Napišite funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke, vrne pa seznam terk oblike <code>(ime,sledilci,vsebine,ogledi,drzava)</code>. Pri tem naj:</p>
+<ul>
+<li><code>ime</code> predstavlja ime kanala, zapisano kot <code>str</code>,</li>
+<li><code>sledilci</code> predstavlja število sledilcev tega kanala podano v milijonih in zapisano kot <code>float</code>,</li>
+<li><code>vsebine</code> predstavlja število vsebin na tem kanalu, zapisano kot <code>int</code>,</li>
+<li><code>ogledi</code> predstavlja povprečno število ogledov, zapisano kot <code>int</code>,</li>
+<li><code>drzava</code> predstavlja kratico države, iz katere izhaja kanal, zapisana kot <code>str</code>.</li>
+</ul>
+<p><code>sledilci</code> so v datoteki zapisani v obliki <code>"81.1M"</code>, v terki pa naj bodo zapisani kot <code>81.1</code>. Število zaokrožite na 1 decimalno mesto.</p>
+<p>Podatka <code>vsebine</code>in <code>ogledi</code> v datoteki vsebujeta pike, v terki naj bosta zapisana kot celi števili (<code>int</code>). Primer: v datoteki je število zapisano kot <code>66.853.633.536</code>, v terki naj bo zapisano kot celo število <code>66853633536</code>.</p>
+<p>Predpostavljajte, da lahko katerakoli izmed spremenljivk v posamezni vrstici datoteke manjka. V tem primeru takšne vrstice ne vključite v seznam terk.</p>
+<p>Primera pravilne izvedbe funkcije:</p>
+<pre><code> preberi_podatke("youtube5.txt")
+    [('5-Minute Crafts', 81.1, 7391, 27907581110, 'US'),
+    ('UR.Cristiano', 71.7, 80, 721228815, 'PT'),
+    ('Alfredo Larin', 46.0, 1831, 39518875780, 'SV'),
+    ('MrBeast', 336.0, 838, 66853633536, 'US'),
+    ('Stokes Twins', 102.0, 335, 16139307959, 'US')]
+ preberi_podatke("youtube5_missing.txt")
+    [('T-Series Bhakti Sagar', 72.6, 29140, 37185631965, 'IN'),
+    ('Set India', 180.0, 148727, 172709029653, 'IN'),
+    ('Katy Perry', 45.6, 170, 27616850074, 'US')]
+</code></pre>
+<h2 id="2-naloga-5-to-k-">2. naloga (5 točk)</h2>
+<p>Napiši funkcijo <code>po_drzavah</code>, ki kot argument sprejme seznam terk, kot ga vrača funkcija <code>preberi_podatke</code> iz 1. naloge (tj. seznam terk oblike <code>(ime,sledilci,vsebine,ogledi,drzava)</code>).</p>
+<p>Funkcija naj vrača slovar, kjer so ključi posamezne države, vrednosti pa seznam terk oblike <code>(ime,vsebine,sledilci,ogledi)</code>.</p>
+<p>Primera pravilno izvedene funkcije:</p>
+<pre><code> podatki1 = [('5-Minute Crafts', 81.1, 7391, 27907581110, 'US'),
+    ('UR.Cristiano', 71.7, 80, 721228815, 'PT'),
+    ('Alfredo Larin', 46.0, 1831, 39518875780, 'SV'),
+    ('MrBeast', 336.0, 838, 66853633536, 'US'),
+    ('Stokes Twins', 102.0, 335, 16139307959, 'US')]
+ po_drzavah(podatki1)
+    {'US': [('5-Minute Crafts', 7391, 81.1, 27907581110),
+    ('MrBeast', 838, 336.0, 66853633536),
+    ('Stokes Twins', 335, 102.0, 16139307959)],
+    'PT': [('UR.Cristiano', 80, 71.7, 721228815)],
+    'SV': [('Alfredo Larin', 1831, 46.0, 39518875780)]}
+ podatki2 = [('T-Series Bhakti Sagar', 72.6, 29140, 37185631965, 'IN'),
+    ('Set India', 180.0, 148727, 172709029653, 'IN'),
+    ('Katy Perry', 45.6, 170, 27616850074, 'US')]
+ po_drzavah(podatki2)
+    {'IN': [('T-Series Bhakti Sagar', 29140, 72.6, 37185631965),
+    ('Set India', 148727, 180.0, 172709029653)],
+    'US': [('Katy Perry', 170, 45.6, 27616850074)]}
+</code></pre>
+<h2 id="3-naloga">3. naloga</h2>
+<p>Napišite funkcijo <code>ratio</code>, ki kot argumenta sprejme slovar, kot ga vrača funkcija <code>po_drzavah</code> (2. naloga) in ime države, zapisano kot <code>str</code>.</p>
+<p>Funkcija naj za vsakega ustvarjalca iz države, določene z drugim argumentom, izračuna razmerje med ogledi in naročniki, ter vrne seznam terk oblike <code>(ime, razmerje)</code>.</p>
+<p>Pri tem naj bo razmerje zaokroženo na 1 decimalno mesto natančno, izračunate pa ga po formuli: $ogledi/(sledilci <em> (10*</em>6))$</p>
+<p>V primeru, da podana država v slovarju nima nobenega izvajalca, naj funkcija vrne prazen seznam.</p>
+<p>Primer pravilno izvedene funkcije:</p>
+<pre><code> slovar = {'US': [('5-Minute Crafts', 7391, 81.1, 27907581110),
+    ('MrBeast', 838, 336.0, 66853633536),
+    ('Stokes Twins', 335, 102.0, 16139307959)],
+    'PT': [('UR.Cristiano', 80, 71.7, 721228815)],
+    'SV': [('Alfredo Larin', 1831, 46.0, 39518875780)]}
+ ratio(slovar, "US")
+    [('5-Minute Crafts', 344.1), ('MrBeast', 199.0), ('Stokes Twins', 158.2)]
+</code></pre>
+<h2 id="4-naloga">4. naloga</h2>
+<p>Napiši funkcijo <code>min_max</code>, ki kot argument sprejme slovar, kot ga vrača funkcija <code>po_drzavah</code> (2. naloga).</p>
+<p>Funkcija naj vrača seznam terk oblike <code>(drzava, minimum,
+    maksimum)</code>, pri čemer sta minimum in maksimum najnižje oziroma najvišje število ogledov izmed vseh kanalov iz dane države. Funkcija naj iskanje minimuma in maksimuma izvede le za države z vsaj dvema kanaloma. Ostale države naj iz seznama terk izpusti.</p>
+<p>Primer pravilno izvedene funkcije:</p>
+<pre><code> slovar = {'US': [('5-Minute Crafts', 7391, 81.1, 27907581110),
+    ('MrBeast', 838, 336.0, 66853633536),
+    ('Stokes Twins', 335, 102.0, 16139307959)],
+    'PT': [('UR.Cristiano', 80, 71.7, 721228815)],
+    'SV': [('Alfredo Larin', 1831, 46.0, 39518875780)]}
+ min_max(slovar)
+    [('US', 16139307959, 66853633536)]
+</code></pre>

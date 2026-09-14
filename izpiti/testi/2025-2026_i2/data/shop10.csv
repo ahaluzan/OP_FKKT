@@ -1,0 +1,11 @@
+starost,spol,izdelek,katergorija,cena,lokacija,velikost,barva,sezona,ocena,popust,placilo,pogostost
+46,Male,Sneakers,Footwear,20,Wyoming,M,White,Summer,2.9,Yes,Venmo,Weekly
+60,Female,Socks,Clothing,41,Washington,L,Gold,Spring,4.3,No,Debit Card,Monthly
+20,Male,Sweater,Clothing,85,Oregon,L,Maroon,Spring,3.7,Yes,Venmo,Every 3 Months
+25,Male,Gloves,Accessories,71,Indiana,M,Indigo,Winter,3.2,Yes,PayPal,Annually
+#40,Female,Shirt,Clothing,61,Illinois,XL,Lavender,Summer,4.4,No,Cash,Quarterly
+36,Male,T-shirt,Clothing,31,Washington,L,Purple,Fall,4.8,Yes,Venmo,Every 3 Months
+22,Female,Jacket,Outerwear,81,Minnesota,M,Maroon,Spring,3.3,No,Cash,Every 3 Months
+45,Female,Sunglasses,Accessories,38,Wyoming,L,Olive,Winter,3.5,No,Bank Transfer,Annually
+#42,Male,Boots,Footwear,29,Iowa,M,Olive,Fall,4.9,Yes,Venmo,Annually
+19,Female,Sweater,Clothing,26,Vermont,M,Turquoise,Fall,4.8,No,Venmo,Bi-Weekly

@@ -1,0 +1,6 @@
+id,starost,spol,izdelek,velikost,cena,ocena,placilo,lokacija,clan
+501,25,Female,Cappuccino,M,3.5,4.7,Card,Ljubljana,Yes
+502,34,Male,Latte,L,4.0,4.2,Cash,Maribor,No
+503,19,Female,Espresso,S,2.5,4.9,Card,Ljubljana,Yes
+504,45,Male,Cappuccino,L,3.8,3.9,App,Celje,No
+505,29,Female,Cold Brew,M,3.9,4.5,Card,Unknown,Yes

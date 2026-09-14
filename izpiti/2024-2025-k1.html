@@ -1,0 +1,98 @@
+<p>Nalogo 1 shranite v datoteko z imenom <code>naloga1.py</code>, naloge 2-4 pa v datoteko <code>naloge.py</code>. Testne datoteke se nahajajo v imeniku <code>./testi/2024-2025-k1/</code></p>
+
+<h1>Naloge</h1>
+<h2>Naloga 1</h2>
+<p>Napišite program, ki sprašuje za geslo toliko časa, dokler ni to skladno z naslednjimi smernicami:</p>
+<ul>
+<li>geslo mora biti dolgo najmanj 12 znakov,</li>
+<li>vsebovati mora najmanj enega od znakov <code>,</code>, <code>.</code>, <code>!</code>, <code>?</code> ali <code>_</code>,</li>
+<li>vsebovati mora vsaj 1 številko,</li>
+</ul>
+<p>Vsakič, ko vpisano geslo ne ustreza kateri od smernic, naj program to izpiše in uporabnika pozove k vnosu novega, s smernicami skladnega gesla. Za posamezen kriterij, ki ga geslo ne izpolnjuje, naj program izpiše sledeče:</p>
+<ul>
+<li>v primeru prekratkega gesla: <code>Geslo ni dovolj dolgo. Poskusite ponovno.</code>,</li>
+<li>če ne vsebuje omenjenih posebnih znakov: <code>Geslo ne vsebuje posebnega znaka. Poskusite ponovno.</code>,</li>
+<li>v primeru, da ne vsebuje številk: <code>Geslo ne vsebuje številk. Poskusite ponovno.</code>.</li>
+</ul>
+<p>Ko je geslo skladno z vsemi smernicami, naj program izpiše <code>Geslo je ustrezno.</code>.</p>
+<p>Primer delovanja:</p>
+<pre><code class="hljs properties"><span class="hljs-attr">Vnesi</span> <span class="hljs-string">geslo: prviposkus</span>
+<span class="hljs-attr">Geslo</span> <span class="hljs-string">ni dovolj dolgo. Poskusite ponovno.</span>
+<span class="hljs-attr">Geslo</span> <span class="hljs-string">ne vsebuje posebnega znaka. Poskusite ponovno.</span>
+<span class="hljs-attr">Geslo</span> <span class="hljs-string">ne vsebuje številk. Poskusite ponovno.</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">geslo: drugi_poskus</span>
+<span class="hljs-attr">Geslo</span> <span class="hljs-string">ne vsebuje številk. Poskusite ponovno.</span>
+<span class="hljs-attr">Vnesi</span> <span class="hljs-string">geslo: tr3tji_poskus</span>
+<span class="hljs-attr">Geslo</span> <span class="hljs-string">je ustrezno.</span>
+</code></pre>
+<h2>Naloga 2 </h2>
+<p>Napišite funkcijo <code>vault</code>, ki vrača seznam (<code>list</code>) kombinacij uporabniških imen s terkami oblike <code>(uporabnisko_ime, geslo)</code>. Pri tem <code>uporabnisko_ime</code> predstavlja posamezno uporabniško ime, <code>geslo</code> pa geslo. Funkcija kot argumenta prejme seznam uporabniških imen zapisanih kot niz (<code>str</code>) in seznam gesel zapisanih kot niz (<code>str</code>). Kombinacije uporabniških imen in gesel naj funkcija generira z združevanjem istoležnih nizov podanih seznamov.</p>
+<p>Funkcija naj <strong>vrne</strong> seznam terk oblike <code>(uporabnisko_ime, geslo)</code>, v katerem se posamezno uporabniško ime pojavi največ enkrat. V primeru, da se enako uporabniško ime pojavi večkrat, naj funkcija temu imenu priredi geslo, ki skupaj z imenom nastopa ob njegovi prvi pojavitvi v seznamu.</p>
+<p>V primeru, da podana seznama nista enake dolžine, naj funkcija generira kombinacije, dokler ne pride do konca krajšega seznama.</p>
+<p>Prvi primer delovanja:</p>
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; usernames1 = [<span class="hljs-string">"ShadowWalker"</span>, <span class="hljs-string">"CrimsonFang"</span>, <span class="hljs-string">"MysticWarden"</span>, <span class="hljs-string">"IronClad23"</span>, <span class="hljs-string">"FrostNova"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; passwords1 = [<span class="hljs-string">"p@ssW0rd!"</span>, <span class="hljs-string">"Dr4g0n$cale"</span>, <span class="hljs-string">"Phant0m123"</span>, <span class="hljs-string">"C0ldBl@ze"</span>, <span class="hljs-string">"R0gueWolf"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; vault(usernames1, passwords1)
+[(<span class="hljs-string">'ShadowWalker'</span>, <span class="hljs-string">'p@ssW0rd!'</span>), (<span class="hljs-string">'CrimsonFang'</span>, <span class="hljs-string">'Dr4g0n$cale'</span>), (<span class="hljs-string">'MysticWarden'</span>, <span class="hljs-string">'Phant0m123'</span>), (<span class="hljs-string">'IronClad23'</span>, <span class="hljs-string">'C0ldBl@ze'</span>), (<span class="hljs-string">'FrostNova'</span>, <span class="hljs-string">'R0gueWolf'</span>)]
+</code></pre>
+<p>Drugi primer delovanja:</p>
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; usernames2 = [<span class="hljs-string">"LunarEcho"</span>, <span class="hljs-string">"BlazeHawk"</span>, <span class="hljs-string">"VoidHunter"</span>, <span class="hljs-string">"CrystalShade"</span>, <span class="hljs-string">"NebulaFox"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; passwords2 = [<span class="hljs-string">"St4rBurst!"</span>, <span class="hljs-string">"Gh0stTrail"</span>, <span class="hljs-string">"FireFl@re"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; vault(usernames2, passwords2)
+[(<span class="hljs-string">'LunarEcho'</span>, <span class="hljs-string">'St4rBurst!'</span>), (<span class="hljs-string">'BlazeHawk'</span>, <span class="hljs-string">'Gh0stTrail'</span>), (<span class="hljs-string">'VoidHunter'</span>, <span class="hljs-string">'FireFl@re'</span>)]
+</code></pre>
+<p>Tretji primer delovanja:</p>
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; usernames3 = [<span class="hljs-string">"AstralBlaze"</span>, <span class="hljs-string">"DarkHorizon"</span>, <span class="hljs-string">"StormFang"</span>, <span class="hljs-string">"DarkHorizon"</span>, <span class="hljs-string">"SolarShade"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; passwords3 = [<span class="hljs-string">"Tw1l1ght!"</span>, <span class="hljs-string">"R@zorEdge"</span>, <span class="hljs-string">"FrostByte"</span>, <span class="hljs-string">"N1ghtFall"</span>, <span class="hljs-string">"Fl@meWing"</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; vault(usernames3, passwords3)
+[(<span class="hljs-string">'AstralBlaze'</span>, <span class="hljs-string">'Tw1l1ght!'</span>), (<span class="hljs-string">'DarkHorizon'</span>, <span class="hljs-string">'R@zorEdge'</span>), (<span class="hljs-string">'StormFang'</span>, <span class="hljs-string">'FrostByte'</span>), (<span class="hljs-string">'SolarShade'</span>, <span class="hljs-string">'Fl@meWing'</span>)]
+</code></pre>
+<h2>Naloga 3</h2>
+<p>Napišite funkcijo <code>slaba_praksa</code>, ki sprejme seznam terk oblike <code>(uporabnisko_ime, geslo)</code>. Pri tem <code>uporabnisko_ime</code> predstavlja posamezno uporabniško ime, <code>geslo</code> pa geslo.</p>
+<p>Funkcija naj <strong>vrne</strong> seznam (<code>list</code>) imen uporabnikov, katerih ime se pojavlja v njihovem geslu. Posamezno ime uporabnika naj se v tem seznamu pojavi največ enkrat.</p>
+<p>Prvi primer delovanja:</p>
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; kombinacije1 = [(<span class="hljs-string">"pixelPioneer"</span>, <span class="hljs-string">"orbit2024"</span>), 
+ (<span class="hljs-string">"quantumQuokka"</span>, <span class="hljs-string">"waveRider!"</span>), 
+ (<span class="hljs-string">"nebulaNinja"</span>, <span class="hljs-string">"matrix42"</span>), 
+ (<span class="hljs-string">"codeCrafter"</span>, <span class="hljs-string">"stellarPass$codeCrafter"</span>), 
+ (<span class="hljs-string">"syntaxSage"</span>, <span class="hljs-string">"quantumLeap!"</span>), 
+ (<span class="hljs-string">"Stellar"</span>, <span class="hljs-string">"quantumStellarSphinxLeap!"</span>), 
+ (<span class="hljs-string">"byteBandit"</span>, <span class="hljs-string">"cosmicEcho!"</span>)]
+ &gt;&gt;&gt; slaba_praksa(kombinacije1)
+ [<span class="hljs-string">'codeCrafter'</span>, <span class="hljs-string">'Stellar'</span>]
+</code></pre>
+<p>Drugi primer delovanja:</p>
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; kombinacije2 = [(<span class="hljs-string">'ShadowWalker'</span>, <span class="hljs-string">'p@ssW0rd!'</span>), 
+(<span class="hljs-string">'CrimsonFang'</span>, <span class="hljs-string">'Dr4g0n$cale'</span>), 
+(<span class="hljs-string">'MysticWarden'</span>, <span class="hljs-string">'Phant0m123'</span>), 
+(<span class="hljs-string">'IronClad23'</span>, <span class="hljs-string">'C0ldBl@ze'</span>), 
+(<span class="hljs-string">'FrostNova'</span>, <span class="hljs-string">'R0gueWolf'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; slaba_praksa(kombinacije2)
+[]
+</code></pre>
+<h2>Naloga 4 </h2>
+<p>Napiši funkcijo <code>generator_gesel</code>, ki sprejme dva argumenta:</p>
+<ul>
+<li>niz (<code>str</code>) z znaki, ki naj se uporabijo pri generiranju gesla;</li>
+<li>seznam (<code>list</code>) števil.</li>
+</ul>
+<p>Funkcija naj deluje na sledeči način:</p>
+<ul>
+<li>iz seznama števil naj jemlje števila od začetka proti koncu;</li>
+<li>vsako število v seznamu naj predstavlja indeks v podanem nizu z znaki;</li>
+<li>na podlagi podanih indeksov iz niza pridobi ustrezne znake in jih združi v končno geslo.</li>
+</ul>
+<p>Funkcija naj <strong>vrne</strong> tako zgenerirano geslo zapisano kot niz (<code>str</code>). V primeru, da katerokoli število v seznamu števil presega obseg niza (število je večje ali enako dolžini niza) ali pa sta bodisi niz bodisi seznam prazna, naj funkcija <strong>vrne</strong> niz <code>"Neveljavni podatki!"</code>.</p>
+<p>Prvi primer delovanja:</p>
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; niz1 = <span class="hljs-string">"nA7!x#G$Kd2L"</span>
+<span class="hljs-meta">&gt;&gt;</span>&gt; sez1 = [<span class="hljs-number">0</span>,<span class="hljs-number">7</span>,<span class="hljs-number">4</span>,<span class="hljs-number">10</span>,<span class="hljs-number">11</span>,<span class="hljs-number">2</span>]
+<span class="hljs-meta">&gt;&gt;</span>&gt; generator_gesel(niz1,sez1)
+n$x2L7
+</code></pre>
+<p>Drugi primer delovanja:</p>
+<pre><code class="hljs yaml"><span class="hljs-string">&gt;&gt;&gt;</span> <span class="hljs-string">niz2</span> <span class="hljs-string">=</span> <span class="hljs-string">"9Z@c5&amp;lQw*Rp8!Vm"</span>
+<span class="hljs-string">&gt;&gt;&gt;</span> <span class="hljs-string">sez2</span> <span class="hljs-string">=</span> <span class="hljs-string">[5,</span> <span class="hljs-number">12</span><span class="hljs-string">,</span> <span class="hljs-number">3</span><span class="hljs-string">,</span> <span class="hljs-number">16</span><span class="hljs-string">,</span> <span class="hljs-number">8</span><span class="hljs-string">,</span> <span class="hljs-number">0</span><span class="hljs-string">,</span> <span class="hljs-number">17</span><span class="hljs-string">,</span> <span class="hljs-number">11</span><span class="hljs-string">,</span> <span class="hljs-number">4</span><span class="hljs-string">,</span> <span class="hljs-number">6</span><span class="hljs-string">]</span>
+<span class="hljs-string">&gt;&gt;&gt;</span> <span class="hljs-string">generator_gesel(niz2,</span> <span class="hljs-string">sez2)</span>
+<span class="hljs-string">Neveljavni</span> <span class="hljs-string">podatki!</span>
+</code></pre>
+<p></p>

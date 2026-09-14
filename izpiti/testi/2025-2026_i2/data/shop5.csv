@@ -1,0 +1,7 @@
+starost,spol,izdelek,katergorija,cena,lokacija,velikost,barva,sezona,ocena,popust,placilo,pogostost
+59,Female,Coat,Outerwear,75,Texas,M,Black,Summer,4.8,No,PayPal,Quarterly
+60,Male,Shirt,Clothing,76,Rhode Island,XL,Teal,Spring,4.7,No,Cash,Annually
+31,Female,Socks,Clothing,43,Utah,M,Silver,Fall,3.6,No,PayPal,Quarterly
+40,Male,Hat,Accessories,45,Iowa,M,Silver,Fall,4.4,No,PayPal,Fortnightly
+61,Female,T-shirt,Clothing,57,Vermont,M,Gray,Summer,2.8,No,Cash,Weekly
+#63,Female,Skirt,Clothing,90,Oregon,L,Cyan,Spring,2.9,No,Venmo,Every 3 Months

@@ -1,0 +1,156 @@
+<p>Naloge shranite v datoteko <code>naloge.py</code>. Testne datoteke se nahajajo v imeniku <code>./testi/2024-2025-k2/</code></p>
+
+<h3><span><h1>Naloga 1 (25 točk)</h1></span></h3><span>
+
+<p>Podatke o Nobelovih nagrajencih imamo zapisane v tekstovnih 
+datotekah. Predpostavljaj, da ima datoteka obliko, ki je skladna s 
+spodnjim zgledom. V prvi vrstici so podana imena stolpcev, za ločilo pa 
+je uporabljeno podpičje (<code>;</code>).</p>
+
+<p>Primer datoteke <code>nobelove_S.csv</code>:</p>
+
+<pre><code class="hljs yaml"><span class="hljs-string">leto;ime;priimek;kategorija;spol;datum</span> <span class="hljs-string">rojstva;drzava</span> <span class="hljs-string">rojstva</span>
+<span class="hljs-number">1992</span><span class="hljs-string">;Derek;Walcott;literature;male;23-01-1930;LC</span>
+<span class="hljs-number">1967</span><span class="hljs-string">;George;Wald;medicine;male;18-11-1906;US</span>
+<span class="hljs-number">1945</span><span class="hljs-string">;Gabriela;Mistral;literature;female;1889-04-07;CL</span>
+<span class="hljs-number">2020</span><span class="hljs-string">;Paul;Milgrom;economics;male;20-04-1948;US</span>
+<span class="hljs-number">2016</span><span class="hljs-string">;David</span> <span class="hljs-string">J.;Thouless;physics;male;21-09-1934;GB</span>
+</code></pre>
+
+<p>Napiši funkcijo <code>preberi_podatke</code>, ki kot argument sprejme ime datoteke (<code>str</code>) in vrne vsebino datoteke kot seznam terk oblike <code>(leto, priimek, kategorija, spol, datum_rojstva, drzava_rojstva)</code>. Pri tem naj</p>
+
+<ul>
+<li><code>leto</code> predstavlja leto prejema nagrade zapisano kot <code>int</code>,</li>
+<li><code>priimek</code> predstavlja priimek nagrajenca zapisan kot <code>str</code>,</li>
+<li><code>kategorija</code> predstavlja kategorijo, v kateri je bila nagrada podeljena, zapisano kot <code>str</code>,</li>
+<li><code>spol</code> predstavlja spol nagrajenca in lahko zavzame vrednost <code>'m'</code> (<em>male</em> - moški) ali <code>'f'</code> (<em>female</em> - ženska),</li>
+<li><code>datum_rojstva</code> predstavlja datum rojstva zapisan kot <code>str</code>,</li>
+<li><code>drzava_rojstva</code> predstavlja oznako države rojstva nagrajenca zapisano kot <code>str</code>.</li>
+</ul>
+
+<p>Napotki in namigi:</p>
+
+<ul>
+<li>datoteka vsebuje stolpec, ki ga v seznam ne boste shranjevali (<code>ime</code>);</li>
+<li>pri shranjevanju v seznam izpustite vse vrstice, pri katerih podatek o priimku nagrajenca ali državi rojstva manjka;</li>
+<li>spol nagrajenca v datoteki zaseda vrednosti <code>male</code> in <code>female</code>; v seznamu terk moške predstavite z vrednostjo <code>m</code>, ženske pa z vrednostjo <code>f</code>;</li>
+<li>pri datumu rojstva ohranite obliko zapisa, kot je uporabljena v datoteki.</li>
+</ul>
+
+<p>Primera pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; preberi_podatke(<span class="hljs-string">"nobelove_S.csv"</span>)
+[(<span class="hljs-number">1992</span>, <span class="hljs-string">'Walcott'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'23-01-1930'</span>, <span class="hljs-string">'LC'</span>),
+ (<span class="hljs-number">1967</span>, <span class="hljs-string">'Wald'</span>, <span class="hljs-string">'medicine'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'18-11-1906'</span>, <span class="hljs-string">'US'</span>),
+ (<span class="hljs-number">1945</span>, <span class="hljs-string">'Mistral'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'f'</span>, <span class="hljs-string">'1889-04-07'</span>, <span class="hljs-string">'CL'</span>),
+ (<span class="hljs-number">2020</span>, <span class="hljs-string">'Milgrom'</span>, <span class="hljs-string">'economics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'20-04-1948'</span>, <span class="hljs-string">'US'</span>),
+ (<span class="hljs-number">2016</span>, <span class="hljs-string">'Thouless'</span>, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'21-09-1934'</span>, <span class="hljs-string">'GB'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; preberi_podatke(<span class="hljs-string">"nobelove_S2.csv"</span>)
+[(<span class="hljs-number">1998</span>, <span class="hljs-string">'Kohn'</span>, <span class="hljs-string">'chemistry'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'09-03-1923'</span>, <span class="hljs-string">'AT'</span>),
+ (<span class="hljs-number">1975</span>, <span class="hljs-string">'Sakharov'</span>, <span class="hljs-string">'peace'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'21-05-1921'</span>, <span class="hljs-string">'RU'</span>),
+ (<span class="hljs-number">2015</span>, <span class="hljs-string">'Lindahl'</span>, <span class="hljs-string">'chemistry'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'28-01-1938'</span>, <span class="hljs-string">'SE'</span>),
+ (<span class="hljs-number">1937</span>, <span class="hljs-string">'Haworth'</span>, <span class="hljs-string">'chemistry'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1883-03-19'</span>, <span class="hljs-string">'GB'</span>)]
+</code></pre>
+
+<h1>Naloga 2 (25 točk)</h1>
+
+<p>Napiši funkcijo <code>slovar_drzav</code>, ki kot argument sprejme <em>seznam terk</em>, kot ga vrača Naloga 1, tj. <em>seznam terk</em> oblike <code>(leto, priimek, kategorija, spol, datum_rojstva, drzava_rojstva)</code>.</p>
+
+<p>Funkcija naj vrne <em>slovar</em> (<code>dict</code>), ki kot <strong>ključe</strong> vsebuje oznake držav, ki se pojavijo v seznamu terk (<code>drzava_rojstva</code>). Na posamezno oznako države naj bo kot <strong>vrednost</strong> vezano število Nobelovih nagrajencev (<code>int</code>), ki so se rodili v državi.</p>
+
+<p>Primer pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; s = [(<span class="hljs-number">1901</span>, <span class="hljs-string">'Röntgen'</span>, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1845-03-27'</span>, <span class="hljs-string">'DE'</span>),
+ (<span class="hljs-number">1901</span>, <span class="hljs-string">'von Behring'</span>, <span class="hljs-string">'medicine'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1854-03-15'</span>, <span class="hljs-string">'PL'</span>),
+ (<span class="hljs-number">1901</span>, <span class="hljs-string">'Dunant'</span>, <span class="hljs-string">'peace'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1828-05-08'</span>, <span class="hljs-string">'CH'</span>),
+ (<span class="hljs-number">1901</span>, <span class="hljs-string">'Passy'</span>, <span class="hljs-string">'peace'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1822-05-20'</span>, <span class="hljs-string">'FR'</span>),
+ (<span class="hljs-number">1901</span>, <span class="hljs-string">'Prudhomme'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1839-03-16'</span>, <span class="hljs-string">'FR'</span>),
+ (<span class="hljs-number">1901</span>, <span class="hljs-string">"van 't Hoff"</span>, <span class="hljs-string">'chemistry'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1852-08-30'</span>, <span class="hljs-string">'NL'</span>),
+ (<span class="hljs-number">1902</span>, <span class="hljs-string">'Fischer'</span>, <span class="hljs-string">'chemistry'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1852-10-09'</span>, <span class="hljs-string">'DE'</span>),
+ (<span class="hljs-number">1902</span>, <span class="hljs-string">'Mommsen'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1817-11-30'</span>, <span class="hljs-string">'DE'</span>),
+ (<span class="hljs-number">1902</span>, <span class="hljs-string">'Gobat'</span>, <span class="hljs-string">'peace'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1843-05-21'</span>, <span class="hljs-string">'CH'</span>),
+ (<span class="hljs-number">1902</span>, <span class="hljs-string">'Ducommun'</span>, <span class="hljs-string">'peace'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'1833-02-19'</span>, <span class="hljs-string">'CH'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; slovar_drzav(s)
+{<span class="hljs-string">'DE'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'PL'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'CH'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'FR'</span>: <span class="hljs-number">2</span>, <span class="hljs-string">'NL'</span>: <span class="hljs-number">1</span>}
+</code></pre>
+
+<h1>Naloga 3 (25 točk)</h1>
+
+<h2>Naloga 3a (10 točk)</h2>
+
+<p>Napiši funkcijo <code>pridobi_leto</code>, ki kot argument prejme datum zapisan kot <code>str</code>. Pri tem je datum lahko podan v enem izmed spodnjih zapisov:</p>
+
+<ul>
+<li><code>DD-MM-YYYY</code>: primer takega zapisa je <code>'23-01-1930'</code>;</li>
+<li><code>YYYY-MM-DD</code>: primer takega zapisa je <code>'1883-03-19'</code>.</li>
+</ul>
+
+<p>Pri tem <code>DD</code> predstavlja dan, <code>MM</code> mesec, <code>YYYY</code> pa leto.</p>
+
+<p>Funkcija <code>pridobi_leto</code> naj iz datuma izlušči leto in tega vrne zapisanega kot <code>int</code>. Funkcija naj deluje z obema zapisoma datumov.</p>
+
+<p>Primera pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; pridobi_leto(<span class="hljs-string">'23-01-1930'</span>)
+<span class="hljs-number">1930</span>
+<span class="hljs-meta">&gt;&gt;</span>&gt; pridobi_leto(<span class="hljs-string">'1883-03-19'</span>)
+<span class="hljs-number">1883</span>
+</code></pre>
+
+<h2>Naloga 3b (15 točk)</h2>
+
+<p>Napiši funkcijo <code>slovar_starosti</code>, ki kot argument <em>sprejme seznam</em> terk, kot ga vrača Naloga 1, tj. <em>seznam terk</em> oblike <code>(leto, priimek, kategorija, spol, datum_rojstva, drzava_rojstva)</code>.</p>
+
+<p>Funkcija naj vrne <em>slovar</em> (<code>dict</code>), ki kot <strong>ključe</strong> vsebuje <em>terke</em> (<code>tuple</code>) oblike <code>(leto, priimek)</code>, kjer <code>leto</code> predstavlja leto prejema nagrade, <code>priimek</code> pa priimek nagrajenca. Kot <strong>vrednosti</strong> naj <em>slovar</em>
+ vsebuje starosti nagrajencev ob prejemu nagrade.  Pri računanju 
+starosti predpostavljaj, da je nagrajenec ob prejemu nagrade tisto leto 
+že imel rojstni dan:</p>
+
+<div><span id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>s</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>o</mi><mi>s</mi><mi>t</mi><mo>=</mo><mi>l</mi><mi>e</mi><mi>t</mi><mi>o</mi><mtext>&amp;#xA0;</mtext><mi>p</mi><mi>r</mi><mi>e</mi><mi>j</mi><mi>e</mi><mi>m</mi><mi>a</mi><mo>&amp;#x2212;</mo><mi>l</mi><mi>e</mi><mi>t</mi><mi>o</mi><mtext>&amp;#xA0;</mtext><mi>r</mi><mi>o</mi><mi>j</mi><mi>s</mi><mi>t</mi><mi>v</mi><mi>a</mi><mo>.</mo></math>" role="presentation"><nobr aria-hidden="true"><span id="MathJax-Span-1"><span id="MathJax-Span-2"><span id="MathJax-Span-3">s</span><span id="MathJax-Span-4">t</span><span id="MathJax-Span-5">a</span><span id="MathJax-Span-6">r</span><span id="MathJax-Span-7">o</span><span id="MathJax-Span-8">s</span><span id="MathJax-Span-9">t</span><span id="MathJax-Span-10">=</span><span id="MathJax-Span-11">l</span><span id="MathJax-Span-12">e</span><span id="MathJax-Span-13">t</span><span id="MathJax-Span-14">o</span><span id="MathJax-Span-15">&nbsp;</span><span id="MathJax-Span-16">p</span><span id="MathJax-Span-17">r</span><span id="MathJax-Span-18">e</span><span id="MathJax-Span-19">j</span><span id="MathJax-Span-20">e</span><span id="MathJax-Span-21">m</span><span id="MathJax-Span-22">a</span><span id="MathJax-Span-23">−</span><span id="MathJax-Span-24">l</span><span id="MathJax-Span-25">e</span><span id="MathJax-Span-26">t</span><span id="MathJax-Span-27">o</span><span id="MathJax-Span-28">&nbsp;</span><span id="MathJax-Span-29">r</span><span id="MathJax-Span-30">o</span><span id="MathJax-Span-31">j</span><span id="MathJax-Span-32">s</span><span id="MathJax-Span-33">t</span><span id="MathJax-Span-34">v</span><span id="MathJax-Span-35">a</span><span id="MathJax-Span-36">.</span></span></span></nobr></span></div></span><p></p><span><p></p>
+
+<p>Primer pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; s = [(<span class="hljs-number">1992</span>, <span class="hljs-string">'Walcott'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'23-01-1930'</span>, <span class="hljs-string">'LC'</span>),
+ (<span class="hljs-number">1967</span>, <span class="hljs-string">'Wald'</span>, <span class="hljs-string">'medicine'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'18-11-1906'</span>, <span class="hljs-string">'US'</span>),
+ (<span class="hljs-number">1945</span>, <span class="hljs-string">'Mistral'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'f'</span>, <span class="hljs-string">'1889-04-07'</span>, <span class="hljs-string">'CL'</span>),
+ (<span class="hljs-number">2020</span>, <span class="hljs-string">'Milgrom'</span>, <span class="hljs-string">'economics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'20-04-1948'</span>, <span class="hljs-string">'US'</span>),
+ (<span class="hljs-number">2016</span>, <span class="hljs-string">'Thouless'</span>, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'21-09-1934'</span>, <span class="hljs-string">'GB'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; slovar_starosti(s)
+{(<span class="hljs-number">1992</span>, <span class="hljs-string">'Walcott'</span>): <span class="hljs-number">62</span>,
+ (<span class="hljs-number">1967</span>, <span class="hljs-string">'Wald'</span>): <span class="hljs-number">61</span>,
+ (<span class="hljs-number">1945</span>, <span class="hljs-string">'Mistral'</span>): <span class="hljs-number">56</span>,
+ (<span class="hljs-number">2020</span>, <span class="hljs-string">'Milgrom'</span>): <span class="hljs-number">72</span>,
+ (<span class="hljs-number">2016</span>, <span class="hljs-string">'Thouless'</span>): <span class="hljs-number">82</span>}
+</code></pre>
+
+<h1>Naloga 4 (25 točk)</h1>
+
+<p>Napiši funkcijo <code>priimki</code>, ki kot argumente sprejme:</p>
+
+<ul>
+<li><em>seznam terk</em>, kot ga vrača Naloga 1, tj. <em>seznam terk</em> oblike <code>(leto, priimek, kategorija, spol, datum_rojstva, drzava_rojstva)</code>,</li>
+<li>naziv kategorije 1 (<code>str</code>),</li>
+<li>naziv kategorije 2 (<code>str</code>).</li>
+</ul>
+
+<p>Funkcija naj vrne množico (<code>set</code>) priimkov, ki se v seznamu nagrajencev pojavijo v obeh kategorijah.</p>
+
+<p><strong>Opozorilo</strong>: v primeru, da je naziv kategorije 1 enak 
+nazivu kategorije 2 (ista kategorija je podana dvakrat), naj funkcija 
+vrne množico vseh priimkov iz podane kategorije.</p>
+
+<p>Primeri pravilne izvedbe funkcije:</p>
+
+<pre><code class="hljs ruby"><span class="hljs-meta">&gt;&gt;</span>&gt; s = [(<span class="hljs-number">1992</span>, <span class="hljs-string">'Walcott'</span>, <span class="hljs-string">'literature'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'23-01-1930'</span>, <span class="hljs-string">'LC'</span>),
+(<span class="hljs-number">1952</span>, <span class="hljs-string">'Bloch'</span>, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'23-10-1905'</span>, <span class="hljs-string">'CH'</span>),
+(<span class="hljs-number">2005</span>, <span class="hljs-string">'Hall'</span>, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'21-08-1934'</span>, <span class="hljs-string">'US'</span>),
+(<span class="hljs-number">1964</span>, <span class="hljs-string">'Bloch'</span>, <span class="hljs-string">'medicine'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'21-01-1912'</span>, <span class="hljs-string">'PL'</span>),
+(<span class="hljs-number">2017</span>, <span class="hljs-string">'Hall'</span>, <span class="hljs-string">'medicine'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'03-05-1945'</span>, <span class="hljs-string">'US'</span>),
+(<span class="hljs-number">2016</span>, <span class="hljs-string">'Thouless'</span>, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'m'</span>, <span class="hljs-string">'21-09-1934'</span>, <span class="hljs-string">'GB'</span>)]
+<span class="hljs-meta">&gt;&gt;</span>&gt; priimki(s, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'medicine'</span>)
+{<span class="hljs-string">'Bloch'</span>, <span class="hljs-string">'Hall'</span>}
+<span class="hljs-meta">&gt;&gt;</span>&gt; priimki(s, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'physics'</span>)
+{<span class="hljs-string">'Bloch'</span>, <span class="hljs-string">'Hall'</span>, <span class="hljs-string">'Thouless'</span>}
+<span class="hljs-meta">&gt;&gt;</span>&gt; priimki(s, <span class="hljs-string">'physics'</span>, <span class="hljs-string">'literature'</span>)
+set()
+</code></pre>
