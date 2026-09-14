@@ -1,0 +1,51 @@
+Billboard: Latin Songs
+1;Despacito;Luis Fonsi & Daddy Yankee Featuring Justin Bieber;1;1;30
+2;Mi Gente;J Balvin & Willy William;2;2;6
+3;Felices Los 4;Maluma;3;2;16
+4;Escapate Conmigo;Wisin Featuring Ozuna;4;3;20
+5;El Amante;Nicky Jam;6;2;30
+6;Subeme La Radio;Enrique Iglesias Featuring Descemer Bueno, Zion & Lennox Or Sean Paul;5;2;24
+7;Imitadora;Romeo Santos;7;5;7
+8;Chantaje;Shakira Featuring Maluma;9;1;41
+9;Ahora Dice;Chris Jeday Presenta J Balvin, Ozuna & Arcangel;8;8;20
+10;Tu Foto;Ozuna;10;10;15
+11;Me Enamore;Shakira;11;4;18
+12;La Rompe Corazones;Daddy Yankee X Ozuna;12;12;20
+13;Me Rehuso;Danny Ocean;13;13;16
+14;Hey DJ;CNCO & Yandel;14;14;18
+15;Bonita;Jowell & Randy & J. Balvin;16;15;9
+16;Bailame;Nacho;20;16;16
+17;Si Tu Novio Te Deja Sola;J Balvin Featuring Bad Bunny;17;14;23
+18;Si Tu La Ves;Nicky Jam Featuring Wisin;18;18;5
+19;Mayores;Becky G Featuring Bad Bunny;15;12;4
+20;Krippy Kush;Farruko, Bad Bunny & Rvssian;0;20;1
+21;Deja Vu;Prince Royce & Shakira;19;4;25
+22;Ahora Me Llama;Karol G X Bad Bunny;25;20;7
+23;Soy Peor;Bad Bunny;24;22;25
+24;Para Que Lastimarme;Gerardo Ortiz;22;15;19
+25;Bella y Sensual;Romeo Santos Featuring Nicky Jam & Daddy Yankee;27;19;3
+26;Sobredosis;Romeo Santos Featuring Ozuna;23;23;3
+27;Las Ultras;Calibre 50;26;17;16
+28;Ni Tu Ni Yo;Jennifer Lopez Featuring Gente de Zona;21;15;6
+29;Las Cosas No Se Hacen Asi;Banda Sinaloense MS de Sergio Lizarraga;29;28;7
+30;Esta Noche Se Me Olvida;Julion Alvarez y Su Norteno Banda;30;30;9
+31;Probablemente;Christian Nodal Featuring David Bisbal;37;31;6
+32;Que Va;Alex Sensation + Ozuna;0;32;1
+33;Ella Es Mi Mujer;Banda Carnaval;28;19;15
+34;Quiereme;Jacob Forever Featuring Farruko;34;33;11
+35;Robarte Un Beso;Carlos Vives & Sebastian Yatra;41;35;2
+36;Vengo A Aclarar;El Fantasma y Banda Populares del Llando;31;29;6
+37;Que Me Has Hecho;Chayanne Featuring Wisin;32;25;16
+38;No Le Hago Falta;Banda Los Recoditos;36;36;5
+39;Te Acuerdas de Mi;Plan B;40;39;3
+40;Esa Boquita;J Alvarez;38;38;4
+41;Dure Dure;Jencarlos + Don Omar;50;41;2
+42;Mi Religion;Yandel;35;25;10
+43;Mi Tesoro;Zion & Lennox Featuring Nicky Jam;33;26;18
+44;Quedate Conmigo;Chyno Miranda Featuring Wisin y Gente de Zona;43;37;6
+45;Si No Vuelves;Gente de Zona;42;35;16
+46;Una Lady Como Tu;Manuel Turizo;0;46;1
+47;Bebe;Ozuna x Anuel AA;44;43;7
+48;El Farsante;Ozuna;45;45;2
+49;El Ratico;Juanes Featuring Kali Uchis;48;45;5
+50;Porque No Te Enamoras;Joss Favela;0;50;1
