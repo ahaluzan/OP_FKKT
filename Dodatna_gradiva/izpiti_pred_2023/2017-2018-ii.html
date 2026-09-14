@@ -1,0 +1,122 @@
+<p></p><p>Napišite modul <code>izpit</code>, ki vsebuje funkcije, kot so zahtevane v posamezni nalogi. V modul 
+lahko napišete tudi pomožne funkcije, če jih potrebujete. Testi so na voljo v mapi <code>./testi/2017-2018-ii</code>. </p>
+
+
+<h1>Planica</h1>
+
+<p>Podane imamo rezultate poletov s Planice. Vaša naloga je napisati pet funkcij, ki so podrobno opisane spodaj. Testiranje med nalogami je neodvisno, kar pomeni, da vaša rešitev ene naloge ne vpliva na testiranje druge naloge; tako jih lahko rešujete v poljubnem vrstnem redu. Naloge niso nujno razporejene po težavnosti.</p>
+
+<h2>1. naloga</h2>
+<p>Podatki so shranjeni v tekstovnih datotekah po serijah (najdete jih poleg testov v mapi <code>public/data</code>). Podanih je pet serij: četrtkove kvalifikacije, prva in druga serija petkove tekme ter prva in druga serija nedeljske tekme. Ena vrstica datoteke predstavlja podatke o skoku enega tekmovalca, podatki pa so ločeni s podpičjem (";"). Prvi podatek je štartna številka, nato skakalec (priimek in ime skupaj), država (kratica), dolžina leta, pet sodniških ocen, zaletno mesto ter na koncu hitrost vetra v m/s (pozitivna vrednost predstavlja vzgonski veter, negativna vrednost pa veter v hrbet).</p><p>Primer datoteke <code>tekma2_serija1.txt</code> (prva serija nedeljske tekme):</p>
+<pre>1;GEIGER Karl;GER;232.0;18.5;19.0;19.0;18.5;18.5;7;0.18
+3;HUBER Daniel;AUT;202.5;17.0;17.0;17.5;18.0;17.5;7;0.24
+4;KOT Maciej;POL;218.0;18.5;18.0;18.5;18.0;18.0;7;0.2
+5;PASCHKE Pius;GER;202.5;17.5;17.5;18.0;17.5;17.5;7;0.53
+6;DAMJAN Jernej;SLO;214.0;18.5;18.0;18.5;18.5;18.5;7;0.49
+7;TAKEUCHI Taku;JPN;196.0;17.0;17.0;17.0;17.5;17.0;7;0.34
+8;WELLINGER Andreas;GER;222.5;18.5;18.5;18.5;18.0;18.0;7;0.44
+9;HAYBOECK Michael;AUT;214.5;18.5;18.5;18.0;18.5;18.5;7;0.3
+10;KOBAYASHI Ryoyu;JPN;220.0;18.5;18.5;18.0;18.0;18.5;7;0.33
+11;BARTOL Tilen;SLO;222.0;18.5;18.5;18.0;18.0;18.5;7;0.36
+12;GRANERUD Halvor Egner;NOR;213.5;18.0;18.0;18.0;18.5;18.0;7;0.22
+13;SEMENIC Anze;SLO;220.0;18.5;18.5;18.0;19.0;18.5;7;0.29
+14;ZYLA Piotr;POL;208.5;18.0;18.0;18.0;18.0;18.0;7;0.38
+15;AIGNER Clemens;AUT;197.0;17.0;17.0;17.5;17.5;17.0;7;0.27
+16;LEYHE Stephan;GER;203.0;17.0;17.0;17.5;18.0;17.5;7;0.25
+17;HULA Stefan;POL;228.5;19.0;19.0;19.0;19.0;18.5;7;0.35
+18;KUBACKI Dawid;POL;217.0;19.0;18.5;18.5;18.5;18.5;7;0.43
+19;KOBAYASHI Junshiro;JPN;236.5;19.0;19.0;19.0;18.5;19.5;7;0.21
+20;FREITAG Richard;GER;232.5;18.5;16.5;17.5;17.5;18.0;7;0.24
+21;FANNEMEL Anders;NOR;232.5;18.5;19.0;18.5;18.0;18.5;7;0.25
+22;PREVC Peter;SLO;235.0;19.5;19.5;19.5;19.0;19.5;7;0.67
+23;EISENBICHLER Markus;GER;232.5;18.5;18.5;17.5;18.0;17.5;7;0.33
+24;AMMANN Simon;SUI;234.0;18.5;18.0;17.5;17.5;17.5;7;0.52
+25;KASAI Noriaki;JPN;216.5;18.0;18.5;18.0;18.5;18.5;7;0.39
+26;FORFANG Johann Andre;NOR;240.5;19.0;19.5;19.0;19.0;19.0;7;0.55
+27;KRAFT Stefan;AUT;243.0;19.5;19.5;19.5;19.0;18.0;7;0.52
+28;TANDE Daniel Andre;NOR;243.5;19.0;19.5;19.5;19.0;18.5;7;0.4
+29;STOCH Kamil;POL;245.0;19.5;19.5;20.0;19.5;19.5;6;0.28
+30;JOHANSSON Robert;NOR;237.0;19.0;18.5;19.0;18.5;19.0;6;0.53
+31;STJERNEN Andreas;NOR;233.0;19.0;18.5;18.5;19.0;18.5;7;0.37</pre>
+
+<p>Prva vrstica opisuje polet tekmovalca s štartno številko 1, to je GEIGER Karl, ki je skočil 232 m, z ocenami za slog 18.5, 19, 19, 18.5 in 18.5, pri tem je skočil s sedmega zaletnega mesta in imel vzgonski veter s hitrostjo 0.18 m/s.</p>
+
+<p>Napišite funkcijo <b>preberi_podatke</b>, ki kot argument prejme pot do datoteke, vrne pa seznam poletov (v vrstnem redu, kot so podani v datoteki). Podatki o enem poletu skakalca naj bodo predstavljeni kot seznam. Prvi element naj bo štartna številka tipa <code>int</code>, nato naj sledita tekmovalec ter država tipa <code>str</code>, dolžina leta tipa <code>float</code>, nato pet ocen (vsaka ocena naj bo tipa <code>float</code>) združite v terko (angl. <code>tuple</code>), ter na koncu zaletno mesto tipa <code>int</code> in hitrost vetra tipa <code>float</code>.</p>
+<p>Primer klica funkcije in vrnjenega rezultata za prvo serijo nedeljske tekme:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>preberi_podatke(<span class="" style="color: rgb(0, 170, 0);">'public/data/tekma2_serija1.txt'</span>)
+<span class="" style="color: rgb(0, 0, 255);">[[1, 'GEIGER Karl', 'GER', 232.0, (18.5, 19.0, 19.0, 18.5, 18.5), 7, 0.18],
+[3, 'HUBER Daniel', 'AUT', 202.5, (17.0, 17.0, 17.5, 18.0, 17.5), 7, 0.24],
+[4, 'KOT Maciej', 'POL', 218.0, (18.5, 18.0, 18.5, 18.0, 18.0), 7, 0.2],
+[5, 'PASCHKE Pius', 'GER', 202.5, (17.5, 17.5, 18.0, 17.5, 17.5), 7, 0.53],
+[6, 'DAMJAN Jernej', 'SLO', 214.0, (18.5, 18.0, 18.5, 18.5, 18.5), 7, 0.49],
+[7, 'TAKEUCHI Taku', 'JPN', 196.0, (17.0, 17.0, 17.0, 17.5, 17.0), 7, 0.34],
+[8, 'WELLINGER Andreas', 'GER', 222.5, (18.5, 18.5, 18.5, 18.0, 18.0), 7, 0.44],
+[9, 'HAYBOECK Michael', 'AUT', 214.5, (18.5, 18.5, 18.0, 18.5, 18.5), 7, 0.3],
+[10, 'KOBAYASHI Ryoyu', 'JPN', 220.0, (18.5, 18.5, 18.0, 18.0, 18.5), 7, 0.33],
+[11, 'BARTOL Tilen', 'SLO', 222.0, (18.5, 18.5, 18.0, 18.0, 18.5), 7, 0.36],
+[12, 'GRANERUD Halvor Egner', 'NOR', 213.5, (18.0, 18.0, 18.0, 18.5, 18.0), 7, 0.22],
+[13, 'SEMENIC Anze', 'SLO', 220.0, (18.5, 18.5, 18.0, 19.0, 18.5), 7, 0.29],
+[14, 'ZYLA Piotr', 'POL', 208.5, (18.0, 18.0, 18.0, 18.0, 18.0), 7, 0.38],
+[15, 'AIGNER Clemens', 'AUT', 197.0, (17.0, 17.0, 17.5, 17.5, 17.0), 7, 0.27],
+[16, 'LEYHE Stephan', 'GER', 203.0, (17.0, 17.0, 17.5, 18.0, 17.5), 7, 0.25],
+[17, 'HULA Stefan', 'POL', 228.5, (19.0, 19.0, 19.0, 19.0, 18.5), 7, 0.35],
+[18, 'KUBACKI Dawid', 'POL', 217.0, (19.0, 18.5, 18.5, 18.5, 18.5), 7, 0.43],
+[19, 'KOBAYASHI Junshiro', 'JPN', 236.5, (19.0, 19.0, 19.0, 18.5, 19.5), 7, 0.21],
+[20, 'FREITAG Richard', 'GER', 232.5, (18.5, 16.5, 17.5, 17.5, 18.0), 7, 0.24],
+[21, 'FANNEMEL Anders', 'NOR', 232.5, (18.5, 19.0, 18.5, 18.0, 18.5), 7, 0.25],
+[22, 'PREVC Peter', 'SLO', 235.0, (19.5, 19.5, 19.5, 19.0, 19.5), 7, 0.67],
+[23, 'EISENBICHLER Markus', 'GER', 232.5, (18.5, 18.5, 17.5, 18.0, 17.5), 7, 0.33],
+[24, 'AMMANN Simon', 'SUI', 234.0, (18.5, 18.0, 17.5, 17.5, 17.5), 7, 0.52],
+[25, 'KASAI Noriaki', 'JPN', 216.5, (18.0, 18.5, 18.0, 18.5, 18.5), 7, 0.39],
+[26, 'FORFANG Johann Andre', 'NOR', 240.5, (19.0, 19.5, 19.0, 19.0, 19.0), 7, 0.55],
+[27, 'KRAFT Stefan', 'AUT', 243.0, (19.5, 19.5, 19.5, 19.0, 18.0), 7, 0.52],
+[28, 'TANDE Daniel Andre', 'NOR', 243.5, (19.0, 19.5, 19.5, 19.0, 18.5), 7, 0.4],
+[29, 'STOCH Kamil', 'POL', 245.0, (19.5, 19.5, 20.0, 19.5, 19.5), 6, 0.28],
+[30, 'JOHANSSON Robert', 'NOR', 237.0, (19.0, 18.5, 19.0, 18.5, 19.0), 6, 0.53],
+[31, 'STJERNEN Andreas', 'NOR', 233.0, (19.0, 18.5, 18.5, 19.0, 18.5), 7, 0.37]]</span></pre>
+
+<h2>2. naloga</h2>
+<p>Napišite funkcijo <b>izracun_tock</b>, ki kot argument prejme podatke o poletu enega skakalca (en element seznama, ki ga vrne 1. naloga), vrne pa seštevek točk, ki jih je skakalec dosegel za ta polet, zaokrožen na eno decimalno mesto (tipa <code>float</code>). Točke se računajo po sledečem algoritmu:</p>
+<p>1. Vsak preleten meter preko 100 m prinaša 1,2 točke (vsak meter pod 100 m pa prinaša -1,2 točke). Torej, za skok dolžine 200 m prejme tekmovalec 120 točk, za skok dolžine 90 m pa -12 točk.<br>
+2. Štejejo se tri srednje sodniške ocene (najnižja in najvišja ocena se odstranita).<br>
+3. Za zaletno mesto številka 8 dobi skakalec 0 točk (referenčno zaletno mesto). Za vsako zvišanje zaletnega mesta dobi skakalec odbitek 9,3312 točk, za znižanje pa prav takšen pribitek točk. Na primer, za zeletno mesto 6 dobi pribitek 18,6624 točk.<br>
+4. Skakalci dobijo za vzgonski veter (pozitivna vrednost hitrosti vetra) odbitek in sicer se v tem primeru hitrost vetra pomnoži s faktorjem 14,40; za veter v hrbet pa dobi skakalec pribitek, kjer pa se uporabi faktor 17,42. Na primer, če veter piha s +0,49 m/s (vzgonski veter), potem tekmovalec dobi odbitek 7,056 točk (torej -7,056 točk).<br>
+Za končen izračun točk se zgoraj omenjeni štirje izračuni seštejejo, rezultat pa se na koncu zaokroži na eno decimalno mesto. Če je slučajno seštevek vseh točk manjši od nič, se kot rezultat vzame vrednost nič (tako tekmovalec ne more doseči negativnega števila točk).</p>
+
+<p>Primera klica funkcije:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>izracun_tock(<span class="" style="color: rgb(0, 170, 0);">[6, 'DAMJAN Jernej', 'SLO', 214.0, (18.5, 18.0, 18.5, 18.5, 18.5), 7, 0.49]</span>)
+<span class="" style="color: rgb(0, 0, 255);">194.6</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>izracun_tock(<span class="" style="color: rgb(0, 170, 0);">[25, 'KASAI Noriaki', 'JPN', 216.5, (18.0, 18.5, 18.0, 18.5, 18.5), 7, 0.39]</span>)
+<span class="" style="color: rgb(0, 0, 255);">198.5</span></pre>
+
+<h2>3. naloga</h2>
+<p>Napišite funkcijo <b>mesto</b>, ki kot prvi argument prejme slovar doseženih točk za vsakega skakalca (ključ v slovarju je ime tekmovalca, vrednost pa dosežene točke, kot jih vrne 2. naloga) ter kot drugi argument ime tekmovalca, vrne pa skakalčevo uvrstitev na tekmi (glej primer spodaj). Če imata dva tekmovalca enak izkupiček točk, potem si delita isto mesto, naslednje uvrščeni tekmovalec pa je dve mesti za njima.</p>
+<p>Primer klica funkcije:<br></p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>slovar_tock = <span class="" style="color: rgb(0, 170, 0);">{'AMMANN Simon': 202.1, 'KRANJEC Robert': 203.4, 'DAMJAN Jernej': 213.2, 'TEPES Jurij': 210.5,  'PREVC Peter': 200.2, 'KASAI Noriaki': 197.1}</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>mesto(slovar_tock, <span class="" style="color: rgb(0, 170, 0);">'PREVC Peter'</span>)
+<span class="" style="color: rgb(0, 0, 255);">5<br></span></pre>
+
+
+<h2>4. naloga</h2>
+<p>Napišite funkcijo <b>dolgi_poleti</b>, ki prejme kot prvi argument seznam poletov (takšnega, kot bi ga naj vrnila 1. naloga), kot drugi pa minimalno dolžino leta v metrih, vrne pa množico skakalcev, ki so poleteli vsaj do podane minimalne dolžine.</p>
+<p>Primer klica funkcije:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>podatki = <span class="" style="color: rgb(0, 170, 0);">[[1, 'TEPES Jurij', 'SLO', 235.5, (19.0, 19.0, 18.5, 19.0, 19.0), 8, 0.63],
+               [2, 'KRANJEC Robert', 'SLO', 238.0, (17.5, 17.0, 16.5, 18.0, 19.0), 8, 1.02],
+               [3, 'DAMJAN Jernej', 'SLO', 223.5, (19.0, 19.0, 19.0, 18.5, 18.5), 4, 2.0],
+               [4, 'PREVC Peter', 'SLO', 214.5, (18.0, 18.0, 18.0, 18.0, 18.5), 7, 0.04],
+               [5, 'AMMANN Simon', 'SUI', 217.0, (18.0, 18.0, 18.0, 17.5, 17.5), 7, 0.08],
+               [6, 'KASAI Noriaki', 'JPN', 211.0, (18.5, 18.0, 18.5, 18.0, 18.5), 7, 0.03]]</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>dolgi_poleti(podatki, <span class="" style="color: rgb(0, 170, 0);">230</span>)
+<span class="" style="color: rgb(0, 0, 255);">{'KRANJEC Robert', 'TEPES Jurij'}</span></pre>
+
+<h2>5. naloga</h2>
+<p>Napišite funkcijo <b>povprecna_dolzina_po_drzavah</b>, ki prejme kot argument seznam poletov (takšnega, kot bi ga naj vrnila 1. naloga), vrne pa slovar, ki ima za ključ kratico države (tipa <code>niz</code>), vrne pa povprečno dolžino poletov vseh skakalcev te države zaokroženo na eno decimalno mesto (tipa <code>float</code>).</p>
+<p>Primer klica funkcije:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>podatki = <span class="" style="color: rgb(0, 170, 0);">[[1, 'TEPES Jurij', 'SLO', 235.5, (19.0, 19.0, 18.5, 19.0, 19.0), 8, 0.63],
+               [2, 'KRANJEC Robert', 'SLO', 238.0, (17.5, 17.0, 16.5, 18.0, 19.0), 8, 1.02],
+               [3, 'DAMJAN Jernej', 'SLO', 223.5, (19.0, 19.0, 19.0, 18.5, 18.5), 4, 2.0],
+               [4, 'PREVC Peter', 'SLO', 214.5, (18.0, 18.0, 18.0, 18.0, 18.5), 7, 0.04],
+               [5, 'AMMANN Simon', 'SUI', 217.0, (18.0, 18.0, 18.0, 17.5, 17.5), 7, 0.08],
+               [6, 'KASAI Noriaki', 'JPN', 211.0, (18.5, 18.0, 18.5, 18.0, 18.5), 7, 0.03]]</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>povprecna_dolzina_po_drzavah(podatki)
+<span class="" style="color: rgb(0, 0, 255);">{'JPN': 211.0, 'SLO': 227.9, 'SUI': 217.0}</span></pre>

@@ -1,0 +1,1 @@
+AttributeError: module 'naloga' has no attribute 'izracunaj_ocene'

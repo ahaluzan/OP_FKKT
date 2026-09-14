@@ -1,0 +1,8 @@
+import unittest
+from izpit import *
+
+test_case = unittest.TestCase()
+input = 'public/data/eruptions-abrv2.txt'
+expected = [['Kilauea', 10117, 0, (1982, 4), (1982, 5), 'Historical Observations'], ['Kilauea', 10118, 0, (1982, 9), (1982, 9), 'Historical Observations'], ['Kilauea', 10119, 1, (1983, 1), (2018, 5), 'Historical Observations'], ['Eyjafjallajokull', 12563, 4, (2010, 3), (2010, 6), 'Historical Observations'], ['Lengai, Ol Doinyo', 14024, 1, (1994, 9), (2006, 7), 'Historical Observations'], ['Krakatau', 15589, 6, (1883, 5), (1883, 10), 'Historical Observations'], ['Pinatubo', 16867, 6, (1991, 4), (1991, 9), 'Historical Observations'], ['Unzendake', 17182, 2, (1996, 2), (1996, 5), 'Historical Observations'], ['Fujisan', 17452, 5, (1707, 12), (1708, 2), 'Historical Observations'], ['Izu-Torishima', 18370, 0, (1965, 11), (1965, 12), 'Hydrophonic'], ['Shikotsu', 18610, 5, (1667, 9), (1667, 9), 'Historical Observations'], ['Shikotsu', 18612, 5, (1739, 8), (1739, 8), 'Historical Observations'], ['Mutnovsky', 18973, 1, (2000, 6), (2000, 6), 'Hydrophonic'], ['St. Helens', 20557, 5, (1980, 3), (1986, 10), 'Historical Observations'], ['Lengai, Ol Doinyo', 20790, 0, (2011, 6), (2014, 7), 'Historical Observations'], ['Monowai', 20799, 0, (2012, 8), (2012, 8), 'Hydrophonic'], ['Axial Seamount', 21092, 0, (2015, 4), (2015, 5), 'Seismicity']]
+
+test_case.assertEqual(preberi_podatke(input), expected)

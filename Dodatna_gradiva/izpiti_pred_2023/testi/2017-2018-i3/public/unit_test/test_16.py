@@ -1,0 +1,11 @@
+'''najvec_izbruhov'''
+import unittest
+from izpit import *
+
+test_case = unittest.TestCase()
+
+data = [['Kilauea', 10117, 0, (1982, 4), (1982, 5), 'Historical Observations'], ['Kilauea', 10118, 0, (1982, 9), (1982, 9), 'Historical Observations'], ['Kilauea', 10119, 1, (1983, 1), (2018, 5), 'Historical Observations'], ['Vesuvius', 13357, 2, (1864, 2), (1868, 11), 'Historical Observations'], ['Vesuvius', 13358, 3, (1870, 12), (1872, 4), 'Historical Observations'], ['Vesuvius', 13360, 4, (1875, 12), (1906, 4), 'Historical Observations'], ['Vesuvius', 13361, 3, (1913, 7), (1944, 4), 'Historical Observations'], ['Etna', 13838, 1, (2004, 2), (2004, 2), 'Historical Observations'], ['Etna', 13846, 1, (2004, 9), (2005, 3), 'Historical Observations'], ['Etna', 13847, 1, (2005, 12), (2005, 12), 'Historical Observations'], ['Etna', 13848, 2, (2006, 7), (2006, 12), 'Historical Observations'], ['Etna', 13849, 2, (2007, 3), (2008, 5), 'Historical Observations'], ['Etna', 13852, 1, (2008, 5), (2009, 7), 'Historical Observations'], ['Etna', 13853, 2, (2010, 4), (2010, 4), 'Historical Observations'], ['Etna', 13854, 1, (2010, 8), (2013, 4), 'Historical Observations'], ['Asosan', 17348, 1, (2003, 7), (2003, 7), 'Historical Observations'], ['Asosan', 17349, 1, (2004, 1), (2004, 1), 'Historical Observations'], ['Asosan', 17350, 1, (2005, 4), (2005, 8), 'Historical Observations'], ['Asosan', 17351, 1, (2008, 2), (2008, 2), 'Historical Observations'], ['Asosan', 20753, 1, (2011, 5), (2011, 6), 'Historical Observations'], ['Etna', 20841, 2, (2013, 9), (2018, 3), 'Historical Observations'], ['Asosan', 20935, 1, (2014, 1), (2014, 2), 'Historical Observations'], ['Asosan', 22174, 3, (2016, 10), (2016, 11), 'Historical Observations']]
+expected = (4, {'Asosan', 'Etna'})
+test_case.assertEqual(najvec_izbruhov(data, 0, 2008, 2018), expected)
+
+
