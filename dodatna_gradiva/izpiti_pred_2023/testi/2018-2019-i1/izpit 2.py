@@ -1,2 +1,0 @@
-from podatki import OCENE
-
