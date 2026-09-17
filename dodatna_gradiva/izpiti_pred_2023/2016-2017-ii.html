@@ -1,0 +1,50 @@
+<p>Napišite modul <code>izpit</code>, ki vsebuje naslednjih pet funkcij (vsaka je vredna 20%). Pisanje pomožnih funkcij je dovoljeno. Testi so na voljo v imeniku <code>./testi/2016-2017-ii/</code></p>
+
+<h2>1. naloga</h2>
+
+<p>Pred kratkim so v Los Angelesu podelili oskarje. Nekateri filmi so se odrezali bolje, nekateri slabše, manjkalo pa ni tudi presenečenj. Podana je datoteka s podatki o nominirancih. Vsaka vrstica predstavlja kategorijo in vse nominirance. Podatki v posamezni vrstici so predstavljeni kot sledi:</p>
+
+<center><i>KATEGORIJA: nominiranec 1; nominiranec 2; nominiranec 3; ...</i></center>
+<br>
+<p>Prve tri vrstice datoteke izgledajo takole:</p>
+
+<pre><code>BEST PICTURE: Arrival; Fences; Hacksaw Ridge; Hell or High Water; Hidden Figures; La La Land; Lion; Manchester by the Sea; Moonlight
+ACTOR IN A LEADING ROLE: Casey Affleck, Manchester by the Sea; Andrew Garfield, Hacksaw Ridge; Ryan Gosling, La La Land; Viggo Mortensen, Captain Fantastic; Denzel Washington, Fences
+ACTOR IN A SUPPORTING ROLE: Mahershala Ali, Moonlight; Jeff Bridges, Hell or High Water; Lucas Hedges, Manchester by the Sea; Dev Patel, Lion; Michael Shannon, Nocturnal Animals
+</code></pre>
+
+<p>Napišite naslednje funkcije (testiranje funkcij je med seboj neodvisno, tako da vrstni red reševanja ni pomemben):</p>
+
+<p><code>preberi(datoteka)</code> - funkcija prejme ime datoteke s podatki o nominirancih, <b>vrne</b> pa slovar, kjer ključi predstavljajo kategorije, vrednosti pa sezname, kjer vsak seznam vsebuje vse nominirance posamezne kategorije. Pri razčlenjevanju datoteke pazite na presledke!<br></p>
+
+<p><code>stevilo_nominirancev(slovar, kategorija)</code> - funkcija prejme slovar z nominiranci in kategorijo, <b>vrne</b> pa število nominirancev v tej kategoriji.</p>
+
+<p><code>velikost_kategorij(slovar, stevilo)</code> - funkcija prejme slovar z nominiranci in stevilo nominirancev, <b>vrne</b> pa množico vseh kategorij, ki imajo točno toliko (<code>stevilo</code>) nominirancev.</p>
+
+<p><code>stevilo_nominacij(slovar, film)</code> - funkcija prejme slovar z nominiranci in naslov filma, <b>vrne</b> pa število nomininacij, ki jih ima ta film v vseh kategorijah. Bodite pozorni, film je lahko v kategoriji nominiran neposredno, na primer <code>La La Land</code> v kategoriji <code>CINEMATOGRAPHY</code>, ali pa posredno, kot na primer <code>Emma Stone, La La Land</code> v kategoriji <code>ACTRESS IN A LEADING ROLE</code>.<br></p>
+
+<p>Primer uporabe:</p>
+
+<pre><code><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> datoteka = <span class="" style="color: rgb(152, 202, 62);">'oscars_data.txt'</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> slovar = preberi(datoteka)
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> slovar
+<span class="" style="color: rgb(125, 159, 211);">{'ANIMATED FEATURE FILM': ['Kubo and the Two Strings', 'Moana', 'My Life as a Zucchini', 'The Red Turtle', 'Zootopia'], 'FILM EDITING': ['Arrival', 'Hacksaw Ridge', 'Hell or High Water', 'La La Land', 'Moonlight'], 'VISUAL EFFECTS': ['Deepwater Horizon', 'Doctor Strange', 'The Jungle Book', 'Kubo and the Two Strings', 'Rogue One - A Star Wars Story'], 'BEST PICTURE': ['Arrival', 'Fences', 'Hacksaw Ridge', 'Hell or High Water', 'Hidden Figures', 'La La Land', 'Lion', 'Manchester by the Sea', 'Moonlight'], 'ACTRESS IN A SUPPORTING ROLE': ['Viola Davis, Fences', 'Naomie Harris, Moonlight', 'Nicole Kidman, Lion', 'Octavia Spencer, Hidden Figures', 'Michelle Williams, Manchester by the Sea'], 'MAKEUP AND HAIRSTYLING': ['A Man Called Ove', 'Star Trek Beyond', 'Suicide Squad'], 'ACTRESS IN A LEADING ROLE': ['Isabelle Huppert, Elle', 'Ruth Negga, Loving', 'Natalie Portman, Jackie', 'Emma Stone, La La Land', 'Meryl Streep, Florence Foster Jenkins'], 'ACTOR IN A LEADING ROLE': ['Casey Affleck, Manchester by the Sea', 'Andrew Garfield, Hacksaw Ridge', 'Ryan Gosling, La La Land', 'Viggo Mortensen, Captain Fantastic', 'Denzel Washington, Fences'], 'MUSIC (ORIGINAL SONG)': ['“Audition (The Fools Who Dream),” La La Land', '“Can’t Stop The Feeling,” Trolls', '“City Of Stars,” La La Land', '“The Empty Chair,” Jim - The James Foley Story', '“How Far I’ll Go,” Moana'], 'ACTOR IN A SUPPORTING ROLE': ['Mahershala Ali, Moonlight', 'Jeff Bridges, Hell or High Water', 'Lucas Hedges, Manchester by the Sea', 'Dev Patel, Lion', 'Michael Shannon, Nocturnal Animals'], 'WRITING (ORIGINAL SCREENPLAY)': ['Hell or High Water', 'La La Land', 'The Lobster', 'Manchester by the Sea', '20th Century Women'], 'CINEMATOGRAPHY': ['Arrival', 'La La Land', 'Lion', 'Moonlight', 'Silence'], 'COSTUME DESIGN': ['Allied', 'Fantastic Beasts and Where to Find Them', 'Florence Foster Jenkins', 'Jackie', 'La La Land'], 'MUSIC (ORIGINAL SCORE)': ['Jackie', 'La La Land', 'Lion', 'Moonlight', 'Passengers'], 'DOCUMENTARY (FEATURE)': ['Fire at Sea', 'I Am Not Your Negro', 'Life, Animated', 'O.J. - Made in America', '13th'], 'SOUND EDITING': ['Arrival', 'Deepwater Horizon', 'Hacksaw Ridge', 'La La Land', 'Sully'], 'PRODUCTION DESIGN': ['Arrival', 'Fantastic Beasts and Where to Find Them', 'Hail, Caesar!', 'La La Land', 'Passengers'], 'LIVE ACTION SHORT FILM': ['Ennemis Intérieurs', 'La Femme et le TGV', 'Silent Nights', 'Sing', 'Timecode'], 'DIRECTING': ['Arrival', 'Hacksaw Ridge', 'La La Land', 'Manchester by the Sea', 'Moonlight'], 'SOUND MIXING': ['Arrival', 'Hacksaw Ridge', 'La La Land', 'Rogue One - A Star Wars Story', '13 Hours - The Secret Soldiers of Benghazi'], 'FOREIGN LANGUAGE FILM': ['Land of Mine', 'A Man Called Ove', 'The Salesman', 'Tanna', 'Toni Erdmann'], 'ANIMATED SHORT FILM': ['Blind Vaysha', 'Borrowed Time', 'Pear Cider and Cigarettes', 'Pearl', 'Piper'], 'DOCUMENTARY (SHORT SUBJECT)': ['Extremis', '4.1 Miles', 'Joe’s Violin', 'Watani - My Homeland', 'The White Helmets'], 'WRITING (ADAPTED SCREENPLAY)': ['Arrival', 'Fences', 'Hidden Figures', 'Lion', 'Moonlight']}</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> kategorija = <span class="" style="color: rgb(152, 202, 62);">'BEST PICTURE'</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> stevilo_nominirancev(slovar, kategorija)
+<span class="" style="color: rgb(125, 159, 211);">9</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> stevilo = 9
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> velikost_kategorij(slovar, stevilo)
+<span class="" style="color: rgb(125, 159, 211);">{'BEST PICTURE'}</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> film = <span class="" style="color: rgb(152, 202, 62);">'La La Land'</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> stevilo_nominacij(slovar, film)
+<span class="" style="color: rgb(152, 202, 62);">14</span>
+</code></pre>
+
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+<h2>2. naloga</h2><p>Radioaktivni razpad lahko modeliramo z diferencialno enačbo:</p><p>\(  \frac{dN}{dt} = -k \cdot N \)<br></p>Pri čemer je \(N\) količina radioaktivne snovi, \(k\) pa pozitivna konstanta, ki določa stopnjo radioaktivnosti snovi.<br><br>Napišite funkcijo <code>radioaktivnost</code>, ki kot argument prejme stopnjo radioaktivnosti, kot rezultat pa vrne čas, ki je potreben, da količina izhodiščne radioaktivne snovi pade na ali pod polovico začetne količine izhodiščne radioaktivne snovi (torej izračunajte razpolovno dobo). Predpostavite, da čas merimo v sekundah (s sekundno natančnostjo), prav tako pri izračunu vzemite&nbsp;\(dt = 1 \). Namig: za začetno količino \( N(t_0) \) lahko izberete poljubno vrednost, npr. 1000.<br><br><p>Primer uporabe:</p>
+
+<pre><code><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> radioaktivnost(0.0001)<br><span class="" style="color: rgb(125, 159, 211);">6932</span>
+</code></pre>
+
+<br>

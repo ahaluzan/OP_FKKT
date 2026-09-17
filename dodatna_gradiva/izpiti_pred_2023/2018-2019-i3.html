@@ -1,0 +1,159 @@
+<p></p><p>Napišite modul <b><code>izpit</code></b>, ki vsebuje funkcije, kot so zahtevane v posamezni nalogi. V modul 
+lahko napišete tudi pomožne funkcije, če jih potrebujete. Testi so na voljo v mapi <code>./testi/2018-2019-i3</code>.</p>
+
+Naloge niso nujno v vrstnem redu zahtevnosti. Če vam pri določeni nalogi ne uspe narediti rešitve, ki pokrije vse teste, poskusite pokriti vsaj del testov. Če vam določena naloga dela probleme, se ne ukvarjajte z njo predolgo in poskusite rešiti kakšno od drugih nalog. Naloge (in podnaloge) se lahko rešujejo neodvisno ena od druge, tako da jih lahko rešujete v poljubnem vrstnem redu.<br><p><br></p>
+
+<h1><a id="1_pisni_izpit_pri_predmetu_Osnove_programiranja_0"></a></h1><h1></h1><div data-mime-type="text/markdown"><div data-mime-type="text/markdown"><h1 id="Izredni-izpitni-rok-pri-predmetu-Osnove-programiranja">3. izpitni rok pri predmetu Osnove programiranja</h1><p><br></p><p></p><p>Statistični urad Republike Slovenije med drugim redno spremlja višine
+ plač v Sloveniji. Zbrani podatki bodo podlaga za naloge v tem izpitnem 
+roku. Pri tem bodite pozorni, da bo vaša rešitev splošna: delovati mora 
+za poljubne podatke, ki ustrezajo predpisanemu formatu.</p>
+<h2 id="1-Branje-podatkov"><br>1. Branje podatkov<a target="_self" href="http://localhost:8888/lab#1-Branje-podatkov"></a></h2>
+<p>Iz datoteke, katere ime je podano kot vhod v funkcijo, preberite 
+podatke o povprečnih bruto in neto plačah v Sloveniji za zadnjih nekaj 
+let. Prebrane podatke vrnite kot seznam terk, kjer vsaka terka 
+predstavlja en mesec (glej primer spodaj). </p>
+<p>Podatki v datoteki so urejeni takole: </p>
+<ul>
+<li>Vsaka vrstica vsebuje podatke za en mesec in sicer na prvem mestu 
+datum, na drugem mestu povprečno bruto plačo in na koncu še povprečno 
+neto plačo. </li>
+<li>Podatki so med seboj ločeni z vejico. </li>
+<li>Datum je podan v obliki niza, npr. <code>2019M07</code>, kjer je na začetku štirimestna letnica, nato pa takoj (brez presledka) mesec v obliki: črka <code>M</code>, ki ji sledi dvomestna oznaka meseca (v našem primeru gre za julij, torej sedmi mesec). </li>
+<li>Datume pretvorite v terko, kjer je prvi element letnica, drugi pa 
+mesec, oba mora računalnik razumeti kot celo število (integer) -- naš 
+primer <code>2019M07</code> se torej pretvori v <code>(2019, 7)</code>.</li>
+<li>Podatki so urejeni po datumih, najnovejši je na prvem mestu.</li>
+</ul>
+<p>Delovanje programa:</p>
+<ul>
+<li>Vhod: ime datoteke s podatki</li>
+<li>Izhod: seznam s podatki (glej primer)</li>
+</ul>
+<p>Primer:</p>
+<pre><code><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> podatki = preberi_podatke(<span class="" style="color: rgb(152, 202, 62);">'data.csv'</span>)
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> podatki
+<span class="" style="color: rgb(0, 0, 255);">[((2018, 9), 1632.88, 1062.03),
+ ((2018, 8), 1669.51, 1082.88),
+ ((2018, 7), 1650.84, 1071.76),
+ ((2018, 6), 1654.0, 1073.47),
+ ((2018, 5), 1663.23, 1077.77),
+ ((2018, 4), 1664.19, 1078.95),
+ ((2018, 3), 1670.69, 1083.0),
+ ((2018, 2), 1638.0, 1066.33),
+ ((2018, 1), 1659.27, 1077.73),
+ ((2017, 12), 1723.13, 1129.76),</span>
+<span class="" style="color: rgb(239, 69, 64);"> # ... izpuščeno ...</span>
+<span class="" style="color: rgb(0, 0, 255);">]</span></code></pre>
+<h2 id="2-Stopnja-obdav%C4%8Ditve-za-vsak-mesec"><br>2. Stopnja obdavčitve za vsak mesec<a target="_self" href="http://localhost:8888/lab#2-Stopnja-obdav%C4%8Ditve-za-vsak-mesec"></a></h2>
+<p>Za vsak mesec v podatkih izračunajte stopnjo obdavčitve. Rezultat 
+vrnite kot seznam terk, kjer je na prvem mestu datum (ki je sam po sebi 
+terka <code>(leto, mesec)</code> in na drugem mestu stopnja obdavčitve (glej tudi primer spodaj). Stopnjo obdavčitve izračunate kot <code>(bruto - neto) / bruto</code>.</p>
+<ul>
+<li>Vhod: seznam kot ga vrača naloga 1.</li>
+<li>Izhod: seznam rezultatov (glej primer).</li>
+</ul>
+<p>Primer:</p>
+<pre><code><span class="" style="color: rgb(239, 69, 64);"># testni podatki</span>
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> podatki = [
+ ((2018, 9), 1632.88, 1062.03),
+ ((2018, 8), 1669.51, 1082.88),
+ ((2018, 7), 1650.84, 1071.76),
+ ((2018, 6), 1654.0, 1073.47),
+ ((2018, 5), 1663.23, 1077.77),
+ ((2018, 4), 1664.19, 1078.95),
+ ((2018, 3), 1670.69, 1083.0),
+ ((2018, 2), 1638.0, 1066.33),
+ ((2018, 1), 1659.27, 1077.73),
+ ((2017, 12), 1723.13, 1129.76),
+ ((2017, 11), 1756.95, 1151.76),
+ ((2017, 10), 1621.46, 1056.47),
+ ((2017, 9), 1604.38, 1047.14),
+ ((2017, 8), 1613.62, 1051.73),
+ ((2017, 7), 1593.1, 1039.55),
+ ((2017, 6), 1602.21, 1045.06),
+ ((2017, 5), 1613.73, 1050.78),
+ ((2017, 4), 1591.01, 1038.05)]
+<span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> stopnje_obdavcitev(podatki)
+<span class="" style="color: rgb(0, 0, 255);">[((2018, 9), 0.3495970310126893),
+ ((2018, 8), 0.3513785481967762),
+ ((2018, 7), 0.35077899735892026),
+ ((2018, 6), 0.3509854897218863),
+ ((2018, 5), 0.3520018277688594),
+ ((2018, 4), 0.35166657653272765),
+ ((2018, 3), 0.3517648396770197),
+ ((2018, 2), 0.34900488400488405),
+ ((2018, 1), 0.3504794277001332),
+ ((2017, 12), 0.34435591046525804),
+ ((2017, 11), 0.34445487919405793),
+ ((2017, 10), 0.348445228374428),
+ ((2017, 9), 0.34732420000249314),
+ ((2017, 8), 0.34821705234193917),
+ ((2017, 7), 0.3474672023099617),
+ ((2017, 6), 0.34773843628488155),
+ ((2017, 5), 0.3488501793980406),
+ ((2017, 4), 0.3475528123644729)]</span></code></pre>
+<h2 id="3-Izra%C4%8Dunajte-drse%C4%8De-povpre%C4%8Dje-bruto-pla%C4%8De-za-zadnje-3-mesece"><br>3. Izračunajte drseče povprečje bruto plače za zadnje 3 mesece<a target="_self" href="http://localhost:8888/lab#3-Izra%C4%8Dunajte-drse%C4%8De-povpre%C4%8Dje-bruto-pla%C4%8De-za-zadnje-3-mesece"></a></h2>
+<p>Za vsak mesec v podatkih izračunajte povprečje zadnjih treh mesecev. 
+Na primer, za julij 2019 je povprečje sestavljeno iz povprečne bruto 
+plače za julij, junij in maj 2019. Za junij 2019 pa iz junijske, majske 
+in aprilske bruto plače v 2019. In tako naprej. </p>
+<p>Upoštevajte, da so podatki urejeni od najnovejšega proti 
+najstarejšemu, zato za najstarejša dva meseca povprečja ne moremo 
+izračunati.</p>
+<ul>
+<li>Vhod: seznam kot ga vrača naloga 1.</li>
+<li>Izhod: seznam terk, prvi element terke je datum (leto, mesec), drugi element pa tromesečeno povprečje bruto plače (glej primer).</li>
+</ul>
+<p>Primer:</p>
+<pre><code><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> drseca_bruto_placa(podatki)
+<span class="" style="color: rgb(0, 0, 255);">[((2018, 9), 1651.0766666666668),
+ ((2018, 8), 1658.1166666666668),
+ ((2018, 7), 1656.0233333333333),
+ ((2018, 6), 1660.4733333333334),
+ ((2018, 5), 1666.0366666666669),
+ ((2018, 4), 1657.6266666666668),
+ ((2018, 3), 1655.9866666666667),
+ ((2018, 2), 1673.4666666666665),
+ ((2018, 1), 1713.1166666666668),
+ ((2017, 12), 1700.5133333333333),
+ ((2017, 11), 1660.93),
+ ((2017, 10), 1613.1533333333334),
+ ((2017, 9), 1603.7),
+ ((2017, 8), 1602.9766666666667),
+ ((2017, 7), 1603.0133333333333),
+ ((2017, 6), 1602.3166666666666)]</span></code></pre>
+<h2 id="4-Izra%C4%8Dun-povpre%C4%8Dnih-pla%C4%8D-po-mesecih"><br>4. Izračun povprečnih plač po mesecih<a target="_self" href="http://localhost:8888/lab#4-Izra%C4%8Dun-povpre%C4%8Dnih-pla%C4%8D-po-mesecih"></a></h2>
+<p>Iz podatkov izračunajte povprečne bruto plače po mesecih, torej 
+povprečje skozi vsa leta, ki so v podatkih: januarskih bruto plač, 
+februarskih bruto plač, itd. </p>
+<p>Rezultate vrnite v slovarju, kjer je ključ številka meseca (1 za januar, 2 za februar, itd.) in vrednost povprečna bruto plača. </p>
+<ul>
+<li>Vhod: seznam kot ga vrača naloga 1.</li>
+<li>Izhod: slovar, kot je opisan zgoraj (glej tudi primer).</li>
+</ul>
+<p>Primer:</p>
+<pre><code><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> povprecne_mesecne_place(podatki)
+<span class="" style="color: rgb(0, 0, 255);">{9: 1618.63,
+ 8: 1641.565,
+ 7: 1621.9699999999998,
+ 6: 1628.105,
+ 5: 1638.48,
+ 4: 1627.6,
+ 3: 1670.69,
+ 2: 1638.0,
+ 1: 1659.27,
+ 12: 1723.13,
+ 11: 1756.95,
+ 10: 1621.46}</span></code></pre>
+<h2 id="5-Poi%C5%A1%C4%8Di-6-mese%C4%8Dni-interval%2C-v-katerem-je-bila-povpre%C4%8Dna-pla%C4%8Da-najvi%C5%A1ja"><br>5. Poiščite 6-mesečni interval, v katerem je bila povprečna plača najvišja<a target="_self" href="http://localhost:8888/lab#5-Poi%C5%A1%C4%8Di-6-mese%C4%8Dni-interval%2C-v-katerem-je-bila-povpre%C4%8Dna-pla%C4%8Da-najvi%C5%A1ja"></a></h2>
+<p>Poiščite interval zaporednih šestih mesecev, v katerem je bila 
+povprečna bruto plača najvišja. Kot rezultat vrnite interval 
+predstavljen z začetnim in končnim datumom ter povprečno bruto plačo v 
+tem intervalu.</p>
+<ul>
+<li>Vhod: seznam kot ga vrača naloga 1.</li>
+<li>Izhod: terka, prva vrednost je začetek intervala <code>(leto, mesec)</code>, sledi konec intervala <code>(leto, mesec)</code>, na koncu povprečna bruto plača v tem intervalu (glej primer).</li>
+</ul>
+<p>Primer:</p>
+<pre><code><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> najboljse_polletje(podatki)
+<span class="" style="color: rgb(0, 0, 255);">((2018, 4), (2017, 11), 1685.3716666666667)</span></code></pre><br><p></p></div></div><p></p>

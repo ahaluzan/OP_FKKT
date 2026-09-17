@@ -1,0 +1,13 @@
+<h5 dir="ltr" style="text-align: left;">1. naloga</h5>
+<p dir="ltr" style="text-align: left;"><code>sez = []</code><br><code>for i in range(3):</code><br><code>    sez.append(int(input("Vnesi število primerov za tekoči dan: ")))</code><br><br><code>print("Povprečje zadnjih treh dni je enako", round(sum(sez) / len(sez), 2))</code><br><code>n = 3</code><br><br><code>while sum(sez) / len(sez) &gt;= 100:</code><br><code>    a = int(input("Vnesi število primerov za tekoči dan: "))</code><br><code>    sez[n % 3] = a</code><br><br><code>    print("Povprečje zadnjih treh dni je enako", round(sum(sez) / len(sez), 2))</code><br><code>    n += 1</code><br><br><code>print("Zapora je trajala", n, "dni")</code></p>
+<h5 dir="ltr" style="text-align: left;"><br>2. naloga</h5>
+<h5>(a)</h5>
+<p dir="ltr" style="text-align: left;"><code>def povprecje(sez): </code><br><code>    vsota = 0 </code><br><code>    stevilo = 0 </code><br><code>    for el in sez: </code><br><code>        if el &gt;= 0: </code><br><code>            vsota += el </code><br><code>            stevilo += 1 </code><br><code>    if stevilo: </code><br><code>        return vsota / stevilo </code><br><code>    return False</code></p>
+<p><code class="hljs python">
+</code></p>
+<h4> </h4>
+<h5>(b)</h5>
+<p dir="ltr" style="text-align: left;"><code class="hljs python">def povprecje_interval(sez, zacetek, konec): <br>    sez = sez[zacetek - 1:konec] <br>    return povprecje(sez)<br></code></p>
+<p dir="ltr" style="text-align: left;"></p>
+<h5>3. naloga</h5>
+<p dir="ltr" style="text-align: left;"><code>def najhujsi_dan(okuzbe):</code><br><code>    if not okuzbe:</code><br><code>        return None</code><br><code>    </code><br><code>    d, naj_stevilo = okuzbe[0]</code><br><code>    naj_datum = [d]</code><br><br><code>    for datum, stevilo in okuzbe[1:]:</code><br><code>        if stevilo &gt; naj_stevilo:</code><br><code>            naj_datum = [datum]</code><br><code>            naj_stevilo = stevilo</code><br><code>        elif stevilo == naj_stevilo:</code><br><code>            naj_datum.append(datum)</code><br><br><code>    if len(naj_datum) == 1:</code><br><code>        return naj_datum[0]</code><br><code>    else:</code><br><code>        return set(naj_datum)</code><br><br></p>

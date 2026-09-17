@@ -1,0 +1,27 @@
+import unittest
+from kolokvij import *
+
+test_case = unittest.TestCase()
+
+podatki = ['CE L1-83T',
+ 'CE NR-006',
+ 'LJ MI-788',
+ 'MB DK-299',
+ 'CE DL-030',
+ 'MS FM-169',
+ 'LJ LF-920',
+ 'CE C3-125',
+ 'CE GZ-587',
+ 'LJ MI-788',
+ 'CE MN-800',
+ 'CE MR-622',
+ 'CE EF-111',
+ 'CE AD-035',
+ 'MB H5-77C',
+ 'MB LL-251',
+ 'MS KU-636',
+ 'LJ LF-920']
+
+resitev = set()
+
+test_case.assertEqual(pogosta_vozila(podatki, 5), resitev)

@@ -1,0 +1,17 @@
+mesec	tip	registracij
+2021_11	avto	6770
+2021_11	avtobus	30
+2021_11	tovorno	1368
+2021_12	avto	4969
+2021_12	avtobus	10
+2021_12	tovorno	1144
+2021_12	traktor	268
+2022_01	avto	6580
+2022_01	avtobus	9
+2022_01	tovorno	1299
+2022_02	avto	6193
+2022_02	avtobus	17
+2022_02	tovorno	1308
+2022_03	avto	7407
+2022_03	avtobus	6
+2022_03	tovorno	1345
