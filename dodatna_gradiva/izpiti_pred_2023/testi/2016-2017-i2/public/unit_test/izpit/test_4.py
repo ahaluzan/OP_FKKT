@@ -1,9 +1,0 @@
-import unittest
-import izpit
-
-
-datoteka = 'public/data/piknik75.txt'
-slovar = {'esbdcztr': (65, 240), 'gpudctji': (331, 313), 'dkzrjo': (343, 372), 'ubhckljn': (171, 429), 'ftajh': (309, 307), 'mpuktjo': (443, 112), 'eptroin': (9, 171), 'ftaim': (238, 22), 'efgudzl': (374, 341), 'egukzoji': (388, 227), 'faclrn': (160, 83), 'gpscti': (410, 274), 'ubcktz': (352, 381), 'tmcu': (337, 432), 'gmpaudj': (242, 231), 'fuckoli': (24, 153), 'emhlin': (497, 290), 'subhckol': (449, 343), 'fagsuhti': (341, 406), 'egmhdtn': (378, 324), 'eghkzon': (392, 62), 'auhcki': (79, 249), 'famproin': (68, 26), 'asbdhr': (276, 381), 'egadhtj': (243, 462), 'emsbjo': (388, 169), 'agsubkjn': (222, 379), 'pdckjlo': (448, 495), 'egpdloj': (317, 393), 'efgscji': (4, 89), 'guckljin': (175, 119), 'psczri': (5, 75), 'eauckti': (93, 366), 'fgdkon': (185, 388), 'gpuhzji': (309, 99), 'fbdhjlr': (225, 77), 'faphdcn': (200, 118), 'famucjri': (231, 379), 'abztrn': (116, 151), 'etzrljon': (35, 165), 'gmasdti': (153, 360), 'fgmkjon': (76, 400), 'eambctz': (326, 190), 'fadtjon': (23, 50), 'tcsjk': (110, 46), 'fgmpzli': (244, 29), 'tcsbk': (484, 315), 'fgpkzn': (388, 127), 'eguroi': (277, 468), 'fgaphcn': (186, 62), 'fmpuctj': (388, 180), 'rgmud': (200, 38), 'fpdklj': (351, 355), 'gpsuhc': (211, 60), 'msubhczo': (349, 134), 'fagsjn': (332, 170), 'egadjoin': (308, 115), 'fguhcktr': (68, 252), 'jrcok': (216, 49), 'fdhcrjon': (251, 444), 'egmsbdj': (320, 176), 'fubdkt': (256, 437), 'fbdrjin': (212, 426), 'faectzn': (217, 217), 'asudhti': (378, 288), 'fdtrjn': (435, 402), 'eadhtli': (131, 337), 'amgtrn': (170, 490), 'eghzjlo': (28, 359), 'egapjr': (327, 358), 'eashzn': (442, 140), 'amsckzj': (203, 172), 'mubdzro': (480, 332), 'aszrlo': (373, 331), 'fgapeuzi': (276, 4)}
-
-test_case = unittest.TestCase()
-test_case.assertEqual(izpit.preberi(datoteka), slovar)

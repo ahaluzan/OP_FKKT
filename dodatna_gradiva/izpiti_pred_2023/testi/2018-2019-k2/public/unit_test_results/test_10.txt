@@ -1,1 +1,0 @@
-AttributeError: module 'naloga' has no attribute 'oceni_naloge'

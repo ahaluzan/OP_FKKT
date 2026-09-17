@@ -1,9 +1,0 @@
-<h5><strong>1. naloga<br></strong></h5>
-<pre><code class="hljs python">najvec_glasov = 0<br>najvec_ime = ''<br><br>ime=input('vnesite ime: ')<br>while ime != '':<br>    glasov = int(input('glasov: '))<br>    if glasov &gt; najvec_glasov:<br>        najvec_glasov = glasov<br>        najvec_ime = ime<br>    ime=input('vnesite ime: ')<br>    <br>print("Zmagal kandidat", najvec_ime)<br>print(najvec_glasov)</code></pre>
-<p><strong>2. naloga<br></strong></p>
-<pre><code class="hljs python">seznam = eval(input("Vnesite seznam: "))<br>indeks = -1<br><br>for i in range(len(seznam)):<br>    pred = sum(seznam[:i])<br>    po = sum(seznam[i + 1:])<br>    if pred == po:<br>        indeks = i<br>        break<br><br>print(indeks)</code></pre>
-<h5><strong>Naloga 3</strong></h5>
-<h5><strong>(a) </strong></h5>
-<pre><code class="hljs python">def pretvori(d,m,s,label):<br>    dec = d + m/60 + s/3600<br>    if label.upper() in ['W', 'S']:<br>        return -dec<br>    else:<br>        return dec</code></pre>
-<p><strong>(b)</strong></p>
-<pre><code class="hljs python">def razdalja(T1, T2, r):<br>    phi1, phi2 = radians(T1[0]), radians(T2[0])<br>    lambda1, lambda2 = radians(T1[1]), radians(T2[1])<br>    <br>    return 2*r*asin(sqrt(pow(sin((phi2 - phi1)/2), 2) + cos(phi1)*cos(phi2) * pow(sin((lambda2 - lambda1)/2), 2)))<br></code></pre>
