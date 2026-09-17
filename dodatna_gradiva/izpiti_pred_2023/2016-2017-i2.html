@@ -1,0 +1,58 @@
+<p>Napišite modul <code>izpit</code>, ki vsebuje naslednjih pet funkcij (vsaka je vredna 20%). Pisanje pomožnih funkcij je dovoljeno. Testi so na voljo v imeniku <code>./testi/2016-2017-i2/</code>.</p>
+
+<h2>Naloge</h2>
+
+<p>Poletje in čas za piknike je tu. 
+Podana je datoteka s podatki o prostorih za piknik. Vsaka vrstica 
+predstavlja ime prostora za piknik  in njegove koordinate. Podatki v 
+posamezni vrstici so predstavljeni kot sledi:</p>
+
+<center><i>Ime prostora za piknik: koordinataX, koordinataY</i></center>
+<br>
+<p>Prve tri vrstice datoteke izgledajo takole:</p>
+
+<pre><code>Gril: 35, 401
+Kozolc: 298, 128
+Mala Loka: 386, 333
+</code></pre>
+
+<p>Napišite naslednje funkcije (testiranje funkcij je med seboj neodvisno, tako da vrstni red reševanja ni pomemben):</p>
+
+<p><code>preberi(datoteka)</code> - funkcija prejme ime datoteke s podatki o prostorih za piknik, <b>vrne</b>
+ pa slovar, kjer ključi predstavljajo imena (predpostavimo, da so imena 
+unikatna), vrednosti pa koordinate. Koordinate naj bodo shranjene v 
+terki z dvema elementoma tipa <code>int</code>.<br></p>
+
+<p><code>koordinate(slovar, ime)</code> - funkcija prejme slovar s prostori za piknik in ime prostora za piknik, <b>vrne</b> pa terko, ki predstavlja koordinate tega prostora.</p>
+
+<p><code>razdalja(slovar, ime1, ime2)</code> - funkcija prejme slovar  s prostori za piknik in imeni dveh prostorov za piknik, <b>vrne</b> pa razdaljo med njima. Uporabite evklidsko razdaljo in jo zaokrožite na dve decimalki natančno.</p>
+
+<p><code>najblizji(slovar, ime)</code> - funkcija prejme slovar s prostori za pilnik in ime prostora za piknik, <b>vrne</b>
+ pa ime prostora za piknik, ki je najbližji podanemu prostoru. 
+Predpostavite lahko, da je najbližji prostor samo en. Uporabite 
+evklidsko razdaljo.</p>
+
+<p><code>sosedje(slovar, ime, r)</code> - funkcija prejme slovar s prostori za piknik, ime prostora za piknik, in radij, <b>vrne</b> pa množico imen prostorov za piknik, ki so oddaljeni za največ <code>r</code> od podanega prostora. Uporabite evklidsko razdaljo.</p>
+
+<p>Primer uporabe:</p>
+
+<pre><code>&gt;&gt;&gt; datoteka = 'piknik.txt'
+&gt;&gt;&gt; slovar = preberi(datoteka)
+&gt;&gt;&gt; slovar
+{'Star maln': (156, 428), 'Logar': (322, 210), 'Gaj': (306, 139), 'Skedenj': (123, 325), 'Stara žaga': (381, 494), 'Kozolc': (298, 128), 'Gril': (35, 401), 'Ranč': (363, 402), 'Park Jasa': (378, 352), 'Rušta': (54, 35), 'Pod kačjo smreko': (50, 18), 'Pod skalco': (392, 276), 'Mala Loka': (386, 333), 'Pri Kovaču': (392, 356), 'Terra Botanica': (104, 381), 'Kleče': (432, 65), 'Kraljev hrib': (233, 363), 'Jezero': (204, 423), 'Zelenica': (426, 32), 'Kos': (18, 145), 'Vitez': (190, 235), 'Sidro': (116, 281)}
+&gt;&gt;&gt; ime = 'Gril'
+&gt;&gt;&gt; koordinate(slovar, ime)
+(35, 401)
+&gt;&gt;&gt; ime2 = 'Kozolc'
+&gt;&gt;&gt; razdalja(slovar, ime, ime2)
+379.08
+&gt;&gt;&gt; najblizji(slovar, ime)
+'Terra Botanica'
+&gt;&gt;&gt; r = 150
+&gt;&gt;&gt; sosedje(slovar, ime, r)
+{'Skedenj', 'Terra Botanica', 'Star maln', 'Sidro'}
+</code></pre>
+
+<br>
+
+<p><b>Namig:</b> Formula za Evklidsko razdaljo: d(T<sub>1</sub>, T<sub>2</sub>) = &radic;<span style="text-decoration: overline;">(x<sub>1</sub> - x<sub>2</sub>)<sup>2</sup> + (y<sub>1</sub> - y<sub>2</sub>)<sup>2</sup></span> </p>

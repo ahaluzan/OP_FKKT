@@ -1,0 +1,3 @@
+Vnesi dnevno količino snega [cm]: Vnesi povprečno dnevno temperaturo [°C]: Vnesi dnevno količino snega [cm]: Vnesi povprečno dnevno temperaturo [°C]: Vnesi dnevno količino snega [cm]: Vnesi povprečno dnevno temperaturo [°C]: Vnesi dnevno količino snega [cm]: Vnesi povprečno dnevno temperaturo [°C]: Čas trajanja izrednih razmer (v dnevih): 3
+V tem času je zapadlo 200.0 cm snega.
+Povprečna dnevna temperatura je bila -5.67 °C.

@@ -1,0 +1,11 @@
+<p><code>def <strong>preberi_vreme</strong>(ime):</code><br><code>    sl = {}</code></p>
+<p><code>    f = open(ime, encoding="utf8")</code><br><code>    f.readline()</code></p>
+<p><code>    for vrstica in f:</code><br><code>        dat, temp, hum, wind, cond = vrstica.strip().split(";")</code><br><code>        mes, dan, let = dat.split("/")</code><br><code>        sl[(int(dan), int(mes), int(let))] = (float(temp),</code><br><code>                                              float(hum),</code><br><code>                                              float(wind),</code><br><code>                                              cond)</code><br><code>    return sl</code></p>
+<p></p>
+<p><code>def <strong>povprecje_po_dnevih</strong>(sl, sel_mes = None):</code><br><code>    sez = []</code><br><code>    for dan, mes, let in sl:</code><br><code>        if mes == sel_mes or sel_mes == None:</code><br><code>            sez.append(sl[(dan, mes, let)][0])</code></p>
+<p><code>    if sez:</code><br><code>        return round(sum(sez)/len(sez),2)</code></p>
+<p><code>    return False</code><br><code>                       </code><br><code>    </code><br><code>def <strong>lepi_dnevi</strong>(sl):</code><br><code>    mn = set()</code><br><code>    for dan, (temp, _, _, cond) in sl.items():</code><br><code>        if (temp &gt;= 10 and "Rain" not in cond) or (temp &gt;= 5 and cond == "Clear"):</code><br><code>            mn.add(dan)</code><br><code>    return mn</code></p>
+<p><br><code>            </code><br><code>def <strong>najvec_soncnih</strong>(sl):</code><br><code>    sl_dni = {}</code><br><code>    for (_, mes, _), (_, _, _, cond) in sl.items():</code><br><code>        if cond == "Clear":</code><br><code>            if mes not in sl_dni:</code><br><code>                sl_dni[mes] = 1</code><br><code>            else:</code><br><code>                sl_dni[mes] += 1</code></p>
+<p><code>    naj_mes = False</code><br><code>    naj_st = 0</code></p>
+<p><code>    for mes, st in sl_dni.items():</code><br><code>        if st &gt; naj_st:</code><br><code>            naj_st = st</code><br><code>            naj_mes = mes</code></p>
+<p><code>    return naj_mes</code><br><code>    </code></p>

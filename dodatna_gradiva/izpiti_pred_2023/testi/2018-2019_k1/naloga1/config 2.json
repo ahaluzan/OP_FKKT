@@ -1,0 +1,26 @@
+{
+  "modulesToTest": [
+    {
+      "id": "2018-19-K1-N1",
+      "moduleName": "naloga1",
+        "publicTests" : {
+          "rootDir" : "public",
+          "timeouts": [],
+          "points:": []
+        },
+        "privateTests": {
+          "rootDir" : "private",
+          "timeouts": [],
+          "points:": []
+        }
+    }
+  ],
+  "defaultTimeout": 2,
+  "abbreviatedOutputLen": 392,
+  "toTestRootDir": ".",
+  "testDirNames": {
+     "inputDir": "input",
+     "outputDir": "output",
+     "resultsDir": "results"
+   }
+}

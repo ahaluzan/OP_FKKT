@@ -1,0 +1,51 @@
+import unittest
+from kolokvij import *
+
+test_case = unittest.TestCase()
+
+podatki = ['CE AD-035',
+ 'LJ AG-870',
+ 'CE C3-125',
+ 'CE GZ-587',
+ 'MB H5-77C',
+ 'LJ JT-154',
+ 'CE EF-111',
+ 'NM RH-428',
+ 'LJ P3-07F',
+ 'KK DA-537',
+ 'KR CS-517',
+ 'LJ LH-924',
+ 'LJ JH-263',
+ 'LJ KV-288',
+ 'LJ LF-920',
+ 'LJ LH-924',
+ 'KP NU-062',
+ 'LJ PB-435',
+ 'LJ 453-UA',
+ 'LJ ET-285',
+ 'LJ JT-154',
+ 'LJ LH-924',
+ 'KR T5-308',
+ 'NM FJ-463',
+ 'LJ ET-285',
+ 'MB DK-299',
+ 'MS CV-554',
+ 'LJ PB-699',
+ 'KR FA-190',
+ 'LJ 007-CL',
+ 'NM RL-323',
+ 'LJ MI-788',
+ 'LJ LH-924',
+ 'MB LL-251',
+ 'SG RL-100',
+ 'PO CV-300',
+ 'KR ZF-406',
+ 'KP P6-394',
+ 'GO RA-563',
+ 'LJ JH-263',
+ 'KR N7-177',
+ 'LJ 453-UA']
+
+resitev = {'LJ 453-UA', 'LJ ET-285', 'LJ JH-263', 'LJ JT-154', 'LJ LH-924'}
+
+test_case.assertEqual(pogosta_vozila(podatki, 2), resitev)

@@ -1,0 +1,1759 @@
+mesec	tip	registracij
+1998_01	kolo z motorjem	...
+1998_01	motorno kolo	12
+1998_01	avto	4495
+1998_01	avtobus	6
+1998_01	tovorno	294
+1998_01	traktor	42
+1998_02	kolo z motorjem	...
+1998_02	motorno kolo	49
+1998_02	avto	5764
+1998_02	avtobus	2
+1998_02	tovorno	351
+1998_02	traktor	50
+1998_03	kolo z motorjem	...
+1998_03	motorno kolo	159
+1998_03	avto	7089
+1998_03	avtobus	29
+1998_03	tovorno	436
+1998_03	traktor	132
+1998_04	kolo z motorjem	...
+1998_04	motorno kolo	458
+1998_04	avto	7643
+1998_04	avtobus	41
+1998_04	tovorno	439
+1998_04	traktor	416
+1998_05	kolo z motorjem	...
+1998_05	motorno kolo	419
+1998_05	avto	6963
+1998_05	avtobus	12
+1998_05	tovorno	413
+1998_05	traktor	662
+1998_06	kolo z motorjem	...
+1998_06	motorno kolo	336
+1998_06	avto	7254
+1998_06	avtobus	9
+1998_06	tovorno	411
+1998_06	traktor	743
+1998_07	kolo z motorjem	...
+1998_07	motorno kolo	275
+1998_07	avto	7381
+1998_07	avtobus	2
+1998_07	tovorno	365
+1998_07	traktor	458
+1998_08	kolo z motorjem	...
+1998_08	motorno kolo	120
+1998_08	avto	4958
+1998_08	avtobus	30
+1998_08	tovorno	365
+1998_08	traktor	125
+1998_09	kolo z motorjem	...
+1998_09	motorno kolo	64
+1998_09	avto	5765
+1998_09	avtobus	27
+1998_09	tovorno	426
+1998_09	traktor	285
+1998_10	kolo z motorjem	...
+1998_10	motorno kolo	36
+1998_10	avto	6791
+1998_10	avtobus	10
+1998_10	tovorno	460
+1998_10	traktor	280
+1998_11	kolo z motorjem	...
+1998_11	motorno kolo	11
+1998_11	avto	5281
+1998_11	avtobus	2
+1998_11	tovorno	385
+1998_11	traktor	98
+1998_12	kolo z motorjem	...
+1998_12	motorno kolo	10
+1998_12	avto	5551
+1998_12	avtobus	14
+1998_12	tovorno	414
+1998_12	traktor	79
+1999_01	kolo z motorjem	...
+1999_01	motorno kolo	11
+1999_01	avto	5973
+1999_01	avtobus	3
+1999_01	tovorno	366
+1999_01	traktor	101
+1999_02	kolo z motorjem	...
+1999_02	motorno kolo	23
+1999_02	avto	6905
+1999_02	avtobus	9
+1999_02	tovorno	335
+1999_02	traktor	128
+1999_03	kolo z motorjem	...
+1999_03	motorno kolo	322
+1999_03	avto	10484
+1999_03	avtobus	11
+1999_03	tovorno	590
+1999_03	traktor	472
+1999_04	kolo z motorjem	...
+1999_04	motorno kolo	539
+1999_04	avto	9337
+1999_04	avtobus	55
+1999_04	tovorno	499
+1999_04	traktor	810
+1999_05	kolo z motorjem	...
+1999_05	motorno kolo	501
+1999_05	avto	10705
+1999_05	avtobus	8
+1999_05	tovorno	569
+1999_05	traktor	675
+1999_06	kolo z motorjem	...
+1999_06	motorno kolo	523
+1999_06	avto	13089
+1999_06	avtobus	18
+1999_06	tovorno	761
+1999_06	traktor	516
+1999_07	kolo z motorjem	...
+1999_07	motorno kolo	271
+1999_07	avto	5353
+1999_07	avtobus	7
+1999_07	tovorno	453
+1999_07	traktor	376
+1999_08	kolo z motorjem	...
+1999_08	motorno kolo	113
+1999_08	avto	3866
+1999_08	avtobus	10
+1999_08	tovorno	263
+1999_08	traktor	135
+1999_09	kolo z motorjem	...
+1999_09	motorno kolo	58
+1999_09	avto	5333
+1999_09	avtobus	13
+1999_09	tovorno	326
+1999_09	traktor	163
+1999_10	kolo z motorjem	...
+1999_10	motorno kolo	47
+1999_10	avto	5814
+1999_10	avtobus	4
+1999_10	tovorno	339
+1999_10	traktor	120
+1999_11	kolo z motorjem	...
+1999_11	motorno kolo	6
+1999_11	avto	5103
+1999_11	avtobus	4
+1999_11	tovorno	443
+1999_11	traktor	93
+1999_12	kolo z motorjem	...
+1999_12	motorno kolo	2
+1999_12	avto	4626
+1999_12	avtobus	16
+1999_12	tovorno	554
+1999_12	traktor	68
+2000_01	kolo z motorjem	...
+2000_01	motorno kolo	12
+2000_01	avto	5061
+2000_01	avtobus	25
+2000_01	tovorno	436
+2000_01	traktor	59
+2000_02	kolo z motorjem	...
+2000_02	motorno kolo	63
+2000_02	avto	7095
+2000_02	avtobus	6
+2000_02	tovorno	383
+2000_02	traktor	88
+2000_03	kolo z motorjem	...
+2000_03	motorno kolo	108
+2000_03	avto	2625
+2000_03	avtobus	0
+2000_03	tovorno	94
+2000_03	traktor	33
+2000_04	kolo z motorjem	...
+2000_04	motorno kolo	418
+2000_04	avto	6883
+2000_04	avtobus	22
+2000_04	tovorno	456
+2000_04	traktor	402
+2000_05	kolo z motorjem	...
+2000_05	motorno kolo	321
+2000_05	avto	6796
+2000_05	avtobus	8
+2000_05	tovorno	488
+2000_05	traktor	326
+2000_06	kolo z motorjem	...
+2000_06	motorno kolo	327
+2000_06	avto	6692
+2000_06	avtobus	10
+2000_06	tovorno	539
+2000_06	traktor	234
+2000_07	kolo z motorjem	...
+2000_07	motorno kolo	187
+2000_07	avto	5776
+2000_07	avtobus	7
+2000_07	tovorno	391
+2000_07	traktor	98
+2000_08	kolo z motorjem	...
+2000_08	motorno kolo	128
+2000_08	avto	4583
+2000_08	avtobus	8
+2000_08	tovorno	349
+2000_08	traktor	79
+2000_09	kolo z motorjem	...
+2000_09	motorno kolo	59
+2000_09	avto	4910
+2000_09	avtobus	6
+2000_09	tovorno	459
+2000_09	traktor	104
+2000_10	kolo z motorjem	...
+2000_10	motorno kolo	41
+2000_10	avto	5434
+2000_10	avtobus	14
+2000_10	tovorno	403
+2000_10	traktor	98
+2000_11	kolo z motorjem	...
+2000_11	motorno kolo	8
+2000_11	avto	3971
+2000_11	avtobus	12
+2000_11	tovorno	430
+2000_11	traktor	53
+2000_12	kolo z motorjem	...
+2000_12	motorno kolo	9
+2000_12	avto	3850
+2000_12	avtobus	6
+2000_12	tovorno	513
+2000_12	traktor	64
+2001_01	kolo z motorjem	...
+2001_01	motorno kolo	15
+2001_01	avto	4778
+2001_01	avtobus	9
+2001_01	tovorno	490
+2001_01	traktor	52
+2001_02	kolo z motorjem	...
+2001_02	motorno kolo	72
+2001_02	avto	5442
+2001_02	avtobus	9
+2001_02	tovorno	420
+2001_02	traktor	62
+2001_03	kolo z motorjem	...
+2001_03	motorno kolo	250
+2001_03	avto	6520
+2001_03	avtobus	11
+2001_03	tovorno	556
+2001_03	traktor	188
+2001_04	kolo z motorjem	...
+2001_04	motorno kolo	396
+2001_04	avto	6613
+2001_04	avtobus	28
+2001_04	tovorno	445
+2001_04	traktor	365
+2001_05	kolo z motorjem	...
+2001_05	motorno kolo	264
+2001_05	avto	6224
+2001_05	avtobus	14
+2001_05	tovorno	451
+2001_05	traktor	306
+2001_06	kolo z motorjem	...
+2001_06	motorno kolo	197
+2001_06	avto	5980
+2001_06	avtobus	10
+2001_06	tovorno	479
+2001_06	traktor	182
+2001_07	kolo z motorjem	...
+2001_07	motorno kolo	156
+2001_07	avto	5651
+2001_07	avtobus	1
+2001_07	tovorno	407
+2001_07	traktor	96
+2001_08	kolo z motorjem	...
+2001_08	motorno kolo	119
+2001_08	avto	4470
+2001_08	avtobus	23
+2001_08	tovorno	364
+2001_08	traktor	81
+2001_09	kolo z motorjem	...
+2001_09	motorno kolo	57
+2001_09	avto	4165
+2001_09	avtobus	31
+2001_09	tovorno	419
+2001_09	traktor	109
+2001_10	kolo z motorjem	...
+2001_10	motorno kolo	35
+2001_10	avto	5025
+2001_10	avtobus	13
+2001_10	tovorno	528
+2001_10	traktor	98
+2001_11	kolo z motorjem	...
+2001_11	motorno kolo	17
+2001_11	avto	4502
+2001_11	avtobus	7
+2001_11	tovorno	520
+2001_11	traktor	59
+2001_12	kolo z motorjem	...
+2001_12	motorno kolo	9
+2001_12	avto	3256
+2001_12	avtobus	12
+2001_12	tovorno	473
+2001_12	traktor	38
+2002_01	kolo z motorjem	...
+2002_01	motorno kolo	9
+2002_01	avto	4874
+2002_01	avtobus	6
+2002_01	tovorno	455
+2002_01	traktor	48
+2002_02	kolo z motorjem	...
+2002_02	motorno kolo	44
+2002_02	avto	5161
+2002_02	avtobus	3
+2002_02	tovorno	428
+2002_02	traktor	82
+2002_03	kolo z motorjem	...
+2002_03	motorno kolo	328
+2002_03	avto	6355
+2002_03	avtobus	7
+2002_03	tovorno	510
+2002_03	traktor	153
+2002_04	kolo z motorjem	23987
+2002_04	motorno kolo	439
+2002_04	avto	5992
+2002_04	avtobus	22
+2002_04	tovorno	485
+2002_04	traktor	414
+2002_05	kolo z motorjem	9158
+2002_05	motorno kolo	435
+2002_05	avto	5666
+2002_05	avtobus	6
+2002_05	tovorno	441
+2002_05	traktor	444
+2002_06	kolo z motorjem	2571
+2002_06	motorno kolo	260
+2002_06	avto	5355
+2002_06	avtobus	4
+2002_06	tovorno	433
+2002_06	traktor	178
+2002_07	kolo z motorjem	2103
+2002_07	motorno kolo	197
+2002_07	avto	5749
+2002_07	avtobus	9
+2002_07	tovorno	588
+2002_07	traktor	143
+2002_08	kolo z motorjem	1045
+2002_08	motorno kolo	95
+2002_08	avto	4021
+2002_08	avtobus	20
+2002_08	tovorno	361
+2002_08	traktor	98
+2002_09	kolo z motorjem	478
+2002_09	motorno kolo	63
+2002_09	avto	4564
+2002_09	avtobus	29
+2002_09	tovorno	476
+2002_09	traktor	124
+2002_10	kolo z motorjem	309
+2002_10	motorno kolo	31
+2002_10	avto	5334
+2002_10	avtobus	11
+2002_10	tovorno	503
+2002_10	traktor	124
+2002_11	kolo z motorjem	100
+2002_11	motorno kolo	10
+2002_11	avto	4724
+2002_11	avtobus	9
+2002_11	tovorno	545
+2002_11	traktor	69
+2002_12	kolo z motorjem	66
+2002_12	motorno kolo	8
+2002_12	avto	3790
+2002_12	avtobus	9
+2002_12	tovorno	617
+2002_12	traktor	45
+2003_01	kolo z motorjem	57
+2003_01	motorno kolo	6
+2003_01	avto	5256
+2003_01	avtobus	5
+2003_01	tovorno	526
+2003_01	traktor	49
+2003_02	kolo z motorjem	100
+2003_02	motorno kolo	31
+2003_02	avto	5831
+2003_02	avtobus	1
+2003_02	tovorno	458
+2003_02	traktor	90
+2003_03	kolo z motorjem	424
+2003_03	motorno kolo	363
+2003_03	avto	6457
+2003_03	avtobus	16
+2003_03	tovorno	473
+2003_03	traktor	232
+2003_04	kolo z motorjem	849
+2003_04	motorno kolo	531
+2003_04	avto	7060
+2003_04	avtobus	25
+2003_04	tovorno	506
+2003_04	traktor	518
+2003_05	kolo z motorjem	845
+2003_05	motorno kolo	353
+2003_05	avto	6613
+2003_05	avtobus	21
+2003_05	tovorno	523
+2003_05	traktor	420
+2003_06	kolo z motorjem	788
+2003_06	motorno kolo	362
+2003_06	avto	7159
+2003_06	avtobus	11
+2003_06	tovorno	488
+2003_06	traktor	224
+2003_07	kolo z motorjem	682
+2003_07	motorno kolo	290
+2003_07	avto	6440
+2003_07	avtobus	7
+2003_07	tovorno	504
+2003_07	traktor	119
+2003_08	kolo z motorjem	601
+2003_08	motorno kolo	140
+2003_08	avto	4617
+2003_08	avtobus	14
+2003_08	tovorno	388
+2003_08	traktor	76
+2003_09	kolo z motorjem	262
+2003_09	motorno kolo	80
+2003_09	avto	5365
+2003_09	avtobus	50
+2003_09	tovorno	425
+2003_09	traktor	88
+2003_10	kolo z motorjem	199
+2003_10	motorno kolo	31
+2003_10	avto	5892
+2003_10	avtobus	12
+2003_10	tovorno	560
+2003_10	traktor	92
+2003_11	kolo z motorjem	77
+2003_11	motorno kolo	14
+2003_11	avto	5515
+2003_11	avtobus	15
+2003_11	tovorno	672
+2003_11	traktor	93
+2003_12	kolo z motorjem	59
+2003_12	motorno kolo	15
+2003_12	avto	5899
+2003_12	avtobus	6
+2003_12	tovorno	730
+2003_12	traktor	68
+2004_01	kolo z motorjem	61
+2004_01	motorno kolo	15
+2004_01	avto	6063
+2004_01	avtobus	5
+2004_01	tovorno	617
+2004_01	traktor	57
+2004_02	kolo z motorjem	105
+2004_02	motorno kolo	73
+2004_02	avto	6790
+2004_02	avtobus	12
+2004_02	tovorno	494
+2004_02	traktor	136
+2004_03	kolo z motorjem	335
+2004_03	motorno kolo	310
+2004_03	avto	7963
+2004_03	avtobus	21
+2004_03	tovorno	612
+2004_03	traktor	380
+2004_04	kolo z motorjem	559
+2004_04	motorno kolo	614
+2004_04	avto	8018
+2004_04	avtobus	33
+2004_04	tovorno	534
+2004_04	traktor	667
+2004_05	kolo z motorjem	695
+2004_05	motorno kolo	574
+2004_05	avto	7309
+2004_05	avtobus	26
+2004_05	tovorno	673
+2004_05	traktor	554
+2004_06	kolo z motorjem	735
+2004_06	motorno kolo	477
+2004_06	avto	7207
+2004_06	avtobus	9
+2004_06	tovorno	652
+2004_06	traktor	253
+2004_07	kolo z motorjem	697
+2004_07	motorno kolo	333
+2004_07	avto	7251
+2004_07	avtobus	11
+2004_07	tovorno	556
+2004_07	traktor	158
+2004_08	kolo z motorjem	646
+2004_08	motorno kolo	176
+2004_08	avto	5343
+2004_08	avtobus	28
+2004_08	tovorno	463
+2004_08	traktor	88
+2004_09	kolo z motorjem	437
+2004_09	motorno kolo	107
+2004_09	avto	5898
+2004_09	avtobus	25
+2004_09	tovorno	567
+2004_09	traktor	170
+2004_10	kolo z motorjem	142
+2004_10	motorno kolo	62
+2004_10	avto	6087
+2004_10	avtobus	19
+2004_10	tovorno	619
+2004_10	traktor	128
+2004_11	kolo z motorjem	99
+2004_11	motorno kolo	33
+2004_11	avto	5931
+2004_11	avtobus	14
+2004_11	tovorno	706
+2004_11	traktor	122
+2004_12	kolo z motorjem	63
+2004_12	motorno kolo	33
+2004_12	avto	5422
+2004_12	avtobus	26
+2004_12	tovorno	928
+2004_12	traktor	115
+2005_01	kolo z motorjem	61
+2005_01	motorno kolo	34
+2005_01	avto	6824
+2005_01	avtobus	7
+2005_01	tovorno	589
+2005_01	traktor	143
+2005_02	kolo z motorjem	128
+2005_02	motorno kolo	48
+2005_02	avto	6352
+2005_02	avtobus	10
+2005_02	tovorno	515
+2005_02	traktor	188
+2005_03	kolo z motorjem	329
+2005_03	motorno kolo	522
+2005_03	avto	7514
+2005_03	avtobus	19
+2005_03	tovorno	587
+2005_03	traktor	1232
+2005_04	kolo z motorjem	651
+2005_04	motorno kolo	1013
+2005_04	avto	8151
+2005_04	avtobus	25
+2005_04	tovorno	631
+2005_04	traktor	2404
+2005_05	kolo z motorjem	826
+2005_05	motorno kolo	697
+2005_05	avto	7564
+2005_05	avtobus	15
+2005_05	tovorno	570
+2005_05	traktor	2115
+2005_06	kolo z motorjem	897
+2005_06	motorno kolo	624
+2005_06	avto	8135
+2005_06	avtobus	17
+2005_06	tovorno	623
+2005_06	traktor	1505
+2005_07	kolo z motorjem	790
+2005_07	motorno kolo	488
+2005_07	avto	6742
+2005_07	avtobus	14
+2005_07	tovorno	530
+2005_07	traktor	1198
+2005_08	kolo z motorjem	704
+2005_08	motorno kolo	335
+2005_08	avto	5373
+2005_08	avtobus	14
+2005_08	tovorno	563
+2005_08	traktor	2251
+2005_09	kolo z motorjem	540
+2005_09	motorno kolo	194
+2005_09	avto	6201
+2005_09	avtobus	19
+2005_09	tovorno	604
+2005_09	traktor	337
+2005_10	kolo z motorjem	221
+2005_10	motorno kolo	91
+2005_10	avto	6177
+2005_10	avtobus	37
+2005_10	tovorno	728
+2005_10	traktor	147
+2005_11	kolo z motorjem	99
+2005_11	motorno kolo	45
+2005_11	avto	5947
+2005_11	avtobus	14
+2005_11	tovorno	799
+2005_11	traktor	154
+2005_12	kolo z motorjem	180
+2005_12	motorno kolo	24
+2005_12	avto	5116
+2005_12	avtobus	30
+2005_12	tovorno	1030
+2005_12	traktor	134
+2006_01	kolo z motorjem	91
+2006_01	motorno kolo	31
+2006_01	avto	6704
+2006_01	avtobus	16
+2006_01	tovorno	914
+2006_01	traktor	125
+2006_02	kolo z motorjem	102
+2006_02	motorno kolo	75
+2006_02	avto	6837
+2006_02	avtobus	10
+2006_02	tovorno	575
+2006_02	traktor	166
+2006_03	kolo z motorjem	287
+2006_03	motorno kolo	569
+2006_03	avto	8392
+2006_03	avtobus	30
+2006_03	tovorno	752
+2006_03	traktor	476
+2006_04	kolo z motorjem	670
+2006_04	motorno kolo	1230
+2006_04	avto	7779
+2006_04	avtobus	33
+2006_04	tovorno	841
+2006_04	traktor	630
+2006_05	kolo z motorjem	801
+2006_05	motorno kolo	871
+2006_05	avto	7912
+2006_05	avtobus	15
+2006_05	tovorno	713
+2006_05	traktor	660
+2006_06	kolo z motorjem	858
+2006_06	motorno kolo	683
+2006_06	avto	7273
+2006_06	avtobus	14
+2006_06	tovorno	752
+2006_06	traktor	404
+2006_07	kolo z motorjem	771
+2006_07	motorno kolo	653
+2006_07	avto	6801
+2006_07	avtobus	16
+2006_07	tovorno	621
+2006_07	traktor	237
+2006_08	kolo z motorjem	454
+2006_08	motorno kolo	380
+2006_08	avto	5769
+2006_08	avtobus	24
+2006_08	tovorno	798
+2006_08	traktor	184
+2006_09	kolo z motorjem	443
+2006_09	motorno kolo	248
+2006_09	avto	6309
+2006_09	avtobus	37
+2006_09	tovorno	900
+2006_09	traktor	302
+2006_10	kolo z motorjem	196
+2006_10	motorno kolo	144
+2006_10	avto	6953
+2006_10	avtobus	21
+2006_10	tovorno	938
+2006_10	traktor	197
+2006_11	kolo z motorjem	82
+2006_11	motorno kolo	50
+2006_11	avto	6449
+2006_11	avtobus	9
+2006_11	tovorno	1087
+2006_11	traktor	185
+2006_12	kolo z motorjem	108
+2006_12	motorno kolo	41
+2006_12	avto	5142
+2006_12	avtobus	13
+2006_12	tovorno	1307
+2006_12	traktor	188
+2007_01	kolo z motorjem	146
+2007_01	motorno kolo	98
+2007_01	avto	6794
+2007_01	avtobus	13
+2007_01	tovorno	1103
+2007_01	traktor	202
+2007_02	kolo z motorjem	200
+2007_02	motorno kolo	216
+2007_02	avto	7404
+2007_02	avtobus	11
+2007_02	tovorno	891
+2007_02	traktor	227
+2007_03	kolo z motorjem	378
+2007_03	motorno kolo	954
+2007_03	avto	9308
+2007_03	avtobus	27
+2007_03	tovorno	1103
+2007_03	traktor	518
+2007_04	kolo z motorjem	834
+2007_04	motorno kolo	1429
+2007_04	avto	8811
+2007_04	avtobus	35
+2007_04	tovorno	974
+2007_04	traktor	597
+2007_05	kolo z motorjem	819
+2007_05	motorno kolo	1093
+2007_05	avto	8939
+2007_05	avtobus	32
+2007_05	tovorno	1159
+2007_05	traktor	571
+2007_06	kolo z motorjem	938
+2007_06	motorno kolo	995
+2007_06	avto	8973
+2007_06	avtobus	20
+2007_06	tovorno	998
+2007_06	traktor	346
+2007_07	kolo z motorjem	940
+2007_07	motorno kolo	809
+2007_07	avto	8494
+2007_07	avtobus	12
+2007_07	tovorno	919
+2007_07	traktor	252
+2007_08	kolo z motorjem	811
+2007_08	motorno kolo	588
+2007_08	avto	7046
+2007_08	avtobus	26
+2007_08	tovorno	952
+2007_08	traktor	219
+2007_09	kolo z motorjem	503
+2007_09	motorno kolo	400
+2007_09	avto	7140
+2007_09	avtobus	25
+2007_09	tovorno	1007
+2007_09	traktor	283
+2007_10	kolo z motorjem	219
+2007_10	motorno kolo	259
+2007_10	avto	8644
+2007_10	avtobus	11
+2007_10	tovorno	1126
+2007_10	traktor	247
+2007_11	kolo z motorjem	127
+2007_11	motorno kolo	171
+2007_11	avto	7436
+2007_11	avtobus	12
+2007_11	tovorno	1240
+2007_11	traktor	242
+2007_12	kolo z motorjem	79
+2007_12	motorno kolo	88
+2007_12	avto	6381
+2007_12	avtobus	9
+2007_12	tovorno	957
+2007_12	traktor	178
+2008_01	kolo z motorjem	114
+2008_01	motorno kolo	171
+2008_01	avto	8431
+2008_01	avtobus	26
+2008_01	tovorno	1174
+2008_01	traktor	207
+2008_02	kolo z motorjem	368
+2008_02	motorno kolo	519
+2008_02	avto	8449
+2008_02	avtobus	12
+2008_02	tovorno	1224
+2008_02	traktor	284
+2008_03	kolo z motorjem	291
+2008_03	motorno kolo	954
+2008_03	avto	9059
+2008_03	avtobus	21
+2008_03	tovorno	1082
+2008_03	traktor	539
+2008_04	kolo z motorjem	718
+2008_04	motorno kolo	1516
+2008_04	avto	10522
+2008_04	avtobus	51
+2008_04	tovorno	1376
+2008_04	traktor	720
+2008_05	kolo z motorjem	910
+2008_05	motorno kolo	1223
+2008_05	avto	8548
+2008_05	avtobus	20
+2008_05	tovorno	1191
+2008_05	traktor	604
+2008_06	kolo z motorjem	925
+2008_06	motorno kolo	941
+2008_06	avto	8792
+2008_06	avtobus	9
+2008_06	tovorno	1062
+2008_06	traktor	404
+2008_07	kolo z motorjem	1020
+2008_07	motorno kolo	873
+2008_07	avto	8938
+2008_07	avtobus	32
+2008_07	tovorno	964
+2008_07	traktor	412
+2008_08	kolo z motorjem	723
+2008_08	motorno kolo	591
+2008_08	avto	6290
+2008_08	avtobus	23
+2008_08	tovorno	907
+2008_08	traktor	268
+2008_09	kolo z motorjem	558
+2008_09	motorno kolo	419
+2008_09	avto	7408
+2008_09	avtobus	12
+2008_09	tovorno	1124
+2008_09	traktor	331
+2008_10	kolo z motorjem	283
+2008_10	motorno kolo	251
+2008_10	avto	8144
+2008_10	avtobus	23
+2008_10	tovorno	972
+2008_10	traktor	276
+2008_11	kolo z motorjem	94
+2008_11	motorno kolo	119
+2008_11	avto	6216
+2008_11	avtobus	7
+2008_11	tovorno	834
+2008_11	traktor	219
+2008_12	kolo z motorjem	54
+2008_12	motorno kolo	69
+2008_12	avto	4918
+2008_12	avtobus	17
+2008_12	tovorno	692
+2008_12	traktor	187
+2009_01	kolo z motorjem	56
+2009_01	motorno kolo	99
+2009_01	avto	6260
+2009_01	avtobus	9
+2009_01	tovorno	573
+2009_01	traktor	157
+2009_02	kolo z motorjem	186
+2009_02	motorno kolo	304
+2009_02	avto	6719
+2009_02	avtobus	12
+2009_02	tovorno	520
+2009_02	traktor	237
+2009_03	kolo z motorjem	349
+2009_03	motorno kolo	829
+2009_03	avto	7876
+2009_03	avtobus	19
+2009_03	tovorno	536
+2009_03	traktor	518
+2009_04	kolo z motorjem	639
+2009_04	motorno kolo	1151
+2009_04	avto	7348
+2009_04	avtobus	18
+2009_04	tovorno	499
+2009_04	traktor	653
+2009_05	kolo z motorjem	688
+2009_05	motorno kolo	874
+2009_05	avto	6971
+2009_05	avtobus	16
+2009_05	tovorno	535
+2009_05	traktor	494
+2009_06	kolo z motorjem	792
+2009_06	motorno kolo	747
+2009_06	avto	7555
+2009_06	avtobus	13
+2009_06	tovorno	628
+2009_06	traktor	323
+2009_07	kolo z motorjem	692
+2009_07	motorno kolo	676
+2009_07	avto	7540
+2009_07	avtobus	13
+2009_07	tovorno	544
+2009_07	traktor	266
+2009_08	kolo z motorjem	589
+2009_08	motorno kolo	483
+2009_08	avto	5730
+2009_08	avtobus	31
+2009_08	tovorno	442
+2009_08	traktor	187
+2009_09	kolo z motorjem	360
+2009_09	motorno kolo	362
+2009_09	avto	6548
+2009_09	avtobus	10
+2009_09	tovorno	562
+2009_09	traktor	244
+2009_10	kolo z motorjem	199
+2009_10	motorno kolo	208
+2009_10	avto	6773
+2009_10	avtobus	17
+2009_10	tovorno	755
+2009_10	traktor	200
+2009_11	kolo z motorjem	127
+2009_11	motorno kolo	96
+2009_11	avto	6207
+2009_11	avtobus	12
+2009_11	tovorno	627
+2009_11	traktor	159
+2009_12	kolo z motorjem	101
+2009_12	motorno kolo	75
+2009_12	avto	5354
+2009_12	avtobus	17
+2009_12	tovorno	598
+2009_12	traktor	175
+2010_01	kolo z motorjem	73
+2010_01	motorno kolo	125
+2010_01	avto	6698
+2010_01	avtobus	11
+2010_01	tovorno	553
+2010_01	traktor	148
+2010_02	kolo z motorjem	155
+2010_02	motorno kolo	261
+2010_02	avto	6518
+2010_02	avtobus	23
+2010_02	tovorno	459
+2010_02	traktor	195
+2010_03	kolo z motorjem	340
+2010_03	motorno kolo	703
+2010_03	avto	8014
+2010_03	avtobus	36
+2010_03	tovorno	690
+2010_03	traktor	504
+2010_04	kolo z motorjem	517
+2010_04	motorno kolo	872
+2010_04	avto	7081
+2010_04	avtobus	10
+2010_04	tovorno	576
+2010_04	traktor	498
+2010_05	kolo z motorjem	467
+2010_05	motorno kolo	554
+2010_05	avto	7153
+2010_05	avtobus	30
+2010_05	tovorno	666
+2010_05	traktor	428
+2010_06	kolo z motorjem	567
+2010_06	motorno kolo	532
+2010_06	avto	7203
+2010_06	avtobus	8
+2010_06	tovorno	588
+2010_06	traktor	290
+2010_07	kolo z motorjem	558
+2010_07	motorno kolo	469
+2010_07	avto	6716
+2010_07	avtobus	6
+2010_07	tovorno	487
+2010_07	traktor	195
+2010_08	kolo z motorjem	398
+2010_08	motorno kolo	287
+2010_08	avto	5540
+2010_08	avtobus	28
+2010_08	tovorno	505
+2010_08	traktor	146
+2010_09	kolo z motorjem	255
+2010_09	motorno kolo	165
+2010_09	avto	6048
+2010_09	avtobus	18
+2010_09	tovorno	641
+2010_09	traktor	192
+2010_10	kolo z motorjem	131
+2010_10	motorno kolo	122
+2010_10	avto	6117
+2010_10	avtobus	6
+2010_10	tovorno	817
+2010_10	traktor	181
+2010_11	kolo z motorjem	91
+2010_11	motorno kolo	80
+2010_11	avto	5801
+2010_11	avtobus	10
+2010_11	tovorno	810
+2010_11	traktor	147
+2010_12	kolo z motorjem	50
+2010_12	motorno kolo	46
+2010_12	avto	4593
+2010_12	avtobus	12
+2010_12	tovorno	645
+2010_12	traktor	137
+2011_01	kolo z motorjem	76
+2011_01	motorno kolo	119
+2011_01	avto	6635
+2011_01	avtobus	11
+2011_01	tovorno	725
+2011_01	traktor	140
+2011_02	kolo z motorjem	114
+2011_02	motorno kolo	170
+2011_02	avto	6602
+2011_02	avtobus	8
+2011_02	tovorno	669
+2011_02	traktor	180
+2011_03	kolo z motorjem	270
+2011_03	motorno kolo	541
+2011_03	avto	7331
+2011_03	avtobus	23
+2011_03	tovorno	928
+2011_03	traktor	450
+2011_04	kolo z motorjem	425
+2011_04	motorno kolo	691
+2011_04	avto	6205
+2011_04	avtobus	17
+2011_04	tovorno	787
+2011_04	traktor	471
+2011_05	kolo z motorjem	433
+2011_05	motorno kolo	505
+2011_05	avto	6826
+2011_05	avtobus	15
+2011_05	tovorno	762
+2011_05	traktor	448
+2011_06	kolo z motorjem	1068
+2011_06	motorno kolo	496
+2011_06	avto	7139
+2011_06	avtobus	16
+2011_06	tovorno	813
+2011_06	traktor	413
+2011_07	kolo z motorjem	441
+2011_07	motorno kolo	347
+2011_07	avto	5943
+2011_07	avtobus	5
+2011_07	tovorno	577
+2011_07	traktor	257
+2011_08	kolo z motorjem	329
+2011_08	motorno kolo	257
+2011_08	avto	5228
+2011_08	avtobus	16
+2011_08	tovorno	567
+2011_08	traktor	219
+2011_09	kolo z motorjem	252
+2011_09	motorno kolo	242
+2011_09	avto	5688
+2011_09	avtobus	13
+2011_09	tovorno	721
+2011_09	traktor	341
+2011_10	kolo z motorjem	113
+2011_10	motorno kolo	106
+2011_10	avto	5640
+2011_10	avtobus	10
+2011_10	tovorno	785
+2011_10	traktor	269
+2011_11	kolo z motorjem	67
+2011_11	motorno kolo	62
+2011_11	avto	5332
+2011_11	avtobus	26
+2011_11	tovorno	763
+2011_11	traktor	239
+2011_12	kolo z motorjem	55
+2011_12	motorno kolo	45
+2011_12	avto	4392
+2011_12	avtobus	2
+2011_12	tovorno	639
+2011_12	traktor	207
+2012_01	kolo z motorjem	85
+2012_01	motorno kolo	71
+2012_01	avto	6236
+2012_01	avtobus	8
+2012_01	tovorno	809
+2012_01	traktor	232
+2012_02	kolo z motorjem	134
+2012_02	motorno kolo	116
+2012_02	avto	5229
+2012_02	avtobus	10
+2012_02	tovorno	596
+2012_02	traktor	286
+2012_03	kolo z motorjem	284
+2012_03	motorno kolo	561
+2012_03	avto	6694
+2012_03	avtobus	13
+2012_03	tovorno	762
+2012_03	traktor	715
+2012_04	kolo z motorjem	318
+2012_04	motorno kolo	474
+2012_04	avto	5615
+2012_04	avtobus	24
+2012_04	tovorno	738
+2012_04	traktor	753
+2012_05	kolo z motorjem	350
+2012_05	motorno kolo	432
+2012_05	avto	6051
+2012_05	avtobus	11
+2012_05	tovorno	724
+2012_05	traktor	672
+2012_06	kolo z motorjem	369
+2012_06	motorno kolo	443
+2012_06	avto	6338
+2012_06	avtobus	7
+2012_06	tovorno	717
+2012_06	traktor	393
+2012_07	kolo z motorjem	459
+2012_07	motorno kolo	399
+2012_07	avto	5453
+2012_07	avtobus	11
+2012_07	tovorno	606
+2012_07	traktor	281
+2012_08	kolo z motorjem	354
+2012_08	motorno kolo	249
+2012_08	avto	4233
+2012_08	avtobus	22
+2012_08	tovorno	545
+2012_08	traktor	200
+2012_09	kolo z motorjem	184
+2012_09	motorno kolo	173
+2012_09	avto	4354
+2012_09	avtobus	11
+2012_09	tovorno	704
+2012_09	traktor	260
+2012_10	kolo z motorjem	129
+2012_10	motorno kolo	140
+2012_10	avto	5093
+2012_10	avtobus	8
+2012_10	tovorno	746
+2012_10	traktor	246
+2012_11	kolo z motorjem	80
+2012_11	motorno kolo	80
+2012_11	avto	4788
+2012_11	avtobus	7
+2012_11	tovorno	784
+2012_11	traktor	154
+2012_12	kolo z motorjem	55
+2012_12	motorno kolo	61
+2012_12	avto	3491
+2012_12	avtobus	9
+2012_12	tovorno	679
+2012_12	traktor	150
+2013_01	kolo z motorjem	87
+2013_01	motorno kolo	65
+2013_01	avto	5565
+2013_01	avtobus	20
+2013_01	tovorno	765
+2013_01	traktor	199
+2013_02	kolo z motorjem	47
+2013_02	motorno kolo	61
+2013_02	avto	4933
+2013_02	avtobus	32
+2013_02	tovorno	597
+2013_02	traktor	219
+2013_03	kolo z motorjem	146
+2013_03	motorno kolo	284
+2013_03	avto	6068
+2013_03	avtobus	34
+2013_03	tovorno	764
+2013_03	traktor	351
+2013_04	kolo z motorjem	316
+2013_04	motorno kolo	703
+2013_04	avto	6216
+2013_04	avtobus	24
+2013_04	tovorno	872
+2013_04	traktor	601
+2013_05	kolo z motorjem	334
+2013_05	motorno kolo	456
+2013_05	avto	6293
+2013_05	avtobus	14
+2013_05	tovorno	732
+2013_05	traktor	466
+2013_06	kolo z motorjem	397
+2013_06	motorno kolo	431
+2013_06	avto	7127
+2013_06	avtobus	9
+2013_06	tovorno	748
+2013_06	traktor	372
+2013_07	kolo z motorjem	389
+2013_07	motorno kolo	421
+2013_07	avto	5693
+2013_07	avtobus	3
+2013_07	tovorno	708
+2013_07	traktor	267
+2013_08	kolo z motorjem	329
+2013_08	motorno kolo	292
+2013_08	avto	4563
+2013_08	avtobus	14
+2013_08	tovorno	642
+2013_08	traktor	171
+2013_09	kolo z motorjem	156
+2013_09	motorno kolo	192
+2013_09	avto	5189
+2013_09	avtobus	20
+2013_09	tovorno	753
+2013_09	traktor	273
+2013_10	kolo z motorjem	103
+2013_10	motorno kolo	156
+2013_10	avto	5992
+2013_10	avtobus	21
+2013_10	tovorno	928
+2013_10	traktor	246
+2013_11	kolo z motorjem	44
+2013_11	motorno kolo	70
+2013_11	avto	5083
+2013_11	avtobus	8
+2013_11	tovorno	1053
+2013_11	traktor	221
+2013_12	kolo z motorjem	32
+2013_12	motorno kolo	46
+2013_12	avto	3717
+2013_12	avtobus	39
+2013_12	tovorno	824
+2013_12	traktor	192
+2014_01	kolo z motorjem	83
+2014_01	motorno kolo	66
+2014_01	avto	6008
+2014_01	avtobus	15
+2014_01	tovorno	1089
+2014_01	traktor	208
+2014_02	kolo z motorjem	86
+2014_02	motorno kolo	101
+2014_02	avto	5363
+2014_02	avtobus	11
+2014_02	tovorno	756
+2014_02	traktor	227
+2014_03	kolo z motorjem	196
+2014_03	motorno kolo	614
+2014_03	avto	6724
+2014_03	avtobus	32
+2014_03	tovorno	994
+2014_03	traktor	519
+2014_04	kolo z motorjem	322
+2014_04	motorno kolo	684
+2014_04	avto	6637
+2014_04	avtobus	37
+2014_04	tovorno	951
+2014_04	traktor	598
+2014_05	kolo z motorjem	294
+2014_05	motorno kolo	533
+2014_05	avto	6275
+2014_05	avtobus	20
+2014_05	tovorno	869
+2014_05	traktor	463
+2014_06	kolo z motorjem	369
+2014_06	motorno kolo	493
+2014_06	avto	6341
+2014_06	avtobus	23
+2014_06	tovorno	883
+2014_06	traktor	287
+2014_07	kolo z motorjem	342
+2014_07	motorno kolo	492
+2014_07	avto	6374
+2014_07	avtobus	36
+2014_07	tovorno	774
+2014_07	traktor	240
+2014_08	kolo z motorjem	250
+2014_08	motorno kolo	307
+2014_08	avto	4781
+2014_08	avtobus	42
+2014_08	tovorno	628
+2014_08	traktor	189
+2014_09	kolo z motorjem	145
+2014_09	motorno kolo	254
+2014_09	avto	6032
+2014_09	avtobus	26
+2014_09	tovorno	805
+2014_09	traktor	296
+2014_10	kolo z motorjem	119
+2014_10	motorno kolo	176
+2014_10	avto	6892
+2014_10	avtobus	12
+2014_10	tovorno	942
+2014_10	traktor	260
+2014_11	kolo z motorjem	84
+2014_11	motorno kolo	113
+2014_11	avto	5855
+2014_11	avtobus	15
+2014_11	tovorno	864
+2014_11	traktor	184
+2014_12	kolo z motorjem	49
+2014_12	motorno kolo	76
+2014_12	avto	4960
+2014_12	avtobus	16
+2014_12	tovorno	821
+2014_12	traktor	205
+2015_01	kolo z motorjem	38
+2015_01	motorno kolo	71
+2015_01	avto	6875
+2015_01	avtobus	18
+2015_01	tovorno	955
+2015_01	traktor	200
+2015_02	kolo z motorjem	106
+2015_02	motorno kolo	159
+2015_02	avto	6233
+2015_02	avtobus	3
+2015_02	tovorno	781
+2015_02	traktor	206
+2015_03	kolo z motorjem	191
+2015_03	motorno kolo	660
+2015_03	avto	8019
+2015_03	avtobus	28
+2015_03	tovorno	1043
+2015_03	traktor	463
+2015_04	kolo z motorjem	297
+2015_04	motorno kolo	821
+2015_04	avto	7268
+2015_04	avtobus	32
+2015_04	tovorno	1028
+2015_04	traktor	543
+2015_05	kolo z motorjem	292
+2015_05	motorno kolo	600
+2015_05	avto	7192
+2015_05	avtobus	14
+2015_05	tovorno	926
+2015_05	traktor	412
+2015_06	kolo z motorjem	387
+2015_06	motorno kolo	549
+2015_06	avto	7392
+2015_06	avtobus	13
+2015_06	tovorno	954
+2015_06	traktor	297
+2015_07	kolo z motorjem	395
+2015_07	motorno kolo	536
+2015_07	avto	7144
+2015_07	avtobus	22
+2015_07	tovorno	932
+2015_07	traktor	221
+2015_08	kolo z motorjem	299
+2015_08	motorno kolo	395
+2015_08	avto	5567
+2015_08	avtobus	25
+2015_08	tovorno	694
+2015_08	traktor	147
+2015_09	kolo z motorjem	202
+2015_09	motorno kolo	284
+2015_09	avto	6371
+2015_09	avtobus	33
+2015_09	tovorno	1026
+2015_09	traktor	278
+2015_10	kolo z motorjem	102
+2015_10	motorno kolo	162
+2015_10	avto	7392
+2015_10	avtobus	13
+2015_10	tovorno	1158
+2015_10	traktor	228
+2015_11	kolo z motorjem	79
+2015_11	motorno kolo	90
+2015_11	avto	6882
+2015_11	avtobus	16
+2015_11	tovorno	1136
+2015_11	traktor	187
+2015_12	kolo z motorjem	55
+2015_12	motorno kolo	59
+2015_12	avto	5323
+2015_12	avtobus	26
+2015_12	tovorno	1163
+2015_12	traktor	176
+2016_01	kolo z motorjem	90
+2016_01	motorno kolo	91
+2016_01	avto	7706
+2016_01	avtobus	30
+2016_01	tovorno	1282
+2016_01	traktor	196
+2016_02	kolo z motorjem	91
+2016_02	motorno kolo	147
+2016_02	avto	6846
+2016_02	avtobus	8
+2016_02	tovorno	1034
+2016_02	traktor	247
+2016_03	kolo z motorjem	177
+2016_03	motorno kolo	690
+2016_03	avto	8556
+2016_03	avtobus	36
+2016_03	tovorno	1194
+2016_03	traktor	427
+2016_04	kolo z motorjem	368
+2016_04	motorno kolo	896
+2016_04	avto	7778
+2016_04	avtobus	39
+2016_04	tovorno	1138
+2016_04	traktor	424
+2016_05	kolo z motorjem	391
+2016_05	motorno kolo	614
+2016_05	avto	8541
+2016_05	avtobus	46
+2016_05	tovorno	1163
+2016_05	traktor	385
+2016_06	kolo z motorjem	416
+2016_06	motorno kolo	585
+2016_06	avto	8977
+2016_06	avtobus	11
+2016_06	tovorno	1151
+2016_06	traktor	271
+2016_07	kolo z motorjem	397
+2016_07	motorno kolo	510
+2016_07	avto	7294
+2016_07	avtobus	17
+2016_07	tovorno	1071
+2016_07	traktor	187
+2016_08	kolo z motorjem	291
+2016_08	motorno kolo	460
+2016_08	avto	5947
+2016_08	avtobus	29
+2016_08	tovorno	944
+2016_08	traktor	160
+2016_09	kolo z motorjem	211
+2016_09	motorno kolo	329
+2016_09	avto	7319
+2016_09	avtobus	24
+2016_09	tovorno	1193
+2016_09	traktor	286
+2016_10	kolo z motorjem	97
+2016_10	motorno kolo	192
+2016_10	avto	7624
+2016_10	avtobus	25
+2016_10	tovorno	1142
+2016_10	traktor	209
+2016_11	kolo z motorjem	78
+2016_11	motorno kolo	121
+2016_11	avto	7642
+2016_11	avtobus	14
+2016_11	tovorno	1443
+2016_11	traktor	182
+2016_12	kolo z motorjem	89
+2016_12	motorno kolo	108
+2016_12	avto	6358
+2016_12	avtobus	32
+2016_12	tovorno	1449
+2016_12	traktor	225
+2017_01	kolo z motorjem	77
+2017_01	motorno kolo	70
+2017_01	avto	8685
+2017_01	avtobus	29
+2017_01	tovorno	1405
+2017_01	traktor	170
+2017_02	kolo z motorjem	135
+2017_02	motorno kolo	189
+2017_02	avto	8106
+2017_02	avtobus	19
+2017_02	tovorno	1217
+2017_02	traktor	226
+2017_03	kolo z motorjem	568
+2017_03	motorno kolo	934
+2017_03	avto	9635
+2017_03	avtobus	25
+2017_03	tovorno	1435
+2017_03	traktor	491
+2017_04	kolo z motorjem	6947
+2017_04	motorno kolo	734
+2017_04	avto	8511
+2017_04	avtobus	43
+2017_04	tovorno	1173
+2017_04	traktor	484
+2017_05	kolo z motorjem	5160
+2017_05	motorno kolo	704
+2017_05	avto	9457
+2017_05	avtobus	22
+2017_05	tovorno	1460
+2017_05	traktor	441
+2017_06	kolo z motorjem	2623
+2017_06	motorno kolo	694
+2017_06	avto	10362
+2017_06	avtobus	8
+2017_06	tovorno	1545
+2017_06	traktor	348
+2017_07	kolo z motorjem	1756
+2017_07	motorno kolo	518
+2017_07	avto	7927
+2017_07	avtobus	10
+2017_07	tovorno	1185
+2017_07	traktor	230
+2017_08	kolo z motorjem	1216
+2017_08	motorno kolo	419
+2017_08	avto	7029
+2017_08	avtobus	38
+2017_08	tovorno	1058
+2017_08	traktor	201
+2017_09	kolo z motorjem	543
+2017_09	motorno kolo	276
+2017_09	avto	7801
+2017_09	avtobus	12
+2017_09	tovorno	1248
+2017_09	traktor	271
+2017_10	kolo z motorjem	357
+2017_10	motorno kolo	232
+2017_10	avto	9331
+2017_10	avtobus	21
+2017_10	tovorno	1521
+2017_10	traktor	271
+2017_11	kolo z motorjem	189
+2017_11	motorno kolo	126
+2017_11	avto	9072
+2017_11	avtobus	32
+2017_11	tovorno	1515
+2017_11	traktor	235
+2017_12	kolo z motorjem	181
+2017_12	motorno kolo	59
+2017_12	avto	6428
+2017_12	avtobus	29
+2017_12	tovorno	1445
+2017_12	traktor	210
+2018_01	kolo z motorjem	220
+2018_01	motorno kolo	125
+2018_01	avto	9627
+2018_01	avtobus	16
+2018_01	tovorno	1587
+2018_01	traktor	248
+2018_02	kolo z motorjem	62
+2018_02	motorno kolo	80
+2018_02	avto	8143
+2018_02	avtobus	24
+2018_02	tovorno	1267
+2018_02	traktor	176
+2018_03	kolo z motorjem	300
+2018_03	motorno kolo	600
+2018_03	avto	11133
+2018_03	avtobus	25
+2018_03	tovorno	1553
+2018_03	traktor	389
+2018_04	kolo z motorjem	606
+2018_04	motorno kolo	1101
+2018_04	avto	9599
+2018_04	avtobus	46
+2018_04	tovorno	1434
+2018_04	traktor	494
+2018_05	kolo z motorjem	864
+2018_05	motorno kolo	698
+2018_05	avto	10566
+2018_05	avtobus	27
+2018_05	tovorno	1518
+2018_05	traktor	432
+2018_06	kolo z motorjem	860
+2018_06	motorno kolo	617
+2018_06	avto	10509
+2018_06	avtobus	17
+2018_06	tovorno	1574
+2018_06	traktor	335
+2018_07	kolo z motorjem	772
+2018_07	motorno kolo	593
+2018_07	avto	9534
+2018_07	avtobus	5
+2018_07	tovorno	1458
+2018_07	traktor	330
+2018_08	kolo z motorjem	761
+2018_08	motorno kolo	519
+2018_08	avto	8609
+2018_08	avtobus	27
+2018_08	tovorno	1288
+2018_08	traktor	248
+2018_09	kolo z motorjem	363
+2018_09	motorno kolo	362
+2018_09	avto	7835
+2018_09	avtobus	24
+2018_09	tovorno	1506
+2018_09	traktor	267
+2018_10	kolo z motorjem	324
+2018_10	motorno kolo	256
+2018_10	avto	8874
+2018_10	avtobus	34
+2018_10	tovorno	1727
+2018_10	traktor	288
+2018_11	kolo z motorjem	215
+2018_11	motorno kolo	131
+2018_11	avto	7949
+2018_11	avtobus	15
+2018_11	tovorno	1668
+2018_11	traktor	249
+2018_12	kolo z motorjem	125
+2018_12	motorno kolo	89
+2018_12	avto	5971
+2018_12	avtobus	16
+2018_12	tovorno	1394
+2018_12	traktor	219
+2019_01	kolo z motorjem	80
+2019_01	motorno kolo	86
+2019_01	avto	9500
+2019_01	avtobus	18
+2019_01	tovorno	1967
+2019_01	traktor	252
+2019_02	kolo z motorjem	166
+2019_02	motorno kolo	299
+2019_02	avto	8794
+2019_02	avtobus	9
+2019_02	tovorno	1678
+2019_02	traktor	274
+2019_03	kolo z motorjem	423
+2019_03	motorno kolo	813
+2019_03	avto	10590
+2019_03	avtobus	23
+2019_03	tovorno	1733
+2019_03	traktor	461
+2019_04	kolo z motorjem	595
+2019_04	motorno kolo	911
+2019_04	avto	9498
+2019_04	avtobus	17
+2019_04	tovorno	1390
+2019_04	traktor	569
+2019_05	kolo z motorjem	601
+2019_05	motorno kolo	667
+2019_05	avto	10536
+2019_05	avtobus	46
+2019_05	tovorno	1555
+2019_05	traktor	434
+2019_06	kolo z motorjem	827
+2019_06	motorno kolo	684
+2019_06	avto	9889
+2019_06	avtobus	16
+2019_06	tovorno	1439
+2019_06	traktor	378
+2019_07	kolo z motorjem	957
+2019_07	motorno kolo	662
+2019_07	avto	9183
+2019_07	avtobus	13
+2019_07	tovorno	1375
+2019_07	traktor	261
+2019_08	kolo z motorjem	665
+2019_08	motorno kolo	506
+2019_08	avto	7758
+2019_08	avtobus	45
+2019_08	tovorno	1027
+2019_08	traktor	197
+2019_09	kolo z motorjem	386
+2019_09	motorno kolo	371
+2019_09	avto	7944
+2019_09	avtobus	47
+2019_09	tovorno	1289
+2019_09	traktor	271
+2019_10	kolo z motorjem	258
+2019_10	motorno kolo	278
+2019_10	avto	9101
+2019_10	avtobus	23
+2019_10	tovorno	1509
+2019_10	traktor	277
+2019_11	kolo z motorjem	105
+2019_11	motorno kolo	113
+2019_11	avto	8079
+2019_11	avtobus	16
+2019_11	tovorno	1691
+2019_11	traktor	243
+2019_12	kolo z motorjem	104
+2019_12	motorno kolo	68
+2019_12	avto	7082
+2019_12	avtobus	9
+2019_12	tovorno	1264
+2019_12	traktor	267
+2020_01	kolo z motorjem	138
+2020_01	motorno kolo	113
+2020_01	avto	9097
+2020_01	avtobus	17
+2020_01	tovorno	1618
+2020_01	traktor	219
+2020_02	kolo z motorjem	161
+2020_02	motorno kolo	261
+2020_02	avto	8469
+2020_02	avtobus	10
+2020_02	tovorno	1224
+2020_02	traktor	260
+2020_03	kolo z motorjem	135
+2020_03	motorno kolo	309
+2020_03	avto	4228
+2020_03	avtobus	5
+2020_03	tovorno	673
+2020_03	traktor	190
+2020_04	kolo z motorjem	257
+2020_04	motorno kolo	535
+2020_04	avto	2946
+2020_04	avtobus	0
+2020_04	tovorno	520
+2020_04	traktor	261
+2020_05	kolo z motorjem	837
+2020_05	motorno kolo	852
+2020_05	avto	7723
+2020_05	avtobus	5
+2020_05	tovorno	1000
+2020_05	traktor	562
+2020_06	kolo z motorjem	1012
+2020_06	motorno kolo	690
+2020_06	avto	9507
+2020_06	avtobus	4
+2020_06	tovorno	1105
+2020_06	traktor	381
+2020_07	kolo z motorjem	1121
+2020_07	motorno kolo	689
+2020_07	avto	9684
+2020_07	avtobus	6
+2020_07	tovorno	1064
+2020_07	traktor	277
+2020_08	kolo z motorjem	834
+2020_08	motorno kolo	520
+2020_08	avto	7004
+2020_08	avtobus	4
+2020_08	tovorno	972
+2020_08	traktor	225
+2020_09	kolo z motorjem	548
+2020_09	motorno kolo	442
+2020_09	avto	7208
+2020_09	avtobus	12
+2020_09	tovorno	1225
+2020_09	traktor	283
+2020_10	kolo z motorjem	249
+2020_10	motorno kolo	244
+2020_10	avto	7179
+2020_10	avtobus	11
+2020_10	tovorno	1325
+2020_10	traktor	269
+2020_11	kolo z motorjem	109
+2020_11	motorno kolo	113
+2020_11	avto	4896
+2020_11	avtobus	9
+2020_11	tovorno	1214
+2020_11	traktor	177
+2020_12	kolo z motorjem	139
+2020_12	motorno kolo	112
+2020_12	avto	3796
+2020_12	avtobus	6
+2020_12	tovorno	1180
+2020_12	traktor	184
+2021_01	kolo z motorjem	89
+2021_01	motorno kolo	108
+2021_01	avto	6079
+2021_01	avtobus	35
+2021_01	tovorno	1478
+2021_01	traktor	265
+2021_02	kolo z motorjem	240
+2021_02	motorno kolo	386
+2021_02	avto	7648
+2021_02	avtobus	5
+2021_02	tovorno	1358
+2021_02	traktor	281
+2021_03	kolo z motorjem	607
+2021_03	motorno kolo	954
+2021_03	avto	11228
+2021_03	avtobus	2
+2021_03	tovorno	1771
+2021_03	traktor	564
+2021_04	kolo z motorjem	507
+2021_04	motorno kolo	665
+2021_04	avto	6834
+2021_04	avtobus	2
+2021_04	tovorno	1232
+2021_04	traktor	437
+2021_05	kolo z motorjem	838
+2021_05	motorno kolo	872
+2021_05	avto	8644
+2021_05	avtobus	6
+2021_05	tovorno	1363
+2021_05	traktor	518
+2021_06	kolo z motorjem	994
+2021_06	motorno kolo	816
+2021_06	avto	8595
+2021_06	avtobus	7
+2021_06	tovorno	1228
+2021_06	traktor	334
+2021_07	kolo z motorjem	1084
+2021_07	motorno kolo	679
+2021_07	avto	7913
+2021_07	avtobus	5
+2021_07	tovorno	1138
+2021_07	traktor	326
+2021_08	kolo z motorjem	661
+2021_08	motorno kolo	527
+2021_08	avto	6391
+2021_08	avtobus	11
+2021_08	tovorno	1044
+2021_08	traktor	219
+2021_09	kolo z motorjem	471
+2021_09	motorno kolo	374
+2021_09	avto	6992
+2021_09	avtobus	19
+2021_09	tovorno	1218
+2021_09	traktor	291
+2021_10	kolo z motorjem	253
+2021_10	motorno kolo	221
+2021_10	avto	7250
+2021_10	avtobus	10
+2021_10	tovorno	1215
+2021_10	traktor	285
+2021_11	kolo z motorjem	137
+2021_11	motorno kolo	168
+2021_11	avto	6770
+2021_11	avtobus	30
+2021_11	tovorno	1368
+2021_11	traktor	243
+2021_12	kolo z motorjem	98
+2021_12	motorno kolo	84
+2021_12	avto	4969
+2021_12	avtobus	10
+2021_12	tovorno	1144
+2021_12	traktor	268
+2022_01	kolo z motorjem	110
+2022_01	motorno kolo	153
+2022_01	avto	6580
+2022_01	avtobus	9
+2022_01	tovorno	1299
+2022_01	traktor	233
+2022_02	kolo z motorjem	179
+2022_02	motorno kolo	320
+2022_02	avto	6193
+2022_02	avtobus	17
+2022_02	tovorno	1308
+2022_02	traktor	284
+2022_03	kolo z motorjem	421
+2022_03	motorno kolo	883
+2022_03	avto	7407
+2022_03	avtobus	6
+2022_03	tovorno	1345
+2022_03	traktor	491
+2022_04	kolo z motorjem	566
+2022_04	motorno kolo	963
+2022_04	avto	6559
+2022_04	avtobus	28
+2022_04	tovorno	1090
+2022_04	traktor	477
+2022_05	kolo z motorjem	852
+2022_05	motorno kolo	942
+2022_05	avto	7765
+2022_05	avtobus	33
+2022_05	tovorno	1254
+2022_05	traktor	497

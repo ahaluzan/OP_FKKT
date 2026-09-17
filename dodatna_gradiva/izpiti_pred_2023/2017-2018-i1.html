@@ -1,0 +1,83 @@
+<p></p><p>Napišite modul <code>izpit</code>, ki vsebuje funkcije, kot so zahtevane v posamezni nalogi. V modul 
+lahko napišete tudi pomožne funkcije, če jih potrebujete. Testi so na voljo v mapi <code>./testi/2017-2018-i1/</code>.</p>
+
+<p>Dovoljen je dostop do vse literature na učilnici. Dostop do ostalih virov in uporaba kakršnekoli komunikacije ni dovoljena. Na koncu na učilnici oddajte (eno) datoteko <code>izpit.py</code>.<br></p><p></p>
+
+Naloge niso nujno v vrstnem redu zahtevnosti. Če vam pri določeni nalogi ne uspe narediti rešitve, ki pokrije vse teste, poskusite pokriti vsaj del testov. Če vam določena naloga dela probleme, se ne ukvarjajte z njo predolgo in poskusite rešiti kakšno od drugih nalog. Naloge (in podnaloge) se lahko rešujejo neodvisno ena od druge, tako da jih lahko rešujete v poljubnem vrstnem redu.<br><p><br><br></p>
+
+<h3>Smučišča</h3>
+
+<h2>1. naloga</h2>
+<p>Podatki o smučiščih so shranjeni v tekstovnih datotekah po posameznih državah državah (najdete jih poleg testov v imeniku <code>public/data</code>). Prva vrstica datoteke vsebuje ime države, nato pa sledijo podatki, ki so ločeni s podpičjem (";"): najprej ime smučišča, nato sledijo snežna odeja v dolini, snežna odeja na vrhu, novozapadli sneg. Na koncu vrstice je število obratujočih naprav in število vseh naprav smučišča – oba podatka sta v eni celici, ločena s poševnico ("/"). Pri snežnih odejah nimamo nujno podanih vseh podatkov, manjkajoči so označeni z minusom ("-"). Primer datoteke <code>slovenija.txt</code>:</p>
+<pre>Slovenija
+Bukovnik;-;35;-;1/1
+Celjska koča;-;30;-;2/3
+Cerkno;-;140;-;4/7
+Črna na Koroškem;70;70;50;1/1
+Golte;-;115;-;7/7
+Javornik;60;80;30;1/1
+Kope - Ribniško Pohorje;-;80;-;8/8
+Kranjska Gora;-;80;-;15/15
+Krvavec;-;130;-;7/13
+Mariborsko Pohorje;-;30;-;12/17
+Pokljuka - Goreljek;-;180;-;5/5
+Pokljuka - Zatrnik;60;-;-;2/2
+Poseka/Ravne;30;30;-;1/1
+Ribniško Pohorje;-;70;-;3/4
+Rogla;-;110;-;12/12
+Rudno;-;45;-;1/1
+Šentjošt nad Horjulom;-;-;-;2/2
+Soriška planina;-;200;-;3/5
+Trije Kralji;-;65;-;2/2
+Velika planina;-;25;-;4/4
+Vogel;-;250;-;4/9</pre>
+
+<p>V zgornjem primeru je v prvi vrstici ime države, naslednja vrstica pa opsuje smučišče Bukovnik, ki nima podanih podatkov o snežni odeji v dolini ter količine novozapadlega snega; je pa na vrhu smučišča 35 cm snega in obratuje edina naprava.</p>
+
+<p>Napišite funkcijo <b>preberi_podatke</b>, ki kot argument prejme <b>seznam</b> poti do datotek, vrne pa seznam smučišč (v vrstnem redu, kot so podane datoteke, znotraj države pa naj ostane vrstni red enak, kot je v datoteki). Podatki o enem smučišču naj bodo predstavljeni kot seznam. Prvi element naj bo ime smučišča tipa <code>niz</code>, nato naj sledijo trije podatki o snežni odeji tipa <code>int</code> (če podatek o snežni odeji ni podan, naj ima vrednost <code>None</code>), nato <code>niz</code> o obratovanju naprav na smučišču (npr. "12/12"), na koncu pa še dodajte državo, v kateri se nahaja smučišče (tipa <code>niz</code>).</p>
+<p>Primer klica funkcije in rezultata za Slovenijo:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>preberi_podatke([<span class="" style="color: rgb(0, 170, 0);">'public/data/slovenija.txt'</span>])
+<span class="" style="color: rgb(0, 0, 255);">[['Bukovnik', None, 35, None, '1/1', 'Slovenija'],
+ ['Celjska koča', None, 30, None, '2/3', 'Slovenija'],
+ ['Cerkno', None, 140, None, '4/7', 'Slovenija'],
+ ['Črna na Koroškem', 70, 70, 50, '1/1', 'Slovenija'],
+ ['Golte', None, 115, None, '7/7', 'Slovenija'],
+ ['Javornik', 60, 80, 30, '1/1', 'Slovenija'],
+ ['Kope - Ribniško Pohorje', None, 80, None, '8/8', 'Slovenija'],
+ ['Kranjska Gora', None, 80, None, '15/15', 'Slovenija'],
+ ['Krvavec', None, 130, None, '7/13', 'Slovenija'],
+ ['Mariborsko Pohorje', None, 30, None, '12/17', 'Slovenija'],
+ ['Pokljuka - Goreljek', None, 180, None, '5/5', 'Slovenija'],
+ ['Pokljuka - Zatrnik', 60, None, None, '2/2', 'Slovenija'],
+ ['Poseka/Ravne', 30, 30, None, '1/1', 'Slovenija'],
+ ['Ribniško Pohorje', None, 70, None, '3/4', 'Slovenija'],
+ ['Rogla', None, 110, None, '12/12', 'Slovenija'],
+ ['Rudno', None, 45, None, '1/1', 'Slovenija'],
+ ['Šentjošt nad Horjulom', None, None, None, '2/2', 'Slovenija'],
+ ['Soriška planina', None, 200, None, '3/5', 'Slovenija'],
+ ['Trije Kralji', None, 65, None, '2/2', 'Slovenija'],
+ ['Velika planina', None, 25, None, '4/4', 'Slovenija'],
+ ['Vogel', None, 250, None, '4/9', 'Slovenija']]</span></pre>
+
+<p>Namig: najprej rešite nalogo tako, da boste prebrali podatke iz prve datoteke podanega seznama. S takšno rešitvijo boste lahko dobili pravilno rešena dva testa od petih (2/5).</p>
+
+<h2>2. naloga</h2>
+<p>Napišite funkcijo <b>delez_delujocih_naprav</b>, ki kot argument prejme seznam smučišč (takega, kot bi ga naj vrnila 1. naloga), vrne pa delež delujočih naprav vseh smučišč skupaj.</p>
+
+<p>Primer klica funkcije:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>delez_delujocih_naprav(<span class="" style="color: rgb(51, 51, 51);">[[<span class="" style="color: rgb(0, 170, 0);">'Bukovnik'</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'1/1'</span>, <span class="" style="color: rgb(0, 170, 0);">'Slovenija'</span>], [<span class="" style="color: rgb(0, 170, 0);">'Celjska koča'</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(239, 69, 64);">30</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'2/3'</span>, <span class="" style="color: rgb(0, 170, 0);">'Slovenija'</span>], [<span class="" style="color: rgb(0, 170, 0);">'Cerkno'</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(239, 69, 64);">140</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'4/7'</span>, <span class="" style="color: rgb(0, 170, 0);">'Slovenija'</span>]]</span>)
+<span class="" style="color: rgb(0, 0, 255);">0.6363636363636364</span></pre>
+V zgornjem primeru je skupaj 11 naprav, od tega jih deluje 7.<br><h2><br>3. naloga</h2>
+<p>Napišite funkcijo <b>najvecja_razlika</b>, ki kot argument prejme seznam smučišč, vrne pa terko z dvema elementoma. Prvi element naj bo največja razlika med snežno odejo na vrhu in v dolini (če kateri od podatkov ni podan, potem to smučišče izpustite). Drugi element pa naj bo množica imen smučišč, ki imajo takšno (največjo) razliko. Predpostavite lahko, da bo vsaj eno smučišče s seznama imelo podana oba podatka (višina odeje na vrhu in višina odeje v dolini).</p>
+<p>Primer klica funkcije:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>najvecja_razlika(<span class="" style="color: rgb(51, 51, 51);">[[<span class="" style="color: rgb(0, 170, 0);">'Bukovnik'</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'1/1'</span>, <span class="" style="color: rgb(0, 170, 0);">'Slovenija'</span>], [<span class="" style="color: rgb(0, 170, 0);">'Sella Nevea - Canin'</span>, <span class="" style="color: rgb(239, 69, 64);">120</span>, <span class="" style="color: rgb(239, 69, 64);">380</span>, <span class="" style="color: rgb(239, 69, 64);">70</span>, <span class="" style="color: rgb(0, 170, 0);">'2/5'</span>, <span class="" style="color: rgb(0, 170, 0);">'Italija'</span>], [<span class="" style="color: rgb(0, 170, 0);">'Wendelstein - Brannenburg'</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">265</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'4/4'</span>, <span class="" style="color: rgb(0, 170, 0);">'Nemčija'</span>]]</span>)
+<span class="" style="color: rgb(0, 0, 255);">(260, {'Sella Nevea - Canin', 'Wendelstein - Brannenburg'})</span></pre>
+
+<h2>4. naloga</h2>
+<p>Napišite funkcijo <b>novozapadli_sneg_po_drzavah</b>, ki prejme kot prvi argument seznam smučišč, kot drugi pa želeno količino novozapadlega snega. Funkcije vrne število smučišč po državah (v slovarju), ki imajo vsaj toliko novozapadlega snega. V vrnjenem slovarju naj bo ključ država, vrednost pa število najdenih smučišč z želeno količino novozapadlega snega.</p>
+<p>Primer klica funkcije:</p>
+<pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt; </span>novozapadli_sneg_po_drzavah(<span class="" style="color: rgb(51, 51, 51);">[[<span class="" style="color: rgb(0, 170, 0);">'Bukovnik'</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'1/1'</span>, <span class="" style="color: rgb(0, 170, 0);">'Slovenija'</span>], [<span class="" style="color: rgb(0, 170, 0);">'Sella Nevea - Canin'</span>, <span class="" style="color: rgb(239, 69, 64);">120</span>, <span class="" style="color: rgb(239, 69, 64);">380</span>, <span class="" style="color: rgb(239, 69, 64);">70</span>, <span class="" style="color: rgb(0, 170, 0);">'2/5'</span>, <span class="" style="color: rgb(0, 170, 0);">'Italija'</span>], [<span class="" style="color: rgb(0, 170, 0);">'Wendelstein - Brannenburg'</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">265</span>, <span class="" style="color: rgb(255, 150, 40);">None</span>, <span class="" style="color: rgb(0, 170, 0);">'4/4'</span>, <span class="" style="color: rgb(0, 170, 0);">'Nemčija'</span>]]</span><span class="" style="color: rgb(51, 51, 51);">, </span><span class="" style="color: rgb(239, 69, 64);">10</span>)
+<span class="" style="color: rgb(0, 0, 255);">{'Nemčija': 0, 'Italija': 1, 'Slovenija': 0}</span></pre><h3><br>
+
+5. naloga</h3><p>Napišite funkcijo <b>dolzina_zasnezeno</b>, ki kot argument prejme seznam višine snežne odeje po dnevih za neko smučišče. Funkcija naj vrne največje število zaporednih dni, ko je bila snežna odeja debela vsaj 20 cm.</p><p>Primer klica funkcije:</p><pre><span class="" style="color: rgb(239, 69, 64);">&gt;&gt;&gt;</span> dolzina_zasnezeno([<span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">30</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(239, 69, 64);">30</span>, <span class="" style="color: rgb(239, 69, 64);">30</span>, <span class="" style="color: rgb(239, 69, 64);">25</span>, <span class="" style="color: rgb(239, 69, 64);">20</span>, <span class="" style="color: rgb(239, 69, 64);">15</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <b><span class="" style="color: rgb(239, 69, 64);">45</span>, <span class="" style="color: rgb(239, 69, 64);">50</span>, <span class="" style="color: rgb(239, 69, 64);">70</span>, <span class="" style="color: rgb(239, 69, 64);">70</span>, <span class="" style="color: rgb(239, 69, 64);">70</span>, <span class="" style="color: rgb(239, 69, 64);">65</span>, <span class="" style="color: rgb(239, 69, 64);">80</span>, <span class="" style="color: rgb(239, 69, 64);">80</span>, <span class="" style="color: rgb(239, 69, 64);">75</span>, <span class="" style="color: rgb(239, 69, 64);">60</span>, <span class="" style="color: rgb(239, 69, 64);">45</span>, <span class="" style="color: rgb(239, 69, 64);">35</span>, <span class="" style="color: rgb(239, 69, 64);">30</span>, <span class="" style="color: rgb(239, 69, 64);">20</span></b>, <span class="" style="color: rgb(239, 69, 64);">15</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">5</span>, <span class="" style="color: rgb(239, 69, 64);">0</span>, <span class="" style="color: rgb(239, 69, 64);">25</span>, <span class="" style="color: rgb(239, 69, 64);">25</span>, <span class="" style="color: rgb(239, 69, 64);">20</span>, <span class="" style="color: rgb(239, 69, 64);">20</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>, <span class="" style="color: rgb(239, 69, 64);">10</span>])<br><span class="" style="color: rgb(0, 0, 255);">14</span><br></pre>
+V zgornjem primeru je najdaljše zaporedje označeno odebeljeno.

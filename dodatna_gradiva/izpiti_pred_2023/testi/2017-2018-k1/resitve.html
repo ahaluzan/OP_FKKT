@@ -1,0 +1,12 @@
+<h5><strong>1. naloga</strong></h5>
+<pre><code class="hljs python">iskano = -1<br>while iskano not in [0, 1]:<br>    iskano = int(input('Glava ali cifra? '))<br>    if iskano not in [0, 1]:<br>        print("Vnesi 0 ali 1!")<br><br>cilj = int(input('Število zaporednih: '))<br>stevilo = 0<br>zaporedje = 0<br><br>while zaporedje &lt; cilj:<br>    met = int(input("Vnesi rezultat meta: "))<br>    if met not in [0, 1]:<br>        print("Vnesi 0 ali 1!")<br>    else:<br>        stevilo+=1<br>        if met == iskano:<br>            zaporedje+=1<br>        else:<br>            zaporedje=0<br>print(stevilo)</code></pre>
+<h5><strong>2. naloga</strong></h5>
+<pre><code class="hljs python">a = eval(input('a = '))<br>b = eval(input('b = '))<br><br>if len(a) != len(b):<br>    print('Vektorja se morata ujemati v dimenzijah!')<br>else:<br>    vsota = 0<br>    for i in range(len(a)):<br>        vsota += a[i] * b[i]<br>    print(vsota)</code></pre>
+<h5><strong>3. naloga</strong></h5>
+<h5><strong>(a)</strong></h5>
+<pre><code class="hljs python">def mediana_treh(a, b, c):<br>    s = [a, b, c]<br>    s.sort()<br>    return s[1]<br></code></pre>
+<p>Če se ne spomnite rešitve z urejanjem, lahko pri treh elementih napišite tudi vse permutacije, ker jih je le 6.</p>
+<pre><code class="hljs python">def mediana_treh(a, b, c):<br>    if a &lt;= b &lt;= c:<br>        return b<br>    if c &lt;= b &lt;= a:<br>        return b<br>    if b &lt;= a &lt;= c:<br>        return a<br>    if c &lt;= a &lt;= b:<br>        return a<br>    if a &lt;= c &lt;= b:<br>        return c<br>    if b &lt;= c &lt;= a:<br>        return c</code></pre>
+<p><strong>(b)</strong></p>
+<pre><code class="hljs python">def mediana(s):<br>    s.sort()<br>    return s[len(s)//2]</code></pre>
+<p></p>

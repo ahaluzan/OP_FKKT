@@ -1,0 +1,71 @@
+
+import unittest
+from izpit import *
+
+test_case = unittest.TestCase()
+
+podatki = [[1, 'GEIGER Karl', 'GER', 232.0, (18.5, 19.0, 19.0, 18.5, 18.5), 7, 0.18],
+[3, 'HUBER Daniel', 'AUT', 202.5, (17.0, 17.0, 17.5, 18.0, 17.5), 7, 0.24],
+[4, 'KOT Maciej', 'POL', 218.0, (18.5, 18.0, 18.5, 18.0, 18.0), 7, 0.2],
+[5, 'PASCHKE Pius', 'GER', 202.5, (17.5, 17.5, 18.0, 17.5, 17.5), 7, 0.53],
+[6, 'DAMJAN Jernej', 'SLO', 214.0, (18.5, 18.0, 18.5, 18.5, 18.5), 7, 0.49],
+[7, 'TAKEUCHI Taku', 'JPN', 196.0, (17.0, 17.0, 17.0, 17.5, 17.0), 7, 0.34],
+[8, 'WELLINGER Andreas', 'GER', 222.5, (18.5, 18.5, 18.5, 18.0, 18.0), 7, 0.44],
+[9, 'HAYBOECK Michael', 'AUT', 214.5, (18.5, 18.5, 18.0, 18.5, 18.5), 7, 0.3],
+[10, 'KOBAYASHI Ryoyu', 'JPN', 220.0, (18.5, 18.5, 18.0, 18.0, 18.5), 7, 0.33],
+[11, 'BARTOL Tilen', 'SLO', 222.0, (18.5, 18.5, 18.0, 18.0, 18.5), 7, 0.36],
+[12, 'GRANERUD Halvor Egner', 'NOR', 213.5, (18.0, 18.0, 18.0, 18.5, 18.0), 7, 0.22],
+[13, 'SEMENIC Anze', 'SLO', 220.0, (18.5, 18.5, 18.0, 19.0, 18.5), 7, 0.29],
+[14, 'ZYLA Piotr', 'POL', 208.5, (18.0, 18.0, 18.0, 18.0, 18.0), 7, 0.38],
+[15, 'AIGNER Clemens', 'AUT', 197.0, (17.0, 17.0, 17.5, 17.5, 17.0), 7, 0.27],
+[16, 'LEYHE Stephan', 'GER', 203.0, (17.0, 17.0, 17.5, 18.0, 17.5), 7, 0.25],
+[17, 'HULA Stefan', 'POL', 228.5, (19.0, 19.0, 19.0, 19.0, 18.5), 7, 0.35],
+[18, 'KUBACKI Dawid', 'POL', 217.0, (19.0, 18.5, 18.5, 18.5, 18.5), 7, 0.43],
+[19, 'KOBAYASHI Junshiro', 'JPN', 236.5, (19.0, 19.0, 19.0, 18.5, 19.5), 7, 0.21],
+[20, 'FREITAG Richard', 'GER', 232.5, (18.5, 16.5, 17.5, 17.5, 18.0), 7, 0.24],
+[21, 'FANNEMEL Anders', 'NOR', 232.5, (18.5, 19.0, 18.5, 18.0, 18.5), 7, 0.25],
+[22, 'PREVC Peter', 'SLO', 235.0, (19.5, 19.5, 19.5, 19.0, 19.5), 7, 0.67],
+[23, 'EISENBICHLER Markus', 'GER', 232.5, (18.5, 18.5, 17.5, 18.0, 17.5), 7, 0.33],
+[24, 'AMMANN Simon', 'SUI', 234.0, (18.5, 18.0, 17.5, 17.5, 17.5), 7, 0.52],
+[25, 'KASAI Noriaki', 'JPN', 216.5, (18.0, 18.5, 18.0, 18.5, 18.5), 7, 0.39],
+[26, 'FORFANG Johann Andre', 'NOR', 240.5, (19.0, 19.5, 19.0, 19.0, 19.0), 7, 0.55],
+[27, 'KRAFT Stefan', 'AUT', 243.0, (19.5, 19.5, 19.5, 19.0, 18.0), 7, 0.52],
+[28, 'TANDE Daniel Andre', 'NOR', 243.5, (19.0, 19.5, 19.5, 19.0, 18.5), 7, 0.4],
+[29, 'STOCH Kamil', 'POL', 245.0, (19.5, 19.5, 20.0, 19.5, 19.5), 6, 0.28],
+[30, 'JOHANSSON Robert', 'NOR', 237.0, (19.0, 18.5, 19.0, 18.5, 19.0), 6, 0.53],
+[31, 'STJERNEN Andreas', 'NOR', 233.0, (19.0, 18.5, 18.5, 19.0, 18.5), 7, 0.37]]
+
+rezultati = {'HUBER Daniel': 180.9,
+ 'WELLINGER Andreas': 205.0,
+ 'TAKEUCHI Taku': 170.6,
+ 'HAYBOECK Michael': 197.9,
+ 'KRAFT Stefan': 231.4,
+ 'EISENBICHLER Markus': 217.6,
+ 'TANDE Daniel Andre': 233.3,
+ 'KOBAYASHI Ryoyu': 203.6,
+ 'AMMANN Simon': 215.6,
+ 'KASAI Noriaki': 198.5,
+ 'SEMENIC Anze': 204.7,
+ 'STJERNEN Andreas': 219.6,
+ 'FREITAG Richard': 217.9,
+ 'BARTOL Tilen': 205.5,
+ 'HULA Stefan': 215.5,
+ 'GEIGER Karl': 221.1,
+ 'GRANERUD Halvor Egner': 196.4,
+ 'KOT Maciej': 202.6,
+ 'FORFANG Johann Andre': 227.0,
+ 'KUBACKI Dawid': 199.0,
+ 'PASCHKE Pius': 177.2,
+ 'KOBAYASHI Junshiro': 227.1,
+ 'LEYHE Stephan': 181.3,
+ 'AIGNER Clemens': 173.3,
+ 'PREVC Peter': 220.2,
+ 'JOHANSSON Robert': 231.9,
+ 'STOCH Kamil': 247.1,
+ 'ZYLA Piotr': 188.1,
+ 'FANNEMEL Anders': 220.2,
+ 'DAMJAN Jernej': 194.6}
+
+for skok in podatki:
+    test_case.assertEqual(izracun_tock(skok), rezultati[skok[1]], "Skakalec "+skok[1])
+

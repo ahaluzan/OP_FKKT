@@ -1,0 +1,26 @@
+{
+  "assignmentsToTest": [
+    {
+      "id": "2020-21-K1-N2",
+      "assignmentName": "naloga2",
+        "publicTests" : {
+          "rootDir" : "public",
+          "timeouts": [],
+          "points:": []
+        },
+        "privateTests": {
+          "rootDir" : "private",
+          "timeouts": [],
+          "points:": []
+        }
+    }
+  ],
+  "defaultTimeout": 2,
+  "toTestRootDir": ".",
+  "testRootDir": ".",
+  "testDirNames": {
+     "unitTestDir": "unit_test",
+     "unitTestStdoutDir": "unit_test_stdout",
+     "unitTestResultsDir": "unit_test_results"
+   }
+}

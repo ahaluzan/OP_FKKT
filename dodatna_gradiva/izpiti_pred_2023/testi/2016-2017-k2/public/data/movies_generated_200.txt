@@ -1,0 +1,200 @@
+KAVAR;1974;Liberia
+BOXIV;1998;Belgium
+NAPEC;1992;United States of America
+LIXUF;1956;Monaco
+VIJEM;1989;Brazil
+TUMIY;1993;Sierra Leone
+PITIK;1962;Sao Tome and Principe
+JEFAK;1957;Austria
+JUWAM;2010;Myanmar
+RUVUK;1950;Sierra Leone
+JOCUK;2001;Guyana
+NULON;1962;Mauritania
+HIHOG;1950;South Sudan
+XEPAJ;1998;Vatican City
+SILIS;2000;Seychelles
+XEMUG;2007;Marshall Islands
+PAVIW;2010;Lesotho
+JIYAH;1997;Antigua and Barbuda
+CERAD;1987;Palau
+PIBOW;1954;Mauritius
+GOPEN;2004;Nepal
+FACEB;1954;Chile
+PINUV;1996;Central African Republic
+JEDEF;1979;China
+XOCAR;2010;North Korea
+ZIVAD;1984;Kenya
+PIGAV;1968;Laos
+CUXUM;2005;Niger
+DEDEY;2003;Jamaica
+FAYER;1986;Bosnia and Herzegovina
+KAYIH;2004;Togo
+RAYUZ;1974;Cuba
+FENAP;1977;Luxembourg
+XOHIP;1988;Liechtenstein
+POLEK;2007;Guyana
+XIGEM;2007;Kosovo
+KUCIR;1953;Cote d'Ivoire
+XUKOL;1992;Uganda
+SANEL;1952;Cyprus
+WUHIN;1994;Antigua and Barbuda
+WEXAJ;1993;Italy
+SEZEG;2002;Cameroon
+RASAK;1971;Gambia
+WOPAK;1974;Morocco
+KEGAJ;2008;Gabon
+XITAM;1982;Bahamas
+TAWUT;1983;Singapore
+CONAJ;1962;Palestine
+MAHAY;2008;China
+GISOD;2001;Malawi
+POKEH;1965;Azerbaijan
+WEMAL;2006;Ghana
+BIBIF;1982;Haiti
+BAHOT;1969;Maldives
+LIMIH;1972;Democratic Republic of the Congo
+KOTIZ;2007;Micronesia
+NENIM;1957;Ecuador
+ZOHUN;1952;Chad
+NEWOB;1982;Germany
+JISUG;2009;Saint Vincent and the Grenadines
+DICUM;1959;Netherlands
+DARUY;1950;Maldives
+MEWUV;1976;Oman
+JEKES;1977;Brazil
+KUJEX;1967;Israel
+FIGAS;2009;Mozambique
+MAJOG;2007;Dominican Republic
+HAPAF;1986;Uruguay
+ZABAT;2002;Switzerland
+TUTAL;1993;Barbados
+WEXEK;2008;Singapore
+FOSAW;1979;Vietnam
+JUPIG;2007;Mexico
+HABIY;1963;Greece
+JECOH;1992;Sierra Leone
+VEDUR;1963;Burundi
+YAZIS;1981;Indonesia
+VENAJ;1987;Czech Republic
+SOXUL;1997;Spain
+VAPUW;1968;Somalia
+NEXOM;1997;Netherlands
+RUVEF;1972;Solomon Islands
+PIRED;1990;Libya
+PEKUR;1976;Kenya
+WIBIX;2004;Palau
+MIKUN;2009;Hungary
+SIJUM;1978;France
+BEPUX;1999;Tuvalu
+SETOY;1953;Egypt
+NUDUX;1987;Nauru
+JEZUL;2003;Poland
+PAPEN;1988;Ethiopia
+FIWAJ;1993;Morocco
+WOFIL;1997;Malawi
+BAXIJ;1977;Nauru
+JOFAV;1987;Afghanistan
+LESOL;1958;Sierra Leone
+ROLOP;1963;Malta
+GUPUL;1958;Uruguay
+HUGOS;1991;San Marino
+METOS;1968;Kenya
+WIPOH;2005;Bosnia and Herzegovina
+ZIXOF;1992;Iran
+BASIJ;1971;Ghana
+JIZOH;1964;Taiwan
+WESED;1980;Timor-Leste
+XOYAN;1968;Ethiopia
+GIHAL;2000;Laos
+GOFEH;1951;Vietnam
+XEVUR;1991;Australia
+DAPUB;1956;Papua New Guinea
+CUXEX;2008;Palestine
+SAMEW;1963;El Salvador
+TENAL;1977;Argentina
+HIPEH;1968;Slovenia
+CIWOT;1969;Kazakhstan
+FOSOZ;1997;Liberia
+TERIV;1958;North Korea
+DEROW;2005;Sweden
+SAREV;2004;Thailand
+MARIP;1965;Canada
+RENUX;1960;Antigua and Barbuda
+REZOR;1979;Saint Vincent and the Grenadines
+REXEH;1950;Lesotho
+JUVOH;1976;Vanuatu
+BENEG;1981;Armenia
+ZIBIP;2006;Democratic Republic of the Congo
+YUNIW;1991;Chile
+ZOPUY;1998;Tanzania
+ZUXEK;1975;Botswana
+LOVOR;2001;Gambia
+TONUT;2004;Egypt
+KANES;1995;Moldova
+MIPAZ;2003;Palestine
+GONED;1998;Greece
+LIVUT;2001;Qatar
+MAFOP;1959;Bolivia
+VOPAG;1998;Bolivia
+ZAXEH;1971;Moldova
+COHAR;1970;Sweden
+KUDOK;1990;Brunei
+XALUR;1962;Cyprus
+HIMUV;1989;Kazakhstan
+ZUKOV;1972;Saint Kitts and Nevis
+JUPES;1969;Uzbekistan
+DEHOS;1965;Kuwait
+VIYIG;1953;Solomon Islands
+WUCOY;2005;Germany
+PUXAH;2009;Comoros
+LASOT;2003;Gambia
+NAYOX;2001;Burkina Faso
+GUTUR;1996;Suriname
+PIRIS;1969;Panama
+NORUT;1992;India
+XADOP;2005;Djibouti
+FIDIX;1991;Spain
+CUVUY;1974;Botswana
+KUHAR;2006;Germany
+ZUNOY;2000;Kiribati
+JOHOL;1986;Malaysia
+SAXUX;1966;Pakistan
+HIVON;1982;Singapore
+SAGUS;1997;Angola
+XIXOC;1960;Slovakia
+XUVIK;1972;Czech Republic
+SUDUC;1953;Equatorial Guinea
+TEVOK;2008;Tajikistan
+SAPUG;1980;Saint Kitts and Nevis
+XEKID;1978;Togo
+BUBIG;1952;Burundi
+VIKOP;1979;Mozambique
+FAJIP;1972;Ethiopia
+REDOC;1951;Samoa
+LIMUV;1996;Liechtenstein
+MAWOH;1976;Fiji
+DEXIB;1981;France
+GEMIY;1995;North Korea
+LEHUH;2006;Mongolia
+CAWOS;1989;Serbia
+COFON;1953;Mauritius
+CIFOW;1971;Grenada
+MOJAP;1950;Mauritius
+WAGAM;1950;Jordan
+TUNOP;2004;Mexico
+GUYUR;1997;Guyana
+TILEM;2007;Mali
+MUXAM;1995;Malta
+MEZEJ;1989;Tuvalu
+HEXOS;1988;Bangladesh
+HIXUL;1971;Iran
+ZOSAJ;1973;Vietnam
+CUXEY;1997;Pakistan
+YOHOR;1975;Zimbabwe
+NIGAV;1971;Ghana
+FETAJ;1976;Mexico
+LEMIW;1998;Comoros
+HOZIF;1970;Botswana
+NAYIT;1955;New Zealand
+LAVEC;1968;Burkina Faso
+HELOG;1995;Tonga

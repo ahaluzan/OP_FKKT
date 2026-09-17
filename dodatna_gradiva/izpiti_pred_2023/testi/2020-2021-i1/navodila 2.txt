@@ -1,0 +1,31 @@
+V imeniku testne skripte se nahaja glavna testna skripta test.py, zaganjalnik
+testov test_wrapper.py, konfiguracijska datoteka conf.json in imenik public,
+ki vsebuje tri podimenike: unit_test, unit_test_results in unit_test_stdout.
+
+Imenik unit_test vsebuje testne skripte za posamezen del vašega programa
+oziroma za posamezne funkcije. Testni primeri so podani v obliki tako
+imenovanih testov enot (angl. unit tests).
+
+Imenik unit_test_results vsebuje rezultate testiranja vašega programa; imenik
+unit_test_stdout pa vsebuje izpise programa (kadar funkcije ne izpišejo ničesar,
+bodo datoteke v tem imeniku prazne, razen če imate dodane izpise za
+razhroščevanje).
+
+Testna skripta test.py s pomočjo test_wrapper.py požene testne skripte iz
+imenika unit_test. Če želite videti, kaj testira posamezna skripta in kakšen
+je pričakovan rezultat posameznega testa, preprosto odprite posamezno testno
+skripto v urejevalniku besedila. Testne skripte so prav tako napisane v
+Pythonu. Rezultati testnih skript se zapišejo v imenik unit_test_results.
+Glede na število prestanih testov dobite ustrezno število točk.
+
+Najlažji način poganjanja testne skripte za testiranje vašega programa je,
+da program prekopirate v isti imenik, kjer se nahaja test.py. Nato samo
+poženete test.py. Lahko pa test.py poženete tudi iz ukazne vrstice iz
+poljubnega delovnega imenika (cwd), npr.:
+  c:\pot\do\pythona\python.exe c:\pot\do\testnega\imenika\test.py
+
+Poti (do Pythona, testnega imenika in imenika z vašo skripto) seveda
+nadomestite z dejanskimi (absolutnimi ali relativnimi) potmi na vašem
+računalniku. Če uporabljate ukazno vrstico v Windowsih in pri poganjanju
+testov vrne napako povezano s kodiranjem znakov, potem pred poganjanjem testov
+v konzoli zamenjajte kodiranje na UTF-8 (v konzoli poženite ukaz chcp 65001).

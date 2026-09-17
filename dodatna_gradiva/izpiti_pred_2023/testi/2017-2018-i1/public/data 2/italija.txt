@@ -1,0 +1,57 @@
+Italija
+Alba di Canazei - Ciampac / Val di Fassa;45;140;-;13/13
+Alta Badia;60;60;10;53/54
+Altopiano di Brentonico - Polsa - S. Valentino;40;40;-;9/11
+Aprica;190;270;-;15/16
+Arabba;138;154;25;22/23
+Campitello - Col Rodella / Val di Fassa;50;260;-;23/23
+Canazei - Belvedere / Val di Fassa;50;260;-;23/23
+Carezza - Karersee - Rosengarten;75;105;10;14/14
+Carosello 3000/ Livigno;107;126;-;31/31
+Drei Zinnen Dolomiten;-;137;25;32/32
+Forni di Sopra;40;110;10;8/8
+Gitschberg Jochtal;60;150;30;15/16
+Gröden - St. Christina;30;125;15;79/79
+Gröden - St. Ulrich;30;125;15;79/79
+Gröden - Wolkenstein;30;125;15;79/79
+Haideralm - Reschenpass;-;190;20;5/5
+Jochgrimm;-;-;-;4/4
+Klausberg - Ahrntal;224;266;-;11/12
+Kronplatz - Dolomiten;-;120;40;32/32
+La Thuile - La Rosiere / San Bernardo;75;300;10;37/37
+Ladurns Gossensass - Pflerschtal;50;150;10;3/3
+Lavarone - Luserna / Alpe Cimbra;50;50;-;14/14
+Livigno;107;126;-;31/31
+Madonna di Campiglio / Dolomiti di Brenta;100;245;-;19/19
+Meran 2000;75;75;15;8/8
+Moena - Alpe Lusia - Bellamonte / Trevalli;45;120;-;8/8
+Monte Maniva;100;120;20;7/7
+Mottolino Fun Mountain/ Livigno;107;126;-;31/31
+Paganella;28;140;15;17/17
+Passo San Pellegrino - Falcade / Trevalli;40;110;-;16/16
+Passo Tonale - Adamello Ski / Val di Sole;40;150;35;28/28
+Pfelders im Passeiertal;103;158;-;4/4
+Piancavallo;40;90;20;13/13
+Plose Brixen;-;150;25;7/7
+Pozza di Fassa - Buffaure / Val di Fassa;45;140;-;13/13
+Ratschings Jaufen;100;180;-;8/8
+Ravascletto-Sutrio / Monte Zoncolan;40;100;-;9/11
+Rein in Taufers - Tauferer Ahrntal;170;280;-;3/4
+Reinswald Sarntal;90;150;35;4/4
+Rittner Horn;35;60;5;4/4
+Roccaraso - Rivisondoli / Alto Sangro;50;100;-;21/23
+Rosskopf - Sterzing;-;150;5;3/3
+San Domenico;-;-;-;7/7
+Sauris;40;50;10;3/3
+Schnalstal / Kurzras;150;260;-;13/13
+Schwemmalm - Ultental;70;70;20;7/7
+Seiser Alm;8;92;2;20/21
+Sella Nevea - Canin;120;380;70;2/5
+Ski Center Latemar - Obereggen;80;130;10;18/18
+Speikboden - Tauferer Ahrntal;133;262;-;8/8
+Tarvisio / Monte Lussari;60;175;70;10/15
+Valchiavenna - Madesimo/Campodolcino;200;240;-;13/13
+Vigiljoch - Lana;-;-;-;4/4
+Vigo di Fassa - Catinaccio / Val di Fassa;40;140;-;6/6
+Villnöss;90;-;-;1/1
+Watles;200;150;10;3/3

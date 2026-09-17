@@ -1,0 +1,172 @@
+<p></p><p>Napišite modul <b><code>izpit</code></b>, ki vsebuje funkcije, kot so zahtevane v posamezni nalogi. V modul 
+lahko napišete tudi pomožne funkcije, če jih potrebujete. Testi so na voljo v mapi <code>./testi/2018-2019-i2</code>.</p>
+
+<p>Dovoljen je dostop do vse literature na učilnici. Dostop do ostalih virov in uporaba kakršnekoli komunikacije ni dovoljena. Na koncu na učilnici <b>oddajte (eno) datoteko <code>izpit</code></b><code><b>.py</b></code>.<br></p><p></p>
+
+Naloge niso nujno v vrstnem redu zahtevnosti. Če vam pri določeni nalogi ne uspe narediti rešitve, ki pokrije vse teste, poskusite pokriti vsaj del testov. Če vam določena naloga dela probleme, se ne ukvarjajte z njo predolgo in poskusite rešiti kakšno od drugih nalog. Naloge (in podnaloge) se lahko rešujejo neodvisno ena od druge, tako da jih lahko rešujete v poljubnem vrstnem redu.<br><p><br></p>
+
+<h1><a id="1_pisni_izpit_pri_predmetu_Osnove_programiranja_0"></a></h1><h1></h1><div data-mime-type="text/markdown"><div data-mime-type="text/markdown"><h1 id="Izredni-izpitni-rok-pri-predmetu-Osnove-programiranja">2. izpitni rok pri predmetu Osnove programiranja</h1><p><br></p><p></p><div><div><div><div data-mime-type="text/markdown"><h2 id="1.-Branje-podatkov">1. Branje podatkov<br><a target="_self" href="http://localhost:8888/lab#1.-Branje-podatkov"></a></h2>
+<p><br>V datoteki CSV imamo dnevne podatke vremenske merilne postaje. Vsaka 
+vrstica datoteke vsebuje meritve za en dan v letu. Prvi podatek je 
+datum, potem pa po vrsti sledijo povprečna dnevna temperatura v 
+stopinjah Celzija, količina padavin v milimetrih, trajanje sončnega 
+obsevanja v urah in na koncu še podatek, ali je bila v danem dnevu 
+zabeležena nevihta (da/ne). Vaša naloga je, da napišete funkcijo <code>preberi_podatke(datoteka)</code>,
+ ki prebere meritve iz podane datoteke in jih vrne kot seznama terk. 
+Struktura terk je razvidna iz primera spodaj. Seznam naj vsebuje po eno 
+terko za vsak prebran dan. Prvi podatek znotraj terke je sam po sebi 
+terka, ki predstavlja datum, na primer <code>(2018, 6, 1)</code> za 1. 
+6. 2018, potem pa, v enakem vrstnem redu kot v datoteki, sledijo še 
+meritve. Pazite na podatkovne tipe! Podatek o nevihti shranite kot <code>True</code> (da) oziroma <code>False</code> (ne).</p>
+<ul>
+<li>vhod: datoteka z vhodnimi podatki</li>
+<li>izhod: seznam terk, kjer vsaka terka predstavlja en dan</li>
+</ul>
+<p>Primer:</p>
+<pre><code>&gt;&gt;&gt; vsi_podatki = preberi_podatke('data.csv')
+&gt;&gt;&gt; vsi_podatki
+[((2018, 1, 1), 8.2, 0.0, 0.0, False),
+ ((2018, 1, 2), 4.0, 19.9, 2.9, False),
+ ((2018, 1, 3), 5.7, 0.0, 2.5, False),
+ # ... izpuščeno ...
+]</code></pre>
+</div></div></div><div></div></div><div><div></div><div><div><div></div></div><div></div></div></div><div><div><div><div data-mime-type="text/markdown"><h2 id="2.-Skupna-koli%C4%8Dina-padavin-po-mesecih"><br></h2><h2 id="2.-Skupna-koli%C4%8Dina-padavin-po-mesecih">2. Skupna količina padavin po mesecih<a target="_self" href="http://localhost:8888/lab#2.-Skupna-koli%C4%8Dina-padavin-po-mesecih"></a></h2>
+<p><br>Napišite funkcijo <code>kolicina_padavin(podatki)</code>, ki vrne 
+slovar, ki kot ključ vsebuje številko meseca (npr. 12 za december), kot 
+vrednost pa skupno količino zapadlih padavin v omenjenem mesecu. </p>
+<ul>
+<li>Vhod: podatki (seznam terk) kot jih vrne 1. naloga.</li>
+<li>Izhod: slovar mesecev s skupno količino padavin v vsakem mesecu.</li>
+</ul>
+<p>Primer (uporabljenih je zgolj nekaj dni):</p>
+<pre><code>&gt;&gt;&gt; testni_podatki = [
+ ((2018, 1, 1), 8.2, 0.0, 0.0, False),
+ ((2018, 1, 2), 4.0, 19.9, 2.9, False),
+ ((2018, 1, 3), 5.7, 0.0, 2.5, False),
+ ((2018, 2, 1), 11.6, 1.2, 0.0, False),
+ ((2018, 2, 2), 6.7, 11.5, 0.0, False),
+ ((2018, 2, 3), 4.2, 33.7, 0.0, False),
+ ((2018, 3, 1), -0.1, 0.0, 0.0, False),
+ ((2018, 3, 2), 3.5, 4.2, 0.0, False),
+ ((2018, 3, 3), 6.0, 7.0, 0.0, False),
+ ((2018, 4, 1), 10.3, 1.1, 8.0, False),
+ ((2018, 4, 2), 11.9, 0.1, 10.6, False),
+ ((2018, 4, 3), 12.1, 0.0, 4.4, False),
+ ((2018, 5, 1), 15.6, 0.0, 0.6, False),
+ ((2018, 5, 2), 19.5, 0.4, 8.8, False),
+ ((2018, 5, 3), 19.5, 0.0, 3.4, True),
+ ((2018, 6, 1), 22.6, 0.0, 12.5, False),
+ ((2018, 6, 2), 22.8, 0.0, 9.3, False),
+ ((2018, 6, 3), 22.2, 0.0, 14.1, False),
+ ((2018, 7, 1), 23.1, 0.5, 3.9, True),
+ ((2018, 7, 2), 22.2, 0.0, 6.1, False),
+ ((2018, 7, 3), 23.6, 0.0, 8.8, False),
+ ((2018, 8, 1), 28.5, 0.0, 13.2, False),
+ ((2018, 8, 2), 29.1, 0.0, 11.0, False),
+ ((2018, 8, 3), 29.2, 0.0, 10.7, False),
+ ((2018, 9, 1), 20.3, 22.9, 1.2, True),
+ ((2018, 9, 2), 19.1, 23.6, 9.6, False),
+ ((2018, 9, 3), 19.1, 0.0, 5.4, False),
+ ((2018, 10, 1), 13.3, 0.0, 1.9, True),
+ ((2018, 10, 2), 13.6, 13.6, 9.3, False),
+ ((2018, 10, 3), 12.6, 0.0, 9.9, False),
+ ((2018, 11, 1), 16.3, 0.0, 0.0, False),
+ ((2018, 11, 2), 15.7, 6.6, 0.0, False),
+ ((2018, 11, 3), 15.6, 8.5, 2.1, False),
+ ((2018, 12, 29), 2.3, 0.0, 4.3, False),
+ ((2018, 12, 30), 4.4, 0.0, 5.6, False),
+ ((2018, 12, 31), 3.9, 0.0, 2.2, False)
+]
+&gt;&gt;&gt; kolicina_padavin(testni_podatki)
+{1: 19.9,
+ 2: 46.400000000000006,
+ 3: 11.2,
+ 4: 1.2000000000000002,
+ 5: 0.4,
+ 6: 0.0,
+ 7: 0.5,
+ 8: 0.0,
+ 9: 46.5,
+ 10: 13.6,
+ 11: 15.1,
+ 12: 0.0}</code></pre>
+</div></div></div><div></div></div><div><div></div><div><div><div></div></div><div></div></div></div><div><div><div><div data-mime-type="text/markdown"><h3 id="3.-Skupno-%C5%A1tevilo-dni-primernih-za-izlete-v-celotnem-letu"><br></h3><h3 id="3.-Skupno-%C5%A1tevilo-dni-primernih-za-izlete-v-celotnem-letu">3. Skupno število dni primernih za izlete v celotnem letu<a target="_self" href="http://localhost:8888/lab#3.-Skupno-%C5%A1tevilo-dni-primernih-za-izlete-v-celotnem-letu"></a></h3>
+<p><br>Napišite funkcijo <code>stevilo_dni_za_izlete(podatki)</code>, ki izračuna število dni, ki so primerni za izlete. Dan je primeren za izlet natanko takrat, ko:</p>
+<ul>
+<li>ima povprečno dnevno temperaturo strogo večjo od 25 stopinj Celzija;</li>
+<li>ima strogo več kot 10 ur sonca;</li>
+<li>ne dežuje (količina padavin je nič);</li>
+<li>in ni bila zabeležena nevihta.</li>
+</ul>
+<ul>
+<li>Vhod: podatki (seznam terk) kot jih vrne 1. naloga.</li>
+<li>Izhod: število dni, primernih za izlete glede na podane vhodne podatke.</li>
+</ul>
+<p>Primer:</p>
+<pre><code>&gt;&gt; stevilo_dni_za_izlete(testni_podatki)
+3</code></pre>
+</div></div></div><div></div></div><div><div></div><div><div><div></div></div><div></div></div></div><div><div><div><div data-mime-type="text/markdown"><h2 id="4.-Najve%C4%8Dja-koli%C4%8Dina-de%C5%BEja%2C-ki-je-zapadla-v-obdobju-10-zaporednih-dni"><br></h2><h2 id="4.-Najve%C4%8Dja-koli%C4%8Dina-de%C5%BEja%2C-ki-je-zapadla-v-obdobju-10-zaporednih-dni">4. Največja količina dežja, ki je zapadla v obdobju 10 zaporednih dni</h2>
+<p><br>Napišite funkcijo <code>najvec_padavin(podatki)</code>, ki izračuna 
+največjo količino padavin, ki je padla v poljubnem obdobju 10 zaporednih
+ dni (drseče okno dolžine 10 dni), glede na podatke, ki jih funkcija 
+prejme na vhodu. Lahko privzamete, da noben dan v podatkih ni izpuščen 
+in da so urejeni po datumih.</p>
+<ul>
+<li>Vhod: podatki (seznam terk) kot jih vrne 1. naloga.</li>
+<li>Izhod: največja količina padavin v milimetrih.</li>
+</ul>
+<p>Primer (odebeljeno je označeno okno 10 dni, kjer je padla največja količina padavin):</p>
+<pre>&gt;&gt;&gt; testni_podatki_2 = [
+ ((2017, 12, 31), 7.1, 0.0, 0.0, False),
+ <b>((2018, 1, 1), 8.2, 0.0, 0.0, False),
+ ((2018, 1, 2), 4.0, 19.9, 2.9, False),
+ ((2018, 1, 3), 5.7, 0.0, 2.5, False),
+ ((2018, 1, 4), 6.1, 0.7, 0.1, False),
+ ((2018, 1, 5), 11.4, 0.0, 0.0, False),
+ ((2018, 1, 6), 12.2, 3.3, 0.4, False),
+ ((2018, 1, 7), 13.1, 0.0, 0.0, False),
+ ((2018, 1, 8), 12.6, 0.0, 1.3, False),
+ ((2018, 1, 9), 13.3, 0.0, 0.0, False),
+ ((2018, 1, 10), 7.2, 8.1, 3.9, False),</b>
+ ((2018, 1, 11), 6.9, 0.0, 5.7, False),
+ ((2018, 1, 12), 8.2, 0.0, 8.1, False),
+ ((2018, 1, 13), 5.6, 0.0, 7.8, False),
+ ((2018, 1, 14), 5.6, 0.0, 3.5, False),
+ ((2018, 1, 15), 5.4, 0.0, 4.9, False),
+ ((2018, 1, 16), 5.9, 1.6, 0.0, False),
+ ((2018, 1, 17), 3.9, 1.0, 0.0, False),
+ ((2018, 1, 18), 6.5, 0.0, 8.5, False),
+ ((2018, 1, 19), 9.2, 0.0, 0.1, False),
+ ((2018, 1, 20), 4.9, 0.0, 6.0, False),
+ ((2018, 1, 21), 5.3, 0.0, 7.4, False),
+ ((2018, 1, 22), 4.9, 0.0, 7.6, False),
+ ((2018, 1, 23), 4.6, 0.0, 8.4, False),
+ ((2018, 1, 24), 4.8, 0.0, 8.7, False),
+ ((2018, 1, 25), 7.9, 0.0, 0.0, False),
+ ((2018, 1, 26), 7.2, 0.0, 3.5, False),
+ ((2018, 1, 27), 8.4, 0.0, 0.6, False),
+ ((2018, 1, 28), 7.7, 0.0, 0.0, False),
+ ((2018, 1, 29), 7.1, 0.0, 0.0, False),
+ ((2018, 1, 30), 7.6, 0.0, 0.0, False),
+ ((2018, 1, 31), 8.0, 0.0, 0.0, False)]
+&gt;&gt;&gt; najvec_padavin(testni_podatki_2)
+32.0
+</pre>
+</div></div></div><div></div></div><div><div></div><div><div><div></div></div><div></div></div></div><div data-mime-type="text/markdown"><h2 id="5.-Obdobja-primerna-za-izlete"><br></h2><h2 id="5.-Obdobja-primerna-za-izlete">5. Obdobja primerna za izlete<a target="_self" href="http://localhost:8888/lab#5.-Obdobja-primerna-za-izlete"></a></h2>
+<p><br>Napišite <code>funkcijo obdobja_za_izlete(podatki)</code>, ki vrne 
+obdobja zaporednih dni, ki so primerna za izlete. Dnevi so primerni za 
+izlete pod istimi pogoji kot pri 3. nalogi (zato si lahko tudi pomagate z
+ rešitvijo te naloge). Funkcija naj vrne seznam parov, kjer prvi element
+ para predstavlja datum začetka obdobja, drugi pa datum konca obdobja 
+primernega za izlet (vključno z zadnjim dnem, ki je še primeren za 
+izlet) – to pomeni, da če je obdobje, ki je primerno za izlet, dolgo en 
+dan, sta datum začetka obdobja in konca obdobja ista. Datum naj bo podan
+ kot terka (v isti obliki kot pri prejšnjih nalogah).</p>
+<ul>
+<li>Vhod: podatki (seznam terk) kot jih vrne 1. naloga.</li>
+<li>Izhod: seznam parov (terk z dvema elementoma, ki predstavljata datum začetka in konca zaporedja dni).</li>
+</ul>
+<p>Primer (v tem primeru je zgolj eno obdobje):</p>
+<pre><code>&gt;&gt; obdobja_za_izlete(testni_podatki)
+[((2018, 8, 1), (2018, 8, 3))]</code></pre>
+</div><br><p></p></div></div><p></p>

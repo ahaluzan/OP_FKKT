@@ -1,0 +1,6 @@
+patient_id(0):global_num(1):sex(2):birth_year(3):age(4):country(5):province(6):city(7):disease(8):infection_case(9):infection_order(10):infected_by(11):contact_number(12):symptom_onset_date(13):confirmed_date(14):released_date(15):deceased_date(16):state(17)
+6001000001:67:female:1991:20s:Korea:Gyeongsangbuk-do:Gyeongsan-si::Shincheonji Church::1200000031:7::19.2.2020:9.4.2020::released
+6001000002:73:female:2001:10s:Korea:Gyeongsangbuk-do:Gyeongsan-si:::::2::19.2.2020:19.3.2020::released
+7000000014::female::30s:Korea:Jeju-do:Jeju-do::Itaewon Clubs:::::9.5.2020:::isolated
+6001000003:91:female:1974:40s:Korea:Gyeongsangbuk-do:Gyeongsan-si:::::3::20.2.2020:6.3.2020::released
+6001000004:105:female:1965:50s:Korea:Gyeongsangbuk-do:Gyeongsan-si:::::5::20.2.2020:25.3.2020::released
