@@ -10,18 +10,18 @@ Spletna učilnica se uporablja predvsem za obvestila in oddajo nalog, medtem ko 
 
 ```
 .
-├── vaje_komplet.md      # Zbirka nalog za vse vaje
-├── naloge_testi/         # Avtomatski testi za posamezne sklope vaj
 ├── dodatna_gradiva/       # Gradiva za dodatne vaje in tematike
+├── gradiva/               # PDF-ji gradiv, predpisanih za študij
+├── izpiti/               # navodila in testi izpitov iz Zbirke rešenih kolokvijev in izpitov
 ├── testi_kol_izp/          # Avtomatski testi starih kolokvijev in izpitov
-└── gradiva/               # PDF-ji gradiv, predpisanih za študij
+└── naloge_testi/         # Avtomatski testi za posamezne sklope vaj
 ```
 
-- **`vaje_komplet.md`** – vsebuje navodila za vse naloge na enem mestu;
-- **`naloge_testi/`** – mapa vsebuje podmape s testi za vsak sklop vaj. S testi preverjate pravilnost svojih rešitev;
-- **`testi_kol_izp/`** - mapa vsebuje podmape s testi starih izpitov in kolokvijev
 - **`dodatna_gradiva/`** – vsebine, ki presegajo redni obseg vaj (npr. dodatne naloge in teme za tiste, ki želite znanje poglobiti);
-- **`gradiva/`** – PDF-ji skript, uporabljenih pri predmetu.
+- **`gradiva/`** – PDF-ji skript, uporabljenih pri predmetu;
+- **`izpiti/`** - mapa vsebuje navodila kolokvijev in izpitov ter podmapo s testi kolokvijev in izpitov iz Zbirke rešeni kolokvijev in izpitov;
+- **`testi_kol_izp/`** - mapa vsebuje podmape s testi starih izpitov in kolokvijev;
+- **`naloge_testi/`** – mapa vsebuje podmape s testi za vsak sklop vaj. S testi preverjate pravilnost svojih rešitev.
 
 ## Kako uporabljati repozitorij
 
@@ -33,7 +33,7 @@ Repozitorij lahko prenesete na enega od naslednjih načinov:
   ```
 - **prenos ZIP datoteke**: na GitHubu kliknite `Code → Download ZIP`.
 
-Če ste repozitorij klonirali, gradiva redno posodabljate z ukazom:
+Če ste repozitorij klonirali, lahko gradiva posodobite z ukazom:
 ```
 git pull
 ```
