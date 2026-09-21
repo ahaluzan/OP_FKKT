@@ -10,13 +10,13 @@ Spletna učilnica se uporablja predvsem za obvestila in oddajo nalog, medtem ko 
 
 ```
 .
-├── dodatna_gradiva/       # Gradiva za dodatne vaje in tematike
+├── dodatna_gradiva/       # gradiva za dodatne vaje in tematike
 ├── gradiva/               # PDF-ji gradiv, predpisanih za študij
 ├── izpiti/               # navodila in testi izpitov iz Zbirke rešenih kolokvijev in izpitov
 └── naloge_testi/         # Avtomatski testi za posamezne sklope vaj
 ```
 
-- **`dodatna_gradiva/`** – vsebine, ki presegajo redni obseg vaj (npr. dodatne naloge in teme za tiste, ki želite znanje poglobiti);
+- **`dodatna_gradiva/`** – vsebine, ki presegajo redni obseg vaj (npr. dodatne naloge in teme za tiste, ki želijo znanje poglobiti);
 - **`gradiva/`** – PDF-ji skript, uporabljenih pri predmetu;
 - **`izpiti/`** - mapa vsebuje navodila kolokvijev in izpitov ter podmapo s testi kolokvijev in izpitov iz Zbirke rešeni kolokvijev in izpitov;
 - **`naloge_testi/`** – mapa vsebuje podmape s testi za vsak sklop vaj. S testi preverjate pravilnost svojih rešitev.
@@ -25,11 +25,11 @@ Spletna učilnica se uporablja predvsem za obvestila in oddajo nalog, medtem ko 
 
 Repozitorij lahko prenesete na enega od naslednjih načinov:
 
-- **kloniranje** (priporočeno, saj lahko z `git pull` enostavno pridobite posodobitve):
+- **prenos ZIP datoteke**: na GitHubu kliknite `Code → Download ZIP` (priporočeni način),
+- **kloniranje** (naprednejši način):
   ```
   git clone <povezava-do-repozitorija>
   ```
-- **prenos ZIP datoteke**: na GitHubu kliknite `Code → Download ZIP`.
 
 Če ste repozitorij klonirali, lahko gradiva posodobite z ukazom:
 ```
